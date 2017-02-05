@@ -10,11 +10,11 @@
   :lang(ko) { font-family: 'Noto Sans KR', sans-serif; }
 </style>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="http://blog.youre.space/baas/css/blog.css">
-<link rel="stylesheet" href="http://blog.youre.space/baas/css/custom_for_mt.css">
-<link rel="start" href="http://blog.youre.space/baas/" title="Home">
-<link rel="alternate" href="http://blog.youre.space/baas/atom.xml" type="application/atom+xml" title="Recent Entries">
-<link rel="canonical" href="http://blog.youre.space/baas/2015/08/usergrid-assets.html">
+<link rel="stylesheet" href="http://weblog.youre.space/baas/css/weblog.css">
+<link rel="stylesheet" href="http://weblog.youre.space/baas/css/custom_for_mt.css">
+<link rel="start" href="http://weblog.youre.space/baas/" title="Home">
+<link rel="alternate" href="http://weblog.youre.space/baas/atom.xml" type="application/atom+xml" title="Recent Entries">
+<link rel="canonical" href="http://weblog.youre.space/baas/2015/08/usergrid-assets.html">
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-81713353-1']);
@@ -25,20 +25,20 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-<link rel="prev" href="http://blog.youre.space/baas/2014/11/-user.html" title="특정날짜에 등록된 user를 가져오려면 어떻게 하면 되나요?">
-<link rel="next" href="http://blog.youre.space/baas/2015/08/usergrid-android-008jar.html" title="usergrid-android-0.0.8.jar">
+<link rel="prev" href="http://weblog.youre.space/baas/2014/11/-user.html" title="특정날짜에 등록된 user를 가져오려면 어떻게 하면 되나요?">
+<link rel="next" href="http://weblog.youre.space/baas/2015/08/usergrid-android-008jar.html" title="usergrid-android-0.0.8.jar">
 <!-- Open Graph Protocol -->
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en-us">
 <meta property="og:title" content="usergrid의 /assets 콜렉션">
-<meta property="og:url" content="http://blog.youre.space/baas/2015/08/usergrid-assets.html">
+<meta property="og:url" content="http://weblog.youre.space/baas/2015/08/usergrid-assets.html">
 <meta property="og:description" content="baas.io와는 다르게 usergrid(1.0.2)에는 /assets 콜렉션이 있습니다. 바이너리 데이터(텍스트 파일이 아닌 그림 파일 같은 것)를 업로드하여 쓰라는군요. curl을 이용하면 아래와 같이 업로드 합니다. 아래 4개의 프로퍼티는 assets 엘리먼트의 필수사항입니다. -F name=&#039;bash.bin&#039;은 이 엔터티의 name 프로퍼티가 됩니다. 다른 엔터티에서도 그렇지만 name 프로퍼티는...">
 <meta property="og:site_name" content="BaaS와 PaaS 차이">
-<meta property="og:image" content="http://blog.youre.space/baas/blogimg/og_image.png">
+<meta property="og:image" content="http://weblog.youre.space/baas/blogimg/og_image.png">
 <!-- Metadata -->
 <meta itemprop="description" content="baas.io와는 다르게 usergrid(1.0.2)에는 /assets 콜렉션이 있습니다. 바이너리 데이터(텍스트 파일이 아닌 그림 파일 같은 것)를 업로드하여 쓰라는군요. curl을 이용하면 아래와 같이 업로드 합니다. 아래 4개의 프로퍼티는 assets 엘리먼트의 필수사항입니다. -F name='bash.bin'은 이 엔터티의 name 프로퍼티가 됩니다. 다른 엔터티에서도 그렇지만 name 프로퍼티는...">
-<link itemprop="url" href="http://blog.youre.space/baas/2015/08/usergrid-assets.html">
-<link itemprop="image" href="http://blog.youre.space/baas/blogimg/og_image.png">
+<link itemprop="url" href="http://weblog.youre.space/baas/2015/08/usergrid-assets.html">
+<link itemprop="image" href="http://weblog.youre.space/baas/blogimg/og_image.png">
 <title>usergrid의 /assets 콜렉션 - BaaS와 PaaS 차이</title>
 </head>
 <body id="sybootstrap">
@@ -58,11 +58,11 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">YOUR E-SPACE</a></li>
         <li><a href="http://weblog.youre.space/">WEBLOG</a></li>
-        <li><a href="http://blog.youre.space/baas/" class="blog-nav-item">Blog Home</a></li>
+        <li><a href="http://weblog.youre.space/baas/" class="blog-nav-item">Blog Home</a></li>
         <li><a href="http://highest.youre.space/">Perl API</a></li>
         <li><a href="http://lego.youre.space/">Lego</a></li>
         <li><a href="http://fnb.youre.space/">F & B</a></li>
-        <li><a href="http://blog.youre.space/baas/atom.xml" class="blog-nav-item">Feed</a></li>
+        <li><a href="http://weblog.youre.space/baas/atom.xml" class="blog-nav-item">Feed</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -80,7 +80,7 @@
 <div class="row">
 <main class="col-sm-8 blog-main">
 <ul class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-<li><a href="http://blog.youre.space/">Home</a></li>
+<li><a href="http://weblog.youre.space/">Home</a></li>
 <li>usergrid의 /assets 콜렉션</li>
 </ul>
 <article id="entry-429" class="blog-post entry entry-asset asset hentry h-entry">
@@ -107,8 +107,8 @@
 </div>
 <aside>
 <ul class="pager">
-<li class="previous"><a href="http://blog.youre.space/baas/2014/11/-user.html" title="특정날짜에 등록된 user를 가져오려면 어떻게 하면 되나요?">Previous Entry</a></li>
-<li class="next"><a href="http://blog.youre.space/baas/2015/08/usergrid-android-008jar.html" title="usergrid-android-0.0.8.jar">Next Entry</a></li>
+<li class="previous"><a href="http://weblog.youre.space/baas/2014/11/-user.html" title="특정날짜에 등록된 user를 가져오려면 어떻게 하면 되나요?">Previous Entry</a></li>
+<li class="next"><a href="http://weblog.youre.space/baas/2015/08/usergrid-android-008jar.html" title="usergrid-android-0.0.8.jar">Next Entry</a></li>
 </ul>
 </aside>
 <!--
@@ -126,24 +126,24 @@
 <div class="sidebar-module">
 <h4>Archives</h4>
 <ol class="list-unstyled">
-<li><a href="http://blog.youre.space/baas/2017/01/">January 2017 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2016/06/">June 2016 (2)</a></li>
-<li><a href="http://blog.youre.space/baas/2016/03/">March 2016 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2016/02/">February 2016 (3)</a></li>
-<li><a href="http://blog.youre.space/baas/2015/08/">August 2015 (3)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/11/">November 2014 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/10/">October 2014 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/03/">March 2014 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/02/">February 2014 (5)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/01/">January 2014 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2013/11/">November 2013 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2013/07/">July 2013 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2013/02/">February 2013 (2)</a></li>
+<li><a href="http://weblog.youre.space/baas/2017/01/">January 2017 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2016/06/">June 2016 (2)</a></li>
+<li><a href="http://weblog.youre.space/baas/2016/03/">March 2016 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2016/02/">February 2016 (3)</a></li>
+<li><a href="http://weblog.youre.space/baas/2015/08/">August 2015 (3)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/11/">November 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/10/">October 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/03/">March 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/02/">February 2014 (5)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/01/">January 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2013/11/">November 2013 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2013/07/">July 2013 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2013/02/">February 2013 (2)</a></li>
 </ol>
 </div>
 <div class="sidebar-module">
 <h4>Search</h4>
-<form class="site-search" method="get" id="search" action="http://blog.youre.space/63/mt-search.cgi">
+<form class="site-search" method="get" id="search" action="http://weblog.youre.space/63/mt-search.cgi">
 <input class="form-control" type="text" name="search" value="" placeholder="検索...">
 <input type="hidden" name="IncludeBlogs" value="11">
 <input type="hidden" name="limit" value="20">

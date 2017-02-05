@@ -10,11 +10,11 @@
   :lang(ko) { font-family: 'Noto Sans KR', sans-serif; }
 </style>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="http://blog.youre.space/baas/css/blog.css">
-<link rel="stylesheet" href="http://blog.youre.space/baas/css/custom_for_mt.css">
-<link rel="start" href="http://blog.youre.space/baas/" title="Home">
-<link rel="alternate" href="http://blog.youre.space/baas/atom.xml" type="application/atom+xml" title="Recent Entries">
-<link rel="canonical" href="http://blog.youre.space/baas/2014/10/gcm.html">
+<link rel="stylesheet" href="http://weblog.youre.space/baas/css/weblog.css">
+<link rel="stylesheet" href="http://weblog.youre.space/baas/css/custom_for_mt.css">
+<link rel="start" href="http://weblog.youre.space/baas/" title="Home">
+<link rel="alternate" href="http://weblog.youre.space/baas/atom.xml" type="application/atom+xml" title="Recent Entries">
+<link rel="canonical" href="http://weblog.youre.space/baas/2014/10/gcm.html">
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-81713353-1']);
@@ -25,20 +25,20 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-<link rel="prev" href="http://blog.youre.space/baas/2014/03/2014-ucloud-biz---ucloud-baas.html" title="2014년 ucloud biz 개발자 컨퍼런스 - ucloud BaaS">
-<link rel="next" href="http://blog.youre.space/baas/2014/11/-user.html" title="특정날짜에 등록된 user를 가져오려면 어떻게 하면 되나요?">
+<link rel="prev" href="http://weblog.youre.space/baas/2014/03/2014-ucloud-biz---ucloud-baas.html" title="2014년 ucloud biz 개발자 컨퍼런스 - ucloud BaaS">
+<link rel="next" href="http://weblog.youre.space/baas/2014/11/-user.html" title="특정날짜에 등록된 user를 가져오려면 어떻게 하면 되나요?">
 <!-- Open Graph Protocol -->
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en-us">
 <meta property="og:title" content="gcm 사용할때나 로그인 할때나 게시판을 열어볼때 딜레이가 발생하는 이유는 무엇인가요..?">
-<meta property="og:url" content="http://blog.youre.space/baas/2014/10/gcm.html">
+<meta property="og:url" content="http://weblog.youre.space/baas/2014/10/gcm.html">
 <meta property="og:description" content="gcm 사용할때나 로그인 할때나 게시판을 열어볼때 딜레이가 발생하는 이유는 무엇인가요..? 작성자 : wirk90 작성일 : 2014.10.10 오전 5시 55분 원문 URL : https://baas.io/support/#!066fd397-f5b2-4804-8a69-b704f4ca474a ==== ==== ==== ==== 아 마도 baas.io 웹 사이트 이용 시 약간의 로딩 시간이 있는 것을 말씀하시는...">
 <meta property="og:site_name" content="BaaS와 PaaS 차이">
-<meta property="og:image" content="http://blog.youre.space/baas/blogimg/og_image.png">
+<meta property="og:image" content="http://weblog.youre.space/baas/blogimg/og_image.png">
 <!-- Metadata -->
 <meta itemprop="description" content="gcm 사용할때나 로그인 할때나 게시판을 열어볼때 딜레이가 발생하는 이유는 무엇인가요..? 작성자 : wirk90 작성일 : 2014.10.10 오전 5시 55분 원문 URL : https://baas.io/support/#!066fd397-f5b2-4804-8a69-b704f4ca474a ==== ==== ==== ==== 아 마도 baas.io 웹 사이트 이용 시 약간의 로딩 시간이 있는 것을 말씀하시는...">
-<link itemprop="url" href="http://blog.youre.space/baas/2014/10/gcm.html">
-<link itemprop="image" href="http://blog.youre.space/baas/blogimg/og_image.png">
+<link itemprop="url" href="http://weblog.youre.space/baas/2014/10/gcm.html">
+<link itemprop="image" href="http://weblog.youre.space/baas/blogimg/og_image.png">
 <title>gcm 사용할때나 로그인 할때나 게시판을 열어볼때 딜레이가 발생하는 이유는 무엇인가요..? - BaaS와 PaaS 차이</title>
 </head>
 <body id="sybootstrap">
@@ -58,11 +58,11 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">YOUR E-SPACE</a></li>
         <li><a href="http://weblog.youre.space/">WEBLOG</a></li>
-        <li><a href="http://blog.youre.space/baas/" class="blog-nav-item">Blog Home</a></li>
+        <li><a href="http://weblog.youre.space/baas/" class="blog-nav-item">Blog Home</a></li>
         <li><a href="http://highest.youre.space/">Perl API</a></li>
         <li><a href="http://lego.youre.space/">Lego</a></li>
         <li><a href="http://fnb.youre.space/">F & B</a></li>
-        <li><a href="http://blog.youre.space/baas/atom.xml" class="blog-nav-item">Feed</a></li>
+        <li><a href="http://weblog.youre.space/baas/atom.xml" class="blog-nav-item">Feed</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -80,7 +80,7 @@
 <div class="row">
 <main class="col-sm-8 blog-main">
 <ul class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-<li><a href="http://blog.youre.space/">Home</a></li>
+<li><a href="http://weblog.youre.space/">Home</a></li>
 <li>gcm 사용할때나 로그인 할때나 게시판을 열어볼때 딜레이가 발생하는 이유는 무엇인가요..?</li>
 </ul>
 <article id="entry-427" class="blog-post entry entry-asset asset hentry h-entry">
@@ -105,8 +105,8 @@
 </div>
 <aside>
 <ul class="pager">
-<li class="previous"><a href="http://blog.youre.space/baas/2014/03/2014-ucloud-biz---ucloud-baas.html" title="2014년 ucloud biz 개발자 컨퍼런스 - ucloud BaaS">Previous Entry</a></li>
-<li class="next"><a href="http://blog.youre.space/baas/2014/11/-user.html" title="특정날짜에 등록된 user를 가져오려면 어떻게 하면 되나요?">Next Entry</a></li>
+<li class="previous"><a href="http://weblog.youre.space/baas/2014/03/2014-ucloud-biz---ucloud-baas.html" title="2014년 ucloud biz 개발자 컨퍼런스 - ucloud BaaS">Previous Entry</a></li>
+<li class="next"><a href="http://weblog.youre.space/baas/2014/11/-user.html" title="특정날짜에 등록된 user를 가져오려면 어떻게 하면 되나요?">Next Entry</a></li>
 </ul>
 </aside>
 <!--
@@ -124,24 +124,24 @@
 <div class="sidebar-module">
 <h4>Archives</h4>
 <ol class="list-unstyled">
-<li><a href="http://blog.youre.space/baas/2017/01/">January 2017 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2016/06/">June 2016 (2)</a></li>
-<li><a href="http://blog.youre.space/baas/2016/03/">March 2016 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2016/02/">February 2016 (3)</a></li>
-<li><a href="http://blog.youre.space/baas/2015/08/">August 2015 (3)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/11/">November 2014 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/10/">October 2014 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/03/">March 2014 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/02/">February 2014 (5)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/01/">January 2014 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2013/11/">November 2013 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2013/07/">July 2013 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2013/02/">February 2013 (2)</a></li>
+<li><a href="http://weblog.youre.space/baas/2017/01/">January 2017 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2016/06/">June 2016 (2)</a></li>
+<li><a href="http://weblog.youre.space/baas/2016/03/">March 2016 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2016/02/">February 2016 (3)</a></li>
+<li><a href="http://weblog.youre.space/baas/2015/08/">August 2015 (3)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/11/">November 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/10/">October 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/03/">March 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/02/">February 2014 (5)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/01/">January 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2013/11/">November 2013 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2013/07/">July 2013 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2013/02/">February 2013 (2)</a></li>
 </ol>
 </div>
 <div class="sidebar-module">
 <h4>Search</h4>
-<form class="site-search" method="get" id="search" action="http://blog.youre.space/63/mt-search.cgi">
+<form class="site-search" method="get" id="search" action="http://weblog.youre.space/63/mt-search.cgi">
 <input class="form-control" type="text" name="search" value="" placeholder="検索...">
 <input type="hidden" name="IncludeBlogs" value="11">
 <input type="hidden" name="limit" value="20">

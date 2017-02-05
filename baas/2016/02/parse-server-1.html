@@ -10,11 +10,11 @@
   :lang(ko) { font-family: 'Noto Sans KR', sans-serif; }
 </style>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="http://blog.youre.space/baas/css/blog.css">
-<link rel="stylesheet" href="http://blog.youre.space/baas/css/custom_for_mt.css">
-<link rel="start" href="http://blog.youre.space/baas/" title="Home">
-<link rel="alternate" href="http://blog.youre.space/baas/atom.xml" type="application/atom+xml" title="Recent Entries">
-<link rel="canonical" href="http://blog.youre.space/baas/2016/02/parse-server-1.html">
+<link rel="stylesheet" href="http://weblog.youre.space/baas/css/weblog.css">
+<link rel="stylesheet" href="http://weblog.youre.space/baas/css/custom_for_mt.css">
+<link rel="start" href="http://weblog.youre.space/baas/" title="Home">
+<link rel="alternate" href="http://weblog.youre.space/baas/atom.xml" type="application/atom+xml" title="Recent Entries">
+<link rel="canonical" href="http://weblog.youre.space/baas/2016/02/parse-server-1.html">
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-81713353-1']);
@@ -25,20 +25,20 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-<link rel="prev" href="http://blog.youre.space/baas/2015/08/paas-baas.html" title="PaaS 쓸까, BaaS 쓸까? (서버 개발자인가, 클라이언트 개발자인가?)">
-<link rel="next" href="http://blog.youre.space/baas/2016/02/parse-server-mongodb-migration.html" title="Parse Server 이용 2 (DB migration)">
+<link rel="prev" href="http://weblog.youre.space/baas/2015/08/paas-baas.html" title="PaaS 쓸까, BaaS 쓸까? (서버 개발자인가, 클라이언트 개발자인가?)">
+<link rel="next" href="http://weblog.youre.space/baas/2016/02/parse-server-mongodb-migration.html" title="Parse Server 이용 2 (DB migration)">
 <!-- Open Graph Protocol -->
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en-us">
 <meta property="og:title" content="Parse Server 이용 1">
-<meta property="og:url" content="http://blog.youre.space/baas/2016/02/parse-server-1.html">
+<meta property="og:url" content="http://weblog.youre.space/baas/2016/02/parse-server-1.html">
 <meta property="og:description" content="https://parse.com/docs/server/guide#migrating 가이드를 보면, 1차로 DB를 변경하고, 2차로 서버를 변경하라고 합니다. 덕분에 MongoDB를 설치하게 되었습니다. Cassandra는 쓰고 있지만, MongoDB는 처음입니다. Debian에 패키지로 2.4 버전을 설치하고 Parse Console에 DB 주소를 입력했습니다. 오류가 표시되네요. 2.6이나 3.0을 설치해야겠습니다. Mongo version 2.4.10 unsupported. 2.6.X and...">
 <meta property="og:site_name" content="BaaS와 PaaS 차이">
-<meta property="og:image" content="http://blog.youre.space/baas/blogimg/og_image.png">
+<meta property="og:image" content="http://weblog.youre.space/baas/blogimg/og_image.png">
 <!-- Metadata -->
 <meta itemprop="description" content="https://parse.com/docs/server/guide#migrating 가이드를 보면, 1차로 DB를 변경하고, 2차로 서버를 변경하라고 합니다. 덕분에 MongoDB를 설치하게 되었습니다. Cassandra는 쓰고 있지만, MongoDB는 처음입니다. Debian에 패키지로 2.4 버전을 설치하고 Parse Console에 DB 주소를 입력했습니다. 오류가 표시되네요. 2.6이나 3.0을 설치해야겠습니다. Mongo version 2.4.10 unsupported. 2.6.X and...">
-<link itemprop="url" href="http://blog.youre.space/baas/2016/02/parse-server-1.html">
-<link itemprop="image" href="http://blog.youre.space/baas/blogimg/og_image.png">
+<link itemprop="url" href="http://weblog.youre.space/baas/2016/02/parse-server-1.html">
+<link itemprop="image" href="http://weblog.youre.space/baas/blogimg/og_image.png">
 <title>Parse Server 이용 1 - BaaS와 PaaS 차이</title>
 </head>
 <body id="sybootstrap">
@@ -58,11 +58,11 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">YOUR E-SPACE</a></li>
         <li><a href="http://weblog.youre.space/">WEBLOG</a></li>
-        <li><a href="http://blog.youre.space/baas/" class="blog-nav-item">Blog Home</a></li>
+        <li><a href="http://weblog.youre.space/baas/" class="blog-nav-item">Blog Home</a></li>
         <li><a href="http://highest.youre.space/">Perl API</a></li>
         <li><a href="http://lego.youre.space/">Lego</a></li>
         <li><a href="http://fnb.youre.space/">F & B</a></li>
-        <li><a href="http://blog.youre.space/baas/atom.xml" class="blog-nav-item">Feed</a></li>
+        <li><a href="http://weblog.youre.space/baas/atom.xml" class="blog-nav-item">Feed</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -80,7 +80,7 @@
 <div class="row">
 <main class="col-sm-8 blog-main">
 <ul class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-<li><a href="http://blog.youre.space/">Home</a></li>
+<li><a href="http://weblog.youre.space/">Home</a></li>
 <li>Parse Server 이용 1</li>
 </ul>
 <article id="entry-432" class="blog-post entry entry-asset asset hentry h-entry">
@@ -103,8 +103,8 @@
 </div>
 <aside>
 <ul class="pager">
-<li class="previous"><a href="http://blog.youre.space/baas/2015/08/paas-baas.html" title="PaaS 쓸까, BaaS 쓸까? (서버 개발자인가, 클라이언트 개발자인가?)">Previous Entry</a></li>
-<li class="next"><a href="http://blog.youre.space/baas/2016/02/parse-server-mongodb-migration.html" title="Parse Server 이용 2 (DB migration)">Next Entry</a></li>
+<li class="previous"><a href="http://weblog.youre.space/baas/2015/08/paas-baas.html" title="PaaS 쓸까, BaaS 쓸까? (서버 개발자인가, 클라이언트 개발자인가?)">Previous Entry</a></li>
+<li class="next"><a href="http://weblog.youre.space/baas/2016/02/parse-server-mongodb-migration.html" title="Parse Server 이용 2 (DB migration)">Next Entry</a></li>
 </ul>
 </aside>
 <!--
@@ -122,24 +122,24 @@
 <div class="sidebar-module">
 <h4>Archives</h4>
 <ol class="list-unstyled">
-<li><a href="http://blog.youre.space/baas/2017/01/">January 2017 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2016/06/">June 2016 (2)</a></li>
-<li><a href="http://blog.youre.space/baas/2016/03/">March 2016 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2016/02/">February 2016 (3)</a></li>
-<li><a href="http://blog.youre.space/baas/2015/08/">August 2015 (3)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/11/">November 2014 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/10/">October 2014 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/03/">March 2014 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/02/">February 2014 (5)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/01/">January 2014 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2013/11/">November 2013 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2013/07/">July 2013 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2013/02/">February 2013 (2)</a></li>
+<li><a href="http://weblog.youre.space/baas/2017/01/">January 2017 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2016/06/">June 2016 (2)</a></li>
+<li><a href="http://weblog.youre.space/baas/2016/03/">March 2016 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2016/02/">February 2016 (3)</a></li>
+<li><a href="http://weblog.youre.space/baas/2015/08/">August 2015 (3)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/11/">November 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/10/">October 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/03/">March 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/02/">February 2014 (5)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/01/">January 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2013/11/">November 2013 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2013/07/">July 2013 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2013/02/">February 2013 (2)</a></li>
 </ol>
 </div>
 <div class="sidebar-module">
 <h4>Search</h4>
-<form class="site-search" method="get" id="search" action="http://blog.youre.space/63/mt-search.cgi">
+<form class="site-search" method="get" id="search" action="http://weblog.youre.space/63/mt-search.cgi">
 <input class="form-control" type="text" name="search" value="" placeholder="検索...">
 <input type="hidden" name="IncludeBlogs" value="11">
 <input type="hidden" name="limit" value="20">

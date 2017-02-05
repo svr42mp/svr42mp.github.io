@@ -10,11 +10,11 @@
   :lang(ko) { font-family: 'Noto Sans KR', sans-serif; }
 </style>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" href="http://blog.youre.space/baas/css/blog.css">
-<link rel="stylesheet" href="http://blog.youre.space/baas/css/custom_for_mt.css">
-<link rel="start" href="http://blog.youre.space/baas/" title="Home">
-<link rel="alternate" href="http://blog.youre.space/baas/atom.xml" type="application/atom+xml" title="Recent Entries">
-<link rel="canonical" href="http://blog.youre.space/baas/2016/02/parse-server-mongodb-migration.html">
+<link rel="stylesheet" href="http://weblog.youre.space/baas/css/weblog.css">
+<link rel="stylesheet" href="http://weblog.youre.space/baas/css/custom_for_mt.css">
+<link rel="start" href="http://weblog.youre.space/baas/" title="Home">
+<link rel="alternate" href="http://weblog.youre.space/baas/atom.xml" type="application/atom+xml" title="Recent Entries">
+<link rel="canonical" href="http://weblog.youre.space/baas/2016/02/parse-server-mongodb-migration.html">
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-81713353-1']);
@@ -25,20 +25,20 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-<link rel="prev" href="http://blog.youre.space/baas/2016/02/parse-server-1.html" title="Parse Server 이용 1">
-<link rel="next" href="http://blog.youre.space/baas/2016/02/usergrid-210-rootwar.html" title="usergrid 2.1.0 ROOT.war">
+<link rel="prev" href="http://weblog.youre.space/baas/2016/02/parse-server-1.html" title="Parse Server 이용 1">
+<link rel="next" href="http://weblog.youre.space/baas/2016/02/usergrid-210-rootwar.html" title="usergrid 2.1.0 ROOT.war">
 <!-- Open Graph Protocol -->
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en-us">
 <meta property="og:title" content="Parse Server 이용 2 (DB migration)">
-<meta property="og:url" content="http://blog.youre.space/baas/2016/02/parse-server-mongodb-migration.html">
+<meta property="og:url" content="http://weblog.youre.space/baas/2016/02/parse-server-mongodb-migration.html">
 <meta property="og:description" content="MongoDB 3.0을 설치하고 이전을 시작했습니다. 별 문제 없이 잘 됐습니다. Parse 직원들 고생했겠네요. App Settings에서 DB 접속 정보를 입력했습니다. 예를 들면, mongodb://id:pw@ip:27017/dbname 형식으로 입력합니다. 27017은 mongodb의 기본 port입니다. 제 Parse 앱 중에 하나는 6.11만건의 API 쿼리가 발생했군요. 공짜로 엄청 잘...">
 <meta property="og:site_name" content="BaaS와 PaaS 차이">
-<meta property="og:image" content="http://blog.youre.space/baas/blogimg/og_image.png">
+<meta property="og:image" content="http://weblog.youre.space/baas/blogimg/og_image.png">
 <!-- Metadata -->
 <meta itemprop="description" content="MongoDB 3.0을 설치하고 이전을 시작했습니다. 별 문제 없이 잘 됐습니다. Parse 직원들 고생했겠네요. App Settings에서 DB 접속 정보를 입력했습니다. 예를 들면, mongodb://id:pw@ip:27017/dbname 형식으로 입력합니다. 27017은 mongodb의 기본 port입니다. 제 Parse 앱 중에 하나는 6.11만건의 API 쿼리가 발생했군요. 공짜로 엄청 잘...">
-<link itemprop="url" href="http://blog.youre.space/baas/2016/02/parse-server-mongodb-migration.html">
-<link itemprop="image" href="http://blog.youre.space/baas/blogimg/og_image.png">
+<link itemprop="url" href="http://weblog.youre.space/baas/2016/02/parse-server-mongodb-migration.html">
+<link itemprop="image" href="http://weblog.youre.space/baas/blogimg/og_image.png">
 <title>Parse Server 이용 2 (DB migration) - BaaS와 PaaS 차이</title>
 </head>
 <body id="sybootstrap">
@@ -58,11 +58,11 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">YOUR E-SPACE</a></li>
         <li><a href="http://weblog.youre.space/">WEBLOG</a></li>
-        <li><a href="http://blog.youre.space/baas/" class="blog-nav-item">Blog Home</a></li>
+        <li><a href="http://weblog.youre.space/baas/" class="blog-nav-item">Blog Home</a></li>
         <li><a href="http://highest.youre.space/">Perl API</a></li>
         <li><a href="http://lego.youre.space/">Lego</a></li>
         <li><a href="http://fnb.youre.space/">F & B</a></li>
-        <li><a href="http://blog.youre.space/baas/atom.xml" class="blog-nav-item">Feed</a></li>
+        <li><a href="http://weblog.youre.space/baas/atom.xml" class="blog-nav-item">Feed</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -80,7 +80,7 @@
 <div class="row">
 <main class="col-sm-8 blog-main">
 <ul class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-<li><a href="http://blog.youre.space/">Home</a></li>
+<li><a href="http://weblog.youre.space/">Home</a></li>
 <li>Parse Server 이용 2 (DB migration)</li>
 </ul>
 <article id="entry-433" class="blog-post entry entry-asset asset hentry h-entry">
@@ -111,8 +111,8 @@ Parse의 IP Address가 54.85.239.107 등으로 나오네요. IP Address로 찾�
 </div>
 <aside>
 <ul class="pager">
-<li class="previous"><a href="http://blog.youre.space/baas/2016/02/parse-server-1.html" title="Parse Server 이용 1">Previous Entry</a></li>
-<li class="next"><a href="http://blog.youre.space/baas/2016/02/usergrid-210-rootwar.html" title="usergrid 2.1.0 ROOT.war">Next Entry</a></li>
+<li class="previous"><a href="http://weblog.youre.space/baas/2016/02/parse-server-1.html" title="Parse Server 이용 1">Previous Entry</a></li>
+<li class="next"><a href="http://weblog.youre.space/baas/2016/02/usergrid-210-rootwar.html" title="usergrid 2.1.0 ROOT.war">Next Entry</a></li>
 </ul>
 </aside>
 <!--
@@ -130,24 +130,24 @@ Parse의 IP Address가 54.85.239.107 등으로 나오네요. IP Address로 찾�
 <div class="sidebar-module">
 <h4>Archives</h4>
 <ol class="list-unstyled">
-<li><a href="http://blog.youre.space/baas/2017/01/">January 2017 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2016/06/">June 2016 (2)</a></li>
-<li><a href="http://blog.youre.space/baas/2016/03/">March 2016 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2016/02/">February 2016 (3)</a></li>
-<li><a href="http://blog.youre.space/baas/2015/08/">August 2015 (3)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/11/">November 2014 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/10/">October 2014 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/03/">March 2014 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/02/">February 2014 (5)</a></li>
-<li><a href="http://blog.youre.space/baas/2014/01/">January 2014 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2013/11/">November 2013 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2013/07/">July 2013 (1)</a></li>
-<li><a href="http://blog.youre.space/baas/2013/02/">February 2013 (2)</a></li>
+<li><a href="http://weblog.youre.space/baas/2017/01/">January 2017 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2016/06/">June 2016 (2)</a></li>
+<li><a href="http://weblog.youre.space/baas/2016/03/">March 2016 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2016/02/">February 2016 (3)</a></li>
+<li><a href="http://weblog.youre.space/baas/2015/08/">August 2015 (3)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/11/">November 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/10/">October 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/03/">March 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/02/">February 2014 (5)</a></li>
+<li><a href="http://weblog.youre.space/baas/2014/01/">January 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2013/11/">November 2013 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2013/07/">July 2013 (1)</a></li>
+<li><a href="http://weblog.youre.space/baas/2013/02/">February 2013 (2)</a></li>
 </ol>
 </div>
 <div class="sidebar-module">
 <h4>Search</h4>
-<form class="site-search" method="get" id="search" action="http://blog.youre.space/63/mt-search.cgi">
+<form class="site-search" method="get" id="search" action="http://weblog.youre.space/63/mt-search.cgi">
 <input class="form-control" type="text" name="search" value="" placeholder="検索...">
 <input type="hidden" name="IncludeBlogs" value="11">
 <input type="hidden" name="limit" value="20">
