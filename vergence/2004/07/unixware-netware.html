@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/Article">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Movable Type 6.3">
+<meta name="description" content=" UnixWare에 대한 미련 NetWare Services와 Real G2 Server 단점과 선호...">
+<style>
+  @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+  :lang(ko) { font-family: 'Noto Sans KR', sans-serif; }
+</style>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://blog.youre.space/vergence/css/blog.css">
+<link rel="stylesheet" href="http://blog.youre.space/vergence/css/custom_for_mt.css">
+<link rel="start" href="http://blog.youre.space/vergence/" title="Home">
+<link rel="alternate" href="http://blog.youre.space/vergence/atom.xml" type="application/atom+xml" title="Recent Entries">
+<link rel="canonical" href="http://blog.youre.space/vergence/2004/07/unixware-netware.html">
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://blog.youre.space/vergence/2004/07/unixware-netware.html">
+<dc:title>UnixWare와 NetWare</dc:title>
+<dc:description> UnixWare에 대한 미련 NetWare Services와 Real G2 Server 단점과 선호...</dc:description>
+<dc:creator>Sangyong Gwak</dc:creator>
+<dc:date>2004-07-27T23:47:41+09:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-nd/4.0/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+</License>
+</rdf:RDF>
+-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-81713353-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<link rel="prev" href="http://blog.youre.space/vergence/2004/07/post-19.html" title="로버트 프로스트의 가지 않은 길">
+<link rel="next" href="http://blog.youre.space/vergence/2004/08/post-20.html" title="일상에 대한 불안">
+<!-- Open Graph Protocol -->
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en-us">
+<meta property="og:title" content="UnixWare와 NetWare">
+<meta property="og:url" content="http://blog.youre.space/vergence/2004/07/unixware-netware.html">
+<meta property="og:description" content=" UnixWare에 대한 미련 NetWare Services와 Real G2 Server 단점과 선호...">
+<meta property="og:site_name" content="vergence의 이상한 세상">
+<meta property="og:image" content="http://blog.youre.space/vergence/blogimg/og_image.png">
+<!-- Metadata -->
+<meta itemprop="description" content=" UnixWare에 대한 미련 NetWare Services와 Real G2 Server 단점과 선호...">
+<link itemprop="url" href="http://blog.youre.space/vergence/2004/07/unixware-netware.html">
+<link itemprop="image" href="http://blog.youre.space/vergence/blogimg/og_image.png">
+<title>UnixWare와 NetWare - vergence의 이상한 세상</title>
+</head>
+<body id="sybootstrap">
+<div><!-- div class="blog-masthead" -->
+<div class="container">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">YOU'RE SPACE</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">YOUR E-SPACE</a></li>
+        <li><a href="http://weblog.youre.space/">WEBLOG</a></li>
+        <li><a href="http://blog.youre.space/vergence/" class="blog-nav-item">Blog Home</a></li>
+        <li><a href="http://highest.youre.space/">Perl API</a></li>
+        <li><a href="http://lego.youre.space/">Lego</a></li>
+        <li><a href="http://fnb.youre.space/">F & B</a></li>
+        <li><a href="http://blog.youre.space/vergence/atom.xml" class="blog-nav-item">Feed</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+</div>
+<div class="container">
+<header class="blog-header">
+<h1 class="blog-title">vergence의 이상한 세상</h1>
+<p class="lead blog-description">Strange World</p>
+</header>
+<div class="row">
+<main class="col-sm-8 blog-main">
+<ul class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<li><a href="http://blog.youre.space/">Home</a></li>
+<li><a href="http://blog.youre.space/vergence/bc0/">BC0</a></li>
+<li>UnixWare와 NetWare</li>
+</ul>
+<article id="entry-327" class="blog-post entry entry-asset asset hentry h-entry">
+<div class="asset-header">
+<h2 itemprop="headline" class="blog-post-title entry-title p-name">UnixWare와 NetWare</h2>
+<footer class="asset-meta blog-post-meta">
+<ul class="asset-meta-list">
+<li class="asset-meta-list-item"><time datetime="2004-07-27T23:47:41+09:00" class="updated published dt-published" itemprop="datePublished">July 27, 2004</time></li>
+<li class="asset-meta-list-item">by <span class="author entry-author vcard p-author h-card"><span class="fn">Sangyong Gwak</span></span></li>
+<li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="http://blog.youre.space/vergence/bc0/">BC0</a></li>
+</ul>
+</footer>
+</div>
+<div class="asset-body e-content" itemprop="articleBody">
+<ul lang="ko">
+<li>UnixWare에 대한 미련</li>
+<li>NetWare Services와 Real G2 Server</li>
+<li>단점과 선호</li>
+</ul>
+</div>
+<div id="more" class="asset-more">
+<p lang="ko" title="UnixWare에 대한 미련">언제나 그렇지만 왠지 자꾸 남들이 안하는 것을 건드리고 있다. UnixWare는 객관적으로 볼 때에 그다지 메리트가 없다. 한글 지원이 미비하고 -심지어는 locale도 제대로 지원되지 않고-, 기능의 업데이트도 상당히 더디다. X 서버의 디스플레이는 vesa를 쓰는 것보다도 느리고, opensource 프로그램들의 binary나 pkg도 그다지 활발히 만들어지지도 않는다. 그렇지만 유닉스웨어엔 마음이 끌린다. 시간이 지나도 거의 바뀌지 않는(업데이트가 느리다는 것에 대한 좋은 표현) 시스템과 안정성, 정통성 같은 것. 또 C/C++ 컴파일러의 제공 같은 것들... 결론은 아무래도 좋다는 것이다.<br>
+그간 UnixWare에서 nat 서비스를 할 수 없어 집에서 못 쓰고 있었는데(또 하나의 단점), 이번에 네트웍 공유기를 들여서 새로운 세상이 열린 것 같다. 덕분에 머지않아 집에 있는 모든 컴퓨터엔 갖가지 운영체제가 설치될 것 같다. 쿨럭;; 그렇잖아도 얼마전에 설치했던 eCS 1.0(OS/2)를 지우고 UnixWare 7.1.3을 설치했다. 더불어 UnixWare에 대한 삽질을 좀 했다. UnixWare를 접할 때마다 느끼는 것이지만 UnixWare는 상당히 비밀을 많이 갖고 있다.<br>
+실은 한 컴퓨터에는 Windows Server 2003을 설치하고 Active Directory(AD) 서비스를 하려고 했다. 그리고 다른 컴퓨터에서 로그온하여 편하게 사용할 수 있도록 하려고 했다. 하지만 Windows Server 2003을 설치하고 곧바로 찾아온 귀찮음은 의지를 꺾는다. 하지만 UnixWare에서 NetWare 서비스 설정하고 NDS 설정한 시간은 Windows Server 2003에서 Active Directory 설정을 하는데에 충분한 시간이 아닐까?</p>
+<p lang="ko" title="NetWare Services와 Real G2 Server">UnixWare 7.1.3을 설치하고 한참 사용하는데, 갑자기 UnixWare 7.1.1에 들어있던 프로그램들이 생각났다. UnixWare 7.1.1 이후 OpenUnix 8으로 이름을 바꾸면서(지금은 다시 UnixWare가 되었지만) 오래된 상업용 소프트웨어들이 빠지고 OpenSource 소프트웨어들이 들어가게 되었다. 예를 들면, NetScape의 FastTrack이 빠지고 Apache가 들어갔다. 또, NetWare도 빠졌고 Real Server(Media Streaming)도 빠졌다. ArcServ, Tarantella 같은 것들도 빠졌다. 삽질과 새로운 것을 즐기는 사람들에게는 조금 애석한 일이다, 쓸모가 있었건 없었건(없었다는 생각이 강하다) 상업용 소프트웨어들을 접하게 되는 좋은 기회였는데.<br>
+UnixWare 7.1.1 시디에 있는 NetWare 패키지와 Real G2 Server를 7.1.3에 설치해 보았다. 약간의 경고만 나오고 잘 진행되었다. 그리고 그 경고들도 쉽게 대처할 수 있는 것들이었다.<br>
+저번에도 겪었던 실수인데, nws(NetWare Services) 패키지를 설치하기 전에 nwnet 패키지를 먼저 설치해야한다는 것을 자꾸 잊는다. 덕분에 이번에도 몇번의 시행착오 끝에 설치를 할 수 있었다. 하지만 이번에는 또 다른 소득이 있었다. NDS를 설치한 것.<br>
+UnixWare 7.1.1에 들어있는 nws는 4.1 버전이다. 조금 오래된 UnixWare인 것을 감안할 때에 참 다행스러운 것이다. 그나마 4.1이라도 되니 NDS를 쓸 수 있지 않은가. 呵呵 그 이전 버전(3 이나 그 이하)이었다면 좌절했을 것이다.<br>
+사실 UnixWare의 문서는 참 읽기 불편하게 되어있다. 좀 더 정확히 말하면, 항행(navigation)일 불편한 인터페이스를 갖고 있다. 문서는 html로 되어있고 웹 브라우져로 보면, 왼쪽에 목차, 오른쪽에 문서 내용을 보여주는 프레임을 갖고 있는데 이것들이 제대로 동작하지 않을 때도 있고, 가장 큰 문제는 길을 잃는다는 것이다. 문서를 보고 있다가 다른 문서로 이동했을 때(문서 자체가 한 문서를 읽는 중에 다른 문서로 이동하도록 조장하고 있어서 더욱 그렇다) 원래 위치로 돌아가 읽는 것을 계속하기가 어렵다. 공학 심리학(인간 공학) 시간에 배운 것의 좋은 예이다. 인터페이스를 수정할 필요가 있다. 예를 들면, 목차 부분에 계층(hierachy)을 잘 표시하고, 가능하면 프레임을 없애고, 문서 중간에 다른 문서에 대한 링크를 줄이는 것이 좋을 것이다.<br>
+다시 NDS를 설치한 것으로 돌아가서, UnixWare의 문서가 잘 조직되어있었다면 아마도 이미 예전에 쉽게 NDS를 설정할 수 있었을 것이다. 지금에 와서 NDS를 제대로 설정하게 된 것은 다분히 그 못난 문서의 탓이다.<br>
+NDS를 설정하고, 윈도우즈에서 NetWare Administrator v5.1을 설치하고 관리를 해봤다. 그리 나쁘지 않았다. 다만 서버에서 직접 설정하기가 어렵다는 것이 참 아쉽다. 또, NetWare Administrator는 조금 오래되어 보인다(사실 최근 버전을 찾을 수가 없어서 우연히 찾은 오래전 버전을 설치했다).<br>
+Windows의 Active Directory처럼 Windows의 사용자 설정을 따로 두거나 Windows에서의 환경에 착 달라붙은 서비스를 하지는 못하지만 NDS도 좋다는 생각이 든다. 그리고 NetWare는 Macintosh나 OS/2, 심지어는 DOS 등의 운영체제도 지원하니까(아까부터 몇번 비추었지만, 도데체 그런 것들이 무슨 쓸모가 있느냔 말이닷).</p>
+<p lang="ko" title="전망">아마도 NetWare가 Windows의 서비스를 완전히 대체(라기 보다는 이전 지위의 수복)할 수는 없을 것이다. 하지만 다양한 운영체제를 지원한다는 것에서 조금의 잇점은 있는 것 같다.<br>
+그리고 UnixWare의 입장에서는 NetWare 서비스가 된다는 것은 사실 별 의미를 못 갖는다. 이미 GNU/Linux용으로 NetWare를 내놓고 있는 상황이기 때문이다. UnixWare는 조금 낡았고 새로 나오는 것들과 비교해서 부족한 점들이 많이 보인다.<br>
+하지만 문제는, 그런 단점에도 불구하고 UnixWare를 좋아한다는 것이다.</p>
+</div>
+<aside>
+<ul class="pager">
+<li class="previous"><a href="http://blog.youre.space/vergence/2004/07/post-19.html" title="로버트 프로스트의 가지 않은 길">Previous Entry</a></li>
+<li class="next"><a href="http://blog.youre.space/vergence/2004/08/post-20.html" title="일상에 대한 불안">Next Entry</a></li>
+</ul>
+</aside>
+<!--
+<aside id="zenback" class="zenback feedback">
+  ここに Zenback の Script コードを貼り付けてください。
+</aside>
+-->
+</article>
+</main>
+<aside class="col-sm-3 col-sm-offset-1 blog-sidebar">
+<div class="sidebar-module sidebar-module-inset">
+</div><div class="sidebar-module">
+<h4>Categories</h4>
+<ol class="list-unstyled">
+<li><a href="http://blog.youre.space/vergence/bc0/">BC0 (63)</a>
+</li>
+<li><a href="http://blog.youre.space/vergence/cal/">cal (28)</a>
+</li>
+</ol>
+</div>
+<div class="sidebar-module">
+<h4>Tags</h4>
+<ul class="tags">
+<li class="level6"><a href="http://blog.youre.space/63/mt-search.cgi?IncludeBlogs=4,5,6,9,10,11,12,13,16,17,3&amp;tag=leadership&amp;limit=20" rel="tag" title="タグ「leadership」の一覧">leadership</a></li>
+<li class="level6"><a href="http://blog.youre.space/63/mt-search.cgi?IncludeBlogs=4,5,6,9,10,11,12,13,16,17,3&amp;tag=%EB%A6%AC%EB%8D%94%EC%8B%AD&amp;limit=20" rel="tag" title="タグ「리더십」の一覧">리더십</a></li>
+</ul>
+</div>
+<div class="sidebar-module">
+<h4>Archives</h4>
+<ol class="list-unstyled">
+<li><a href="http://blog.youre.space/vergence/2017/02/">February 2017 (5)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/11/">November 2016 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/10/">October 2016 (3)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/09/">September 2016 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/07/">July 2016 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/06/">June 2016 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/05/">May 2016 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/04/">April 2016 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/03/">March 2016 (4)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/02/">February 2016 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/01/">January 2016 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2015/12/">December 2015 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2015/11/">November 2015 (3)</a></li>
+<li><a href="http://blog.youre.space/vergence/2015/10/">October 2015 (5)</a></li>
+<li><a href="http://blog.youre.space/vergence/2015/09/">September 2015 (3)</a></li>
+<li><a href="http://blog.youre.space/vergence/2015/08/">August 2015 (9)</a></li>
+<li><a href="http://blog.youre.space/vergence/2015/07/">July 2015 (4)</a></li>
+<li><a href="http://blog.youre.space/vergence/2014/11/">November 2014 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2014/10/">October 2014 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2014/08/">August 2014 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2014/06/">June 2014 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2014/05/">May 2014 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2014/04/">April 2014 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2014/03/">March 2014 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2013/11/">November 2013 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2013/08/">August 2013 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2013/05/">May 2013 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2011/09/">September 2011 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2004/09/">September 2004 (14)</a></li>
+<li><a href="http://blog.youre.space/vergence/2004/08/">August 2004 (14)</a></li>
+<li><a href="http://blog.youre.space/vergence/2004/07/">July 2004 (6)</a></li>
+<li><a href="http://blog.youre.space/vergence/2004/06/">June 2004 (4)</a></li>
+<li><a href="http://blog.youre.space/vergence/2004/05/">May 2004 (19)</a></li>
+<li><a href="http://blog.youre.space/vergence/2004/04/">April 2004 (4)</a></li>
+</ol>
+</div>
+<div class="sidebar-module">
+<h4>Search</h4>
+<form class="site-search" method="get" id="search" action="http://blog.youre.space/63/mt-search.cgi">
+<input class="form-control" type="text" name="search" value="" placeholder="検索...">
+<input type="hidden" name="IncludeBlogs" value="10">
+<input type="hidden" name="limit" value="20">
+</form>
+</div>
+</aside>
+</div>
+</div>
+<footer class="blog-footer">
+<ul>
+<li>블로그 게시물에 대한 권한은 모두 저자에게 있습니다.</li>
+<li>설치형 블로그를 권장합니다.</li>
+<li>YOUR'E SPACE, YOUR E-SPACE</li>
+<li>문의 : <a href="mailto:imyaman@netscape.net">imyaman@netscape.net</a></li>
+</ul>
+<p><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">라이선스 안내 Attribution-NoDerivs-NonCommercial, 저작자 표시-비영리-변경 금지(BY-NC-ND)</a></p>
+<p><a href="#top">Back to top</a></p>
+<!-- ad starts -->
+<center>
+<script type="text/javascript">
+clicksor_enable_adhere = false;
+clicksor_enable_inter = false;
+clicksor_enable_layer_pop = false;
+clicksor_enable_pop = false;
+clicksor_enable_text_link = false;
+clicksor_banner_image_banner = true;
+clicksor_banner_text_banner = true;
+clicksor_layer_banner = false;
+clicksor_mobile_redirect = false;
+clicksor_default_url = '';
+clicksor_banner_border = '#000808';
+clicksor_banner_ad_bg = '#FFFFFF';
+clicksor_banner_link_color = '#080800';
+clicksor_banner_text_color = '#666666';
+</script>
+<script type="text/javascript" src="http://b.yu0123456.com/show.php?nid=1&amp;pid=330835&amp;adtype=7&amp;sid=588821"></script>
+<center>
+<script type="text/javascript">
+  ( function() {
+    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+    var unit = {"calltype":"async[2]","publisher":"imyaman","width":320,"height":50,"sid":"cal.youre.space"};
+    var placement_id = window.CHITIKA.units.length;
+    window.CHITIKA.units.push(unit);
+    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+}());
+</script>
+<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
+</center>
+<a href="//go.ad2up.com/afu.php?id=464574"><div style="width: 100%; height: 50px; background-color: green; text-align: center;">
+<h2>세상에서 제일 좋은 집은?</h2>
+</div></a>
+<center>
+<div class="main_banner" id="main_banner1">
+  <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
+  <script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+</div>
+</center>
+<center>
+<div id="admixer_display"></div>
+</center>
+<script type="text/javascript" src="http://scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript">
+    new admixer_ad({
+    admixer_key:"8ch8bwvi",
+    display_id:"admixer_display",
+    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
+    ad_change:true,  //default : true
+    test : false,//default : false
+    test_display_id : "log"
+});
+</script>
+<!-- ad ends -->
+</footer>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/Article">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Movable Type 6.3">
+<meta name="description" content=""그럼 그 분 밑에 있었던 거예요?"라는 말을 또 들었습니다. 아니라고 또 대답했습니다. 마치 그 분이 그 서비스를 혼자 만든 것인듯 질문을 받을 때마다 아쉬움이 작게 폭발하곤 합니다, 모든 사람들이 알아주길 바라는 건 아닙니다만. 회사가, 조직이 만든 어느 상품은 다함께 만든...">
+<style>
+  @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+  :lang(ko) { font-family: 'Noto Sans KR', sans-serif; }
+</style>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://blog.youre.space/vergence/css/blog.css">
+<link rel="stylesheet" href="http://blog.youre.space/vergence/css/custom_for_mt.css">
+<link rel="start" href="http://blog.youre.space/vergence/" title="Home">
+<link rel="alternate" href="http://blog.youre.space/vergence/atom.xml" type="application/atom+xml" title="Recent Entries">
+<link rel="canonical" href="http://blog.youre.space/vergence/2015/12/baas-baas.html">
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://blog.youre.space/vergence/2015/12/baas-baas.html">
+<dc:title>BaaS팀과 BaaS개발팀 그리고 기술전략팀</dc:title>
+<dc:description>&quot;그럼 그 분 밑에 있었던 거예요?&quot;라는 말을 또 들었습니다. 아니라고 또 대답했습니다. 마치 그 분이 그 서비스를 혼자 만든 것인듯 질문을 받을 때마다 아쉬움이 작게 폭발하곤 합니다, 모든 사람들이 알아주길 바라는 건 아닙니다만. 회사가, 조직이 만든 어느 상품은 다함께 만든...</dc:description>
+<dc:creator>Sangyong Gwak</dc:creator>
+<dc:date>2015-12-25T19:35:13+09:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-nd/4.0/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+</License>
+</rdf:RDF>
+-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-81713353-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<link rel="prev" href="http://blog.youre.space/vergence/2015/11/post-9.html" title="한국어와 한글의 변화">
+<link rel="next" href="http://blog.youre.space/vergence/2015/12/post-9.html" title="쿼티바 휴대폰">
+<!-- Open Graph Protocol -->
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en-us">
+<meta property="og:title" content="BaaS팀과 BaaS개발팀 그리고 기술전략팀">
+<meta property="og:url" content="http://blog.youre.space/vergence/2015/12/baas-baas.html">
+<meta property="og:description" content="&quot;그럼 그 분 밑에 있었던 거예요?&quot;라는 말을 또 들었습니다. 아니라고 또 대답했습니다. 마치 그 분이 그 서비스를 혼자 만든 것인듯 질문을 받을 때마다 아쉬움이 작게 폭발하곤 합니다, 모든 사람들이 알아주길 바라는 건 아닙니다만. 회사가, 조직이 만든 어느 상품은 다함께 만든...">
+<meta property="og:site_name" content="vergence의 이상한 세상">
+<meta property="og:image" content="http://blog.youre.space/vergence/blogimg/og_image.png">
+<!-- Metadata -->
+<meta itemprop="description" content=""그럼 그 분 밑에 있었던 거예요?"라는 말을 또 들었습니다. 아니라고 또 대답했습니다. 마치 그 분이 그 서비스를 혼자 만든 것인듯 질문을 받을 때마다 아쉬움이 작게 폭발하곤 합니다, 모든 사람들이 알아주길 바라는 건 아닙니다만. 회사가, 조직이 만든 어느 상품은 다함께 만든...">
+<link itemprop="url" href="http://blog.youre.space/vergence/2015/12/baas-baas.html">
+<link itemprop="image" href="http://blog.youre.space/vergence/blogimg/og_image.png">
+<title>BaaS팀과 BaaS개발팀 그리고 기술전략팀 - vergence의 이상한 세상</title>
+</head>
+<body id="sybootstrap">
+<div><!-- div class="blog-masthead" -->
+<div class="container">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">YOU'RE SPACE</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">YOUR E-SPACE</a></li>
+        <li><a href="http://weblog.youre.space/">WEBLOG</a></li>
+        <li><a href="http://blog.youre.space/vergence/" class="blog-nav-item">Blog Home</a></li>
+        <li><a href="http://highest.youre.space/">Perl API</a></li>
+        <li><a href="http://lego.youre.space/">Lego</a></li>
+        <li><a href="http://fnb.youre.space/">F & B</a></li>
+        <li><a href="http://blog.youre.space/vergence/atom.xml" class="blog-nav-item">Feed</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+</div>
+<div class="container">
+<header class="blog-header">
+<h1 class="blog-title">vergence의 이상한 세상</h1>
+<p class="lead blog-description">Strange World</p>
+</header>
+<div class="row">
+<main class="col-sm-8 blog-main">
+<ul class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<li><a href="http://blog.youre.space/">Home</a></li>
+<li><a href="http://blog.youre.space/vergence/cal/">cal</a></li>
+<li>BaaS팀과 BaaS개발팀 그리고 기술전략팀</li>
+</ul>
+<article id="entry-400" class="blog-post entry entry-asset asset hentry h-entry">
+<div class="asset-header">
+<h2 itemprop="headline" class="blog-post-title entry-title p-name">BaaS팀과 BaaS개발팀 그리고 기술전략팀</h2>
+<footer class="asset-meta blog-post-meta">
+<ul class="asset-meta-list">
+<li class="asset-meta-list-item"><time datetime="2015-12-25T19:35:13+09:00" class="updated published dt-published" itemprop="datePublished">December 25, 2015</time></li>
+<li class="asset-meta-list-item">by <span class="author entry-author vcard p-author h-card"><span class="fn">Sangyong Gwak</span></span></li>
+<li class="asset-meta-list-item">Category: <a itemprop="articleSection" rel="tag" href="http://blog.youre.space/vergence/cal/">cal</a></li>
+</ul>
+</footer>
+</div>
+<div class="asset-body e-content" itemprop="articleBody">
+<p>"그럼 그 분 밑에 있었던 거예요?"라는 말을 <em>또</em> 들었습니다. 아니라고 또 대답했습니다.
+마치 그 분이 그 서비스를 혼자 만든 것인듯 질문을 받을 때마다 아쉬움이 작게 폭발하곤 합니다, 모든 사람들이 알아주길 바라는 건 아닙니다만.</p>
+<p>회사가, 조직이 만든 어느 상품은 다함께 만든 것이지 특별히 어느 한 사람이 만들었다고 말하기는 어렵다고 생각합니다.</p>
+<p>그 회사에 플랫폼사업부문 플랫폼사업본부 BaaS팀이 있었습니다. 또 그 회사에 개발실 기술전략팀, API플랫폼팀이 있었습니다. 이 팀들뿐 아니라 다양한 부서들이 그 서비스를 위해 힘썼습니다. 개발실의 Android팀, iOS팀, 디자인실의 디자인부서, UX부서, frontend engineering부서, 사업지원실의 PMO부서, QA부서 등이 말이지요.</p>
+<p>서비스 공개 전에 개발실 소속의 개발자들이 사업부서로 소속이 바뀌는 변화가 있으면서 API플랫폼팀의 일부와 Android팀, iOS팀 등의 소수가 P본부 BaaS개발팀이 되었습니다.</p>
+<p>서비스 공개 이후 기술전략팀은 원래의 역할로 돌아가고, 그 서비스는 BaaS팀과 BaaS개발팀 중심으로 움직이게 됩니다.
+이후 그 서비스는 kt로 이전됩니다. 그 서비스를 담당하는 BaaS팀, BaaS개발팀은 kt로 전적전출됩니다.</p>
+<p>저는 BaaS팀 소속이었습니다. 그 분 밑에 있던 건 아니지요.
+괜히 중얼중얼 하게 되네요.</p>
+</div>
+<aside>
+<ul class="pager">
+<li class="previous"><a href="http://blog.youre.space/vergence/2015/11/post-9.html" title="한국어와 한글의 변화">Previous Entry</a></li>
+<li class="next"><a href="http://blog.youre.space/vergence/2015/12/post-9.html" title="쿼티바 휴대폰">Next Entry</a></li>
+</ul>
+</aside>
+<!--
+<aside id="zenback" class="zenback feedback">
+  ここに Zenback の Script コードを貼り付けてください。
+</aside>
+-->
+</article>
+</main>
+<aside class="col-sm-3 col-sm-offset-1 blog-sidebar">
+<div class="sidebar-module sidebar-module-inset">
+</div><div class="sidebar-module">
+<h4>Categories</h4>
+<ol class="list-unstyled">
+<li><a href="http://blog.youre.space/vergence/bc0/">BC0 (63)</a>
+</li>
+<li><a href="http://blog.youre.space/vergence/cal/">cal (28)</a>
+</li>
+</ol>
+</div>
+<div class="sidebar-module">
+<h4>Tags</h4>
+<ul class="tags">
+<li class="level6"><a href="http://blog.youre.space/63/mt-search.cgi?IncludeBlogs=4,5,6,9,10,11,12,13,16,17,3&amp;tag=leadership&amp;limit=20" rel="tag" title="タグ「leadership」の一覧">leadership</a></li>
+<li class="level6"><a href="http://blog.youre.space/63/mt-search.cgi?IncludeBlogs=4,5,6,9,10,11,12,13,16,17,3&amp;tag=%EB%A6%AC%EB%8D%94%EC%8B%AD&amp;limit=20" rel="tag" title="タグ「리더십」の一覧">리더십</a></li>
+</ul>
+</div>
+<div class="sidebar-module">
+<h4>Archives</h4>
+<ol class="list-unstyled">
+<li><a href="http://blog.youre.space/vergence/2017/02/">February 2017 (5)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/11/">November 2016 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/10/">October 2016 (3)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/09/">September 2016 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/07/">July 2016 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/06/">June 2016 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/05/">May 2016 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/04/">April 2016 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/03/">March 2016 (4)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/02/">February 2016 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2016/01/">January 2016 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2015/12/">December 2015 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2015/11/">November 2015 (3)</a></li>
+<li><a href="http://blog.youre.space/vergence/2015/10/">October 2015 (5)</a></li>
+<li><a href="http://blog.youre.space/vergence/2015/09/">September 2015 (3)</a></li>
+<li><a href="http://blog.youre.space/vergence/2015/08/">August 2015 (9)</a></li>
+<li><a href="http://blog.youre.space/vergence/2015/07/">July 2015 (4)</a></li>
+<li><a href="http://blog.youre.space/vergence/2014/11/">November 2014 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2014/10/">October 2014 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2014/08/">August 2014 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2014/06/">June 2014 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2014/05/">May 2014 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2014/04/">April 2014 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2014/03/">March 2014 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2013/11/">November 2013 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2013/08/">August 2013 (1)</a></li>
+<li><a href="http://blog.youre.space/vergence/2013/05/">May 2013 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2011/09/">September 2011 (2)</a></li>
+<li><a href="http://blog.youre.space/vergence/2004/09/">September 2004 (14)</a></li>
+<li><a href="http://blog.youre.space/vergence/2004/08/">August 2004 (14)</a></li>
+<li><a href="http://blog.youre.space/vergence/2004/07/">July 2004 (6)</a></li>
+<li><a href="http://blog.youre.space/vergence/2004/06/">June 2004 (4)</a></li>
+<li><a href="http://blog.youre.space/vergence/2004/05/">May 2004 (19)</a></li>
+<li><a href="http://blog.youre.space/vergence/2004/04/">April 2004 (4)</a></li>
+</ol>
+</div>
+<div class="sidebar-module">
+<h4>Search</h4>
+<form class="site-search" method="get" id="search" action="http://blog.youre.space/63/mt-search.cgi">
+<input class="form-control" type="text" name="search" value="" placeholder="検索...">
+<input type="hidden" name="IncludeBlogs" value="10">
+<input type="hidden" name="limit" value="20">
+</form>
+</div>
+</aside>
+</div>
+</div>
+<footer class="blog-footer">
+<ul>
+<li>블로그 게시물에 대한 권한은 모두 저자에게 있습니다.</li>
+<li>설치형 블로그를 권장합니다.</li>
+<li>YOUR'E SPACE, YOUR E-SPACE</li>
+<li>문의 : <a href="mailto:imyaman@netscape.net">imyaman@netscape.net</a></li>
+</ul>
+<p><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">라이선스 안내 Attribution-NoDerivs-NonCommercial, 저작자 표시-비영리-변경 금지(BY-NC-ND)</a></p>
+<p><a href="#top">Back to top</a></p>
+<!-- ad starts -->
+<center>
+<script type="text/javascript">
+clicksor_enable_adhere = false;
+clicksor_enable_inter = false;
+clicksor_enable_layer_pop = false;
+clicksor_enable_pop = false;
+clicksor_enable_text_link = false;
+clicksor_banner_image_banner = true;
+clicksor_banner_text_banner = true;
+clicksor_layer_banner = false;
+clicksor_mobile_redirect = false;
+clicksor_default_url = '';
+clicksor_banner_border = '#000808';
+clicksor_banner_ad_bg = '#FFFFFF';
+clicksor_banner_link_color = '#080800';
+clicksor_banner_text_color = '#666666';
+</script>
+<script type="text/javascript" src="http://b.yu0123456.com/show.php?nid=1&amp;pid=330835&amp;adtype=7&amp;sid=588821"></script>
+<center>
+<script type="text/javascript">
+  ( function() {
+    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+    var unit = {"calltype":"async[2]","publisher":"imyaman","width":320,"height":50,"sid":"cal.youre.space"};
+    var placement_id = window.CHITIKA.units.length;
+    window.CHITIKA.units.push(unit);
+    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+}());
+</script>
+<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
+</center>
+<a href="//go.ad2up.com/afu.php?id=464574"><div style="width: 100%; height: 50px; background-color: green; text-align: center;">
+<h2>세상에서 제일 좋은 집은?</h2>
+</div></a>
+<center>
+<div class="main_banner" id="main_banner1">
+  <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
+  <script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+</div>
+</center>
+<center>
+<div id="admixer_display"></div>
+</center>
+<script type="text/javascript" src="http://scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript">
+    new admixer_ad({
+    admixer_key:"8ch8bwvi",
+    display_id:"admixer_display",
+    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
+    ad_change:true,  //default : true
+    test : false,//default : false
+    test_display_id : "log"
+});
+</script>
+<!-- ad ends -->
+</footer>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

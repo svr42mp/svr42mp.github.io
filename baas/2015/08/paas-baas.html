@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/Article">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Movable Type 6.3">
+<meta name="description" content="IT를 잘 모르지만, 애써서 주워듣고 있습니다. 모르는데 아는 척하지 않으려고 조심도 하고요. 이제는 IT와 관련있는 비즈니스가 있는지보다 IT와 무관한 비즈니스가 있는지가 궁금한 세상이란 생각도 들고요. 뭔가 새로운 인터넷 서비스를 만들 때, PaaS와 BaaS 중에 어떤 것을 쓸까 고민하는 것도 자연스러워질...">
+<style>
+  @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+  :lang(ko) { font-family: 'Noto Sans KR', sans-serif; }
+</style>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://blog.youre.space/baas/css/blog.css">
+<link rel="stylesheet" href="http://blog.youre.space/baas/css/custom_for_mt.css">
+<link rel="start" href="http://blog.youre.space/baas/" title="Home">
+<link rel="alternate" href="http://blog.youre.space/baas/atom.xml" type="application/atom+xml" title="Recent Entries">
+<link rel="canonical" href="http://blog.youre.space/baas/2015/08/paas-baas.html">
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-81713353-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<link rel="prev" href="http://blog.youre.space/baas/2015/08/usergrid-android-008jar.html" title="usergrid-android-0.0.8.jar">
+<link rel="next" href="http://blog.youre.space/baas/2016/02/parse-server-1.html" title="Parse Server 이용 1">
+<!-- Open Graph Protocol -->
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en-us">
+<meta property="og:title" content="PaaS 쓸까, BaaS 쓸까? (서버 개발자인가, 클라이언트 개발자인가?)">
+<meta property="og:url" content="http://blog.youre.space/baas/2015/08/paas-baas.html">
+<meta property="og:description" content="IT를 잘 모르지만, 애써서 주워듣고 있습니다. 모르는데 아는 척하지 않으려고 조심도 하고요. 이제는 IT와 관련있는 비즈니스가 있는지보다 IT와 무관한 비즈니스가 있는지가 궁금한 세상이란 생각도 들고요. 뭔가 새로운 인터넷 서비스를 만들 때, PaaS와 BaaS 중에 어떤 것을 쓸까 고민하는 것도 자연스러워질...">
+<meta property="og:site_name" content="BaaS와 PaaS 차이">
+<meta property="og:image" content="http://blog.youre.space/baas/blogimg/og_image.png">
+<!-- Metadata -->
+<meta itemprop="description" content="IT를 잘 모르지만, 애써서 주워듣고 있습니다. 모르는데 아는 척하지 않으려고 조심도 하고요. 이제는 IT와 관련있는 비즈니스가 있는지보다 IT와 무관한 비즈니스가 있는지가 궁금한 세상이란 생각도 들고요. 뭔가 새로운 인터넷 서비스를 만들 때, PaaS와 BaaS 중에 어떤 것을 쓸까 고민하는 것도 자연스러워질...">
+<link itemprop="url" href="http://blog.youre.space/baas/2015/08/paas-baas.html">
+<link itemprop="image" href="http://blog.youre.space/baas/blogimg/og_image.png">
+<title>PaaS 쓸까, BaaS 쓸까? (서버 개발자인가, 클라이언트 개발자인가?) - BaaS와 PaaS 차이</title>
+</head>
+<body id="sybootstrap">
+<div><!-- div class="blog-masthead" -->
+<div class="container">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">YOU'RE SPACE</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">YOUR E-SPACE</a></li>
+        <li><a href="http://weblog.youre.space/">WEBLOG</a></li>
+        <li><a href="http://blog.youre.space/baas/" class="blog-nav-item">Blog Home</a></li>
+        <li><a href="http://highest.youre.space/">Perl API</a></li>
+        <li><a href="http://lego.youre.space/">Lego</a></li>
+        <li><a href="http://fnb.youre.space/">F & B</a></li>
+        <li><a href="http://blog.youre.space/baas/atom.xml" class="blog-nav-item">Feed</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+</div>
+<div class="container">
+<header class="blog-header">
+<h1 class="blog-title">BaaS와 PaaS 차이</h1>
+<p class="lead blog-description"></p>
+</header>
+<div class="row">
+<main class="col-sm-8 blog-main">
+<ul class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<li><a href="http://blog.youre.space/">Home</a></li>
+<li>PaaS 쓸까, BaaS 쓸까? (서버 개발자인가, 클라이언트 개발자인가?)</li>
+</ul>
+<article id="entry-431" class="blog-post entry entry-asset asset hentry h-entry">
+<div class="asset-header">
+<h2 itemprop="headline" class="blog-post-title entry-title p-name">PaaS 쓸까, BaaS 쓸까? (서버 개발자인가, 클라이언트 개발자인가?)</h2>
+<footer class="asset-meta blog-post-meta">
+<ul class="asset-meta-list">
+<li class="asset-meta-list-item"><time datetime="2015-08-27T00:02:27+00:00" class="updated published dt-published" itemprop="datePublished">August 27, 2015</time></li>
+<li class="asset-meta-list-item">by <span class="author entry-author vcard p-author h-card"><span class="fn">Sangyong Gwak</span></span></li>
+</ul>
+</footer>
+</div>
+<div class="asset-body e-content" itemprop="articleBody">
+<p>IT를 잘 모르지만, 애써서 주워듣고 있습니다. 모르는데 아는 척하지 않으려고 조심도 하고요.
+이제는 IT와 관련있는 비즈니스가 있는지보다 IT와 무관한 비즈니스가 있는지가 궁금한 세상이란 생각도 들고요.</p>
+<p>뭔가 새로운 인터넷 서비스를 만들 때, PaaS와 BaaS 중에 어떤 것을 쓸까 고민하는 것도 자연스러워질 거란 생각이 듭니다. 새로운 것도 새로운 것 나름이지만요.
+만약 제가 서버 개발자라면, 새 서비스 만들 때 PaaS를 쓸 겁니다. 제가 클라이언트 개발자라면 BaaS를 쓸 거고요. 개발이라는 것과는 백만광년 반대쪽에 있지만... ㅠㅠ</p>
+<p>클라우드 서비스를 IaaS, PaaS, BaaS, SaaS 등으로  구분한다면, IaaS는 서버 하드웨어(real machine이든 virtual machine이든)와 운영체제, 인터넷 연결, 방화벽, 로드밸런서 등까지 편하게 해주는 것이라고 이해하고 있습니다.
+PaaS는 개발 언어나 프레임워크, 빌드와 디플로이까지 편하게 해주는 것이고요, 예를 들면 java 언어로, tomcat 이용하여 개발할 때 코드만 작성하면 나머지는 알아서 되겠거니 하는거...
+BaaS는 클라이언트가 필요로하는 서버 API 모두 미리 만들어 놨으니 새로 개발할 필요 없이 편하게 해주는 거...
+SaaS는 개발하지 말고 갖다 쓰라는 것. 또는 IDE를 SaaS로 제공하는 것이면, IDE 설치하고 관리하는 것 대신해주어 편리하게 해주는 거... 로 이해하고 있습니다.</p>
+<p>각각 이런 메시지로 관심을 끌 수 있을 것 같아요.
+IaaS "하드웨어 사서 옮기고 케이블 연결하고 그런거 힘들죠? 꺼지면 켜러 오기도 힘들고요."
+PaaS "세팅하는데 시간 버리지 말고 빨리 코드 작성해서 올려. 빨리하고 집에 가자."
+BaaS "서버 신경 쓰지마, 넌 클라이언트만 만들면 돼"
+SaaS "애플리케이션 만들어놨으니까 넌 쓰기만 하면 돼"</p>
+<p>개인적으로, 대인배 Heroku님께 큰 빚을 지고 살고 있습니다. perl과 Dancer로 간단한 스크립트 몇개 만들어서 올리고 있는데, 한달에 한 줄 정도 고치다 보니 전에 어디까지 했는지 기억 나지 않을 때가 많습니다. 가끔씩 보는 디렉토리다보니 생각 없이 지우는 경우도 많고요. 이 때에는 github, bitbucket께도 큰 빚을. Bluemix도 쓰고 있는데, 이건 정말 신세계 같습니다. Cloud Foundry 명령어 몇줄로 원하는게 뚝딱이예요. 여기도 perl과 Mojolicious로 끄적끄적. 예전에 dotCloud도 좋다고 썼는데, 이젠 perl을 이용할 수 없는 것 같아요.
+BaaS로는 baas.io 잘 써왔는데, 지금은 아무 생각 없이 Parse 잘 쓰고 있습니다. 하지만 느려서, 개인적으로 설치한 usergrid도 쓰고 있고요.</p>
+<p>PaaS와 BaaS를 생각하면 괜히 흐믓합니다, 별로 쓰는 것도 없지만. 클라우드 서비스들이 저에게 말하는 것 같아요, "다 쉽게 만들어놨어, 넌 뻘짓만 안 하면 돼."</p>
+</div>
+<aside>
+<ul class="pager">
+<li class="previous"><a href="http://blog.youre.space/baas/2015/08/usergrid-android-008jar.html" title="usergrid-android-0.0.8.jar">Previous Entry</a></li>
+<li class="next"><a href="http://blog.youre.space/baas/2016/02/parse-server-1.html" title="Parse Server 이용 1">Next Entry</a></li>
+</ul>
+</aside>
+<!--
+<aside id="zenback" class="zenback feedback">
+  ここに Zenback の Script コードを貼り付けてください。
+</aside>
+-->
+</article>
+</main>
+<aside class="col-sm-3 col-sm-offset-1 blog-sidebar">
+<div class="sidebar-module sidebar-module-inset">
+</div><div class="sidebar-module">
+<h4>Categories</h4>
+</div>
+<div class="sidebar-module">
+<h4>Archives</h4>
+<ol class="list-unstyled">
+<li><a href="http://blog.youre.space/baas/2017/01/">January 2017 (1)</a></li>
+<li><a href="http://blog.youre.space/baas/2016/06/">June 2016 (2)</a></li>
+<li><a href="http://blog.youre.space/baas/2016/03/">March 2016 (1)</a></li>
+<li><a href="http://blog.youre.space/baas/2016/02/">February 2016 (3)</a></li>
+<li><a href="http://blog.youre.space/baas/2015/08/">August 2015 (3)</a></li>
+<li><a href="http://blog.youre.space/baas/2014/11/">November 2014 (1)</a></li>
+<li><a href="http://blog.youre.space/baas/2014/10/">October 2014 (1)</a></li>
+<li><a href="http://blog.youre.space/baas/2014/03/">March 2014 (1)</a></li>
+<li><a href="http://blog.youre.space/baas/2014/02/">February 2014 (5)</a></li>
+<li><a href="http://blog.youre.space/baas/2014/01/">January 2014 (1)</a></li>
+<li><a href="http://blog.youre.space/baas/2013/11/">November 2013 (1)</a></li>
+<li><a href="http://blog.youre.space/baas/2013/07/">July 2013 (1)</a></li>
+<li><a href="http://blog.youre.space/baas/2013/02/">February 2013 (2)</a></li>
+</ol>
+</div>
+<div class="sidebar-module">
+<h4>Search</h4>
+<form class="site-search" method="get" id="search" action="http://blog.youre.space/63/mt-search.cgi">
+<input class="form-control" type="text" name="search" value="" placeholder="検索...">
+<input type="hidden" name="IncludeBlogs" value="11">
+<input type="hidden" name="limit" value="20">
+</form>
+</div>
+</aside>
+</div>
+</div>
+<footer class="blog-footer">
+<ul>
+<li>블로그 게시물에 대한 권한은 모두 저자에게 있습니다.</li>
+<li>설치형 블로그를 권장합니다.</li>
+<li>YOUR'E SPACE, YOUR E-SPACE</li>
+<li>문의 : <a href="mailto:imyaman@netscape.net">imyaman@netscape.net</a></li>
+</ul>
+<p><a href="#top">Back to top</a></p>
+<!-- ad starts -->
+<center>
+<script type="text/javascript">
+clicksor_enable_adhere = false;
+clicksor_enable_inter = false;
+clicksor_enable_layer_pop = false;
+clicksor_enable_pop = false;
+clicksor_enable_text_link = false;
+clicksor_banner_image_banner = true;
+clicksor_banner_text_banner = true;
+clicksor_layer_banner = false;
+clicksor_mobile_redirect = false;
+clicksor_default_url = '';
+clicksor_banner_border = '#000808';
+clicksor_banner_ad_bg = '#FFFFFF';
+clicksor_banner_link_color = '#080800';
+clicksor_banner_text_color = '#666666';
+</script>
+<script type="text/javascript" src="http://b.yu0123456.com/show.php?nid=1&amp;pid=330835&amp;adtype=7&amp;sid=588821"></script>
+<center>
+<script type="text/javascript">
+  ( function() {
+    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+    var unit = {"calltype":"async[2]","publisher":"imyaman","width":320,"height":50,"sid":"cal.youre.space"};
+    var placement_id = window.CHITIKA.units.length;
+    window.CHITIKA.units.push(unit);
+    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+}());
+</script>
+<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
+</center>
+<a href="//go.ad2up.com/afu.php?id=464574"><div style="width: 100%; height: 50px; background-color: green; text-align: center;">
+<h2>세상에서 제일 좋은 집은?</h2>
+</div></a>
+<center>
+<div class="main_banner" id="main_banner1">
+  <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
+  <script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+</div>
+</center>
+<center>
+<div id="admixer_display"></div>
+</center>
+<script type="text/javascript" src="http://scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript">
+    new admixer_ad({
+    admixer_key:"8ch8bwvi",
+    display_id:"admixer_display",
+    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
+    ad_change:true,  //default : true
+    test : false,//default : false
+    test_display_id : "log"
+});
+</script>
+<!-- ad ends -->
+</footer>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

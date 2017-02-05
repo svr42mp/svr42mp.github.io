@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="e커머스 매출 올리는 산수(算數) - 매출액 계산하기...">
+    <meta name="generator" content="Movable Type 6.3">
+    <title>e커머스 데이터 파헤치기-1편 - 조철현의 블로그</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="http://blog.youre.space/genie7/styles.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="http://blog.youre.space/genie7/styles_ie.css">
+    <script src="/63/mt-static/support/theme_static/eiger/js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <link rel="start" href="http://blog.youre.space/genie7/">
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://blog.youre.space/genie7/atom.xml">
+    <link rel="canonical" href="http://blog.youre.space/genie7/blog/2015/11/e--1.html" />
+    <style>
+    @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+    :lang(ko) { font-family: 'Noto Sans KR', sans-serif; } 
+    </style>
+
+    
+    <link rel="next" href="http://blog.youre.space/genie7/blog/2015/11/e--2.html" title="e커머스 데이터 파헤치기-2편">
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:title" content="e커머스 데이터 파헤치기-1편">
+    <meta property="og:url" content="http://blog.youre.space/genie7/blog/2015/11/e--1.html">
+    <meta property="og:description" content="e커머스 매출 올리는 산수(算數) - 매출액 계산하기...">
+    <meta property="og:site_name" content="조철현의 블로그">
+    <meta property="og:image" content="">
+    <!-- Metadata -->
+    <meta itemprop="description" content="e커머스 매출 올리는 산수(算數) - 매출액 계산하기...">
+    <link itemprop="url" href="http://blog.youre.space/genie7/blog/2015/11/e--1.html">
+    <link itemprop="image" href="">
+    
+  </head>
+  <body>
+    <header role="banner">
+      <h1 class="title">
+    <a href="http://blog.youre.space/genie7/">
+
+      조철현의 블로그
+
+    </a>
+  </h1>
+
+      <nav role="navigation">
+          <ul>
+
+            <li><a href="http://blog.youre.space/genie7/about/about-page.html">About</a></li>
+
+            <li><a href="http://blog.youre.space/genie7/blog/">Blog</a></li>
+
+          </ul>
+        </nav>
+
+    </header>
+    <div class="content">
+      <ul class="breadcrumb">
+        <li><a href="http://blog.youre.space/genie7/">Home</a></li>
+        <li><a href="http://blog.youre.space/genie7/blog/">Blog</a></li>
+        <li>e커머스 데이터 파헤치기-1편</li>
+      </ul>
+      <div role="main">
+        <article id="entry-140" class="entry">
+          <h2 itemprop="name" class="title">e커머스 데이터 파헤치기-1편</h2>
+          <footer>
+            <p>Posted on <time datetime="2015-11-08T21:44:04+09:00" itemprop="datePublished">November  8, 2015</time></p>
+          </footer>
+          <div class="entry-content" itemprop="articleBody">
+            <p>e커머스 매출 올리는 산수(算數) - 매출액 계산하기</p>
+            <p>기업은 목적은 이윤 추구에 있다고 한다.뭐, 개인적으로 이 목적에 동의하지는 않지만 월급 받고 살다 보니 그냥 그렇다고 해 둬야지 뭐. 나중에 내가 회사를 차리게 되면, 난 나와 직원들이받아야 하는 높은급여를정해 놓고 나머지는 다양한 방식으로 사회에 환원할 거다. 그럴 기회나 생기면 다행이겠지만...<br /><br />본론으로 돌아가서e커머스 비즈니스는상품을 최대한 많이 팔아서 매출액을 올리는 것이 e커머스 비즈니스의 가장 기본 목표이다. 주간, 월간, 연간 매출이 있을 수 있으나 편의상 하루에 대한 부분만 고려해 보자.매출액을 계산하는 공식은 다음과 같다.<br /><br />매출액1 =(상품1 X 판매수량1) + (상품2 X 판매수량2) + (상품3 X 판매수량3) + ... + (상품n X 판매수량n)<br /><br />여러 종류의 상품들이 다양하게 팔리기 때문에 상품의 종류는 n가지, 그리고 각 상품이 팔리는 수량도 n가지가 존재하겠네요. 그런데 이 공식을 다른 방식으로도 계산할 수 있습니다.<br /><br />매출액2= (고객1 X 구매금액1) + (고객2 X 구매금액2) + (고객3 X 구매금액3) + ... + (고객m X 구매금액m)<br /><br />각각의 고객이 구매한 금액을 모두 더하는 방식인 거죠. 사실 여기서 고객1, 고객2, 고객3, ..., 고객m은 모두 1이 됩니다. 왜냐하면 각각의 고객이라 함은 1명의 고객을 뜻하니까요.<br />결과적으로 매출액1과 매출액2는 동일한 금액이 됩니다. 그냥 편하게 매출액(=매출액1=매출액2)이라고 부르기로 하죠.<br /><br />매출액1을 높이기 위해서는 어떤 방법이 있을까요? 실제로 가능한지 아닌지는 따지지 않고, 산수(算數)로만 생각해보도록 하지요.<br /><br />- 방법 1 :상품1, 상품2, 상품3, ..., 상품n의 각각의 상품의 가격을 높인다.<br />- 방법 2 : 판매수량1, 판매수량2, 판매수량3, ..., 판매수량n의 각각의 판매수량을 증가시킨다.<br />- 방법 3 : n은 더 큰 수가 될 수 있도록 판매되는 상품을 늘린다.<br /><br />또 있을 수도 있겠지만, 머리가 아플수 있으니 간단하게 여기까지만,<br />그러면, 매출액2를 높이기 위한 방법도 정리해 볼까요? 앞의 식에서 해봤으니 이건 좀 쉽겠지요?<br /><br />- 방법4 : 고객1, 고객2, 고객3, ..., 고객m의 각각의 고객의 값을 높인다. 응? 아니다 이건 아니다. 왜냐하면 고객1, 고객2, 고객3, ..., 고객m은 모두 1이라고 앞에서 언급했다. 1이라고 해놓고 더 큰 값을 만들어 낼 수는 없으니까!<br />- 방법5 : 구매금액1, 구매금액2, 구매금액3, ..., 구매금액m의 각각의 구매금액을 높인다.<br />- 방법 6 : m을 더 큰 수가 될 수 있도록 더 많은 고객이 구매할 수 있도록 한다.<br /><br />이것도 머리가 아플 수 있으니 여기까지만 하자.<br /><br />위에서 말도 안 되는 방법 4를 제외하고, 우리는 매출을 높이기 위한 방법을 찾아 내었다.<br />이제 실행만 하면 된다.<br /><br />To be continued...</p>
+          </div>
+
+          <nav class="pagination">
+            <ul>
+
+
+              <li><a rel="next" href="http://blog.youre.space/genie7/blog/2015/11/e--2.html" title="e커머스 데이터 파헤치기-2편">Next entry</a></li>
+
+          </ul>
+        </nav>
+          <!--
+<aside id="zenback" class="feedback">
+  
+  Please paste the Zenback script code here
+  
+</aside>
+-->
+          
+          
+        </article>
+      </div>
+      <div class="related">
+        <nav class="widget-pages widget">
+  <h3>Pages</h3>
+  <ul>
+      
+    <li><a href="http://blog.youre.space/genie7/about/about-page.html">친구들</a></li>
+      
+  </ul>
+</nav>
+      
+    
+  
+
+<nav class="widget-archive-dropdown widget">
+  <h3>Archives</h3>
+  <select>
+    <option>Select a Year...</option>
+        
+    <option value="http://blog.youre.space/genie7/blog/2016/">2016</option>
+        
+    
+        
+    <option value="http://blog.youre.space/genie7/blog/2015/">2015</option>
+        
+  </select>
+</nav>
+        
+    
+
+<div class="widget">
+  <h3>Sample Widget 01</h3>
+  <p>This is sample widget</p>
+</div>
+<div class="widget">
+  <h3>Sample Widget 04</h3>
+  <p>Links</p>
+  <ul>
+    <li><a href="#">Link Text</a></li>
+    <li><a href="#">Link Text</a></li>
+    <li><a href="#">Link Text</a></li>
+    <li><a href="#">Link Text</a></li>
+    <li><a href="#">Link Text</a></li>
+  </ul>
+</div>
+<div class="widget">
+  <h3>Sample Widget 02</h3>
+  <p>Advertisement</p>
+  <a href="http://blog.youre.space/genie7/">
+    <img alt="" src="/63/mt-static/support/theme_static/eiger/images/ad-sample.png">
+  </a>
+</div>
+<div class="widget">
+  <h3>Sample Widget 03</h3>
+  <p>Banner</p>
+  <a href="http://blog.youre.space/genie7/">
+    <img alt="" src="/63/mt-static/support/theme_static/eiger/images/banner-sample.png">
+  </a>
+  <a href="http://blog.youre.space/genie7/">
+    <img alt="" src="/63/mt-static/support/theme_static/eiger/images/banner-sample.png">
+  </a>
+  <a href="http://blog.youre.space/genie7/">
+    <img alt="" src="/63/mt-static/support/theme_static/eiger/images/banner-sample.png">
+  </a>
+</div>
+
+      </div>
+    </div>
+    <footer role="contentinfo">
+      <script type="text/javascript" src="http://scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript">
+new admixer_ad({
+  admixer_key: "mp3kh792",
+  display_id : "admixer_display",
+  adsense_publisher_key : "ca-mb-pub-0000000000000000",
+  ad_change : true,
+  test : false,
+  test_display_id : "log",
+  rtb_banner_height_type : "proportional"
+});
+</script>
+<center>
+  <div id="admixer_display"></div>
+  <div id="log"></div>
+</center>
+<br />
+    </footer>
+    <script src="http://blog.youre.space/63/mt-static/jquery/jquery.min.js"></script>
+    <script src="http://blog.youre.space/genie7/mt-theme-eiger.js"></script>
+  </body>
+</html>
