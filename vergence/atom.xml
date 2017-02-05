@@ -4,17 +4,17 @@
     <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://blog.youre.space/vergence/atom.xml" />
     <id>tag:blog.youre.space,2017-01-30:/vergence//10</id>
-    <updated>2017-02-05T11:56:52Z</updated>
+    <updated>2017-02-05T12:01:26Z</updated>
     <subtitle>Strange World</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3</generator>
 
 <entry>
-    <title>Firebase hosting를 거쳐 Netlify로 이동</title>
+    <title>Firebase hosting을 거쳐 Netlify로 이동</title>
     <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/02/firebase-hosting-netlify.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.519</id>
 
     <published>2017-02-05T11:50:15Z</published>
-    <updated>2017-02-05T11:56:52Z</updated>
+    <updated>2017-02-05T12:01:26Z</updated>
 
     <summary>http://weblog.youre.space 블로그는 github io 호스팅을 이용했습니다. 더 자유롭고 장애 없는 곳을 찾기로 했습니다. Firebase의 hosting으로 옮겨보았으나, HTTP는 지원하지 않고 HTTPS만 지원하는 단점이 있습니다. 그래서 결국 Netlify로 옮겼습니다. 아주 좋네요....</summary>
     <author>
@@ -28,7 +28,7 @@
 Firebase의 hosting으로 옮겨보았으나, HTTP는 지원하지 않고 HTTPS만 지원하는 단점이 있습니다.
 그래서 결국 Netlify로 옮겼습니다. 아주 좋네요.</p>
 
-<p><img alt="" src="https://www.netlify.com/img/press/logos/full-logo-dark-simple.png" width="320" class="mt-image-none" style="" /></p>
+<p><a href="http://blog.youre.space/vergence/uploads/netlify-meta-image.jpg"><img alt="netlify-meta-image.jpg" src="http://blog.youre.space/vergence/assets_c/2017/02/netlify-meta-image-thumb-320xauto-122.jpg" width="320" height="171" class="mt-image-none" style="" /></a></p>
 ]]>
         
     </content>
