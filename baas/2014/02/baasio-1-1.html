@@ -137,11 +137,25 @@
 </div>
 <div class="sidebar-module">
 <h4>Search</h4>
-<form class="site-search" method="get" id="search" action="http://weblog.youre.space/63/mt-search.cgi">
-<input class="form-control" type="text" name="search" value="" placeholder="検索...">
-<input type="hidden" name="IncludeBlogs" value="11">
-<input type="hidden" name="limit" value="20">
-</form>
+<!--
+  <form class="site-search" method="get" id="search" action="http://weblog.youre.space/63/mt-search.cgi">
+    <input class="form-control" type="text" name="search" value="" placeholder="検索...">
+    <input type="hidden" name="IncludeBlogs" value="11">
+    <input type="hidden" name="limit" value="20">
+  </form>
+-->
+<script>
+  (function() {
+    var cx = '003733824246001356237:ea5vbziqtl0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
 </div>
 </aside>
 </div>
