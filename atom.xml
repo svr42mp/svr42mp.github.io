@@ -4,9 +4,35 @@
     <link rel="alternate" type="text/html" href="http://blog.youre.space/" />
     <link rel="self" type="application/atom+xml" href="http://blog.youre.space/atom.xml" />
     <id>tag:blog.youre.space,2017-01-30:/3</id>
-    <updated>2017-02-03T11:16:48Z</updated>
+    <updated>2017-02-05T12:01:26Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3</generator>
+
+<entry>
+    <title>Firebase hosting을 거쳐 Netlify로 이동 - vergence의 이상한 세상</title>
+    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/02/firebase-hosting-netlify.html" />
+    <id>tag:blog.youre.space,2017:/vergence//10.519</id>
+
+    <published>2017-02-05T11:50:15Z</published>
+    <updated>2017-02-05T12:01:26Z</updated>
+
+    <summary>http://weblog.youre.space 블로그는 github io 호스팅을 이용했습니다. 더 자유롭고 장애 없는 곳을 찾기로 했습니다. Firebase의 hosting으로 옮겨보았으나, HTTP는 지원하지 않고 HTTPS만 지원하는 단점이 있습니다. 그래서 결국 Netlify로 옮겼습니다. 아주 좋네요....</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
+        <![CDATA[<p>http://weblog.youre.space 블로그는 github io 호스팅을 이용했습니다. 더 자유롭고 장애 없는 곳을 찾기로 했습니다.
+Firebase의 hosting으로 옮겨보았으나, HTTP는 지원하지 않고 HTTPS만 지원하는 단점이 있습니다.
+그래서 결국 Netlify로 옮겼습니다. 아주 좋네요.</p>
+
+<p><a href="http://blog.youre.space/vergence/uploads/netlify-meta-image.jpg"><img alt="netlify-meta-image.jpg" src="http://blog.youre.space/vergence/assets_c/2017/02/netlify-meta-image-thumb-320xauto-122.jpg" width="320" height="171" class="mt-image-none" style="" /></a></p>
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>요즘 우리의 머리 속에 있는 것 - vergence의 이상한 세상</title>
@@ -434,27 +460,6 @@ $
 
     <published>2016-09-25T11:25:09Z</published>
     <updated>2016-09-25T11:25:26Z</updated>
-
-    <summary>내용...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/imyaman/">
-        <![CDATA[<p>내용</p>]]>
-        <![CDATA[<p>확장</p>]]>
-    </content>
-</entry>
-
-<entry>
-    <title>아홉째 - 곽상용의 블로그</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/imyaman/2016/09/post-7.html" />
-    <id>tag:blog.youre.space,2016:/imyaman//5.463</id>
-
-    <published>2016-09-25T11:24:39Z</published>
-    <updated>2016-09-25T11:24:57Z</updated>
 
     <summary>내용...</summary>
     <author>
