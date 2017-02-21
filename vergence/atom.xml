@@ -4,9 +4,32 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:blog.youre.space,2017-01-30:/vergence//10</id>
-    <updated>2017-02-05T12:01:26Z</updated>
+    <updated>2017-02-21T05:14:19Z</updated>
     <subtitle>Strange World</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3</generator>
+
+<entry>
+    <title>LuneOS Nexus 5 Port and Loan</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/02/luneos-nexus-5-port-and-loan.html" />
+    <id>tag:blog.youre.space,2017:/vergence//10.521</id>
+
+    <published>2017-02-21T05:14:01Z</published>
+    <updated>2017-02-21T05:14:19Z</updated>
+
+    <summary>LuneOS(webOS)의 Nexus 5 Port가 있습니다. 설치해보았는데 아직 이른 단계입니다. 일상에서 쓰기에 아직 길이 멉니다. LuneOS로 대출 받을 방법이 있을까 궁금하네요....</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>LuneOS(webOS)의 Nexus 5 Port가 있습니다. 설치해보았는데 아직 이른 단계입니다. 일상에서 쓰기에 아직 길이 멉니다.</p>
+
+<p>LuneOS로 대출 받을 방법이 있을까 궁금하네요.</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Firebase hosting을 거쳐 Netlify로 이동</title>
@@ -480,46 +503,6 @@ $
         <![CDATA[<p>Nokia E72에 한글입력기 설치하고 한글 폰트도 설치했습니다. 이제 이동하면서 글 쓸 때는 이걸 쓸 겁니다. 삼성 블랙잭은 좀 쉬라고 두고요.</p>
 
 <p><a href="http://weblog.youre.space/vergence/uploads/IMG_20160724_143017137118408.jpg"><img alt="IMG_20160724_143017137118408.jpg" src="http://weblog.youre.space/vergence/assets_c/2017/02/IMG_20160724_143017137118408-thumb-320xauto-124.jpg" width="320" height="240" class="mt-image-none" style="" /></a></p>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>상품을 고객에게 전달하기 위한 메시지</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2016/06/service-concept.html" />
-    <id>tag:weblog.youre.space,2016:/vergence//10.412</id>
-
-    <published>2016-06-07T12:02:40Z</published>
-    <updated>2016-06-27T05:13:44Z</updated>
-
-    <summary>저는 인터넷 서비스의 분야에서 일하고 있고, 새로운 상품을 만드는 것을 포함하는 사업계획서에, 상품의 개념과 함께 슬로건 한 개와 캐치프레이즈 여러 개를 넣어둡니다. 그리고 사업계획서 뒷부분에는 예상 고객을 구분하고 구분별로 전달할 메시지를 넣어둡니다. 개념, 슬로건, 캐치프레이즈, 고객에게 전달할 메시지 등을 모아보면...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>저는 인터넷 서비스의 분야에서 일하고 있고, 새로운 상품을 만드는 것을 포함하는 사업계획서에, 상품의 개념과 함께 슬로건 한 개와 캐치프레이즈 여러 개를 넣어둡니다. 그리고 사업계획서 뒷부분에는 예상 고객을 구분하고 구분별로 전달할 메시지를 넣어둡니다. 개념, 슬로건, 캐치프레이즈, 고객에게 전달할 메시지 등을 모아보면 결국 고객들과 이 상품을 통해 어떤 커뮤니케이션을 할 것인지가 구체화됩니다.
-상품(보통 웹 사이트로 보여지는) 출시 후에 마케팅에 대한 것을 고민할 때 더 만들기는 하지만, 사업기획하는 단계에서도 어느 정도 나와야하죠.</p>
-
-<p>어느 BaaS는 개념으로 "모바일 앱이 필요로하는 서버의 기능을 미리 만들어 API로 제공하는 서비스"라고 했고, 주요한 슬로건은 "서버는 우리가 만들 테니 모바일 앱 개발에 집중하세요" 등을 썼습니다.
-어느 테스트 서비스는 개념으로 "모바일 앱을 다양한 디바이스에 한꺼번에 설치하고 자동으로 동작시켜 오류를 찾아주는 서비스"라고 했고, 주요한 슬로건은 "단순 반복적인 테스트는 기계가 하고 사람은 더 창의적인 테스트를 해야합니다" 등을 썼습니다.</p>
-
-<p>이런 메시지들을 나중에 홍보자료에 넣거나 고객에게 상품을 소개하는 데 활용하지요. 
-이 메시지들은 상품의 가치(고객 관점의 가치, 돈 벌고 싶은 내 관점의 가치가 아니라)를 바탕으로 만들어집니다.
-이런 메시지들이 나오지 않으면 상품기획할 때 곤란해집니다. 단적으로, 상품을 소개하는 웹 사이트를 방문했는데 첫 화면에서 상품을 설명하는 메시지가 없으면 곤란합니다.
-첫 화면에서 그런 메시지를 보고, (좋은데) 어떻게 쓰는거지? (좋은데) 이게 진짜 돼? (좋은데) 가격은 얼마일까? 등의 질문이 나오면 참 좋다고 생각합니다.</p>
-
-<p>이미 만들어진 상품에 대해서도 이런 메시지를 재정립하기도 하지요. 사업계획서나 상품기획서 없이 만들어진 상품도 그렇고요.
-어느 지하철 노선도 앱은 "데이터 통신을 사용하지 않는, 휴대폰에 부담을 주지 않는, 개인정보를 수집하지 않는 작고 가벼운 지하철 앱"이라는 개념을 뒤늦게 정하기도 하고,
-어느 식품정보조회 앱은 "찍으면 설탕"이라는 개념으로 다시 꺼내기도 하고요.</p>
-
-<p>메시지를 정하지 못하면 곤란해집니다. 뭔가 만들긴 했는데, 어떻게 팔지 고민이 되는거죠. '뭔지 모르겠지만 고객에게 줘봅시다, 그럼 용도를 알게 되겠죠.'라는 생각으로 접근하는 건 피하려고 합니다.
-그럴 바엔 차라리 로또를 사라고 말하고 싶어요. 의도한 바로 고객을 만족시키고, 의도치 않게 고객이 다른 의미를 찾게 되면 고마운 일입니다. 하지만 고객이 의미를 알아서 찾을 것을 기대하고 접근하는 건 무모한거죠.</p>
-
-<p>요즘은 #올챙이 #TadpoleDBHub 를 살펴보고 있습니다. 관심이 많이 필요하네요.</p>
 ]]>
         
     </content>
