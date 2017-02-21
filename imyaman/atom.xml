@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>곽상용의 블로그</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/imyaman/" />
-    <link rel="self" type="application/atom+xml" href="http://blog.youre.space/imyaman/atom.xml" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/" />
+    <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:blog.youre.space,2017-01-30:/imyaman//5</id>
     <updated>2017-01-30T08:40:31Z</updated>
     <subtitle>IT 서비스에 관심이 많습니다.</subtitle>
@@ -10,7 +10,7 @@
 
 <entry>
     <title>오늘의 커피 사진</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/imyaman/2017/01/post-10.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/01/post-10.html" />
     <id>tag:blog.youre.space,2017:/imyaman//5.472</id>
 
     <published>2017-01-30T08:23:55Z</published>
@@ -23,7 +23,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/imyaman/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
         <![CDATA[<p><img alt="" src="https://freehuman.fr/uploads/images/scaled_full_06ba50cef62aeb88c7f3.jpg" width="320" height="200" class="mt-image-none" style="" /></p>
 
 <p>엔제리너스 원두로 만든 커피를 스타벅스 컵에 담았습니다. 여러 모로 불비하네요.</p>
@@ -34,7 +34,7 @@
 
 <entry>
     <title>드디어 한 페이지</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/imyaman/2016/09/post-9.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2016/09/post-9.html" />
     <id>tag:blog.youre.space,2016:/imyaman//5.465</id>
 
     <published>2016-09-25T11:25:35Z</published>
@@ -47,7 +47,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/imyaman/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
         <![CDATA[<p>내용</p>]]>
         <![CDATA[<p>확장</p>]]>
     </content>
@@ -55,7 +55,7 @@
 
 <entry>
     <title>열째</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/imyaman/2016/09/post-8.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2016/09/post-8.html" />
     <id>tag:blog.youre.space,2016:/imyaman//5.464</id>
 
     <published>2016-09-25T11:25:09Z</published>
@@ -68,7 +68,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/imyaman/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
         <![CDATA[<p>내용</p>]]>
         <![CDATA[<p>확장</p>]]>
     </content>
@@ -76,7 +76,7 @@
 
 <entry>
     <title>아홉째</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/imyaman/2016/09/post-7.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2016/09/post-7.html" />
     <id>tag:blog.youre.space,2016:/imyaman//5.463</id>
 
     <published>2016-09-25T11:24:39Z</published>
@@ -89,7 +89,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/imyaman/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
         <![CDATA[<p>내용</p>]]>
         <![CDATA[<p>확장</p>]]>
     </content>
@@ -97,7 +97,7 @@
 
 <entry>
     <title>여덟째</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/imyaman/2016/09/post-6.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2016/09/post-6.html" />
     <id>tag:blog.youre.space,2016:/imyaman//5.462</id>
 
     <published>2016-09-25T11:24:07Z</published>
@@ -110,7 +110,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/imyaman/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
         <![CDATA[<p>내용</p>]]>
         <![CDATA[<p>확장</p>]]>
     </content>
@@ -118,7 +118,7 @@
 
 <entry>
     <title>일곱째</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/imyaman/2016/09/post-5.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2016/09/post-5.html" />
     <id>tag:blog.youre.space,2016:/imyaman//5.461</id>
 
     <published>2016-09-25T11:23:20Z</published>
@@ -131,7 +131,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/imyaman/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
         <![CDATA[<p>내용</p>]]>
         <![CDATA[<p>확장</p>]]>
     </content>
@@ -139,7 +139,7 @@
 
 <entry>
     <title>여섯째</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/imyaman/2016/09/post-4.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2016/09/post-4.html" />
     <id>tag:blog.youre.space,2016:/imyaman//5.460</id>
 
     <published>2016-09-25T11:22:43Z</published>
@@ -152,7 +152,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/imyaman/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
         <![CDATA[<p>내용</p>]]>
         <![CDATA[<p>확장</p>]]>
     </content>
@@ -160,7 +160,7 @@
 
 <entry>
     <title>다섯번째</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/imyaman/2016/09/post-3.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2016/09/post-3.html" />
     <id>tag:blog.youre.space,2016:/imyaman//5.459</id>
 
     <published>2016-09-25T11:22:13Z</published>
@@ -173,7 +173,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/imyaman/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
         <![CDATA[<p>내용</p>]]>
         <![CDATA[<p>확장</p>]]>
     </content>
@@ -181,7 +181,7 @@
 
 <entry>
     <title>네번째</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/imyaman/2016/09/post-2.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2016/09/post-2.html" />
     <id>tag:blog.youre.space,2016:/imyaman//5.458</id>
 
     <published>2016-09-25T11:21:36Z</published>
@@ -194,7 +194,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/imyaman/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
         <![CDATA[<p>내용</p>]]>
         <![CDATA[<p>확장</p>]]>
     </content>
@@ -202,7 +202,7 @@
 
 <entry>
     <title>세번째</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/imyaman/2016/09/post-1.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2016/09/post-1.html" />
     <id>tag:blog.youre.space,2016:/imyaman//5.457</id>
 
     <published>2016-09-25T11:20:50Z</published>
@@ -215,7 +215,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/imyaman/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
         <![CDATA[<p>내용</p>]]>
         <![CDATA[<p>확장 내용</p>]]>
     </content>
@@ -223,7 +223,7 @@
 
 <entry>
     <title>두번째 글</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/imyaman/2016/09/post.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2016/09/post.html" />
     <id>tag:blog.youre.space,2016:/imyaman//5.456</id>
 
     <published>2016-09-25T11:19:47Z</published>
@@ -236,7 +236,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/imyaman/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
         <![CDATA[<p>이게 바로 두번째 글입니다.</p>
 ]]>
         <![CDATA[<p>이 부분은 확장된 부분이고요.</p>
@@ -246,7 +246,7 @@
 
 <entry>
     <title>iPhone 6s의 3D 터치에 대해</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/imyaman/2015/10/iphone-6s-3d.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2015/10/iphone-6s-3d.html" />
     <id>tag:svr42mp.github.io,2015:/imyaman//5.123</id>
 
     <published>2015-10-25T06:45:51Z</published>
@@ -259,7 +259,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/imyaman/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
         <![CDATA[<div class="entry-content" itemprop="articleBody">
 <p>아이폰의 3D 터치는 애플답지 않습니다. 아쉬움이 있어 이야기를 꺼내봅니다.</p>
 <p>애플다운 애플은, 매킨토시의 마우스에 오직 1개의 버튼만 두었습니다. 오직 1개인 이 버튼은 거의 마우스 절반 크기였습니다. 매킨토시에는 "Contextual menu"라는 것이 있습니다. 윈도우즈의 오른쪽 버튼 메뉴와 비슷한 것입니다. 이 메뉴를 보려면, 키보드의 ctrl 키와 마우스 버튼을 누르면 됩니다. 있지만, 엄청 권하는 것은 아닌, 그런 기능입니다. 사실 이 메뉴를 쓰지 않아도 불편하지 않은게 매킨토시입니다. 애초에 마우스 버튼이 1개인 것에서 알아볼 수 있는 특징입니다.</p>

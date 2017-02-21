@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>유재석의 블로그</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/yoojs8512/" />
-    <link rel="self" type="application/atom+xml" href="http://blog.youre.space/yoojs8512/atom.xml" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/yoojs8512/" />
+    <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/yoojs8512/atom.xml" />
     <id>tag:blog.youre.space,2016-05-29:/yoojs8512//9</id>
     <updated>2016-05-29T06:41:54Z</updated>
     <subtitle>PR+기자</subtitle>
@@ -10,7 +10,7 @@
 
 <entry>
     <title>EBS &apos;공부의 배신&apos;의 프레이밍...그리고 시사점</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/yoojs8512/blog/2016/05/post.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/yoojs8512/blog/2016/05/post.html" />
     <id>tag:weblog.youre.space,2016:/yoojs8512//9.286</id>
 
     <published>2016-05-29T05:57:13Z</published>
@@ -23,7 +23,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/yoojs8512/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/yoojs8512/">
         <![CDATA[<p>어제, 오늘 온라인에서 화제인 프로그램이 하나 있습니다. 바로 EBS 다큐프라임 '공부의 배신'이라는 시사교양 프로그램의 일부 내용이 캡처돼 '명문대생의 프라이드.jpg'이란 제목으로 돌고 있기 때문인데요.</p>
 <p>대부분의 댓글은 학벌, 지연, 끼리끼리 문화를 비판하는 것에 집중돼 있었습니다. 첨언하자면, 이 방송의 의도이기도 하겠죠.</p>
 <p>그런데 몇 가지 댓글이 눈에 띄더군요.</p>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>유용빈의 블로그</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/yongbin/" />
-    <link rel="self" type="application/atom+xml" href="http://blog.youre.space/yongbin/atom.xml" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/yongbin/" />
+    <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/yongbin/atom.xml" />
     <id>tag:blog.youre.space,2015-10-25:/yongbin//6</id>
     <updated>2016-08-01T05:54:35Z</updated>
     <subtitle>I did nothing today, and still got paid. -Dilbert</subtitle>
@@ -10,7 +10,7 @@
 
 <entry>
     <title>farmbot</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/yongbin/2016/08/farmbot.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/yongbin/2016/08/farmbot.html" />
     <id>tag:weblog.youre.space,2016:/yongbin//6.444</id>
 
     <published>2016-08-01T05:52:40Z</published>
@@ -23,7 +23,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/yongbin/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/yongbin/">
         <![CDATA[<ul>
 <li>7월까지 $2900 한화 330만원</li>
 <li>가든, 로프탑, 인도어등에서 사용가능</li>
