@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>vergence의 이상한 세상</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/" />
-    <link rel="self" type="application/atom+xml" href="http://blog.youre.space/vergence/atom.xml" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
+    <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:blog.youre.space,2017-01-30:/vergence//10</id>
     <updated>2017-02-21T11:30:02Z</updated>
     <subtitle>Strange World</subtitle>
@@ -10,7 +10,7 @@
 
 <entry>
     <title>정의를 구하라</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/02/iie-eie.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/02/iie-eie.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.522</id>
 
     <published>2017-02-21T11:30:02Z</published>
@@ -23,7 +23,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>하늘이 무너져도 정의를 구하라. 요즘 한국에서 가장 필요한 말이라는 생각이 듭니다.</p>
 
 <p>열 명의 범죄자를 놓치더라도, 한 명의 무고한 사람을 희생시켜서는 안 된다. 참 좋은 말입니다. 하지만 지금 욕 먹기를 작정한 것들이 이 말을 방패 삼고 있습니다.</p>
@@ -40,7 +40,7 @@
 
 <entry>
     <title>LuneOS Nexus 5 Port and Loan</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/02/luneos-nexus-5-port-and-loan.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/02/luneos-nexus-5-port-and-loan.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.521</id>
 
     <published>2017-02-21T05:14:01Z</published>
@@ -53,7 +53,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>LuneOS(webOS)의 Nexus 5 Port가 있습니다. 설치해보았는데 아직 이른 단계입니다. 일상에서 쓰기에 아직 길이 멉니다.</p>
 
 <p>LuneOS로 대출 받을 방법이 있을까 궁금하네요.</p>]]>
@@ -63,7 +63,7 @@
 
 <entry>
     <title>Firebase hosting을 거쳐 Netlify로 이동</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/02/firebase-hosting-netlify.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/02/firebase-hosting-netlify.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.519</id>
 
     <published>2017-02-05T11:50:15Z</published>
@@ -76,12 +76,12 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>http://weblog.youre.space 블로그는 github io 호스팅을 이용했습니다. 더 자유롭고 장애 없는 곳을 찾기로 했습니다.
 Firebase의 hosting으로 옮겨보았으나, HTTP는 지원하지 않고 HTTPS만 지원하는 단점이 있습니다.
 그래서 결국 Netlify로 옮겼습니다. 아주 좋네요.</p>
 
-<p><a href="http://blog.youre.space/vergence/uploads/netlify-meta-image.jpg"><img alt="netlify-meta-image.jpg" src="http://blog.youre.space/vergence/assets_c/2017/02/netlify-meta-image-thumb-320xauto-122.jpg" width="320" height="171" class="mt-image-none" style="" /></a></p>
+<p><a href="http://weblog.youre.space/vergence/uploads/netlify-meta-image.jpg"><img alt="netlify-meta-image.jpg" src="http://weblog.youre.space/vergence/assets_c/2017/02/netlify-meta-image-thumb-320xauto-122.jpg" width="320" height="171" class="mt-image-none" style="" /></a></p>
 ]]>
         
     </content>
@@ -89,7 +89,7 @@ Firebase의 hosting으로 옮겨보았으나, HTTP는 지원하지 않고 HTTPS�
 
 <entry>
     <title>요즘 우리의 머리 속에 있는 것</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/02/ii-iei-ee-ii-ie-e.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/02/ii-iei-ee-ii-ie-e.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.484</id>
 
     <published>2017-02-03T11:16:48Z</published>
@@ -102,7 +102,7 @@ Firebase의 hosting으로 옮겨보았으나, HTTP는 지원하지 않고 HTTPS�
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>눈을 감고, 떠오르는 것들을 애써 막지 않으니 그 수가 많습니다. 복잡하게 살고 있고 세상이 복잡하기도 하고요.<br />
 현직 대통령의 문제, 뇌물, 국민연금과 삼성전자, 평창 올림픽, 체육계 비리, 부산의 그 건물, 인사 청탁, 위안부 거짓 합의, 특정 기업 특혜... 그리고 세월호.<br />
 비리도 나쁘지만, 아무리 나쁜 마음이라도 사람을 죽이는 것 큰 잘못인데.</p>
@@ -117,7 +117,7 @@ Firebase의 hosting으로 옮겨보았으나, HTTP는 지원하지 않고 HTTPS�
 
 <entry>
     <title>2017-01-05</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/02/2017-01-05.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/02/2017-01-05.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.483</id>
 
     <published>2017-02-03T11:16:46Z</published>
@@ -130,7 +130,7 @@ Firebase의 hosting으로 옮겨보았으나, HTTP는 지원하지 않고 HTTPS�
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>요즘 하루 시간 잘 갑니다. 여가활동도 줄었습니다. 퇴근 후 여유시간이 물리적으로 줄어든 탓이 조금 있고요, 마음의 여유나 체력의 탓이 큽니다.<br />
 시간계획이 아직 바뀌지 않은, 조정이 덜 된 탓일 수도 있고요. 이건 시간 지나면 해결될 문제이긴 할 겁니다. 놀 시간은 어떻게든 만들게 되더라고요.</p>]]>
         
@@ -139,7 +139,7 @@ Firebase의 hosting으로 옮겨보았으나, HTTP는 지원하지 않고 HTTPS�
 
 <entry>
     <title>생각하고 싶어서</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/02/ieie-iii.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/02/ieie-iii.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.482</id>
 
     <published>2017-02-02T14:31:23Z</published>
@@ -152,15 +152,15 @@ Firebase의 hosting으로 옮겨보았으나, HTTP는 지원하지 않고 HTTPS�
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
-        <![CDATA[<a href="http://blog.youre.space/vergence/IMG_20170202_232736.jpg"><img alt="" src="http://blog.youre.space/vergence/assets_c/2017/02/IMG_20170202_232736-thumb-autox427-120.jpg" width="320" height="427" class="mt-image-none" style="" /></a>]]>
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<a href="http://weblog.youre.space/vergence/IMG_20170202_232736.jpg"><img alt="" src="http://weblog.youre.space/vergence/assets_c/2017/02/IMG_20170202_232736-thumb-autox427-120.jpg" width="320" height="427" class="mt-image-none" style="" /></a>]]>
         
     </content>
 </entry>
 
 <entry>
     <title>이메일로 MovableType에 글 쓰기</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/02/ieie-movabletypei-e-ie.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/02/ieie-movabletypei-e-ie.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.481</id>
 
     <published>2017-02-01T23:35:55Z</published>
@@ -173,7 +173,7 @@ Firebase의 hosting으로 옮겨보았으나, HTTP는 지원하지 않고 HTTPS�
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>전에 fetchmail로 메일을 긁어서 처리하는 것을 만든 적이 있습니다. 이번에도 fetchmail을 이용해서 메일을 긁어오고 MovableType에 넣을 생각이었지요.</p>
 
 <p>삽질을 시작하기 전에, 검색 한번 더 해봐야겠다는 생각이 들었습니다. 오잉...? MT 웹 사이트에 플러그인이 있었네요.<br />
@@ -192,7 +192,7 @@ A search in time saves 9 chores.</p>
 
 <entry>
     <title>왜냐면</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/02/iee.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/02/iee.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.480</id>
 
     <published>2017-02-01T14:48:42Z</published>
@@ -205,7 +205,7 @@ A search in time saves 9 chores.</p>
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>좋으니까요</p>]]>
         
     </content>
@@ -213,7 +213,7 @@ A search in time saves 9 chores.</p>
 
 <entry>
     <title>X Window System에서 창 최대화 문제</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2016/11/x-window-system.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2016/11/x-window-system.html" />
     <id>tag:blog.youre.space,2016:/vergence//10.471</id>
 
     <published>2016-11-03T07:06:20Z</published>
@@ -228,7 +228,7 @@ A search in time saves 9 chores.</p>
         <category term="cal" scheme="http://www.sixapart.com/ns/types#category" />
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>X Window System에서 창(window)을 최대화(maximize)했을 때 창이 화면 전체를 덮지 않는 경우가 있습니다. 창 최대화/리사이즈는 윈도우 매니저(window manager)의 도움을 받는 건데, 윈도우 매니저가 최대화/리사이즈의 동작을 어떻게 구현했느냐에 따라 달라집니다.
 윈도우 매니저는 보통 X의 <em>NET</em>WORKAREA 정보를 참고하여 창의 최대 크기를 정합니다. workarea는 xprop 명령으로 확인할 수 있습니다. xprop 명령을 실행하고 커서가 + 모양으로 바뀌면 데스크탑의 빈 공간을 선택합니다.
 1366x768 해상도의 스크린에서 workarea가 아래와 같이 1366x744로 확인되면, 창을 최대화했을 때 24만큼 채워지지 않는 영역이 생길 수 있습니다.</p>
@@ -251,7 +251,7 @@ Style * EWMHMaximizeIgnoreWorkingArea, EWMHPlacementIgnoreWorkingArea
 
 <entry>
     <title>인공신경망을 이용한 문장의 언어 구분</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2016/10/post-70.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2016/10/post-70.html" />
     <id>tag:blog.youre.space,2016:/vergence//10.470</id>
 
     <published>2016-10-30T14:07:57Z</published>
@@ -266,7 +266,7 @@ Style * EWMHMaximizeIgnoreWorkingArea, EWMHPlacementIgnoreWorkingArea
         <category term="cal" scheme="http://www.sixapart.com/ns/types#category" />
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>인공신경망을 이용하여 문장이 어느 나라 언어인지 구분하도록 만들어보았습니다. 모든 언어는 아니고 한국어/일본어/영어만 구분하도록 제한하였습니다. 이건 굳이 인공신경망을 이용하지 않아도 되지만, 인공신경망으로 해보고 싶었습니다.</p>
 
 <p>문장에 각 글자가 얼마나 자주 출현하는지를 바탕으로 영어/프랑스어/폴란드어를 구분하는 예시가 있습니다.</p>
@@ -328,7 +328,7 @@ Listing 1 will generate letter frequencies for a file and output them in a forma
 
 <entry>
     <title>감사 받고 표창 받은 이야기</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2016/10/post-69.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2016/10/post-69.html" />
     <id>tag:blog.youre.space,2016:/vergence//10.469</id>
 
     <published>2016-10-20T16:09:21Z</published>
@@ -343,7 +343,7 @@ Listing 1 will generate letter frequencies for a file and output them in a forma
         <category term="cal" scheme="http://www.sixapart.com/ns/types#category" />
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>감사(監査)라는 단어를 들으면 다양한 생각이 듭니다. 이 글은 제 자랑이 많이 들어있습니다.
 군에서 받은 표창 중에 사단장 표창이 2개 있습니다. 둘 다 사단 감사실에서 추천을 한 것입니다.</p>
 
@@ -368,7 +368,7 @@ Listing 1 will generate letter frequencies for a file and output them in a forma
 
 <entry>
     <title>openpaas.cloudsc.kr rhc setup 주소</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2016/10/openpaascloudsckr-rhc-setup.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2016/10/openpaascloudsckr-rhc-setup.html" />
     <id>tag:blog.youre.space,2016:/vergence//10.468</id>
 
     <published>2016-10-07T13:58:30Z</published>
@@ -381,7 +381,7 @@ Listing 1 will generate letter frequencies for a file and output them in a forma
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>리빙포인트
 온라인 문서 http://openpaas.cloudsc.kr/start/commandLine 에는 broker.cloudsc.or.kr 으로 표시되어있지만, 실제로는 broker.cloud.or.kr 주소를 쓰는 것이 정신건강에 좋다.</p>
 
@@ -419,7 +419,7 @@ $
 
 <entry>
     <title>노트북 배터리 리필</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2016/09/post-68.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2016/09/post-68.html" />
     <id>tag:blog.youre.space,2016:/vergence//10.454</id>
 
     <published>2016-09-17T11:43:27Z</published>
@@ -434,7 +434,7 @@ $
         <category term="cal" scheme="http://www.sixapart.com/ns/types#category" />
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>배터리 리필했습니다. 배터리가 빵빵하니 천군만마처럼 든든하군요.</p>
 
 <p>Let's note CF-J9은 명세 상으론 6.5시간 간답니다. 리필한 배터리는 설계의 86%랍니다. 5.5시간이 되겠군요. 명세는 명세일뿐이니 1시간 정도 덜 간다고 보면 실제로는 4.5시간 정도 버틸 것 같습니다.</p>
@@ -443,7 +443,7 @@ $
 
 <p>그나저나 정품 배터리는 얼마나 좋은 배터리를 썼길래 그 조그만한 걸로 6.5시간을 만들어냈을까 궁금합니다. 무려 2010년 모델인데요.</p>
 
-<p><a href="http://blog.youre.space/vergence/uploads/IMG_20160917_204038.jpg"><img alt="IMG_20160917_204038.jpg" src="http://blog.youre.space/vergence/assets_c/2017/02/IMG_20160917_204038-thumb-320xauto-126.jpg" width="320" height="240" class="mt-image-none" style="" /></a></p>
+<p><a href="http://weblog.youre.space/vergence/uploads/IMG_20160917_204038.jpg"><img alt="IMG_20160917_204038.jpg" src="http://weblog.youre.space/vergence/assets_c/2017/02/IMG_20160917_204038-thumb-320xauto-126.jpg" width="320" height="240" class="mt-image-none" style="" /></a></p>
 ]]>
         
     </content>
@@ -451,7 +451,7 @@ $
 
 <entry>
     <title>Linux에서 WiFi 장치가 반복해서 사라질 때</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2016/09/linux-wifi.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2016/09/linux-wifi.html" />
     <id>tag:blog.youre.space,2016:/vergence//10.453</id>
 
     <published>2016-09-16T14:36:14Z</published>
@@ -466,7 +466,7 @@ $
         <category term="cal" scheme="http://www.sixapart.com/ns/types#category" />
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>나와 함께하는 Lemmi(Let's note CF-J9)는 무선 인터넷 디바이스로 Intel® WiFi Link 5300을 갖고 있습니다. 오래된 녀석이라 그런지 연속사용시간이 좀 길어지면 이 디바이스가 이상해집니다. 커널 내 드라이버에서 에러를 표시하는데, 다시 돌아오지도 않습니다.</p>
 
 <p>이 증상이 특히 대기모드에서 일반모드로 돌아올 때 처음 발생했어서 전력관리 문제라고 생각했습니다. 그래서 아래와 같이 모듈 옵션을 넣었습니다.
@@ -492,7 +492,7 @@ $
 
 <entry>
     <title>내가 갖고 싶은 키보드</title>
-    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2016/07/post-67.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2016/07/post-67.html" />
     <id>tag:blog.youre.space,2016:/vergence//10.452</id>
 
     <published>2016-07-27T21:10:14Z</published>
@@ -505,7 +505,7 @@ $
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>https://en.m.wikipedia.org/wiki/LK201</p>
 
 <p>이 키보드의 caps lock 키 옆에 ctrl 키가 보인다.</p>
