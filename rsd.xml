@@ -3,12 +3,12 @@
 <service>
 <engineName>Movable Type 6.3</engineName>
 <engineLink>http://www.sixapart.com/movabletype/</engineLink>
-<homePageLink>http://weblog.youre.space/</homePageLink>
+<homePageLink>http://blog.youre.space/</homePageLink>
 <apis>
-<api name="MetaWeblog" preferred="true" apiLink="http://weblog.youre.space/63/mt-xmlrpc.cgi" blogID="3" />
-<api name="MovableType" preferred="false" apiLink="http://weblog.youre.space/63/mt-xmlrpc.cgi" blogID="3" />
-<api name="Blogger" preferred="false" apiLink="http://weblog.youre.space/63/mt-xmlrpc.cgi" blogID="3" />
-<api name="Atom" preferred="false" apiLink="http://weblog.youre.space/63/mt-atom.cgi/weblog" blogID="3" />
+<api name="MetaWeblog" preferred="true" apiLink="http://blog.youre.space/63/mt-xmlrpc.cgi" blogID="3" />
+<api name="MovableType" preferred="false" apiLink="http://blog.youre.space/63/mt-xmlrpc.cgi" blogID="3" />
+<api name="Blogger" preferred="false" apiLink="http://blog.youre.space/63/mt-xmlrpc.cgi" blogID="3" />
+<api name="Atom" preferred="false" apiLink="http://blog.youre.space/63/mt-atom.cgi/weblog" blogID="3" />
 </apis>
 </service>
 </rsd>

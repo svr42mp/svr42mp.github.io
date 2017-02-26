@@ -4,9 +4,30 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:blog.youre.space,2017-01-30:/vergence//10</id>
-    <updated>2017-02-26T09:07:03Z</updated>
+    <updated>2017-02-26T11:02:43Z</updated>
     <subtitle>Strange World</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3</generator>
+
+<entry>
+    <title>stat은 제가 원하던게</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/02/stat-1.html" />
+    <id>tag:blog.youre.space,2017:/vergence//10.526</id>
+
+    <published>2017-02-26T11:02:17Z</published>
+    <updated>2017-02-26T11:02:43Z</updated>
+
+    <summary>아니군요....</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>아니군요.</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>stat 명령어를 처음 써봅니다</title>
@@ -460,38 +481,6 @@ Checking for applications ... found 1
 Your client tools are now configured.
 $
 </code></pre>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>노트북 배터리 리필</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2016/09/post-68.html" />
-    <id>tag:blog.youre.space,2016:/vergence//10.454</id>
-
-    <published>2016-09-17T11:43:27Z</published>
-    <updated>2017-02-07T14:11:51Z</updated>
-
-    <summary>배터리 리필했습니다. 배터리가 빵빵하니 천군만마처럼 든든하군요. Let&apos;s note CF-J9은 명세 상으론 6.5시간 간답니다. 리필한 배터리는 설계의 86%랍니다. 5.5시간이 되겠군요. 명세는 명세일뿐이니 1시간 정도 덜 간다고 보면 실제로는 4.5시간 정도 버틸 것 같습니다. 캘리브리에이션 하고 있는데, 끝나면 확인해봐야겠네요. 그나저나 정품 배터리는...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-        <category term="cal" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>배터리 리필했습니다. 배터리가 빵빵하니 천군만마처럼 든든하군요.</p>
-
-<p>Let's note CF-J9은 명세 상으론 6.5시간 간답니다. 리필한 배터리는 설계의 86%랍니다. 5.5시간이 되겠군요. 명세는 명세일뿐이니 1시간 정도 덜 간다고 보면 실제로는 4.5시간 정도 버틸 것 같습니다.</p>
-
-<p>캘리브리에이션 하고 있는데, 끝나면 확인해봐야겠네요.</p>
-
-<p>그나저나 정품 배터리는 얼마나 좋은 배터리를 썼길래 그 조그만한 걸로 6.5시간을 만들어냈을까 궁금합니다. 무려 2010년 모델인데요.</p>
-
-<p><a href="http://weblog.youre.space/vergence/uploads/IMG_20160917_204038.jpg"><img alt="IMG_20160917_204038.jpg" src="http://weblog.youre.space/vergence/assets_c/2017/02/IMG_20160917_204038-thumb-320xauto-126.jpg" width="320" height="240" class="mt-image-none" style="" /></a></p>
 ]]>
         
     </content>
