@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Movable Type 6.3">
-<meta name="description" content="눈을 감고, 떠오르는 것들을 애써 막지 않으니 그 수가 많습니다. 복잡하게 살고 있고 세상이 복잡하기도 하고요. 현직 대통령의 문제, 뇌물, 국민연금과 삼성전자, 평창 올림픽, 체육계 비리, 부산의 그 건물, 인사 청탁, 위안부 거짓 합의, 특정 기업 특혜... 그리고 세월호. 비리도...">
+<meta name="description" content="블로그는 MovableType으로 운영하고 있습니다. 블로그에 업로드한 파일들은 웹 서버의 특정 디렉토리에 저장됩니다. 제 서버의 공간을 좀 아끼고자 합니다.MovableType에 업로드한 파일을 Parse Server에 저장해두고, 블로그에는 그 링크를 삽입하도록 만들려고 합니다. MovableType을 고쳐야할 텐데, 시간이 걸리더라도 해보려고 합니다. 취미생활이니까요. Parse Server는 Buddy가...">
 <style>
   @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
   :lang(ko) { font-family: 'Noto Sans KR', sans-serif; }
@@ -14,16 +14,16 @@
 <link rel="stylesheet" href="http://blog.youre.space/vergence/css/custom_for_mt.css">
 <link rel="start" href="http://blog.youre.space/vergence/" title="Home">
 <link rel="alternate" href="http://blog.youre.space/vergence/atom.xml" type="application/atom+xml" title="Recent Entries">
-<link rel="canonical" href="http://blog.youre.space/vergence/2017/02/ii-iei-ee-ii-ie-e.html">
+<link rel="canonical" href="http://blog.youre.space/vergence/2017/02/parse-server.html">
 <!--
 <rdf:RDF xmlns="http://web.resource.org/cc/"
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<Work rdf:about="http://blog.youre.space/vergence/2017/02/ii-iei-ee-ii-ie-e.html">
-<dc:title>요즘 우리의 머리 속에 있는 것</dc:title>
-<dc:description>눈을 감고, 떠오르는 것들을 애써 막지 않으니 그 수가 많습니다. 복잡하게 살고 있고 세상이 복잡하기도 하고요. 현직 대통령의 문제, 뇌물, 국민연금과 삼성전자, 평창 올림픽, 체육계 비리, 부산의 그 건물, 인사 청탁, 위안부 거짓 합의, 특정 기업 특혜... 그리고 세월호. 비리도...</dc:description>
+<Work rdf:about="http://blog.youre.space/vergence/2017/02/parse-server.html">
+<dc:title>Parse Server 를 파일 저장소로 이용</dc:title>
+<dc:description>블로그는 MovableType으로 운영하고 있습니다. 블로그에 업로드한 파일들은 웹 서버의 특정 디렉토리에 저장됩니다. 제 서버의 공간을 좀 아끼고자 합니다.MovableType에 업로드한 파일을 Parse Server에 저장해두고, 블로그에는 그 링크를 삽입하도록 만들려고 합니다. MovableType을 고쳐야할 텐데, 시간이 걸리더라도 해보려고 합니다. 취미생활이니까요. Parse Server는 Buddy가...</dc:description>
 <dc:creator>Sangyong Gwak</dc:creator>
-<dc:date>2017-02-03T20:16:48+09:00</dc:date>
+<dc:date>2017-02-26T16:23:20+09:00</dc:date>
 <license rdf:resource="http://creativecommons.org/licenses/by-nc-nd/4.0/" />
 </Work>
 <License rdf:about="http://creativecommons.org/licenses/by-nc-nd/4.0/">
@@ -40,21 +40,20 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-<link rel="prev" href="http://blog.youre.space/vergence/2017/02/2017-01-05.html" title="2017-01-05">
-<link rel="next" href="http://blog.youre.space/vergence/2017/02/firebase-hosting-netlify.html" title="Firebase hosting을 거쳐 Netlify로 이동">
+<link rel="prev" href="http://blog.youre.space/vergence/2017/02/iie-eie.html" title="정의를 구하라">
 <!-- Open Graph Protocol -->
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en-us">
-<meta property="og:title" content="요즘 우리의 머리 속에 있는 것">
-<meta property="og:url" content="http://blog.youre.space/vergence/2017/02/ii-iei-ee-ii-ie-e.html">
-<meta property="og:description" content="눈을 감고, 떠오르는 것들을 애써 막지 않으니 그 수가 많습니다. 복잡하게 살고 있고 세상이 복잡하기도 하고요. 현직 대통령의 문제, 뇌물, 국민연금과 삼성전자, 평창 올림픽, 체육계 비리, 부산의 그 건물, 인사 청탁, 위안부 거짓 합의, 특정 기업 특혜... 그리고 세월호. 비리도...">
+<meta property="og:title" content="Parse Server 를 파일 저장소로 이용">
+<meta property="og:url" content="http://blog.youre.space/vergence/2017/02/parse-server.html">
+<meta property="og:description" content="블로그는 MovableType으로 운영하고 있습니다. 블로그에 업로드한 파일들은 웹 서버의 특정 디렉토리에 저장됩니다. 제 서버의 공간을 좀 아끼고자 합니다.MovableType에 업로드한 파일을 Parse Server에 저장해두고, 블로그에는 그 링크를 삽입하도록 만들려고 합니다. MovableType을 고쳐야할 텐데, 시간이 걸리더라도 해보려고 합니다. 취미생활이니까요. Parse Server는 Buddy가...">
 <meta property="og:site_name" content="vergence의 이상한 세상">
 <meta property="og:image" content="http://blog.youre.space/vergence/blogimg/og_image.png">
 <!-- Metadata -->
-<meta itemprop="description" content="눈을 감고, 떠오르는 것들을 애써 막지 않으니 그 수가 많습니다. 복잡하게 살고 있고 세상이 복잡하기도 하고요. 현직 대통령의 문제, 뇌물, 국민연금과 삼성전자, 평창 올림픽, 체육계 비리, 부산의 그 건물, 인사 청탁, 위안부 거짓 합의, 특정 기업 특혜... 그리고 세월호. 비리도...">
-<link itemprop="url" href="http://blog.youre.space/vergence/2017/02/ii-iei-ee-ii-ie-e.html">
+<meta itemprop="description" content="블로그는 MovableType으로 운영하고 있습니다. 블로그에 업로드한 파일들은 웹 서버의 특정 디렉토리에 저장됩니다. 제 서버의 공간을 좀 아끼고자 합니다.MovableType에 업로드한 파일을 Parse Server에 저장해두고, 블로그에는 그 링크를 삽입하도록 만들려고 합니다. MovableType을 고쳐야할 텐데, 시간이 걸리더라도 해보려고 합니다. 취미생활이니까요. Parse Server는 Buddy가...">
+<link itemprop="url" href="http://blog.youre.space/vergence/2017/02/parse-server.html">
 <link itemprop="image" href="http://blog.youre.space/vergence/blogimg/og_image.png">
-<title>요즘 우리의 머리 속에 있는 것 - vergence의 이상한 세상</title>
+<title>Parse Server 를 파일 저장소로 이용 - vergence의 이상한 세상</title>
 </head>
 <body id="sybootstrap">
 <div><!-- div class="blog-masthead" -->
@@ -96,30 +95,29 @@
 <main class="col-sm-8 blog-main">
 <ul class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
 <li><a href="http://blog.youre.space/">Home</a></li>
-<li>요즘 우리의 머리 속에 있는 것</li>
+<li>Parse Server 를 파일 저장소로 이용</li>
 </ul>
-<article id="entry-484" class="blog-post entry entry-asset asset hentry h-entry">
+<article id="entry-524" class="blog-post entry entry-asset asset hentry h-entry">
 <div class="asset-header">
-<h2 itemprop="headline" class="blog-post-title entry-title p-name">요즘 우리의 머리 속에 있는 것</h2>
+<h2 itemprop="headline" class="blog-post-title entry-title p-name">Parse Server 를 파일 저장소로 이용</h2>
 <footer class="asset-meta blog-post-meta">
 <ul class="asset-meta-list">
-<li class="asset-meta-list-item"><time datetime="2017-02-03T20:16:48+09:00" class="updated published dt-published" itemprop="datePublished">February  3, 2017</time></li>
+<li class="asset-meta-list-item"><time datetime="2017-02-26T16:23:20+09:00" class="updated published dt-published" itemprop="datePublished">February 26, 2017</time></li>
 <li class="asset-meta-list-item">by <span class="author entry-author vcard p-author h-card"><span class="fn">Sangyong Gwak</span></span></li>
 </ul>
 </footer>
 </div>
 <div class="asset-body e-content" itemprop="articleBody">
-<p>눈을 감고, 떠오르는 것들을 애써 막지 않으니 그 수가 많습니다. 복잡하게 살고 있고 세상이 복잡하기도 하고요.<br>
-현직 대통령의 문제, 뇌물, 국민연금과 삼성전자, 평창 올림픽, 체육계 비리, 부산의 그 건물, 인사 청탁, 위안부 거짓 합의, 특정 기업 특혜... 그리고 세월호.<br>
-비리도 나쁘지만, 아무리 나쁜 마음이라도 사람을 죽이는 것 큰 잘못인데.</p>
-<p>눈 감고 사색하고 싶네요.</p>
-<p>Twitter나 Facebook을 micro blog라고도 합니다. 그 말은 짧은 글이라는 의미를 갖고 있을 겁니다. Messenger도 짧은 글을 쓰게되고 게다가 상대가 있어 한참 고민하고 답하기도 어렵고요. 이런 서비스에 맞추어 내 생각도 단편적이 되는 건 아닐까 조금 걱정 됩니다.<br>
-저는 한 주제에 대해 스스로 대답하며 천천히 계속 생각하고 긴 글을 쓰고 싶습니다. Micro blog, messenger 모두 좋아하지만 거리를 두고 싶기도 합니다. 양가적인 감정이네요.</p>
+<p>블로그는 MovableType으로 운영하고 있습니다. 블로그에 업로드한 파일들은 웹 서버의 특정 디렉토리에 저장됩니다. 제 서버의 공간을 좀 아끼고자 합니다.<br>MovableType에 업로드한 파일을 Parse Server에 저장해두고, 블로그에는 그 링크를 삽입하도록 만들려고 합니다. MovableType을 고쳐야할 텐데, 시간이 걸리더라도 해보려고 합니다. 취미생활이니까요.</p>
+<p>Parse Server는 Buddy가 제공하는 것을 쓸 겁니다. 파일을 업로드하면, 해당 파일에 대해 아래와 같은 URL이 생성됩니다.</p>
+<p>https://buddyparsefiles.blob.core.windows.net/global/23d53f7cbd7022ab5a5e08974fc8f940_500_25605337_1483082877.jpeg</p>
+<p>이 URL로 그림을 표시할 겁니다. 아래와 같이.</p>
+<p><img src="https://buddyparsefiles.blob.core.windows.net/global/23d53f7cbd7022ab5a5e08974fc8f940_500_25605337_1483082877.jpeg"></p>
+<p>Parse Server에 파일 업로드하고 URL을 받는 방법은 확인했습니다. 다음으론, MovableType이 그림 파일의 인덱스를 만들고, Parse Server에 파일을 업로드하고, 서버에서 파일을 지우도록 만들어야겠네요.</p>
 </div>
 <aside>
 <ul class="pager">
-<li class="previous"><a href="http://blog.youre.space/vergence/2017/02/2017-01-05.html" title="2017-01-05">Previous Entry</a></li>
-<li class="next"><a href="http://blog.youre.space/vergence/2017/02/firebase-hosting-netlify.html" title="Firebase hosting을 거쳐 Netlify로 이동">Next Entry</a></li>
+<li class="previous"><a href="http://blog.youre.space/vergence/2017/02/iie-eie.html" title="정의를 구하라">Previous Entry</a></li>
 </ul>
 </aside>
 <!--

@@ -4,9 +4,35 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:blog.youre.space,2017-01-30:/vergence//10</id>
-    <updated>2017-02-21T11:30:02Z</updated>
+    <updated>2017-02-26T07:30:15Z</updated>
     <subtitle>Strange World</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3</generator>
+
+<entry>
+    <title>Parse Server 를 파일 저장소로 이용</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/02/parse-server.html" />
+    <id>tag:blog.youre.space,2017:/vergence//10.524</id>
+
+    <published>2017-02-26T07:23:20Z</published>
+    <updated>2017-02-26T07:30:15Z</updated>
+
+    <summary>블로그는 MovableType으로 운영하고 있습니다. 블로그에 업로드한 파일들은 웹 서버의 특정 디렉토리에 저장됩니다. 제 서버의 공간을 좀 아끼고자 합니다.MovableType에 업로드한 파일을 Parse Server에 저장해두고, 블로그에는 그 링크를 삽입하도록 만들려고 합니다. MovableType을 고쳐야할 텐데, 시간이 걸리더라도 해보려고 합니다. 취미생활이니까요. Parse Server는 Buddy가...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>블로그는 MovableType으로 운영하고 있습니다. 블로그에 업로드한 파일들은 웹 서버의 특정 디렉토리에 저장됩니다. 제 서버의 공간을 좀 아끼고자 합니다.<br />MovableType에 업로드한 파일을 Parse Server에 저장해두고, 블로그에는 그 링크를 삽입하도록 만들려고 합니다. MovableType을 고쳐야할 텐데, 시간이 걸리더라도 해보려고 합니다. 취미생활이니까요.</p>
+<p>Parse Server는 Buddy가 제공하는 것을 쓸 겁니다. 파일을 업로드하면, 해당 파일에 대해 아래와 같은 URL이 생성됩니다.</p>
+<p>https://buddyparsefiles.blob.core.windows.net/global/23d53f7cbd7022ab5a5e08974fc8f940_500_25605337_1483082877.jpeg</p>
+<p>이 URL로 그림을 표시할 겁니다. 아래와 같이.</p>
+<p><img src="https://buddyparsefiles.blob.core.windows.net/global/23d53f7cbd7022ab5a5e08974fc8f940_500_25605337_1483082877.jpeg" /></p>
+<p>Parse Server에 파일 업로드하고 URL을 받는 방법은 확인했습니다. 다음으론, MovableType이 그림 파일의 인덱스를 만들고, Parse Server에 파일을 업로드하고, 서버에서 파일을 지우도록 만들어야겠네요.</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>정의를 구하라</title>
@@ -485,30 +511,6 @@ $
 
 <p>꽤 장시간 연속으로 Lemmi와 놀고 있는데, 무선 인터넷 디바이스가 사라지지 않고 잘 동작하네요. 일단 이렇게 살아야겠습니다.
 조만간 이 녀석 내부를 말끔히 청소하면 좋겠는데, 방법이 있을런지...</p>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>내가 갖고 싶은 키보드</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2016/07/post-67.html" />
-    <id>tag:blog.youre.space,2016:/vergence//10.452</id>
-
-    <published>2016-07-27T21:10:14Z</published>
-    <updated>2016-09-16T14:36:04Z</updated>
-
-    <summary>https://en.m.wikipedia.org/wiki/LK201 이 키보드의 caps lock 키 옆에 ctrl 키가 보인다....</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>https://en.m.wikipedia.org/wiki/LK201</p>
-
-<p>이 키보드의 caps lock 키 옆에 ctrl 키가 보인다.</p>
 ]]>
         
     </content>
