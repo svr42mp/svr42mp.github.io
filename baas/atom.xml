@@ -4,9 +4,38 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/baas/atom.xml" />
     <id>tag:blog.youre.space,2017-02-19:/baas//11</id>
-    <updated>2017-01-31T10:49:27Z</updated>
+    <updated>2017-03-03T14:43:56Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3</generator>
+
+<entry>
+    <title>오래된 parse.com JavaScript 예제 </title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2017/02/parse-dot-com-js-sdk-example.html" />
+    <id>tag:blog.youre.space,2017:/baas//11.529</id>
+
+    <published>2017-02-20T22:55:07Z</published>
+    <updated>2017-03-03T14:43:56Z</updated>
+
+    <summary>왠지 있을 것 같았습니다. Parse Server와 JavaScript를 이용해 블로그를 만들어보고 싶은데, 실력은 부족하여 고심했습니다. 오랜만에 취미생활을 하려다가, 왠지 느낌이... 왠지 예제가 있을 것 같았습니다. 역시 있네요. 하지만 좀 오래된 버전입니다. Parse Server를 지원하는 JavaScript SDK를 적용하면 올바르게 동작하지 않습니다. https://code.tutsplus.com/series/building-your-blog-with-parsejs--cms-651...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/baas/">
+        <![CDATA[<p>왠지 있을 것 같았습니다. Parse Server와 JavaScript를 이용해 블로그를 만들어보고 싶은데, 실력은 부족하여 고심했습니다.
+오랜만에 취미생활을 하려다가, 왠지 느낌이...</p>
+
+<p>왠지 예제가 있을 것 같았습니다. 역시 있네요.
+하지만 좀 오래된 버전입니다. Parse Server를 지원하는 JavaScript SDK를 적용하면 올바르게 동작하지 않습니다.
+<a href="https://code.tutsplus.com/series/building-your-blog-with-parsejs--cms-651">https://code.tutsplus.com/series/building-your-blog-with-parsejs--cms-651</a></p>
+
+<p>이것을 최신 버전의 Parse Server JavaScript SDK와 잘 동작하도록 고쳐보는 것에서 시작해보려고 합니다.</p>
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Parse에게 인사</title>
@@ -453,30 +482,6 @@ BaaS로는 baas.io 잘 써왔는데, 지금은 아무 생각 없이 Parse 잘 �
 <p><a href="https://www.facebook.com/andrew.gwak/posts/254078088104093?stream_ref=10">https://www.facebook.com/andrew.gwak/posts/254078088104093?stream_ref=10</a></p>
 </div>
 </div>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>baas.io 오픈베타 1년 1개월째</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2014/02/baasio-1-1.html" />
-    <id>tag:weblog.youre.space,2014:/baas//11.424</id>
-
-    <published>2014-02-19T23:50:00Z</published>
-    <updated>2016-06-27T14:23:25Z</updated>
-
-    <summary>http://blog.baas.io/?p=617 2013년 1월 29일에 baas.io 오픈베타 서비스를 시작했습니다. 어느새 오픈베타 1년 1개월째입니다. 오래오래 많은 분을 만나고 싶습니다. https://twitter.com/unixware213/status/436147589977624576 https://www.facebook.com/backendservice/posts/597026043706836...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/baas/">
-        <![CDATA[<p><a href="http://blog.baas.io/?p=617">http://blog.baas.io/?p=617</a></p>
-<p>2013년 1월 29일에 baas.io 오픈베타 서비스를 시작했습니다. 어느새 오픈베타 1년 1개월째입니다. 오래오래 많은 분을 만나고 싶습니다.</p>
-<p><a href="https://twitter.com/unixware213/status/436147589977624576">https://twitter.com/unixware213/status/436147589977624576</a></p>
-<p><a href="https://www.facebook.com/backendservice/posts/597026043706836">https://www.facebook.com/backendservice/posts/597026043706836</a></p>]]>
         
     </content>
 </entry>

@@ -75,6 +75,23 @@
 </header>
 <div class="row">
 <main class="col-sm-8 blog-main">
+<article id="entry-529" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
+<h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="http://weblog.youre.space/baas/2017/02/parse-dot-com-js-sdk-example.html" rel="bookmark">오래된 parse.com JavaScript 예제 </a></h2>
+<footer class="asset-meta blog-post-meta">
+<ul class="asset-meta-list">
+<li class="asset-meta-list-item"><time datetime="2017-02-20T22:55:07+00:00" class="updated published dt-published" itemprop="datePublished">February 20, 2017</time></li>
+<li class="asset-meta-list-item">by <span class="author entry-author vcard p-author h-card"><span class="fn">Sangyong Gwak</span></span></li>
+</ul>
+</footer>
+<div class="asset-body e-content" itemprop="articleBody">
+<p>왠지 있을 것 같았습니다. Parse Server와 JavaScript를 이용해 블로그를 만들어보고 싶은데, 실력은 부족하여 고심했습니다.
+오랜만에 취미생활을 하려다가, 왠지 느낌이...</p>
+<p>왠지 예제가 있을 것 같았습니다. 역시 있네요.
+하지만 좀 오래된 버전입니다. Parse Server를 지원하는 JavaScript SDK를 적용하면 올바르게 동작하지 않습니다.
+<a href="https://code.tutsplus.com/series/building-your-blog-with-parsejs--cms-651">https://code.tutsplus.com/series/building-your-blog-with-parsejs--cms-651</a></p>
+<p>이것을 최신 버전의 Parse Server JavaScript SDK와 잘 동작하도록 고쳐보는 것에서 시작해보려고 합니다.</p>
+</div>
+</article>
 <article id="entry-474" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="http://weblog.youre.space/baas/2017/01/parse.html" rel="bookmark">Parse에게 인사</a></h2>
 <footer class="asset-meta blog-post-meta">
@@ -253,29 +270,8 @@ BaaS로는 baas.io 잘 써왔는데, 지금은 아무 생각 없이 Parse 잘 �
 <p><a href="https://drive.google.com/open?id=0Bxc4-JysR_20X19HaTBPVkFwQWM">usergrid-android-0.0.8.jar</a></p>
 </div>
 </article>
-<article id="entry-429" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
-<h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="http://weblog.youre.space/baas/2015/08/usergrid-assets.html" rel="bookmark">usergrid의 /assets 콜렉션</a></h2>
-<footer class="asset-meta blog-post-meta">
-<ul class="asset-meta-list">
-<li class="asset-meta-list-item"><time datetime="2015-08-17T22:53:21+00:00" class="updated published dt-published" itemprop="datePublished">August 17, 2015</time></li>
-<li class="asset-meta-list-item">by <span class="author entry-author vcard p-author h-card"><span class="fn">Sangyong Gwak</span></span></li>
-</ul>
-</footer>
-<div class="asset-body e-content" itemprop="articleBody">
-<p>baas.io와는 다르게 usergrid(1.0.2)에는 /assets 콜렉션이 있습니다. 바이너리 데이터(텍스트 파일이 아닌 그림 파일 같은 것)를 업로드하여 쓰라는군요. curl을 이용하면 아래와 같이 업로드 합니다. 아래 4개의 프로퍼티는 assets 엘리먼트의 필수사항입니다.</p>
-<ul>
-<li>-F name='bash.bin'은 이 엔터티의 name 프로퍼티가 됩니다. 다른 엔터티에서도 그렇지만 name 프로퍼티는 UUID의 위치에 대신 사용될 수도 있습니다.</li>
-<li>-F file=@'/bin/bash'는 업로드할 파일의 로컬 경로입니다.</li>
-<li>-F owner='...'는 백엔드 앱에 저장된 user 엔터티의 UUID를 넣습니다.</li>
-<li><p>-F path='12345'는 assets 콜렉션에만 필수인 프로퍼티인데, /assets/12345/bash.bin 이런 식의 경로를 만들기 위한 것 같습니다.</p>
-<p>curl -X POST -F name='bash.bin' -F file=@/bin/bash -F owner='ac62f4f0-3f53-11e5-9bcb-e3451d9cb512' -F path='12345' 'https://api02.your.space/svr42mp/baas.io/assets/</p></li>
-</ul>
-<p>참고사항
-* http://apigee.com/docs/app-services/content/default-data-entities#application-properties</p>
-</div>
-</article>
 <ul class="pager">
-  <li class="previous"><a rel="prev" href="http://weblog.youre.space/63/mt-search.cgi?IncludeBlogs=11&amp;template_id=6737&amp;limit=10&amp;archive_type=Index&amp;page=2">Previous</a></li><div class="sidebar-module"><h4>Archives</h4><ol class="list-unstyled"><li><a href="http://weblog.youre.space/baas/2017/01/">January 2017 (1)</a></li><li><a href="http://weblog.youre.space/baas/2016/06/">June 2016 (2)</a></li><li><a href="http://weblog.youre.space/baas/2016/03/">March 2016 (1)</a></li><li><a href="http://weblog.youre.space/baas/2016/02/">February 2016 (3)</a></li><li><a href="http://weblog.youre.space/baas/2015/08/">August 2015 (3)</a></li><li><a href="http://weblog.youre.space/baas/2014/11/">November 2014 (1)</a></li><li><a href="http://weblog.youre.space/baas/2014/10/">October 2014 (1)</a></li><li><a href="http://weblog.youre.space/baas/2014/03/">March 2014 (1)</a></li><li><a href="http://weblog.youre.space/baas/2014/02/">February 2014 (5)</a></li><li><a href="http://weblog.youre.space/baas/2014/01/">January 2014 (1)</a></li><li><a href="http://weblog.youre.space/baas/2013/11/">November 2013 (1)</a></li><li><a href="http://weblog.youre.space/baas/2013/07/">July 2013 (1)</a></li><li><a href="http://weblog.youre.space/baas/2013/02/">February 2013 (2)</a></li></ol></div>
+  <li class="previous"><a rel="prev" href="http://weblog.youre.space/63/mt-search.cgi?IncludeBlogs=11&amp;template_id=6737&amp;limit=10&amp;archive_type=Index&amp;page=2">Previous</a></li><div class="sidebar-module"><h4>Archives</h4><ol class="list-unstyled"><li><a href="http://weblog.youre.space/baas/2017/02/">February 2017 (1)</a></li><li><a href="http://weblog.youre.space/baas/2017/01/">January 2017 (1)</a></li><li><a href="http://weblog.youre.space/baas/2016/06/">June 2016 (2)</a></li><li><a href="http://weblog.youre.space/baas/2016/03/">March 2016 (1)</a></li><li><a href="http://weblog.youre.space/baas/2016/02/">February 2016 (3)</a></li><li><a href="http://weblog.youre.space/baas/2015/08/">August 2015 (3)</a></li><li><a href="http://weblog.youre.space/baas/2014/11/">November 2014 (1)</a></li><li><a href="http://weblog.youre.space/baas/2014/10/">October 2014 (1)</a></li><li><a href="http://weblog.youre.space/baas/2014/03/">March 2014 (1)</a></li><li><a href="http://weblog.youre.space/baas/2014/02/">February 2014 (5)</a></li><li><a href="http://weblog.youre.space/baas/2014/01/">January 2014 (1)</a></li><li><a href="http://weblog.youre.space/baas/2013/11/">November 2013 (1)</a></li><li><a href="http://weblog.youre.space/baas/2013/07/">July 2013 (1)</a></li><li><a href="http://weblog.youre.space/baas/2013/02/">February 2013 (2)</a></li></ol></div>
   </ul>
 </main>
 <aside class="col-sm-3 col-sm-offset-1 blog-sidebar">
@@ -286,6 +282,7 @@ BaaS로는 baas.io 잘 써왔는데, 지금은 아무 생각 없이 Parse 잘 �
 <div class="sidebar-module">
 <h4>Recent Entries</h4>
 <ol class="list-unstyled">
+<li><a href="http://weblog.youre.space/baas/2017/02/parse-dot-com-js-sdk-example.html">오래된 parse.com JavaScript 예제 </a></li>
 <li><a href="http://weblog.youre.space/baas/2017/01/parse.html">Parse에게 인사</a></li>
 <li><a href="http://weblog.youre.space/baas/2016/06/firebase-price-free-limit.html">Firebase 요금과 무료 용량</a></li>
 <li><a href="http://weblog.youre.space/baas/2016/06/firebase.html">Firebase에서 entity 생성시각 저장하기</a></li>
@@ -295,23 +292,23 @@ BaaS로는 baas.io 잘 써왔는데, 지금은 아무 생각 없이 Parse 잘 �
 <li><a href="http://weblog.youre.space/baas/2016/02/parse-server-1.html">Parse Server 이용 1</a></li>
 <li><a href="http://weblog.youre.space/baas/2015/08/paas-baas.html">PaaS 쓸까, BaaS 쓸까? (서버 개발자인가, 클라이언트 개발자인가?)</a></li>
 <li><a href="http://weblog.youre.space/baas/2015/08/usergrid-android-008jar.html">usergrid-android-0.0.8.jar</a></li>
-<li><a href="http://weblog.youre.space/baas/2015/08/usergrid-assets.html">usergrid의 /assets 콜렉션</a></li>
 </ol>
 </div>
 <div class="sidebar-module">
 <h4>Photos</h4>
 <div class="photo">
 <ol>
+<li><a href="http://weblog.youre.space/vergence/2017/03/nintendo-switch.html"><img src="http://weblog.youre.space/vergence/assets_c/2017/03/bundle1-thumb-70x70-128.jpg" alt="닌텐도 스위치 사고 싶습니다" title="「닌텐도 스위치 사고 싶습니다」on「vergence의 이상한 세상」" width="70" height="70" class="thumbnail"></a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/02/firebase-hosting-netlify.html"><img src="http://weblog.youre.space/vergence/assets_c/2017/02/netlify-meta-image-thumb-70x70-122.jpg" alt="Firebase hosting을 거쳐 Netlify로 이동" title="「Firebase hosting을 거쳐 Netlify로 이동」on「vergence의 이상한 세상」" width="70" height="70" class="thumbnail"></a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/02/ieie-iii.html"><img src="http://weblog.youre.space/vergence/assets_c/2017/02/IMG_20170202_232736-thumb-70x70-120.jpg" alt="생각하고 싶어서" title="「생각하고 싶어서」on「vergence의 이상한 세상」" width="70" height="70" class="thumbnail"></a></li>
 <li><a href="http://weblog.youre.space/imyaman/2017/01/post-10.html"><img src="http://weblog.youre.space/imyaman/assets_c/2017/01/Screenshot_2017-01-25-21-50-02-thumb-70x70-118.png" alt="오늘의 커피 사진" title="「오늘의 커피 사진」on「곽상용의 블로그」" width="70" height="70" class="thumbnail"></a></li>
-<li><a href="http://weblog.youre.space/vergence/2016/09/post-68.html"><img src="http://weblog.youre.space/vergence/assets_c/2017/02/IMG_20160917_204038-thumb-70x70-126.jpg" alt="노트북 배터리 리필" title="「노트북 배터리 리필」on「vergence의 이상한 세상」" width="70" height="70" class="thumbnail"></a></li>
 </ol>
 </div>
 </div>
 <div class="sidebar-module">
 <h4>Archives</h4>
 <ol class="list-unstyled">
+<li><a href="http://weblog.youre.space/baas/2017/02/">February 2017 (1)</a></li>
 <li><a href="http://weblog.youre.space/baas/2017/01/">January 2017 (1)</a></li>
 <li><a href="http://weblog.youre.space/baas/2016/06/">June 2016 (2)</a></li>
 <li><a href="http://weblog.youre.space/baas/2016/03/">March 2016 (1)</a></li>

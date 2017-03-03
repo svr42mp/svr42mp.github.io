@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Movable Type 6.3">
-<meta name="description" content="아침에 이렇게 인사했습니다. 잘 가라, Parse. 오래 가라, Parse Sever....">
+<meta name="description" content="왠지 있을 것 같았습니다. Parse Server와 JavaScript를 이용해 블로그를 만들어보고 싶은데, 실력은 부족하여 고심했습니다. 오랜만에 취미생활을 하려다가, 왠지 느낌이... 왠지 예제가 있을 것 같았습니다. 역시 있네요. 하지만 좀 오래된 버전입니다. Parse Server를 지원하는 JavaScript SDK를 적용하면 올바르게 동작하지 않습니다. https://code.tutsplus.com/series/building-your-blog-with-parsejs--cms-651...">
 <style>
   @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
   :lang(ko) { font-family: 'Noto Sans KR', sans-serif; }
@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="http://weblog.youre.space/baas/css/custom_for_mt.css">
 <link rel="start" href="http://weblog.youre.space/baas/" title="Home">
 <link rel="alternate" href="http://weblog.youre.space/baas/atom.xml" type="application/atom+xml" title="Recent Entries">
-<link rel="canonical" href="http://weblog.youre.space/baas/2017/01/parse.html">
+<link rel="canonical" href="http://weblog.youre.space/baas/2017/02/parse-dot-com-js-sdk-example.html">
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-81713353-1']);
@@ -25,21 +25,20 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-<link rel="prev" href="http://weblog.youre.space/baas/2016/06/firebase-price-free-limit.html" title="Firebase 요금과 무료 용량">
-<link rel="next" href="http://weblog.youre.space/baas/2017/02/parse-dot-com-js-sdk-example.html" title="오래된 parse.com JavaScript 예제 ">
+<link rel="prev" href="http://weblog.youre.space/baas/2017/01/parse.html" title="Parse에게 인사">
 <!-- Open Graph Protocol -->
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en-us">
-<meta property="og:title" content="Parse에게 인사">
-<meta property="og:url" content="http://weblog.youre.space/baas/2017/01/parse.html">
-<meta property="og:description" content="아침에 이렇게 인사했습니다. 잘 가라, Parse. 오래 가라, Parse Sever....">
+<meta property="og:title" content="오래된 parse.com JavaScript 예제 ">
+<meta property="og:url" content="http://weblog.youre.space/baas/2017/02/parse-dot-com-js-sdk-example.html">
+<meta property="og:description" content="왠지 있을 것 같았습니다. Parse Server와 JavaScript를 이용해 블로그를 만들어보고 싶은데, 실력은 부족하여 고심했습니다. 오랜만에 취미생활을 하려다가, 왠지 느낌이... 왠지 예제가 있을 것 같았습니다. 역시 있네요. 하지만 좀 오래된 버전입니다. Parse Server를 지원하는 JavaScript SDK를 적용하면 올바르게 동작하지 않습니다. https://code.tutsplus.com/series/building-your-blog-with-parsejs--cms-651...">
 <meta property="og:site_name" content="BaaS와 PaaS 차이">
 <meta property="og:image" content="http://weblog.youre.space/baas/blogimg/og_image.png">
 <!-- Metadata -->
-<meta itemprop="description" content="아침에 이렇게 인사했습니다. 잘 가라, Parse. 오래 가라, Parse Sever....">
-<link itemprop="url" href="http://weblog.youre.space/baas/2017/01/parse.html">
+<meta itemprop="description" content="왠지 있을 것 같았습니다. Parse Server와 JavaScript를 이용해 블로그를 만들어보고 싶은데, 실력은 부족하여 고심했습니다. 오랜만에 취미생활을 하려다가, 왠지 느낌이... 왠지 예제가 있을 것 같았습니다. 역시 있네요. 하지만 좀 오래된 버전입니다. Parse Server를 지원하는 JavaScript SDK를 적용하면 올바르게 동작하지 않습니다. https://code.tutsplus.com/series/building-your-blog-with-parsejs--cms-651...">
+<link itemprop="url" href="http://weblog.youre.space/baas/2017/02/parse-dot-com-js-sdk-example.html">
 <link itemprop="image" href="http://weblog.youre.space/baas/blogimg/og_image.png">
-<title>Parse에게 인사 - BaaS와 PaaS 차이</title>
+<title>오래된 parse.com JavaScript 예제  - BaaS와 PaaS 차이</title>
 </head>
 <body id="sybootstrap">
 <div><!-- div class="blog-masthead" -->
@@ -81,26 +80,29 @@
 <main class="col-sm-8 blog-main">
 <ul class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
 <li><a href="http://weblog.youre.space/">Home</a></li>
-<li>Parse에게 인사</li>
+<li>오래된 parse.com JavaScript 예제 </li>
 </ul>
-<article id="entry-474" class="blog-post entry entry-asset asset hentry h-entry">
+<article id="entry-529" class="blog-post entry entry-asset asset hentry h-entry">
 <div class="asset-header">
-<h2 itemprop="headline" class="blog-post-title entry-title p-name">Parse에게 인사</h2>
+<h2 itemprop="headline" class="blog-post-title entry-title p-name">오래된 parse.com JavaScript 예제 </h2>
 <footer class="asset-meta blog-post-meta">
 <ul class="asset-meta-list">
-<li class="asset-meta-list-item"><time datetime="2017-01-31T10:48:09+00:00" class="updated published dt-published" itemprop="datePublished">January 31, 2017</time></li>
+<li class="asset-meta-list-item"><time datetime="2017-02-20T22:55:07+00:00" class="updated published dt-published" itemprop="datePublished">February 20, 2017</time></li>
 <li class="asset-meta-list-item">by <span class="author entry-author vcard p-author h-card"><span class="fn">Sangyong Gwak</span></span></li>
 </ul>
 </footer>
 </div>
 <div class="asset-body e-content" itemprop="articleBody">
-<p>아침에 이렇게 인사했습니다.
-잘 가라, Parse. 오래 가라, Parse Sever.</p>
+<p>왠지 있을 것 같았습니다. Parse Server와 JavaScript를 이용해 블로그를 만들어보고 싶은데, 실력은 부족하여 고심했습니다.
+오랜만에 취미생활을 하려다가, 왠지 느낌이...</p>
+<p>왠지 예제가 있을 것 같았습니다. 역시 있네요.
+하지만 좀 오래된 버전입니다. Parse Server를 지원하는 JavaScript SDK를 적용하면 올바르게 동작하지 않습니다.
+<a href="https://code.tutsplus.com/series/building-your-blog-with-parsejs--cms-651">https://code.tutsplus.com/series/building-your-blog-with-parsejs--cms-651</a></p>
+<p>이것을 최신 버전의 Parse Server JavaScript SDK와 잘 동작하도록 고쳐보는 것에서 시작해보려고 합니다.</p>
 </div>
 <aside>
 <ul class="pager">
-<li class="previous"><a href="http://weblog.youre.space/baas/2016/06/firebase-price-free-limit.html" title="Firebase 요금과 무료 용량">Previous Entry</a></li>
-<li class="next"><a href="http://weblog.youre.space/baas/2017/02/parse-dot-com-js-sdk-example.html" title="오래된 parse.com JavaScript 예제 ">Next Entry</a></li>
+<li class="previous"><a href="http://weblog.youre.space/baas/2017/01/parse.html" title="Parse에게 인사">Previous Entry</a></li>
 </ul>
 </aside>
 <!--
