@@ -55,6 +55,35 @@
                         <div id="alpha-inner">
 
                             
+                            <div id="entry-532" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <h2 class="asset-name entry-title"><a href="http://weblog.youre.space/vergence/2017/03/vuejs-parsejs.html" rel="bookmark">Vue.js Parse.js 함께 쓰고 싶은 마음</a> - <a href="http://weblog.youre.space/vergence/">vergence의 이상한 세상</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                By <span class="vcard author">Sangyong Gwak</span> on <abbr class="published" title="2017-03-09T00:01:34+09:00">March  9, 2017 12:01 AM</abbr>
+    
+            </span>
+
+            
+            
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>하아... 컴맹이라 별짓하고 있습니다.<br /><br />Parse Server로부터 데이터를 여러개 가져옵니다.<br /><br />    var Post = Parse.Object.extend("Post");<br />    //var blogs = new Post();<br />    var query = new Parse.Query(Post);<br />    query.limit(10);<br />    query.descending("createdAt");<br />    query.find({<br />      success: querySuccess,<br />      error: queryFailure<br />    });<br /><br />function querySuccess(posts){<br />  $.each(posts, function(index, value){<br />    console.log(value.createdAt);<br />    console.log(value.get("title"));<br />  });<br />}<br /><br />이렇게 접근이 가능한데, Parse Object는 createdAt은 바로 접근이 되는데, 다른 컬럼은 get()을 써야합니다.<br />그래서, Vue.js에 쓸 때, <br /><br />  var example2 = new Vue({<br />    el: '#example-2',<br />    data: {<br />      items: posts<br />    }<br />  })<br />라고 하고,<br /><br />          &lt;template v-for="item in items"&gt;<br />          &lt;div class="blog-post"&gt;<br />            &lt;h2 class="blog-post-title"&gt;{{ item.title }}&lt;/h2&gt;<br />            &lt;p class="blog-post-meta"&gt;{{ item.createdAt }} by &lt;a href="#"&gt;imyaman&lt;/a&gt;&lt;/p&gt;<br />            &lt;span&gt;{{ item.content }} {{ item.objectId }}&lt;/span&gt;<br />          &lt;/div&gt;&lt;!-- /.blog-post --&gt;<br />          &lt;/template&gt;<br /><br />이렇게 하면, item.createdAt 만 정상적으로 표시되고, item.title은 정상적으로 표시되지 않습니다.<br />Vue.js에 쓰기 위해 object array를 다시 만들어보았습니다.<br /><br />  $.each(posts, function(index, value){<br />    str = str + '{"title" : "' + value.get('title') + '"}';<br />    if(index+1 != posts.length){ str=str+','; }<br />  }); <br />  str = '[' + str + ']';<br /><br />  postObjects=JSON.parse(str);<br /><br />  var example2 = new Vue({<br />    el: '#example-2',<br />    data: {<br />      items: postObjects<br />    }<br />  })<br /><br />이렇게 하면 템플릿에서 item.title을 쓸 수 있긴한데, 과연 이게 바른 방법인가... 고민되네요.<br />http://blog.sys5.co/renew/index.html  파일에서 실험해보고 있습니다.</p>
+        </div>
+
+
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+                            
                             <div id="entry-531" class="entry-asset asset hentry">
     <div class="asset-header">
         <h2 class="asset-name entry-title"><a href="http://weblog.youre.space/vergence/2017/03/iiii.html" rel="bookmark">임시저장</a> - <a href="http://weblog.youre.space/vergence/">vergence의 이상한 세상</a></h2>
@@ -607,42 +636,6 @@ Firebase의 hosting으로 옮겨보았으나, HTTP는 지원하지 않고 HTTPS�
 </div>
 
 
-                            
-                            <div id="entry-484" class="entry-asset asset hentry">
-    <div class="asset-header">
-        <h2 class="asset-name entry-title"><a href="http://weblog.youre.space/vergence/2017/02/ii-iei-ee-ii-ie-e.html" rel="bookmark">요즘 우리의 머리 속에 있는 것</a> - <a href="http://weblog.youre.space/vergence/">vergence의 이상한 세상</a></h2>
-        <div class="asset-meta">
-            <span class="byline">
-    
-                By <span class="vcard author">Sangyong Gwak</span> on <abbr class="published" title="2017-02-03T20:16:48+09:00">February  3, 2017  8:16 PM</abbr>
-    
-            </span>
-
-            
-            
-
-        </div>
-    </div>
-    <div class="asset-content entry-content">
-
-        <div class="asset-body">
-            <p>눈을 감고, 떠오르는 것들을 애써 막지 않으니 그 수가 많습니다. 복잡하게 살고 있고 세상이 복잡하기도 하고요.<br />
-현직 대통령의 문제, 뇌물, 국민연금과 삼성전자, 평창 올림픽, 체육계 비리, 부산의 그 건물, 인사 청탁, 위안부 거짓 합의, 특정 기업 특혜... 그리고 세월호.<br />
-비리도 나쁘지만, 아무리 나쁜 마음이라도 사람을 죽이는 것 큰 잘못인데.</p>
-
-<p>눈 감고 사색하고 싶네요.</p>
-
-<p>Twitter나 Facebook을 micro blog라고도 합니다. 그 말은 짧은 글이라는 의미를 갖고 있을 겁니다. Messenger도 짧은 글을 쓰게되고 게다가 상대가 있어 한참 고민하고 답하기도 어렵고요. 이런 서비스에 맞추어 내 생각도 단편적이 되는 건 아닐까 조금 걱정 됩니다.<br />
-저는 한 주제에 대해 스스로 대답하며 천천히 계속 생각하고 긴 글을 쓰고 싶습니다. Micro blog, messenger 모두 좋아하지만 거리를 두고 싶기도 합니다. 양가적인 감정이네요.</p>
-        </div>
-
-
-
-    </div>
-    <div class="asset-footer"></div>
-</div>
-
-
 
                         </div>
                     </div>
@@ -790,6 +783,10 @@ Firebase의 hosting으로 옮겨보았으나, HTTP는 지원하지 않고 HTTPS�
     <div class="widget-content">
         <ul>
         
+            <li><a href="http://weblog.youre.space/vergence/2017/03/vuejs-parsejs.html">Vue.js Parse.js 함께 쓰고 싶은 마음</a> - <a href="http://weblog.youre.space/vergence/">vergence의 이상한 세상</a></li>
+        
+    
+        
             <li><a href="http://weblog.youre.space/vergence/2017/03/iiii.html">임시저장</a> - <a href="http://weblog.youre.space/vergence/">vergence의 이상한 세상</a></li>
         
     
@@ -823,10 +820,6 @@ Firebase의 hosting으로 옮겨보았으나, HTTP는 지원하지 않고 HTTPS�
     
         
             <li><a href="http://weblog.youre.space/vergence/2017/02/firebase-hosting-netlify.html">Firebase hosting을 거쳐 Netlify로 이동</a> - <a href="http://weblog.youre.space/vergence/">vergence의 이상한 세상</a></li>
-        
-    
-        
-            <li><a href="http://weblog.youre.space/vergence/2017/02/ii-iei-ee-ii-ie-e.html">요즘 우리의 머리 속에 있는 것</a> - <a href="http://weblog.youre.space/vergence/">vergence의 이상한 세상</a></li>
         
         </ul>
     </div>

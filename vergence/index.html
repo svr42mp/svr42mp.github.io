@@ -91,6 +91,96 @@
 </header>
 <div class="row">
 <main class="col-sm-8 blog-main">
+<article id="entry-532" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
+<h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="http://weblog.youre.space/vergence/2017/03/vuejs-parsejs.html" rel="bookmark">Vue.js Parse.js 함께 쓰고 싶은 마음</a></h2>
+<footer class="asset-meta blog-post-meta">
+<ul class="asset-meta-list">
+<li class="asset-meta-list-item"><time datetime="2017-03-09T00:01:34+09:00" class="updated published dt-published" itemprop="datePublished">March  9, 2017</time></li>
+<li class="asset-meta-list-item">by <span class="author entry-author vcard p-author h-card"><span class="fn">Sangyong Gwak</span></span></li>
+</ul>
+</footer>
+<div class="asset-body e-content" itemprop="articleBody">
+<p>하아... 컴맹이라 별짓하고 있습니다.<br><br>Parse Server로부터 데이터를 여러개 가져옵니다.<br><br>    var Post = Parse.Object.extend("Post");<br>    //var blogs = new Post();<br>    var query = new Parse.Query(Post);<br>    query.limit(10);<br>    query.descending("createdAt");<br>    query.find({<br>      success: querySuccess,<br>      error: queryFailure<br>    });<br><br>function querySuccess(posts){<br>  $.each(posts, function(index, value){<br>    console.log(value.createdAt);<br>    console.log(value.get("title"));<br>  });<br>}<br><br>이렇게 접근이 가능한데, Parse Object는 createdAt은 바로 접근이 되는데, 다른 컬럼은 get()을 써야합니다.<br>그래서, Vue.js에 쓸 때, <br><br>  var example2 = new Vue({<br>    el: '#example-2',<br>    data: {<br>      items: posts<br>    }<br>  })<br>라고 하고,<br><br>          &lt;template v-for="item in items"&gt;<br>          &lt;div class="blog-post"&gt;<br>            &lt;h2 class="blog-post-title"&gt;{{ item.title }}&lt;/h2&gt;<br>            &lt;p class="blog-post-meta"&gt;{{ item.createdAt }} by &lt;a href="#"&gt;imyaman&lt;/a&gt;&lt;/p&gt;<br>            &lt;span&gt;{{ item.content }} {{ item.objectId }}&lt;/span&gt;<br>          &lt;/div&gt;&lt;!-- /.blog-post --&gt;<br>          &lt;/template&gt;<br><br>이렇게 하면, item.createdAt 만 정상적으로 표시되고, item.title은 정상적으로 표시되지 않습니다.<br>Vue.js에 쓰기 위해 object array를 다시 만들어보았습니다.<br><br>  $.each(posts, function(index, value){<br>    str = str + '{"title" : "' + value.get('title') + '"}';<br>    if(index+1 != posts.length){ str=str+','; }<br>  }); <br>  str = '[' + str + ']';<br><br>  postObjects=JSON.parse(str);<br><br>  var example2 = new Vue({<br>    el: '#example-2',<br>    data: {<br>      items: postObjects<br>    }<br>  })<br><br>이렇게 하면 템플릿에서 item.title을 쓸 수 있긴한데, 과연 이게 바른 방법인가... 고민되네요.<br>http://blog.sys5.co/renew/index.html  파일에서 실험해보고 있습니다.</p>
+</div>
+</article>
+<article id="entry-531" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
+<h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="http://weblog.youre.space/vergence/2017/03/iiii.html" rel="bookmark">임시저장</a></h2>
+<footer class="asset-meta blog-post-meta">
+<ul class="asset-meta-list">
+<li class="asset-meta-list-item"><time datetime="2017-03-08T09:43:04+09:00" class="updated published dt-published" itemprop="datePublished">March  8, 2017</time></li>
+<li class="asset-meta-list-item">by <span class="author entry-author vcard p-author h-card"><span class="fn">Sangyong Gwak</span></span></li>
+</ul>
+</footer>
+<div class="asset-body e-content" itemprop="articleBody">
+<p>안드로이드는 어떻게...<br>
+그 글</p>
+<p>안드로이드가 이렇게 흥하게 된 데에는 여러가지 이유가 있겠지만, 앱 스토어 측면에서 이야기 해보려합니다.</p>
+<p>피처폰이 한창이던 시절이 있었습니다. 피처폰이 가고 스마트폰이 왔죠. 스마트폰과 함께 iOS와 Android도 왔습니다. 안드로이드는 단지 온게 아니라 엄청난 영향을 미치고 있습니다. 그리고 안드로이드가 이렇게 흥하게 된 것은 통신사의 역할이 큽니다.</p>
+<p>전화기(모바일 디바이스)는 통신사의 영역입니다, 전화 서비스는 물론이고요. 이 두 가지는 분리하여 생각하기 어려웠습니다. 요즘에 와서야 전화기를 전자회사에서 살 수 있다는 생각을 하고 있는거지, 전화기는 기본적으로 통신사가 파는 것이었습니다.</p>
+<p>통신사는 애초부터 앱 스토어 판의 큰 부분을 차지 하고 있었습니다.<br>
+통신사는 피처폰 이전엔 음성 통화, 문자 메시지, 그 외 부가서비스로 돈을 벌었습니다. 피처폰부터 콘텐츠와 데이터 통화로도 돈을 벌게 됩니다. 글, 화보, 벨소리, 음악, 동영상 같은게 콘텐츠죠. 매직엔, 준, 이지아이 같은 버튼을 누르면 피처폰에서 이런 콘텐츠를 이용할 수 있었습니다. 그리고 통신사 입장에서 앱도 콘텐츠로 분류하곤 합니다. 피처폰을 통해 사용자에게 제공되고 각각의 콘텐츠에 가격을 부여하고 이를 전송하는 데이터 통신에 가격을 부여하는 측면에서는 다 비슷한 녀석들입니다. 이것들이 형태는 좀 다를 수 있지만 결국은 앱 스토어입니다.<br>
+애플이나 구글처럼 누구나 상품(앱)을 팔 수 있는 오픈마켓이 아니고, 업체(CP, contents provider)로부터 상품을 사서 통신사가 파는 형태였고요.</p>
+<p>WIPI 의무 탑재 해제가 안드로이드가 흥하는데에 기여한 부분이 있다면, 손톱만큼 정도.<br>
+스마트폰 전에는 Java(Java ME)가 세계적으로 가장 유명한 플랫폼이었습니다. BREW나 그 외에도 많아지만요. 한국에서는 WIPI라는 플랫폼이 있었는데 C와 JAVA를 지원했습니다.<br>
+사실 통신사 입장에선 별 차이가 없었습니다. 음성 통화 위주에서는 어떤 전화기를 팔든 차이가 없습니다. Java ME건 심비안이건 블랙베리건 위피건 다 잘 되니까요.<br>
+위피로 이미 장사를 하고 있고 돈도 잘 벌리고 있었으니까요. 다만 사용자 중엔 위피 말고 한국외의 좋은 전화기를 쓰고 싶어하는 사람도 +++++++++0AAAAAAAAAAAAAQQQAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqw니다. 결정적으로 아이폰, 노키아폰도 살짝. 위피 의무 탑재 해제로 인해 한국외의 전화기가 들어올 수 있는(통신사가 판매할 수 있는) 상황이 되었던 거지, 통신사가 팔고 싶어하던 상황이었냐면 팔고 싶기도 하고 안 팔고 싶기도한 복잡한 상황이었습니다.</p>
+<p>====</p>
+<p><br>
+ULUG의 글을 보면서 예전 생각을 문득 해보았습니다.</p>
+<p>리눅스나 유닉스에 대한 정보를 쉽게 얻을 수 없었던 때가 있었습니다. 대략 1999, 2000년 즈음입니다.<br>
+그런 이유로 저는 동호회나 온라인 커뮤니티를 자주 찾게 되었습니다.</p>
+<p>대전에는 리눅스베이라는 학원, 그 학원의 영향으로 터보리눅스가 유행한 적이 있습니다.<br>
+나중엔 DLUG(Daejeon Linux User Group인듯 합니다)라는 이름으로 활동하는 분들을 충남대학교에서 본 적도 있고요.<br>
+서울엔 리눅스사랑넷이나 KLDP, Linux for Seminar 그런 것이 들려왔습니다. 하지만 대전에서는 큰 행사 같은 건 보이지 않았습니다.<br>
+그러고 보니 대전은 좀 조용한 도시라는 생각이 듭니다.</p>
+<p>한</p>
+<p><br>
+===</p>
+<p>2호선을 타고 가다보면 지상으로 이동하는 구간이 있습니다. 전등빛에 익숙해 있다가 갑자기 밝은 햇빛을 보면, 순간 이런 생각이 듭니다. '아, 세상이 참 아름답구나.'</p>
+<p>어릴 때 외가 옥천에 가서 혼자 동산에 올라가 햇빛을 본 적이 있습니다. 햇빛이 참 좋았던 기억이 납니다. 우리는 그런 것들을 아름답게 느끼도록 만들어져 있는지도 모릅니다.</p>
+<p>누가 그렇게 만들었는지 궁금합니다.</p>안드로이드는 어떻게...<br>
+그 글<br>
+<br>
+안드로이드가 이렇게 흥하게 된 데에는 여러가지 이유가 있겠지만, 앱 스토어 측면에서 이야기 해보려합니다.<br>
+<br>
+피처폰이 한창이던 시절이 있었습니다. 피처폰이 가고 스마트폰이 왔죠. 스마트폰과 함께 iOS와 Android도 왔습니다. 안드로이드는 단지 온게 아니라 엄청난 영향을 미치고 있습니다. 그리고 안드로이드가 이렇게 흥하게 된 것은 통신사의 역할이 큽니다.<br>
+<br>
+전화기(모바일 디바이스)는 통신사의 영역입니다, 전화 서비스는 물론이고요. 이 두 가지는 분리하여 생각하기 어려웠습니다. 요즘에 와서야 전화기를 전자회사에서 살 수 있다는 생각을 하고 있는거지, 전화기는 기본적으로 통신사가 파는 것이었습니다.<br>
+<br>
+통신사는 애초부터 앱 스토어 판의 큰 부분을 차지 하고 있었습니다.<br>
+통신사는 피처폰 이전엔 음성 통화, 문자 메시지, 그 외 부가서비스로 돈을 벌었습니다. 피처폰부터 콘텐츠와 데이터 통화로도 돈을 벌게 됩니다. 글, 화보, 벨소리, 음악, 동영상 같은게 콘텐츠죠. 매직엔, 준, 이지아이 같은 버튼을 누르면 피처폰에서 이런 콘텐츠를 이용할 수 있었습니다. 그리고 통신사 입장에서 앱도 콘텐츠로 분류하곤 합니다. 피처폰을 통해 사용자에게 제공되고 각각의 콘텐츠에 가격을 부여하고 이를 전송하는 데이터 통신에 가격을 부여하는 측면에서는 다 비슷한 녀석들입니다. 이것들이 형태는 좀 다를 수 있지만 결국은 앱 스토어입니다.<br>
+애플이나 구글처럼 누구나 상품(앱)을 팔 수 있는 오픈마켓이 아니고, 업체(CP, contents provider)로부터 상품을 사서 통신사가 파는 형태였고요.<br>
+<br>
+WIPI 의무 탑재 해제가 안드로이드가 흥하는데에 기여한 부분이 있다면, 손톱만큼 정도.<br>
+스마트폰 전에는 Java(Java ME)가 세계적으로 가장 유명한 플랫폼이었습니다. BREW나 그 외에도 많아지만요. 한국에서는 WIPI라는 플랫폼이 있었는데 C와 JAVA를 지원했습니다.<br>
+사실 통신사 입장에선 별 차이가 없었습니다. 음성 통화 위주에서는 어떤 전화기를 팔든 차이가 없습니다. Java ME건 심비안이건 블랙베리건 위피건 다 잘 되니까요.<br>
+위피로 이미 장사를 하고 있고 돈도 잘 벌리고 있었으니까요. 다만 사용자 중엔 위피 말고 한국외의 좋은 전화기를 쓰고 싶어하는 사람도 +++++++++0AAAAAAAAAAAAAQQQAAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqw니다. 결정적으로 아이폰, 노키아폰도 살짝. 위피 의무 탑재 해제로 인해 한국외의 전화기가 들어올 수 있는(통신사가 판매할 수 있는) 상황이 되었던 거지, 통신사가 팔고 싶어하던 상황이었냐면 팔고 싶기도 하고 안 팔고 싶기도한 복잡한 상황이었습니다.<br>
+<br>
+====<br>
+<br>
+<br>
+ULUG의 글을 보면서 예전 생각을 문득 해보았습니다.<br>
+<br>
+리눅스나 유닉스에 대한 정보를 쉽게 얻을 수 없었던 때가 있었습니다. 대략 1999, 2000년 즈음입니다.<br>
+그런 이유로 저는 동호회나 온라인 커뮤니티를 자주 찾게 되었습니다.<br>
+<br>
+대전에는 리눅스베이라는 학원, 그 학원의 영향으로 터보리눅스가 유행한 적이 있습니다.<br>
+나중엔 DLUG(Daejeon Linux User Group인듯 합니다)라는 이름으로 활동하는 분들을 충남대학교에서 본 적도 있고요.<br>
+서울엔 리눅스사랑넷이나 KLDP, Linux for Seminar 그런 것이 들려왔습니다. 하지만 대전에서는 큰 행사 같은 건 보이지 않았습니다.<br>
+그러고 보니 대전은 좀 조용한 도시라는 생각이 듭니다.<br>
+<br>
+한<br>
+<br>
+<br>
+===<br>
+<br>
+2호선을 타고 가다보면 지상으로 이동하는 구간이 있습니다. 전등빛에 익숙해 있다가 갑자기 밝은 햇빛을 보면, 순간 이런 생각이 듭니다. '아, 세상이 참 아름답구나.'<br>
+<br>
+어릴 때 외가 옥천에 가서 혼자 동산에 올라가 햇빛을 본 적이 있습니다. 햇빛이 참 좋았던 기억이 납니다. 우리는 그런 것들을 아름답게 느끼도록 만들어져 있는지도 모릅니다.<br>
+<br>
+누가 그렇게 만들었는지 궁금합니다.
+</div>
+</article>
 <article id="entry-528" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="http://weblog.youre.space/vergence/2017/03/nintendo-switch.html" rel="bookmark">닌텐도 스위치 사고 싶습니다</a></h2>
 <footer class="asset-meta blog-post-meta">
@@ -210,39 +300,8 @@ Firebase의 hosting으로 옮겨보았으나, HTTP는 지원하지 않고 HTTPS�
 <a href="http://weblog.youre.space/vergence/IMG_20170202_232736.jpg"><img alt="" src="http://weblog.youre.space/vergence/assets_c/2017/02/IMG_20170202_232736-thumb-autox427-120.jpg" width="320" height="427" class="mt-image-none" style=""></a>
 </div>
 </article>
-<article id="entry-481" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
-<h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="http://weblog.youre.space/vergence/2017/02/ieie-movabletypei-e-ie.html" rel="bookmark">이메일로 MovableType에 글 쓰기</a></h2>
-<footer class="asset-meta blog-post-meta">
-<ul class="asset-meta-list">
-<li class="asset-meta-list-item"><time datetime="2017-02-02T08:35:55+09:00" class="updated published dt-published" itemprop="datePublished">February  2, 2017</time></li>
-<li class="asset-meta-list-item">by <span class="author entry-author vcard p-author h-card"><span class="fn">Sangyong Gwak</span></span></li>
-</ul>
-</footer>
-<div class="asset-body e-content" itemprop="articleBody">
-<p>전에 fetchmail로 메일을 긁어서 처리하는 것을 만든 적이 있습니다. 이번에도 fetchmail을 이용해서 메일을 긁어오고 MovableType에 넣을 생각이었지요.</p>
-<p>삽질을 시작하기 전에, 검색 한번 더 해봐야겠다는 생각이 들었습니다. 오잉...? MT 웹 사이트에 플러그인이 있었네요.<br>
-세상엔 많은 사람이 있다는 생각을 오늘 또 했습니다.</p>
-<p>이런 속담이 있지 않을까요?<br>
-A search in time saves 9 chores.</p>
-<p>이 플러그인은 정말 좋습니다. 멀티블로그에서, 블로그별로 포스팅할 이메일 주소를 설정할 수 있는 점 때문에 특히. 단점은 gmail에서 메일을 받아야하는 점입니다. 하지만 gmail 가입이 어려운 건 아니니 큰 단점은 아닙니다.</p>
-<p>앞으로 이메일로 편하게 블로그에 글 쓸 수 있게 되었습니다.<br>
-오늘의 취미생활.</p>
-</div>
-</article>
-<article id="entry-480" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
-<h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="http://weblog.youre.space/vergence/2017/02/iee.html" rel="bookmark">왜냐면</a></h2>
-<footer class="asset-meta blog-post-meta">
-<ul class="asset-meta-list">
-<li class="asset-meta-list-item"><time datetime="2017-02-01T23:48:42+09:00" class="updated published dt-published" itemprop="datePublished">February  1, 2017</time></li>
-<li class="asset-meta-list-item">by <span class="author entry-author vcard p-author h-card"><span class="fn">Sangyong Gwak</span></span></li>
-</ul>
-</footer>
-<div class="asset-body e-content" itemprop="articleBody">
-<p>좋으니까요</p>
-</div>
-</article>
 <ul class="pager">
-  <li class="previous"><a rel="prev" href="http://weblog.youre.space/63/mt-search.cgi?IncludeBlogs=10&amp;template_id=6402&amp;limit=10&amp;archive_type=Index&amp;page=2">Previous</a></li><div class="sidebar-module"><h4>Archives</h4><ol class="list-unstyled"><li><a href="http://weblog.youre.space/vergence/2017/03/">March 2017 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2017/02/">February 2017 (9)</a></li><li><a href="http://weblog.youre.space/vergence/2016/11/">November 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/10/">October 2016 (3)</a></li><li><a href="http://weblog.youre.space/vergence/2016/09/">September 2016 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2016/07/">July 2016 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2016/06/">June 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/05/">May 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/04/">April 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/03/">March 2016 (4)</a></li><li><a href="http://weblog.youre.space/vergence/2016/02/">February 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/01/">January 2016 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2015/12/">December 2015 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2015/11/">November 2015 (3)</a></li><li><a href="http://weblog.youre.space/vergence/2015/10/">October 2015 (5)</a></li><li><a href="http://weblog.youre.space/vergence/2015/09/">September 2015 (3)</a></li><li><a href="http://weblog.youre.space/vergence/2015/08/">August 2015 (9)</a></li><li><a href="http://weblog.youre.space/vergence/2015/07/">July 2015 (4)</a></li><li><a href="http://weblog.youre.space/vergence/2014/11/">November 2014 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2014/10/">October 2014 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2014/08/">August 2014 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2014/06/">June 2014 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2014/05/">May 2014 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2014/04/">April 2014 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2014/03/">March 2014 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2013/11/">November 2013 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2013/08/">August 2013 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2013/05/">May 2013 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2011/09/">September 2011 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2004/09/">September 2004 (14)</a></li><li><a href="http://weblog.youre.space/vergence/2004/08/">August 2004 (14)</a></li><li><a href="http://weblog.youre.space/vergence/2004/07/">July 2004 (6)</a></li><li><a href="http://weblog.youre.space/vergence/2004/06/">June 2004 (4)</a></li><li><a href="http://weblog.youre.space/vergence/2004/05/">May 2004 (19)</a></li><li><a href="http://weblog.youre.space/vergence/2004/04/">April 2004 (4)</a></li></ol></div>
+  <li class="previous"><a rel="prev" href="http://weblog.youre.space/63/mt-search.cgi?IncludeBlogs=10&amp;template_id=6402&amp;limit=10&amp;archive_type=Index&amp;page=2">Previous</a></li><div class="sidebar-module"><h4>Archives</h4><ol class="list-unstyled"><li><a href="http://weblog.youre.space/vergence/2017/03/">March 2017 (3)</a></li><li><a href="http://weblog.youre.space/vergence/2017/02/">February 2017 (9)</a></li><li><a href="http://weblog.youre.space/vergence/2016/11/">November 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/10/">October 2016 (3)</a></li><li><a href="http://weblog.youre.space/vergence/2016/09/">September 2016 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2016/07/">July 2016 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2016/06/">June 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/05/">May 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/04/">April 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/03/">March 2016 (4)</a></li><li><a href="http://weblog.youre.space/vergence/2016/02/">February 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/01/">January 2016 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2015/12/">December 2015 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2015/11/">November 2015 (3)</a></li><li><a href="http://weblog.youre.space/vergence/2015/10/">October 2015 (5)</a></li><li><a href="http://weblog.youre.space/vergence/2015/09/">September 2015 (3)</a></li><li><a href="http://weblog.youre.space/vergence/2015/08/">August 2015 (9)</a></li><li><a href="http://weblog.youre.space/vergence/2015/07/">July 2015 (4)</a></li><li><a href="http://weblog.youre.space/vergence/2014/11/">November 2014 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2014/10/">October 2014 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2014/08/">August 2014 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2014/06/">June 2014 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2014/05/">May 2014 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2014/04/">April 2014 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2014/03/">March 2014 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2013/11/">November 2013 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2013/08/">August 2013 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2013/05/">May 2013 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2011/09/">September 2011 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2004/09/">September 2004 (14)</a></li><li><a href="http://weblog.youre.space/vergence/2004/08/">August 2004 (14)</a></li><li><a href="http://weblog.youre.space/vergence/2004/07/">July 2004 (6)</a></li><li><a href="http://weblog.youre.space/vergence/2004/06/">June 2004 (4)</a></li><li><a href="http://weblog.youre.space/vergence/2004/05/">May 2004 (19)</a></li><li><a href="http://weblog.youre.space/vergence/2004/04/">April 2004 (4)</a></li></ol></div>
   </ul>
 </main>
 <aside class="col-sm-3 col-sm-offset-1 blog-sidebar">
@@ -259,6 +318,8 @@ A search in time saves 9 chores.</p>
 <div class="sidebar-module">
 <h4>Recent Entries</h4>
 <ol class="list-unstyled">
+<li><a href="http://weblog.youre.space/vergence/2017/03/vuejs-parsejs.html">Vue.js Parse.js 함께 쓰고 싶은 마음</a></li>
+<li><a href="http://weblog.youre.space/vergence/2017/03/iiii.html">임시저장</a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/03/nintendo-switch.html">닌텐도 스위치 사고 싶습니다</a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/02/parse-server.html">Parse Server를 파일 저장소로 이용</a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/02/iie-eie.html">정의를 구하라</a></li>
@@ -267,8 +328,6 @@ A search in time saves 9 chores.</p>
 <li><a href="http://weblog.youre.space/vergence/2017/02/ii-iei-ee-ii-ie-e.html">요즘 우리의 머리 속에 있는 것</a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/02/2017-01-05.html">2017-01-05</a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/02/ieie-iii.html">생각하고 싶어서</a></li>
-<li><a href="http://weblog.youre.space/vergence/2017/02/ieie-movabletypei-e-ie.html">이메일로 MovableType에 글 쓰기</a></li>
-<li><a href="http://weblog.youre.space/vergence/2017/02/iee.html">왜냐면</a></li>
 </ol>
 </div>
 <div class="sidebar-module">
@@ -283,16 +342,16 @@ A search in time saves 9 chores.</p>
 <div class="photo">
 <ol>
 <li><a href="http://weblog.youre.space/vergence/2017/03/nintendo-switch.html"><img src="http://weblog.youre.space/vergence/assets_c/2017/03/bundle1-thumb-70x70-128.jpg" alt="닌텐도 스위치 사고 싶습니다" title="「닌텐도 스위치 사고 싶습니다」on「vergence의 이상한 세상」" width="70" height="70" class="thumbnail"></a></li>
+<li><a href="http://weblog.youre.space/baas/2017/02/parse-dot-com-js-sdk-example.html"><img src="http://weblog.youre.space/baas/assets_c/2017/03/blog-post-thumb-70x70-129.jpg" alt="오래된 parse.com JavaScript 예제 " title="「오래된 parse.com JavaScript 예제 」on「BaaS와 PaaS 차이」" width="70" height="70" class="thumbnail"></a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/02/firebase-hosting-netlify.html"><img src="http://weblog.youre.space/vergence/assets_c/2017/02/netlify-meta-image-thumb-70x70-122.jpg" alt="Firebase hosting을 거쳐 Netlify로 이동" title="「Firebase hosting을 거쳐 Netlify로 이동」on「vergence의 이상한 세상」" width="70" height="70" class="thumbnail"></a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/02/ieie-iii.html"><img src="http://weblog.youre.space/vergence/assets_c/2017/02/IMG_20170202_232736-thumb-70x70-120.jpg" alt="생각하고 싶어서" title="「생각하고 싶어서」on「vergence의 이상한 세상」" width="70" height="70" class="thumbnail"></a></li>
-<li><a href="http://weblog.youre.space/imyaman/2017/01/post-10.html"><img src="http://weblog.youre.space/imyaman/assets_c/2017/01/Screenshot_2017-01-25-21-50-02-thumb-70x70-118.png" alt="오늘의 커피 사진" title="「오늘의 커피 사진」on「곽상용의 블로그」" width="70" height="70" class="thumbnail"></a></li>
 </ol>
 </div>
 </div>
 <div class="sidebar-module">
 <h4>Archives</h4>
 <ol class="list-unstyled">
-<li><a href="http://weblog.youre.space/vergence/2017/03/">March 2017 (1)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2017/03/">March 2017 (3)</a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/02/">February 2017 (9)</a></li>
 <li><a href="http://weblog.youre.space/vergence/2016/11/">November 2016 (1)</a></li>
 <li><a href="http://weblog.youre.space/vergence/2016/10/">October 2016 (3)</a></li>
