@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Movable Type 6.3">
-<meta name="description" content="아무말 글씨 연습입니다. Waterman C/F fountain pen 만년필, M nib 닙입니다....">
+<meta name="description" content="Firebase bindings for Vue.js라고 설명되어있는 VueFire라는게 있습니다. 이것 없어도 v-for 같이 목록을 표시하려는 구문에 Firebase 쿼리 결과를 그대로 전달해주어도 템플릿에서 데이터에 편하게 접근할 수 있었습니다. 그래서 Firebase와 Vue.js에 낙점해야겠다고 생각했습니다, 어제 저녁 시점까지만 해도. 오늘 아침 생각은, Parse Server로 낙점,...">
 <style>
   @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
   :lang(ko) { font-family: 'Noto Sans KR', sans-serif; }
@@ -14,16 +14,16 @@
 <link rel="stylesheet" href="http://weblog.youre.space/vergence/css/custom_for_mt.css">
 <link rel="start" href="http://weblog.youre.space/vergence/" title="Home">
 <link rel="alternate" href="http://weblog.youre.space/vergence/atom.xml" type="application/atom+xml" title="Recent Entries">
-<link rel="canonical" href="http://weblog.youre.space/vergence/2017/03/fountainpen-2017-03-19.html">
+<link rel="canonical" href="http://weblog.youre.space/vergence/2017/03/firebase-vuejs.html">
 <!--
 <rdf:RDF xmlns="http://web.resource.org/cc/"
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<Work rdf:about="http://weblog.youre.space/vergence/2017/03/fountainpen-2017-03-19.html">
-<dc:title>글씨 연습 2017-03-19</dc:title>
-<dc:description>아무말 글씨 연습입니다. Waterman C/F fountain pen 만년필, M nib 닙입니다....</dc:description>
+<Work rdf:about="http://weblog.youre.space/vergence/2017/03/firebase-vuejs.html">
+<dc:title>Firebase와 Vue.js</dc:title>
+<dc:description>Firebase bindings for Vue.js라고 설명되어있는 VueFire라는게 있습니다. 이것 없어도 v-for 같이 목록을 표시하려는 구문에 Firebase 쿼리 결과를 그대로 전달해주어도 템플릿에서 데이터에 편하게 접근할 수 있었습니다. 그래서 Firebase와 Vue.js에 낙점해야겠다고 생각했습니다, 어제 저녁 시점까지만 해도. 오늘 아침 생각은, Parse Server로 낙점,...</dc:description>
 <dc:creator>Sangyong Gwak</dc:creator>
-<dc:date>2017-03-19T21:52:25+09:00</dc:date>
+<dc:date>2017-03-21T08:20:24+09:00</dc:date>
 <license rdf:resource="http://creativecommons.org/licenses/by-nc-nd/4.0/" />
 </Work>
 <License rdf:about="http://creativecommons.org/licenses/by-nc-nd/4.0/">
@@ -40,21 +40,20 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-<link rel="prev" href="http://weblog.youre.space/vergence/2017/03/vuejs-parsejs.html" title="Vue.js Parse.js 함께 쓰고 싶은 마음">
-<link rel="next" href="http://weblog.youre.space/vergence/2017/03/firebase-vuejs.html" title="Firebase와 Vue.js">
+<link rel="prev" href="http://weblog.youre.space/vergence/2017/03/fountainpen-2017-03-19.html" title="글씨 연습 2017-03-19">
 <!-- Open Graph Protocol -->
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en-us">
-<meta property="og:title" content="글씨 연습 2017-03-19">
-<meta property="og:url" content="http://weblog.youre.space/vergence/2017/03/fountainpen-2017-03-19.html">
-<meta property="og:description" content="아무말 글씨 연습입니다. Waterman C/F fountain pen 만년필, M nib 닙입니다....">
+<meta property="og:title" content="Firebase와 Vue.js">
+<meta property="og:url" content="http://weblog.youre.space/vergence/2017/03/firebase-vuejs.html">
+<meta property="og:description" content="Firebase bindings for Vue.js라고 설명되어있는 VueFire라는게 있습니다. 이것 없어도 v-for 같이 목록을 표시하려는 구문에 Firebase 쿼리 결과를 그대로 전달해주어도 템플릿에서 데이터에 편하게 접근할 수 있었습니다. 그래서 Firebase와 Vue.js에 낙점해야겠다고 생각했습니다, 어제 저녁 시점까지만 해도. 오늘 아침 생각은, Parse Server로 낙점,...">
 <meta property="og:site_name" content="vergence의 이상한 세상">
 <meta property="og:image" content="http://weblog.youre.space/vergence/blogimg/og_image.png">
 <!-- Metadata -->
-<meta itemprop="description" content="아무말 글씨 연습입니다. Waterman C/F fountain pen 만년필, M nib 닙입니다....">
-<link itemprop="url" href="http://weblog.youre.space/vergence/2017/03/fountainpen-2017-03-19.html">
+<meta itemprop="description" content="Firebase bindings for Vue.js라고 설명되어있는 VueFire라는게 있습니다. 이것 없어도 v-for 같이 목록을 표시하려는 구문에 Firebase 쿼리 결과를 그대로 전달해주어도 템플릿에서 데이터에 편하게 접근할 수 있었습니다. 그래서 Firebase와 Vue.js에 낙점해야겠다고 생각했습니다, 어제 저녁 시점까지만 해도. 오늘 아침 생각은, Parse Server로 낙점,...">
+<link itemprop="url" href="http://weblog.youre.space/vergence/2017/03/firebase-vuejs.html">
 <link itemprop="image" href="http://weblog.youre.space/vergence/blogimg/og_image.png">
-<title>글씨 연습 2017-03-19 - vergence의 이상한 세상</title>
+<title>Firebase와 Vue.js - vergence의 이상한 세상</title>
 </head>
 <body id="sybootstrap">
 <div><!-- div class="blog-masthead" -->
@@ -96,27 +95,29 @@
 <main class="col-sm-8 blog-main">
 <ul class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
 <li><a href="http://weblog.youre.space/">Home</a></li>
-<li>글씨 연습 2017-03-19</li>
+<li>Firebase와 Vue.js</li>
 </ul>
-<article id="entry-534" class="blog-post entry entry-asset asset hentry h-entry">
+<article id="entry-536" class="blog-post entry entry-asset asset hentry h-entry">
 <div class="asset-header">
-<h2 itemprop="headline" class="blog-post-title entry-title p-name">글씨 연습 2017-03-19</h2>
+<h2 itemprop="headline" class="blog-post-title entry-title p-name">Firebase와 Vue.js</h2>
 <footer class="asset-meta blog-post-meta">
 <ul class="asset-meta-list">
-<li class="asset-meta-list-item"><time datetime="2017-03-19T21:52:25+09:00" class="updated published dt-published" itemprop="datePublished">March 19, 2017</time></li>
+<li class="asset-meta-list-item"><time datetime="2017-03-21T08:20:24+09:00" class="updated published dt-published" itemprop="datePublished">March 21, 2017</time></li>
 <li class="asset-meta-list-item">by <span class="author entry-author vcard p-author h-card"><span class="fn">Sangyong Gwak</span></span></li>
 </ul>
 </footer>
 </div>
 <div class="asset-body e-content" itemprop="articleBody">
-<p>아무말 글씨 연습입니다.
-Waterman C/F fountain pen 만년필, M nib 닙입니다.</p>
-<p><img src="https://farm3.staticflickr.com/2933/33528909585_aa3d4988f1_k.jpg" width="320"></p>
+<p>Firebase bindings for Vue.js라고 설명되어있는 VueFire라는게 있습니다. 이것 없어도 v-for 같이 목록을 표시하려는 구문에 Firebase 쿼리 결과를 그대로 전달해주어도 템플릿에서 데이터에 편하게 접근할 수 있었습니다.
+그래서 Firebase와 Vue.js에 낙점해야겠다고 생각했습니다, 어제 저녁 시점까지만 해도.</p>
+<p>오늘 아침 생각은, Parse Server로 낙점, UI 프레임워크를 쓰지 말고 단순한 JavaScript로 해결해야겠다입니다.
+뭐 대단하고 복잡한 걸 만들 거라고. 에휴.</p>
+<p>Frontend의 rounting 처리해주는 라이브러리는 찾아서 넣고, jquery 정도만 써서 낼롬 만들어야지 싶습니다.</p>
+<p>취미생활도 진도가 나가야 재미!</p>
 </div>
 <aside>
 <ul class="pager">
-<li class="previous"><a href="http://weblog.youre.space/vergence/2017/03/vuejs-parsejs.html" title="Vue.js Parse.js 함께 쓰고 싶은 마음">Previous Entry</a></li>
-<li class="next"><a href="http://weblog.youre.space/vergence/2017/03/firebase-vuejs.html" title="Firebase와 Vue.js">Next Entry</a></li>
+<li class="previous"><a href="http://weblog.youre.space/vergence/2017/03/fountainpen-2017-03-19.html" title="글씨 연습 2017-03-19">Previous Entry</a></li>
 </ul>
 </aside>
 <!--
