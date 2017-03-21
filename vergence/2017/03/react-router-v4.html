@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" itemscope itemtype="http://schema.org/Article">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="generator" content="Movable Type 6.3">
-<meta name="description" content="">
+<meta name="description" content="React Router로 삽질을 했습니다. React Router는 여러 경로를 웹 문서 하나에서 처리하기 위해 frontend router를 쓰는데, 그 중 하나입니다. 예를 들면, /home, /about, /contact 주소로 요청한 걸 모두 index.html이 처리, 그것도 frontend에서. React Router 최신 버전은 v4.0.0인데, 별 생각 없이...">
 <style>
   @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
   :lang(ko) { font-family: 'Noto Sans KR', sans-serif; }
@@ -14,14 +14,16 @@
 <link rel="stylesheet" href="http://weblog.youre.space/vergence/css/custom_for_mt.css">
 <link rel="start" href="http://weblog.youre.space/vergence/" title="Home">
 <link rel="alternate" href="http://weblog.youre.space/vergence/atom.xml" type="application/atom+xml" title="Recent Entries">
-<link rel="canonical" href="http://weblog.youre.space/vergence/2017/03/">
+<link rel="canonical" href="http://weblog.youre.space/vergence/2017/03/react-router-v4.html">
 <!--
 <rdf:RDF xmlns="http://web.resource.org/cc/"
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-<Work rdf:about="http://weblog.youre.space/vergence/">
-<dc:title>추ㅣ미생활 취미생호라</dc:title>
-<dc:description>틈틈이 취미생활을 합니다. 추ㅣ미생활 취미생호라 일부러 오기한 겁니다.</dc:description>
+<Work rdf:about="http://weblog.youre.space/vergence/2017/03/react-router-v4.html">
+<dc:title>React Router v4</dc:title>
+<dc:description>React Router로 삽질을 했습니다. React Router는 여러 경로를 웹 문서 하나에서 처리하기 위해 frontend router를 쓰는데, 그 중 하나입니다. 예를 들면, /home, /about, /contact 주소로 요청한 걸 모두 index.html이 처리, 그것도 frontend에서. React Router 최신 버전은 v4.0.0인데, 별 생각 없이...</dc:description>
+<dc:creator>Sangyong Gwak</dc:creator>
+<dc:date>2017-03-22T08:30:20+09:00</dc:date>
 <license rdf:resource="http://creativecommons.org/licenses/by-nc-nd/4.0/" />
 </Work>
 <License rdf:about="http://creativecommons.org/licenses/by-nc-nd/4.0/">
@@ -38,15 +40,22 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+<link rel="prev" href="http://weblog.youre.space/vergence/2017/03/firebase-vuejs.html" title="Firebase와 Vue.js">
 <!-- Open Graph Protocol -->
-<meta property="og:title" content="Monthly">
-<meta property="og:url" content="http://weblog.youre.space/vergence/2017/03/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en-us">
+<meta property="og:title" content="React Router v4">
+<meta property="og:url" content="http://weblog.youre.space/vergence/2017/03/react-router-v4.html">
+<meta property="og:description" content="React Router로 삽질을 했습니다. React Router는 여러 경로를 웹 문서 하나에서 처리하기 위해 frontend router를 쓰는데, 그 중 하나입니다. 예를 들면, /home, /about, /contact 주소로 요청한 걸 모두 index.html이 처리, 그것도 frontend에서. React Router 최신 버전은 v4.0.0인데, 별 생각 없이...">
+<meta property="og:site_name" content="추ㅣ미생활 취미생호라">
 <meta property="og:image" content="http://weblog.youre.space/vergence/blogimg/og_image.png">
-<meta property="og:description" content="추ㅣ미생활 취미생호라 Monthly">
-<link rel="prev" href="http://weblog.youre.space/vergence/2017/02/" title="February 2017">
-<title>March 2017 Archive - 추ㅣ미생활 취미생호라</title>
+<!-- Metadata -->
+<meta itemprop="description" content="React Router로 삽질을 했습니다. React Router는 여러 경로를 웹 문서 하나에서 처리하기 위해 frontend router를 쓰는데, 그 중 하나입니다. 예를 들면, /home, /about, /contact 주소로 요청한 걸 모두 index.html이 처리, 그것도 frontend에서. React Router 최신 버전은 v4.0.0인데, 별 생각 없이...">
+<link itemprop="url" href="http://weblog.youre.space/vergence/2017/03/react-router-v4.html">
+<link itemprop="image" href="http://weblog.youre.space/vergence/blogimg/og_image.png">
+<title>React Router v4 - 추ㅣ미생활 취미생호라</title>
 </head>
-<body>
+<body id="sybootstrap">
 <div><!-- div class="blog-masthead" -->
 <div class="container">
 <nav class="navbar navbar-inverse">
@@ -86,30 +95,39 @@
 <main class="col-sm-8 blog-main">
 <ul class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
 <li><a href="http://weblog.youre.space/">Home</a></li>
-<li>March 2017 Archive</li>
+<li>React Router v4</li>
 </ul>
-<section id="posts">
-<h1 class="blog-post-title">March 2017 Archive</h1>
-<dl class="dl-horizontal">
-<dt><time datetime="2017-03-22T08:30:20+09:00">22</time></dt>
-<dd><a href="http://weblog.youre.space/vergence/2017/03/react-router-v4.html">React Router v4</a></dd>
-<dt><time datetime="2017-03-21T08:20:24+09:00">21</time></dt>
-<dd><a href="http://weblog.youre.space/vergence/2017/03/firebase-vuejs.html">Firebase와 Vue.js</a></dd>
-<dt><time datetime="2017-03-19T21:52:25+09:00">19</time></dt>
-<dd><a href="http://weblog.youre.space/vergence/2017/03/fountainpen-2017-03-19.html">글씨 연습 2017-03-19</a></dd>
-<dt><time datetime="2017-03-09T00:01:34+09:00"> 9</time></dt>
-<dd><a href="http://weblog.youre.space/vergence/2017/03/vuejs-parsejs.html">Vue.js Parse.js 함께 쓰고 싶은 마음</a></dd>
-<dt><time datetime="2017-03-08T09:43:04+09:00"> 8</time></dt>
-<dd><a href="http://weblog.youre.space/vergence/2017/03/iiii.html">임시저장</a></dd>
-<dt><time datetime="2017-03-03T23:12:03+09:00"> 3</time></dt>
-<dd><a href="http://weblog.youre.space/vergence/2017/03/nintendo-switch.html">닌텐도 스위치 사고 싶습니다</a></dd>
-</dl>
-</section>
+<article id="entry-537" class="blog-post entry entry-asset asset hentry h-entry">
+<div class="asset-header">
+<h2 itemprop="headline" class="blog-post-title entry-title p-name">React Router v4</h2>
+<footer class="asset-meta blog-post-meta">
+<ul class="asset-meta-list">
+<li class="asset-meta-list-item"><time datetime="2017-03-22T08:30:20+09:00" class="updated published dt-published" itemprop="datePublished">March 22, 2017</time></li>
+<li class="asset-meta-list-item">by <span class="author entry-author vcard p-author h-card"><span class="fn">Sangyong Gwak</span></span></li>
+</ul>
+</footer>
+</div>
+<div class="asset-body e-content" itemprop="articleBody">
+<p>React Router로 삽질을 했습니다. React Router는 여러 경로를 웹 문서 하나에서 처리하기 위해 frontend<br>
+router를 쓰는데, 그 중 하나입니다. 예를 들면, /home, /about, /contact 주소로 요청한 걸 모두<br>
+index.html이 처리, 그것도 frontend에서.<br>
+React Router 최신 버전은 v4.0.0인데, 별 생각 없이 그 버전를 선택했습니다. react-router-v4 ...<br>
+문서와 예제는 대부분 v3.x에 맞게 되어있는데, v4에서 많이 달라진 줄 모르고 그대로 쓰려고 한 거죠.</p>
+<p>React Router를 쓴다면, 현재는 v3으로. 미래를 위해선 v4로.</p>
+<p>일이 아니고 취미생활이라 참 다행입니다.<br>
+</p>React Router로 삽질을 했습니다. React Router는 여러 경로를 웹 문서 하나에서 처리하기 위해 frontend router를 쓰는데, 그 중 하나입니다. 예를 들면, /home, /about, /contact 주소로 요청한 걸 모두 index.html이 처리, 그것도 frontend에서.<div>React Router 최신 버전은 v4.0.0인데, 별 생각 없이 그 버전를 선택했습니다. react-router-v4 ...</div><div>문서와 예제는 대부분 v3.x에 맞게 되어있는데, v4에서 많이 달라진 줄 모르고 그대로 쓰려고 한 거죠.</div><div><br></div><div>React Router를 쓴다면, 현재는 v3으로. 미래를 위해선 v4로.</div><div><br></div><div>일이 아니고 취미생활이라 참 다행입니다.</div>
+</div>
 <aside>
 <ul class="pager">
-<li class="previous"><a href="http://weblog.youre.space/vergence/2017/02/" title="February 2017">February 2017</a></li>
+<li class="previous"><a href="http://weblog.youre.space/vergence/2017/03/firebase-vuejs.html" title="Firebase와 Vue.js">Previous Entry</a></li>
 </ul>
 </aside>
+<!--
+<aside id="zenback" class="zenback feedback">
+  ここに Zenback の Script コードを貼り付けてください。
+</aside>
+-->
+</article>
 </main>
 <aside class="col-sm-3 col-sm-offset-1 blog-sidebar">
 <div class="sidebar-module sidebar-module-inset">
