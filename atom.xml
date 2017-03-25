@@ -4,9 +4,34 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/atom.xml" />
     <id>tag:blog.youre.space,2017-01-30:/3</id>
-    <updated>2017-03-23T07:55:28Z</updated>
+    <updated>2017-03-25T05:41:57Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3</generator>
+
+<entry>
+    <title>탄이와 핵이 - 추ㅣ미생활 취미생호라</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/03/post-71.html" />
+    <id>tag:blog.youre.space,2017:/vergence//10.539</id>
+
+    <published>2017-03-25T05:37:44Z</published>
+    <updated>2017-03-25T05:41:57Z</updated>
+
+    <summary>탄핵을 기념하여 뿌린 씨앗에서 싹이 났습니다. 토마토가 열리기 전에 혼란스러운 상황이 정리되길....</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>탄핵을 기념하여 뿌린 씨앗에서 싹이 났습니다.
+토마토가 열리기 전에 혼란스러운 상황이 정리되길.</p>
+
+<p><img src="https://c1.staticflickr.com/3/2868/33505944971_2fb37d7a9b_k.jpg" width="320"></p>
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>스타크래프트 HD 이야기에 이어 - 추ㅣ미생활 취미생호라</title>
@@ -973,37 +998,6 @@ ULUG의 글을 보면서 예전 생각을 문득 해보았습니다.<br />
         <![CDATA[<p>LuneOS(webOS)의 Nexus 5 Port가 있습니다. 설치해보았는데 아직 이른 단계입니다. 일상에서 쓰기에 아직 길이 멉니다.</p>
 
 <p>LuneOS로 대출 받을 방법이 있을까 궁금하네요.</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>오래된 parse.com JavaScript 예제  - BaaS와 PaaS 차이</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2017/02/parse-dot-com-js-sdk-example.html" />
-    <id>tag:blog.youre.space,2017:/baas//11.529</id>
-
-    <published>2017-02-20T13:55:07Z</published>
-    <updated>2017-03-03T05:46:50Z</updated>
-
-    <summary>왠지 있을 것 같았습니다. Parse Server와 JavaScript를 이용해 블로그를 만들어보고 싶은데, 실력은 부족하여 고심했습니다. 오랜만에 취미생활을 하려다가, 왠지 느낌이... 왠지 예제가 있을 것 같았습니다. 역시 있네요. 하지만 좀 오래된 버전입니다. Parse Server를 지원하는 JavaScript SDK를 적용하면 올바르게 동작하지 않습니다. https://code.tutsplus.com/series/building-your-blog-with-parsejs--cms-651...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/baas/">
-        <![CDATA[<p>왠지 있을 것 같았습니다. Parse Server와 JavaScript를 이용해 블로그를 만들어보고 싶은데, 실력은 부족하여 고심했습니다.
-오랜만에 취미생활을 하려다가, 왠지 느낌이...</p>
-
-<p>왠지 예제가 있을 것 같았습니다. 역시 있네요.
-하지만 좀 오래된 버전입니다. Parse Server를 지원하는 JavaScript SDK를 적용하면 올바르게 동작하지 않습니다.
-<a href="https://code.tutsplus.com/series/building-your-blog-with-parsejs--cms-651">https://code.tutsplus.com/series/building-your-blog-with-parsejs--cms-651</a></p>
-
-<p>이것을 최신 버전의 Parse Server JavaScript SDK와 잘 동작하도록 고쳐보는 것에서 시작해보려고 합니다.</p>
-
-<p><img alt="blog-post.jpg" src="http://weblog.youre.space/baas/assets_c/2017/03/blog-post-thumb-320xauto-129.jpg" width="320" class="mt-image-none" style="" /></p>
-]]>
         
     </content>
 </entry>
