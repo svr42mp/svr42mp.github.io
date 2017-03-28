@@ -29,6 +29,13 @@
     
     
     
+	    <script type="text/javascript">
+         MT.entryID = 126;
+         MT.commentsPerPage = 50;
+         MT.entryCommentCount = <script type='text/javascript' src='http://disqus.com/forums/youre-space/get_num_replies_for_entry.js?url=http://weblog.youre.space/about/about-page.html'></script><noscript>View</noscript>;
+         MT.commentIds = [];
+	    </script>
+    
     <title>About Page - weblog</title>
 </head>
 <body id="classic-website" class="mt-page-archive layout-wtt">
@@ -77,7 +84,50 @@
 
 
                     
-                    
+                    <h2 class="comments-header"></h2>
+    <ul id="top-comment-nav">
+        <li id="top-prev-comments">
+            <a href="javascript://" id="top-prev-comments-link" title="Previous">&lt;&lt;&nbsp;Previous</a>
+        </li>
+        <li id="top-num-comments">
+            <span id="top-current-comments"></span>
+        </li>
+        <li id="top-next-comments">
+            <a href="javascript://" id="top-next-comments-link" title="Next">Next&nbsp;&gt;&gt;</a>
+        </li>
+    </ul>
+            </mt:If>
+    <div id="comments-content" class="comments-content">
+                    <div id="comments"></div><div id="disqus_thread"></div>
+            <div style="display:none;" id="disqus_post_title">About Page</div>
+            <div style="display:none;" id="disqus_post_message"><p>This is an example \"about\" page. (Typically, an \"about\" page features information on the individual or corporation.)</p>\n<p>If the <code>@ABOUT_PAGE</code> tag is used on a web page, the “about” page will be added to the navigation list in both the header and footer.</p>\n</div>
+            <script type="text/javascript">
+                var disqus_domain = 'disqus.com';
+                var disqus_shortname = 'youre-space';
+                var disqus_url = 'http://weblog.youre.space/about/about-page.html';
+                var disqus_title = document.getElementById('disqus_post_title').innerHTML;
+                var disqus_message = document.getElementById('disqus_post_message').innerHTML;
+            </script>
+            <script type="text/javascript" src="http://youre-space.disqus.com/embed.js"></script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=youre-space">comments powered by Disqus.</a></noscript>
+
+    </div>
+            <mt:If tag="EntryCommentCount" gt="$comments_per_page">
+                <mt:Ignore>The data is modified by the paginate script</mt:Ignore>
+    <ul id="comment-nav">
+        <li id="prev-comments">
+            <a href="javascript://" id="prev-comments-link" title="Previous">&lt;&lt;&nbsp;Previous</a>
+        </li>
+        <li id="num-comments">
+            <span id="current-comments"></span>
+        </li>
+        <li id="next-comments">
+            <a href="javascript://" id="next-comments-link" title="Next">Next&nbsp;&gt;&gt;</a>
+        </li>
+    </ul>
+            </mt:If>
+        
+
 
 
                         </div>
@@ -98,7 +148,7 @@
         
 
     
-            <li><a href="http://weblog.youre.space/imyagirl/">Ella Chung</a></li>
+            <li><a href="http://weblog.youre.space/imyagirl/">Ella</a></li>
         
 
     
@@ -126,7 +176,7 @@
         
 
     
-            <li><a href="http://weblog.youre.space/vergence/">vergence의 이상한 세상</a></li>
+            <li><a href="http://weblog.youre.space/vergence/">추ㅣ미생활 취미생호라</a></li>
         
         </ul>
     </div>
