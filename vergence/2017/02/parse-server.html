@@ -42,6 +42,12 @@
 </script>
 <link rel="prev" href="http://weblog.youre.space/vergence/2017/02/iie-eie.html" title="정의를 구하라">
 <link rel="next" href="http://weblog.youre.space/vergence/2017/03/nintendo-switch.html" title="닌텐도 스위치 사고 싶습니다">
+<script type="text/javascript">
+MT.entryID = 524;
+MT.commentsPerPage = 50;
+MT.entryCommentCount = <script type='text/javascript' src='http://disqus.com/forums/youre-space/get_num_replies_for_entry.js?url=http://weblog.youre.space/vergence/2017/02/parse-server.html'></script><noscript>View</noscript>;
+MT.commentIds = [];
+</script>
 <!-- Open Graph Protocol -->
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en-us">
@@ -127,6 +133,47 @@
   ここに Zenback の Script コードを貼り付けてください。
 </aside>
 -->
+<h4 class="comments-header"></h4>
+<ul id="top-comment-nav">
+<li id="top-prev-comments">
+<a href="javascript://" id="top-prev-comments-link" title="前">&lt;&lt;&nbsp;前</a>
+</li>
+<li id="top-num-comments">
+<span id="top-current-comments"></span>
+</li>
+<li id="top-next-comments">
+<a href="javascript://" id="top-next-comments-link" title="次">次&nbsp;&gt;&gt;</a>
+</li>
+</ul>
+</mt:If>
+<div id="comments-content" class="comments-content">
+            <div id="comments"></div><div id="disqus_thread"></div>
+            <div style="display:none;" id="disqus_post_title">Parse Server를 파일 저장소로 이용</div>
+            <div style="display:none;" id="disqus_post_message"><p>블로그는 MovableType으로 운영하고 있습니다. 블로그에 업로드한 파일들은 웹 서버의 특정 디렉토리에 저장됩니다. 제 서버의 공간을 좀 아끼고자 합니다.<br />MovableType에 업로드한 파일을 Parse Server에 저장해두고, 블로그에는 그 링크를 삽입하도록 만들려고 합니다. MovableType을 고쳐야할 텐데, 시간이 걸리더라도 해보려고 합니다. 취미생활이니까요.</p>\n<p>Parse Server는 Buddy가 제공하는 것을 쓸 겁니다. 파일을 업로드하면, 해당 파일에 대해 아래와 같은 URL이 생성됩니다.</p>\n<p>https://buddyparsefiles.blob.core.windows.net/global/23d53f7cbd7022ab5a5e08974fc8f940_500_25605337_1483082877.jpeg</p>\n<p>이 URL로 그림을 표시할 겁니다. 아래와 같이.</p>\n<p><img src=\"https://buddyparsefiles.blob.core.windows.net/global/23d53f7cbd7022ab5a5e08974fc8f940_500_25605337_1483082877.jpeg\" width=\"320\" /></p>\n<p>Parse Server에 파일 업로드하고 URL을 받는 방법은 확인했습니다. 다음으론, MovableType이 그림 파일의 인덱스를 만들고, Parse Server에 파일을 업로드하고, 서버에서 파일을 지우도록 만들어야겠네요.</p></div>
+            <script type="text/javascript">
+                var disqus_domain = 'disqus.com';
+                var disqus_shortname = 'youre-space';
+                var disqus_url = 'http://weblog.youre.space/vergence/2017/02/parse-server.html';
+                var disqus_title = document.getElementById('disqus_post_title').innerHTML;
+                var disqus_message = document.getElementById('disqus_post_message').innerHTML;
+            </script>
+            <script type="text/javascript" src="http://youre-space.disqus.com/embed.js"></script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=youre-space">comments powered by Disqus.</a></noscript>
+</div>
+<mt:If tag="EntryCommentCount" gt="$comments_per_page">
+<mt:Ignore>Paginationスクリプトによって変更されています。</mt:Ignore>
+<ul id="comment-nav">
+<li id="prev-comments">
+<a href="javascript://" id="prev-comments-link" title="前">&lt;&lt;&nbsp;前</a>
+</li>
+<li id="num-comments">
+<span id="current-comments"></span>
+</li>
+<li id="next-comments">
+<a href="javascript://" id="next-comments-link" title="次">次&nbsp;&gt;&gt;</a>
+</li>
+</ul>
+</mt:If>
 </article>
 </main>
 <aside class="col-sm-3 col-sm-offset-1 blog-sidebar">
