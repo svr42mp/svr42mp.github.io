@@ -4,7 +4,7 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:blog.youre.space,2017-01-30:/vergence//10</id>
-    <updated>2017-04-10T03:13:21Z</updated>
+    <updated>2017-04-10T03:44:01Z</updated>
     <subtitle>틈틈이 취미생활을 합니다. 추ㅣ미생활 취미생호라 일부러 오기한 겁니다.</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3</generator>
 
@@ -14,7 +14,7 @@
     <id>tag:blog.youre.space,2017:/vergence//10.543</id>
 
     <published>2017-04-10T03:09:36Z</published>
-    <updated>2017-04-10T03:13:21Z</updated>
+    <updated>2017-04-10T03:44:01Z</updated>
 
     <summary> SBS, TV가요 20, 인기가요총출동 VJ, 조여정, 1997-10-12...</summary>
     <author>
@@ -24,8 +24,9 @@
     
     
     <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<iframe id="sbs_player" width="640" height="360" style="border: 0;" src="http://openapi.sbs.co.kr/api/sbs/video/player.jsp?clientid=f88f0e13402c69a95c94620e39d6fa6d7b81e118&amp;content_id=410570012&amp;req_gubun=1&amp;uuid=1" scrolling="no" allowfullscreen=""></iframe>
-
+        <![CDATA[<p>
+<iframe id="sbs_player" width="320" style="border: 0;" src="http://openapi.sbs.co.kr/api/sbs/video/player.jsp?clientid=f88f0e13402c69a95c94620e39d6fa6d7b81e118&amp;content_id=410570012&amp;req_gubun=1&amp;uuid=1" scrolling="no" allowfullscreen=""></iframe>
+</p>
 <p>SBS, TV가요 20, 인기가요총출동 VJ, 조여정, 1997-10-12</p>]]>
         
     </content>
