@@ -172,7 +172,7 @@ React Router 최신 버전은 v4.0.0인데, 별 생각 없이 그 버전를 선�
     <id>tag:blog.youre.space,2017:/vergence//10.536</id>
 
     <published>2017-03-20T23:20:24Z</published>
-    <updated>2017-04-11T08:51:20Z</updated>
+    <updated>2017-04-11T08:52:42Z</updated>
 
     <summary>Firebase bindings for Vue.js라고 설명되어있는 VueFire라는게 있습니다. 이것 없어도 v-for 같이 목록을 표시하려는 구문에 Firebase 쿼리 결과를 그대로 전달해주어도 템플릿에서 데이터에 편하게 접근할 수 있었습니다. 그래서 Firebase와 Vue.js에 낙점해야겠다고 생각했습니다, 어제 저녁 시점까지만 해도. 오늘 아침 생각은, Parse Server로 낙점,...</summary>
     <author>
