@@ -141,7 +141,7 @@
     <id>tag:blog.youre.space,2017:/vergence//10.537</id>
 
     <published>2017-03-21T23:30:20Z</published>
-    <updated>2017-03-22T00:33:41Z</updated>
+    <updated>2017-04-11T07:24:52Z</updated>
 
     <summary>React Router로 삽질을 했습니다. 여러 경로를 웹 문서 하나에서 처리하기 위해 frontend router를 쓰는데, React Router는 그 중 하나입니다. 예를 들면, /home, /about, /contact 주소로 요청한 걸 모두 index.html이 처리, 그것도 frontend에서. React Router 최신 버전은 v4.0.0인데, 별 생각 없이...</summary>
     <author>
