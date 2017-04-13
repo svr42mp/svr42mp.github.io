@@ -91,6 +91,18 @@
 </header>
 <div class="row">
 <main class="col-sm-8 blog-main">
+<article id="entry-545" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
+<h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="http://weblog.youre.space/vergence/2017/04/ii-ii.html" rel="bookmark">좋은 소식</a></h2>
+<footer class="asset-meta blog-post-meta">
+<ul class="asset-meta-list">
+<li class="asset-meta-list-item"><time datetime="2017-04-14T08:10:35+09:00" class="updated published dt-published" itemprop="datePublished">April 14, 2017</time></li>
+<li class="asset-meta-list-item">by <span class="author entry-author vcard p-author h-card"><span class="fn">Sangyong Gwak</span></span></li>
+</ul>
+</footer>
+<div class="asset-body e-content" itemprop="articleBody">
+<p>좋은 소식이 있습니다. 오늘 금요일이예요.</p>좋은 소식이 있습니다. 오늘 금요일이예요.
+</div>
+</article>
 <article id="entry-544" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
 <h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="http://weblog.youre.space/vergence/2017/04/answodls.html" rel="bookmark">문재인 구글 검색</a></h2>
 <footer class="asset-meta blog-post-meta">
@@ -230,20 +242,8 @@ Waterman C/F fountain pen 만년필, M nib 닙입니다.</p>
 <p><img src="https://farm3.staticflickr.com/2933/33528909585_aa3d4988f1_k.jpg" width="320"></p>
 </div>
 </article>
-<article id="entry-532" class="blog-post entry-asset entry asset hentry h-entry" itemscope itemType="http://schema.org/BlogPosting">
-<h2 class="blog-post-title entry-title p-name" itemprop="headline"><a href="http://weblog.youre.space/vergence/2017/03/vuejs-parsejs.html" rel="bookmark">Vue.js Parse.js 함께 쓰고 싶은 마음</a></h2>
-<footer class="asset-meta blog-post-meta">
-<ul class="asset-meta-list">
-<li class="asset-meta-list-item"><time datetime="2017-03-09T00:01:34+09:00" class="updated published dt-published" itemprop="datePublished">March  9, 2017</time></li>
-<li class="asset-meta-list-item">by <span class="author entry-author vcard p-author h-card"><span class="fn">Sangyong Gwak</span></span></li>
-</ul>
-</footer>
-<div class="asset-body e-content" itemprop="articleBody">
-<p>하아... 컴맹이라 별짓하고 있습니다.<br><br>Parse Server로부터 데이터를 여러개 가져옵니다.<br><br>    var Post = Parse.Object.extend("Post");<br>    //var blogs = new Post();<br>    var query = new Parse.Query(Post);<br>    query.limit(10);<br>    query.descending("createdAt");<br>    query.find({<br>      success: querySuccess,<br>      error: queryFailure<br>    });<br><br>function querySuccess(posts){<br>  $.each(posts, function(index, value){<br>    console.log(value.createdAt);<br>    console.log(value.get("title"));<br>  });<br>}<br><br>이렇게 접근이 가능한데, Parse Object는 createdAt은 바로 접근이 되는데, 다른 컬럼은 get()을 써야합니다.<br>그래서, Vue.js에 쓸 때, <br><br>  var example2 = new Vue({<br>    el: '#example-2',<br>    data: {<br>      items: posts<br>    }<br>  })<br>라고 하고,<br><br>          &lt;template v-for="item in items"&gt;<br>          &lt;div class="blog-post"&gt;<br>            &lt;h2 class="blog-post-title"&gt;{{ item.title }}&lt;/h2&gt;<br>            &lt;p class="blog-post-meta"&gt;{{ item.createdAt }} by &lt;a href="#"&gt;imyaman&lt;/a&gt;&lt;/p&gt;<br>            &lt;span&gt;{{ item.content }} {{ item.objectId }}&lt;/span&gt;<br>          &lt;/div&gt;&lt;!-- /.blog-post --&gt;<br>          &lt;/template&gt;<br><br>이렇게 하면, item.createdAt 만 정상적으로 표시되고, item.title은 정상적으로 표시되지 않습니다.<br>Vue.js에 쓰기 위해 object array를 다시 만들어보았습니다.<br><br>  $.each(posts, function(index, value){<br>    str = str + '{"title" : "' + value.get('title') + '"}';<br>    if(index+1 != posts.length){ str=str+','; }<br>  }); <br>  str = '[' + str + ']';<br><br>  postObjects=JSON.parse(str);<br><br>  var example2 = new Vue({<br>    el: '#example-2',<br>    data: {<br>      items: postObjects<br>    }<br>  })<br><br>이렇게 하면 템플릿에서 item.title을 쓸 수 있긴한데, 과연 이게 바른 방법인가... 고민되네요.<br>http://blog.sys5.co/renew/index.html  파일에서 실험해보고 있습니다.</p>
-</div>
-</article>
 <ul class="pager">
-  <li class="previous"><a rel="prev" href="http://weblog.youre.space/63/mt-search.cgi?IncludeBlogs=10&amp;template_id=6402&amp;limit=10&amp;archive_type=Index&amp;page=2">Previous</a></li><div class="sidebar-module"><h4>Archives</h4><ol class="list-unstyled"><li><a href="http://weblog.youre.space/vergence/2017/04/">April 2017 (3)</a></li><li><a href="http://weblog.youre.space/vergence/2017/03/">March 2017 (9)</a></li><li><a href="http://weblog.youre.space/vergence/2017/02/">February 2017 (9)</a></li><li><a href="http://weblog.youre.space/vergence/2016/11/">November 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/10/">October 2016 (3)</a></li><li><a href="http://weblog.youre.space/vergence/2016/09/">September 2016 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2016/07/">July 2016 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2016/06/">June 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/05/">May 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/04/">April 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/03/">March 2016 (4)</a></li><li><a href="http://weblog.youre.space/vergence/2016/02/">February 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/01/">January 2016 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2015/12/">December 2015 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2015/11/">November 2015 (3)</a></li><li><a href="http://weblog.youre.space/vergence/2015/10/">October 2015 (5)</a></li><li><a href="http://weblog.youre.space/vergence/2015/09/">September 2015 (3)</a></li><li><a href="http://weblog.youre.space/vergence/2015/08/">August 2015 (9)</a></li><li><a href="http://weblog.youre.space/vergence/2015/07/">July 2015 (4)</a></li><li><a href="http://weblog.youre.space/vergence/2014/11/">November 2014 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2014/10/">October 2014 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2014/08/">August 2014 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2014/06/">June 2014 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2014/05/">May 2014 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2014/04/">April 2014 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2014/03/">March 2014 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2013/11/">November 2013 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2013/08/">August 2013 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2013/05/">May 2013 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2011/09/">September 2011 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2004/09/">September 2004 (14)</a></li><li><a href="http://weblog.youre.space/vergence/2004/08/">August 2004 (14)</a></li><li><a href="http://weblog.youre.space/vergence/2004/07/">July 2004 (6)</a></li><li><a href="http://weblog.youre.space/vergence/2004/06/">June 2004 (4)</a></li><li><a href="http://weblog.youre.space/vergence/2004/05/">May 2004 (19)</a></li><li><a href="http://weblog.youre.space/vergence/2004/04/">April 2004 (4)</a></li></ol></div>
+  <li class="previous"><a rel="prev" href="http://weblog.youre.space/63/mt-search.cgi?IncludeBlogs=10&amp;template_id=6402&amp;limit=10&amp;archive_type=Index&amp;page=2">Previous</a></li><div class="sidebar-module"><h4>Archives</h4><ol class="list-unstyled"><li><a href="http://weblog.youre.space/vergence/2017/04/">April 2017 (4)</a></li><li><a href="http://weblog.youre.space/vergence/2017/03/">March 2017 (9)</a></li><li><a href="http://weblog.youre.space/vergence/2017/02/">February 2017 (9)</a></li><li><a href="http://weblog.youre.space/vergence/2016/11/">November 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/10/">October 2016 (3)</a></li><li><a href="http://weblog.youre.space/vergence/2016/09/">September 2016 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2016/07/">July 2016 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2016/06/">June 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/05/">May 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/04/">April 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/03/">March 2016 (4)</a></li><li><a href="http://weblog.youre.space/vergence/2016/02/">February 2016 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2016/01/">January 2016 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2015/12/">December 2015 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2015/11/">November 2015 (3)</a></li><li><a href="http://weblog.youre.space/vergence/2015/10/">October 2015 (5)</a></li><li><a href="http://weblog.youre.space/vergence/2015/09/">September 2015 (3)</a></li><li><a href="http://weblog.youre.space/vergence/2015/08/">August 2015 (9)</a></li><li><a href="http://weblog.youre.space/vergence/2015/07/">July 2015 (4)</a></li><li><a href="http://weblog.youre.space/vergence/2014/11/">November 2014 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2014/10/">October 2014 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2014/08/">August 2014 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2014/06/">June 2014 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2014/05/">May 2014 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2014/04/">April 2014 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2014/03/">March 2014 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2013/11/">November 2013 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2013/08/">August 2013 (1)</a></li><li><a href="http://weblog.youre.space/vergence/2013/05/">May 2013 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2011/09/">September 2011 (2)</a></li><li><a href="http://weblog.youre.space/vergence/2004/09/">September 2004 (14)</a></li><li><a href="http://weblog.youre.space/vergence/2004/08/">August 2004 (14)</a></li><li><a href="http://weblog.youre.space/vergence/2004/07/">July 2004 (6)</a></li><li><a href="http://weblog.youre.space/vergence/2004/06/">June 2004 (4)</a></li><li><a href="http://weblog.youre.space/vergence/2004/05/">May 2004 (19)</a></li><li><a href="http://weblog.youre.space/vergence/2004/04/">April 2004 (4)</a></li></ol></div>
   </ul>
 </main>
 <aside class="col-sm-3 col-sm-offset-1 blog-sidebar">
@@ -260,6 +260,7 @@ Waterman C/F fountain pen 만년필, M nib 닙입니다.</p>
 <div class="sidebar-module">
 <h4>Recent Entries</h4>
 <ol class="list-unstyled">
+<li><a href="http://weblog.youre.space/vergence/2017/04/ii-ii.html">좋은 소식</a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/04/answodls.html">문재인 구글 검색</a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/04/iframe.html">iframe 테스트와 조여정</a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/04/iieii-eiee.html">인천공항에 갔습니다</a></li>
@@ -269,7 +270,6 @@ Waterman C/F fountain pen 만년필, M nib 닙입니다.</p>
 <li><a href="http://weblog.youre.space/vergence/2017/03/react-router-v4.html">React Router v4</a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/03/firebase-vuejs.html">Firebase와 Vue.js</a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/03/fountainpen-2017-03-19.html">글씨 연습 2017-03-19</a></li>
-<li><a href="http://weblog.youre.space/vergence/2017/03/vuejs-parsejs.html">Vue.js Parse.js 함께 쓰고 싶은 마음</a></li>
 </ol>
 </div>
 <div class="sidebar-module">
@@ -293,7 +293,7 @@ Waterman C/F fountain pen 만년필, M nib 닙입니다.</p>
 <div class="sidebar-module">
 <h4>Archives</h4>
 <ol class="list-unstyled">
-<li><a href="http://weblog.youre.space/vergence/2017/04/">April 2017 (3)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2017/04/">April 2017 (4)</a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/03/">March 2017 (9)</a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/02/">February 2017 (9)</a></li>
 <li><a href="http://weblog.youre.space/vergence/2016/11/">November 2016 (1)</a></li>
