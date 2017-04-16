@@ -4,9 +4,156 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/atom.xml" />
     <id>tag:blog.youre.space,2017-01-30:/3</id>
-    <updated>2017-04-16T07:41:59Z</updated>
+    <updated>2017-04-16T07:47:24Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3</generator>
+
+<entry>
+    <title>2002-02-20 - 추ㅣ미생활 취미생호라</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/04/2002-02-20.html" />
+    <id>tag:blog.youre.space,2017:/vergence//10.560</id>
+
+    <published>2017-04-16T07:47:24Z</published>
+    <updated>2017-04-16T07:47:24Z</updated>
+
+    <summary>거의 다름 없는 하루하루를 보내고 있다. 아침에 일어나서 식사하고 씻고 출근해서 공부... 계속 공부하다가 저녁 먹고, 22:00 정동에 퇴근. 그러면 또 하루가 간다.뭔가 아쉬움이 남기는 하지만...공부하는 것 진도가 빨리 나가지 않아서 괴롭다. 고3 때에도 이렇지는 않았는데... 쩝 :-P얼른 유닉스의 내부...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p></p><p>거의 다름 없는 하루하루를 보내고 있다. 아침에 일어나서 식사하고 씻고 출근해서 공부... 계속 공부하다가 저녁 먹고, 22:00 정동에 퇴근. 그러면 또 하루가 간다.<br /></p><p>뭔가 아쉬움이 남기는 하지만...<br /></p><p>공부하는 것 진도가 빨리 나가지 않아서 괴롭다. 고3 때에도 이렇지는 않았는데... 쩝 :-P<br /></p><p>얼른 유닉스의 내부 구조부터 한번 다 읽어 내어야겠다. 일단 유닉스의 내부구조와 libc info만 해두면, 뭐 c primer plus야... c 처음 공부하는 것도 아니고...<br /></p><p>차를 하나 샀는데, 쌍화차다... - -;<br />아무래도 회사에서 마시기에는 좀 무리일 것 같다. 냄새가 좀 진하기 때문에... 꼭 한약 마시는 것 같은...<br /></p><p>아흠. 졸립다.<br />나의 유일한 평안... 잠.<br /></p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>2002-02-19 - 추ㅣ미생활 취미생호라</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/04/2002-02-19.html" />
+    <id>tag:blog.youre.space,2017:/vergence//10.559</id>
+
+    <published>2017-04-16T07:47:22Z</published>
+    <updated>2017-04-16T07:47:22Z</updated>
+
+    <summary>벌써 화요일이라니...이번 주가 가고, 다음 주마저 가면, 회사에서 공부 시작한지 딱 한달이 된다. 으음... 이번 주가 가면 ucsoft에 온지 만 한달이다. 지금까지 뭘 했나 하는 생각이 들긴 하지만... 뭐 그리 아쉽지는 않다. 나름대로 바쁘게 보냈으니까. 그리고 개인적인 성장을 위해 많이...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p></p><p>벌써 화요일이라니...<br />이번 주가 가고, 다음 주마저 가면, 회사에서 공부 시작한지 딱 한달이 된다. 으음... 이번 주가 가면 ucsoft에 온지 만 한달이다. 지금까지 뭘 했나 하는 생각이 들긴 하지만... 뭐 그리 아쉽지는 않다. 나름대로 바쁘게 보냈으니까. 그리고 개인적인 성장을 위해 많이 노력 했으니까. 게다가 돈도 받으니...<br /></p><p>오늘은 왠지 몸이 많이 피곤하다. 어제의 기차 여행이 많이 스트레스를 줬던 것일까? 아니면, 오늘 새벽에 한번 깼던 것? 그것도 아니면, libc info 페이지 공부하는 것? 아뭏든 몸과 마음이 좀 지친 듯하다.<br />"지치다" - 요즘 내 상태를 한마디로 표현하자면 이 단어가 제일 적당한 것 같다.  어떻게 해야할까? wais가 말하는 것처럼 적당히 시간 때우다가 그만두고 옮길까? 아니면, 더 열심히 일해서 좀 더 나은 생산을 할까?<br /></p><p>갈등 상황이다. wais의 회사에 간다면, 그곳에서 잘 할 수 있을까? 뭐, 그곳엔 나보다 더 나은 사람은 없는 것 같지만. 지금 상황으론 ucsoft에서 별 문제 없이, 시간에 얽매이는 작업 없이 지내고 있긴 하지만, 좀 부담이 된다. 공부해서 어느 정도 실력으로 올려야한다는 것이. 뭐 나에게도 남는 것이기에 거절할 것은 못 되지만, 어쨌든 부담되는 것은 사실이다.<br /></p><p>그런데, ucsoft에서는 문제가, 업무시간이 12:00부터 16:00이기에 점심 먹기가 애매하다는 것이다. 나는 보통 출근을 10:00에서 11:00 사이에 하는데, 그러면 공부하다가 밥 먹으러 나가기가 좀 불편하다는...<br />요즘 계속 점심을 굶었더니, 버티기가 좀 힘들다. 가뜩이나, 물가도 비싸서 충분히 못 먹는데... 게다가 급여도 생활하기에 넉넉한 편도 아니고.<br /></p><p>생각해보니, 매일 4시간 일하고, 주 5일 근무하는 것을 쳐보니, 50만원/80시간, 시간 당 약 5천원 정도 되는 것 같다. 뭐 왠만한 시간제 근무보다 좋지만, 실제로 일하는 시간은 하루에 12시간이니...<br />공부 끝나고 어느 정도 일하게 되면, 칼 출/퇴근이다. 흘흘...<br /></p><p>아흠... 어떻게든 바른 곳으로 향하길...<br />과연 어디로 가는 것인지는 지나봐야 알 것인가.<br /></p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>2002-02-14 - 추ㅣ미생활 취미생호라</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/04/2002-02-14.html" />
+    <id>tag:blog.youre.space,2017:/vergence//10.558</id>
+
+    <published>2017-04-16T07:47:21Z</published>
+    <updated>2017-04-16T07:47:21Z</updated>
+
+    <summary>내일 퇴근 해서 집에 가려고 한다. 거의 19일(?)만에 집에 가는 것 같다. 이렇게 오랜동안 집 나와 본 적이 없었는데...몸은 좀 많이 안 좋지만, 좋은 경험(?)임은 확실한 듯하다.요 며칠 공부가 잘 안 된다. 내용이 어려운 탓도 있지만, 다른 사람들하고 딴 짓을...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p></p><p>내일 퇴근 해서 집에 가려고 한다. 거의 19일(?)만에 집에 가는 것 같다. 이렇게 오랜동안 집 나와 본 적이 없었는데...<br />몸은 좀 많이 안 좋지만, 좋은 경험(?)임은 확실한 듯하다.<br /></p><p>요 며칠 공부가 잘 안 된다. 내용이 어려운 탓도 있지만, 다른 사람들하고 딴 짓을 해서 좀 부족한 것 같기도 하다. 특히 양파님이 자꾸 장난을 걸어와서...<br /></p><p>내일도 출근해서 공부하다가 16:00에 테스트 받고(꽤나 힘든 시간이 될 듯하다. 하지만 뭐 어때. 그냥 마음 놓고... 어차피 여긴 학교가 아니니까...), 한 시간 정도 걸릴테니, 17:00에 퇴근해서 영등포역으로 가서, 열차를 타고 대전으로.<br /></p><p>대전에 가면, 친구들 좀 봐야겠다. 친구들이 많이 보고 싶다. 특히나, 정민이가...<br />전에 돈 벌면, 영실이 칵테일 사주겠다고 했었던 것같은데. 음... 다시 생각해보니, 하늘에서 돈 떨어지면 사주겠다고 했었군. 하하<br /></p><p>그리고, 휴학 연장도 해야겠고.<br />어쨌든... 내일은 무엇을 또 하겠지.<br /></p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>2002-02-13 - 추ㅣ미생활 취미생호라</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/04/2002-02-13.html" />
+    <id>tag:blog.youre.space,2017:/vergence//10.557</id>
+
+    <published>2017-04-16T07:47:19Z</published>
+    <updated>2017-04-16T07:47:19Z</updated>
+
+    <summary>어쩌다 보니 하루가 다 가버렸다. 오늘은 설 연휴의 마지막 날인데. 뭐 설 연휴가 나에게 큰 의미가 있는 것은 아니나, 약간은 허무하게 보낸 것 같다는 느낌을 떨쳐버릴 수가 없다.일하면서 스트레스 받을 것은 예상하던 바이나, 양파님이 갈구는 것은 좀 귀찮다. 걍 무시해버려도...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p></p><p>어쩌다 보니 하루가 다 가버렸다. 오늘은 설 연휴의 마지막 날인데. 뭐 설 연휴가 나에게 큰 의미가 있는 것은 아니나, 약간은 허무하게 보낸 것 같다는 느낌을 떨쳐버릴 수가 없다.<br /></p><p>일하면서 스트레스 받을 것은 예상하던 바이나, 양파님이 갈구는 것은 좀 귀찮다. 걍 무시해버려도 되는 것이긴 하지만... 어제와 오늘은 먹을 것을 많이 먹으라고 강요하는 것으로 심심함을 달래는 것 같았다. 뭐 이틀정도 했으니 그만하겠지 하는 생각이 든다.<br /></p><p>타잔님하고 얘기하면서, 양파님이 말하길, 인카운터 1.2 나오는 것이 내가 인스톨러와 linuxrc를 준비 못해서 미뤄진다고 했다. 내일 이것에 대해 얘기해 봐야겠다.<br />나는 회사에서 나에 맞추기 위해 일정을 천천히 잡는 것은 별로 맞지 않다고 본다. 회사는 회사가 지향하는 바를 이루기 위해 직원을 이용하는 것이고, 그 것을 위한 일을 하는 직원이 제대로 맞추지 못할 경우에는, 그 직원보다는 다른 직원을 찾는 것이 더 바람직하다고 생각한다. 지금처럼 그 직원의 능력이 성장 될 때까지 기다린다는 것은 회사의 큰 손실이며, 잘 못된 운영이라고 생각한다. (양파님한테, 내가 직업을 얻어 일을 하려고 했던 의도는 시간에 맞게 어떤 일을 해내려는 것 보다는, 그다지 정해진 기한 내에 처리되어야하는 일이 아닌 일에, 특히 x window 시스템 프로그래밍 쪽이었다는 것을 말해야겠다.) 물론 양파님도 운영에 대한 어떤 생각이 있으니 그런 것이긴 하겠지만...<br /></p><p>서울 와서 끼니 때에 제대로 식사를 하지 않는 것 같다. 오늘은 아침, 점심 거르고, 저녁 때 즈음 되어서 피자 먹은 것 밖에는 없다. 그것도 과식...<br />몸에 많이 안 좋을 것이라는 생각이 들기는 하는데, 특별히 어떻게 해야할지 계획이 잘 안 선다. 내일부터는 고시원에서 다시 아침 식사를 할 것 같다. 저녁 식사는 퇴근하고 먹는다고 해도, 점심은 어떻게 해야할지...<br /></p><p>번하드하고 채팅을 했는데, 번하드도 심란한 것 같았다. 별로 도움이 되지 못하는 것 같아서 아쉬웠다.<br />그리고 어색했는지 잘 모르겠지만, 번하드에게 friend라는 말을 썼다. take care, my friend(?) Burnhard 이런 식으로 메시지를 보냈더니, remove (?)라는 답이...<br />:-)<br /></p><p>부디 명희라는 분과 그 가족들, 번하드와 그의 가족들, 나와 나와 관련된 모든 사람들에게 부디 평안이 깃들길 바란다.<br /></p><p>오늘도 가엾은 나의 영혼이 부디 평안한 밤을 맞길 기원한다.<br /></p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>2002-02-12 - 추ㅣ미생활 취미생호라</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/04/2002-02-12.html" />
+    <id>tag:blog.youre.space,2017:/vergence//10.556</id>
+
+    <published>2017-04-16T07:47:18Z</published>
+    <updated>2017-04-16T07:47:18Z</updated>
+
+    <summary>서울에 온 이후로 몸이 좀 많이 안 좋아졌다는 생각이 든다. 거의 2주 동안 매일 설사하고, 하루에 2끼 밖에 안 먹고, 잠 조금 밖에 못 자고...눈은 하루 종일 충혈 되어있고...서울에 와서 3일 정도 지나서부터 였던가, 사무실에 있으면, 가만히 앉아 있어도 어지럽고,...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p></p><p>서울에 온 이후로 몸이 좀 많이 안 좋아졌다는 생각이 든다. 거의 2주 동안 매일 설사하고, 하루에 2끼 밖에 안 먹고, 잠 조금 밖에 못 자고...<br />눈은 하루 종일 충혈 되어있고...<br /></p><p>서울에 와서 3일 정도 지나서부터 였던가, 사무실에 있으면, 가만히 앉아 있어도 어지럽고, 몸이 위 아래로 움직이는 것 같고...<br /></p><p>며칠 전부터는 감기 증세도 조금 있는 것 같다. 콧물도 조금 나고, 코도 막히고...<br /></p><p>일단은 좀 무리해서라도 공부하는데 집중해야겠다.<br /></p><p>좀 지나면, 조금 여유를 부릴 수 있을 것 같고, 또 익숙해지기도 할테니...<br /></p><p>2주전 서울에 온 것은 내 인생에 또 하나의 전환점이 었을 것이라는 생각이 든다. 환경이 많이 바뀐데다가 하는 일도 바뀌었으니, 아니라고 하기가 어려울 정도고...<br /></p><p>이 전환점은 어떤 방향으로 가는 전환점일까.<br />지금은 알 수 없겠지만, 부디 나중에 평가하기에, 바른 길이었기를 바란다.<br /></p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>2002-02-11 - 추ㅣ미생활 취미생호라</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/04/2002-02-11.html" />
+    <id>tag:blog.youre.space,2017:/vergence//10.555</id>
+
+    <published>2017-04-16T07:47:16Z</published>
+    <updated>2017-04-16T07:47:16Z</updated>
+
+    <summary>사무실에 혼자 있다. 종화씨는 부모님이 오셔서 같이 집으로...역시 적막하고 고요한 곳이 나에게 어울리는 것일까.다음 금요일에 다시 테스트 하는데,공부 정말 안 된다.아흐 어쩐다...어떻게든 열심히 해봐야겠다.노력한 결과가 어쨌든 나의 인생에 도움이 되기는 하겠지.(부디 그러기를...)...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p></p><p>사무실에 혼자 있다. 종화씨는 부모님이 오셔서 같이 집으로...<br /></p><p>역시 적막하고 고요한 곳이 나에게 어울리는 것일까.<br />다음 금요일에 다시 테스트 하는데,<br />공부 정말 안 된다.<br /></p><p>아흐 어쩐다...<br />어떻게든 열심히 해봐야겠다.<br /></p><p>노력한 결과가 어쨌든 나의 인생에 도움이 되기는 하겠지.(부디 그러기를...)<br /></p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>2002-02-10 - 추ㅣ미생활 취미생호라</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/04/2002-02-10.html" />
+    <id>tag:blog.youre.space,2017:/vergence//10.554</id>
+
+    <published>2017-04-16T07:47:14Z</published>
+    <updated>2017-04-16T07:47:14Z</updated>
+
+    <summary>어제 &quot;마음의 부자&quot;에 대한 생각이 바뀔지도 모르겠다.오늘은 일요일이고,내일을 월요일이다.젠장... 오늘은 갔다....</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p></p><p>어제 "마음의 부자"에 대한 생각이 바뀔지도 모르겠다.<br /></p><p>오늘은 일요일이고,<br />내일을 월요일이다.<br /></p><p>젠장... 오늘은 갔다.<br /></p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>2002-02-07 - 추ㅣ미생활 취미생호라</title>
@@ -183,285 +330,6 @@
 <iframe id="sbs_player" width="320" height="180" style="border: 0;" src="http://openapi.sbs.co.kr/api/sbs/video/player.jsp?clientid=f88f0e13402c69a95c94620e39d6fa6d7b81e118&amp;content_id=410570012&amp;req_gubun=1&amp;uuid=1" scrolling="no" allowfullscreen=""></iframe>
 </p>
 <p>SBS, TV가요 20, 인기가요총출동 VJ, 조여정, 1997-10-12</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>인천공항에 갔습니다 - 추ㅣ미생활 취미생호라</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/04/iieii-eiee.html" />
-    <id>tag:blog.youre.space,2017:/vergence//10.542</id>
-
-    <published>2017-04-01T09:45:54Z</published>
-    <updated>2017-04-01T09:45:54Z</updated>
-
-    <summary>중국인 여행객이 줄어든 것 같습니다. 스타벅스에서 오늘의 커피를 한잔하고, 치즈케익도 먹었습니다. 아내는 아이스 아메리카노를 시켰는데 한모금 마시더니 쓰다고 얼굴을 찌푸렸습니다. 그리고는 치즈케익 한입 먹더니 얼굴에 두드레기가 났습니다. 못먹는 음식이 많아져 안타까워 보였습니다. 다음은 비행기가 보고싶어 4층 코너로 이동했습니다. 가는길 배고프다며...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>중국인 여행객이 줄어든 것 같습니다. 스타벅스에서 오늘의 커피를 한잔하고, 치즈케익도 먹었습니다. 아내는 아이스 아메리카노를 시켰는데 한모금 마시더니 쓰다고 얼굴을 찌푸렸습니다. 그리고는 치즈케익 한입 먹더니 얼굴에 두드레기가 났습니다. 못먹는 음식이 많아져 안타까워 보였습니다. 다음은 비행기가 보고싶어 4층 코너로 이동했습니다. 가는길 배고프다며 아내가 찹쌀떡을 사달라 합니다. 먹는 모습을 보니 점심을 굶었나 하는 생각이 들지만 굳이 얘기하지 않습니다. 아내는 웃고있으니까요. 비행기를 보는 공간은 여전히 사람들이 많습니다. 다시 1층으로 내려오니 역시 도착하는 사람들은 썰물처럼 밀려옵니다. 집으로 돌아오는 길에 바다를 지났습니다. 해가 지는 모습을 보니 마음이 뭉클했습니다. 오늘은 여기까지입니다.</p><p>&#51473;&#44397;&#51064; &#50668;&#54665;&#44061;&#51060; &#51460;&#50612;&#46304; &#44163; &#44057;&#49845;&#45768;&#45796;. &#49828;&#53440;&#48261;&#49828;&#50640;&#49436; &#50724;&#45720;&#51032; &#52964;&#54588;&#47484; &#54620;&#51092;&#54616;&#44256;, &#52824;&#51592;&#52992;&#51061;&#46020; &#47673;&#50632;&#49845;&#45768;&#45796;. &#50500;&#45236;&#45716; &#50500;&#51060;&#49828; &#50500;&#47700;&#47532;&#52852;&#45432;&#47484; &#49884;&#53040;&#45716;&#45936; &#54620;&#47784;&#44552; &#47560;&#49884;&#45908;&#45768; &#50416;&#45796;&#44256; &#50620;&#44404;&#51012; &#52236;&#54392;&#47160;&#49845;&#45768;&#45796;. &#44536;&#47532;&#44256;&#45716; &#52824;&#51592;&#52992;&#51061; &#54620;&#51077; &#47673;&#45908;&#45768; &#50620;&#44404;&#50640; &#46160;&#46300;&#47112;&#44592;&#44032; &#45228;&#49845;&#45768;&#45796;. &#47803;&#47673;&#45716; &#51020;&#49885;&#51060; &#47566;&#50500;&#51256; &#50504;&#53440;&#44620;&#50892; &#48372;&#50688;&#49845;&#45768;&#45796;. &#45796;&#51020;&#51008; &#48708;&#54665;&#44592;&#44032; &#48372;&#44256;&#49910;&#50612; 4&#52789; &#53076;&#45320;&#47196; &#51060;&#46041;&#54664;&#49845;&#45768;&#45796;. &#44032;&#45716;&#44600; &#48176;&#44256;&#54532;&#45796;&#47728; &#50500;&#45236;&#44032; &#52281;&#49920;&#46497;&#51012; &#49324;&#45804;&#46972; &#54633;&#45768;&#45796;. &#47673;&#45716; &#47784;&#49845;&#51012; &#48372;&#45768; &#51216;&#49900;&#51012; &#44406;&#50632;&#45208; &#54616;&#45716; &#49373;&#44033;&#51060; &#46308;&#51648;&#47564; &#44403;&#51060; &#50584;&#44592;&#54616;&#51648; &#50506;&#49845;&#45768;&#45796;. &#50500;&#45236;&#45716; &#50883;&#44256;&#51080;&#51004;&#45768;&#44620;&#50836;. &#48708;&#54665;&#44592;&#47484; &#48372;&#45716; &#44277;&#44036;&#51008; &#50668;&#51204;&#55176; &#49324;&#46988;&#46308;&#51060; &#47566;&#49845;&#45768;&#45796;. &#45796;&#49884; 1&#52789;&#51004;&#47196; &#45236;&#47140;&#50724;&#45768; &#50669;&#49884; &#46020;&#52265;&#54616;&#45716; &#49324;&#46988;&#46308;&#51008; &#50032;&#47932;&#52376;&#47100; &#48128;&#47140;&#50741;&#45768;&#45796;. &#51665;&#51004;&#47196; &#46028;&#50500;&#50724;&#45716; &#44600;&#50640; &#48148;&#45796;&#47484; &#51648;&#45228;&#49845;&#45768;&#45796;. &#54644;&#44032; &#51648;&#45716; &#47784;&#49845;&#51012; &#48372;&#45768; &#47560;&#51020;&#51060; &#47945;&#53364;&#54664;&#49845;&#45768;&#45796;. &#50724;&#45720;&#51008; &#50668;&#44592;&#44620;&#51648;&#51077;&#45768;&#45796;.</p>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Let’s Encrypt is Here – Open Source Security Certificates Available at SashiDo! - 곽상용의 블로그</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/03/letas-encrypt-is-here-a-open-source-security-certificates-available-at-sashido.html" />
-    <id>tag:blog.youre.space,2017:/imyaman//5.541</id>
-
-    <published>2017-03-29T00:11:34Z</published>
-    <updated>2017-03-29T00:11:34Z</updated>
-
-    <summary>I love SashiDo and &quot;Let&apos;s Ecrypt&quot;. From: Tanya from SashiDo.io Date: Wednesday, March 29, 2017 at 09:04 Subject: Let’s Encrypt is Here – Open Source Security Certificates Available at SashiDo! To: imyaman #AOLMsgPart_2_d18f1e86-a603-4de7-992d-b0a3893061f4 td{color: black;} .aolReplacedBody #aolmail_outlook a{ padding: 0;...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
-        <![CDATA[<p>I love SashiDo and "Let's Ecrypt".</p>
-
-<p>From: Tanya from SashiDo.io <br />
-Date: Wednesday, March 29, 2017 at 09:04<br />
-Subject: Let’s Encrypt is Here – Open Source Security Certificates Available at SashiDo!<br />
-To: imyaman </p>
-
-<p>#AOLMsgPart_2_d18f1e86-a603-4de7-992d-b0a3893061f4 td{color: black;} .aolReplacedBody #aolmail_outlook a{ padding: 0; } .aolReplacedBody { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; font-weight: 400; } .aolReplacedBody .aolmail_ReadMsgBody{ width: 100%; } .aolReplacedBody .aolmail_ExternalClass{ width: 100%; } .aolReplacedBody img { border: 0; max-width: 100%; height: auto; outline: none; display: inline-block; margin: 0; padding: 0; text-decoration: none; line-height: 100%; } .aolReplacedBody #aolmail_backgroundTable{ height: 100% !important; margin: 0; padding: 0; width: 100% !important; }#AOLMsgPart_2_d18f1e86-a603-4de7-992d-b0a3893061f4 td{color: black;} .aolReplacedBody .aolmail_main { font-family: Helvetica, Arial, sans-serif; letter-spacing: 0; width: 100%; } .aolReplacedBody table { border-spacing: 0; border-collapse: separate; table-layout: fixed; } .aolReplacedBody td { padding: 0; font-family: Helvetica, Arial, sans-serif; } .aolReplacedBody a { border: none; outline: none !important; } .aolReplacedBody .aolmail_content-td { color: #222; line-height: 20px; } .aolReplacedBody .aolmail_content-td &gt; :first-child { margin-top: 0; padding-top: 0; } .aolReplacedBody .aolmail_content-td h1 { font-size: 1.3em; font-weight: bold; line-height: 25px; margin-top: 20px; margin-bottom: 5px; } .aolReplacedBody .aolmail_content-td h1 + h2 { margin-top: 0 !important; } .aolReplacedBody .aolmail_content-td h2 + h1 { margin-top: 0 !important; } .aolReplacedBody .aolmail_content-td h2 { font-size: 1.1em; font-weight: bold; margin: 20px 0 5px; } .aolReplacedBody .aolmail_content-td h3 ,.aolReplacedBody .aolmail_content-td h4 ,.aolReplacedBody .aolmail_content-td h5 { font-size: 13px; font-weight: bold; margin-bottom: 5px; } .aolReplacedBody .aolmail_content-td p { margin: 0 0 15px 0; } .aolReplacedBody .aolmail_content-td p img,.aolReplacedBody .aolmail_content-td h1 img,.aolReplacedBody .aolmail_content-td h2 img,.aolReplacedBody .aolmail_content-td li img,.aolReplacedBody .aolmail_content-td .aolmail_intercom-h2b-button img { margin: 0; padding: 0; } .aolReplacedBody .aolmail_content-td a { color: #1251ba; text-decoration: underline; } .aolReplacedBody .aolmail_content-td strong { color: #606060; } .aolReplacedBody .aolmail_content-td ol,.aolReplacedBody .aolmail_content-td ul { margin: 0 0 20px 40px; padding: 0; list-style: disc; } .aolReplacedBody .aolmail_content-td ol { list-style: decimal; } .aolReplacedBody .aolmail_content-td ol li,.aolReplacedBody .aolmail_content-td ul li { margin: 5px 0; } .aolReplacedBody .aolmail_content-td blockquote { padding: 10px 0; margin: 10px 0; font-style: italic; color: #8C8C8C; } .aolReplacedBody .aolmail_content-td blockquote a { color: #8C8C8C; } .aolReplacedBody .aolmail_content-td img { max-width: 100%; margin: 15px 0 15px; } .aolReplacedBody .aolmail_content-td .aolmail_intercom-container { margin-bottom: 16px; } .aolReplacedBody .aolmail_content-td hr { border: none; border-top: 1px solid #DDD; border-bottom: 0; margin: 20px 0; } .aolReplacedBody .aolmail_content-td table th { font-weight: bold; background: #F6F6F6; } .aolReplacedBody .aolmail_content-td table td,.aolReplacedBody .aolmail_content-td table th { padding: 7px 10px; border: 1px solid #DADADA; text-align: left; vertical-align: top; } .aolReplacedBody .aolmail_content-td table { margin-bottom: 20px; border-collapse: collapse; border-spacing: 0; } .aolReplacedBody .aolmail_content-td table.aolmail_intercom-container.aolmail_intercom-align-center { margin-left: auto; margin-right: auto; } .aolReplacedBody .aolmail_content-td table.aolmail_intercom-container td { border: none; padding: 0; margin: 0; } .aolReplacedBody .aolmail_footer { width: 100%; font-family: Helvetica, Arial, sans-serif; } .aolReplacedBody .aolmail_footer .aolmail_footer-td { padding: 10px 0; text-align: left; width: 100%; font-size: 11px; color: #999999; } .aolReplacedBody .aolmail_footer a { text-decoration: underline; font-size: 11px; color: #999999; }#AOLMsgPart_2_d18f1e86-a603-4de7-992d-b0a3893061f4 td{color: black;} .aolReplacedBody .aolmail_content-td blockquote + * { margin-top: 10px !important; } .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td h1 { padding: 15px 0 5px 0 !important; } .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td h2 { padding: 0 0 5px 0 !important; } .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td p { padding: 10px 0 !important; } .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td hr + * { padding-top: 20px !important; } .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td .aolmail_intercom-container { padding: 5px 0 !important; } .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td ol ,.aolReplacedBody .aolmail_ExternalClass .aolmail_content-td ul { padding: 0 0 20px 40px !important; margin: 0 !important; } .aolReplacedBody img { max-width: 600px !important; } @media (max-width: 600px) { .aolReplacedBody img { max-width: 100% !important; } }#AOLMsgPart_2_d18f1e86-a603-4de7-992d-b0a3893061f4 td{color: black;} .aolReplacedBody .aolmail_intercom-align-right { text-align: right !important;}.aolReplacedBody .aolmail_intercom-align-center { text-align: center !important;}.aolReplacedBody .aolmail_intercom-align-left { text-align: left !important;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-right{ text-align: left !important;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left{ text-align: right !important;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left { text-align:right !important;}.aolReplacedBody .aolmail_right-to-left li { text-align:right !important; direction: rtl;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left img,.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left .aolmail_intercom-h2b-button { margin-left: 0 !important;}.aolReplacedBody .aolmail_intercom-attachment,.aolReplacedBody .aolmail_intercom-attachments,.aolReplacedBody .aolmail_intercom-attachments td,.aolReplacedBody .aolmail_intercom-attachments th,.aolReplacedBody .aolmail_intercom-attachments tr,.aolReplacedBody .aolmail_intercom-attachments tbody,.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon,.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon img { border: none !important; box-shadow: none !important; padding: 0 !important; margin: 0 !important;}.aolReplacedBody .aolmail_intercom-attachments { margin: 10px 0 !important;}.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon,.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon img { width: 16px !important; height: 16px !important;}.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon { padding-right: 5px !important;}.aolReplacedBody .aolmail_intercom-attachment { display: inline-block !important; margin-bottom: 5px !important;}.aolReplacedBody .aolmail_intercom-interblocks-content-card { width: 334px !important; max-height: 136px !important; max-width: 100% !important; overflow: hidden !important; border-radius: 20px !important; font-size: 16px !important; border: 1px solid #e0e0e0 !important;}.aolReplacedBody .aolmail_intercom-interblocks-link,.aolReplacedBody .aolmail_intercom-interblocks-article-card { text-decoration: none !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-icon { width: 22.5% !important; height: 136px !important; float: left !important; background-color: #fafafa !important; background-image: url('https://static.intercom-mail.com/assets/article_book-1a595be287f73c0d02f548f513bfc831.png') !important; background-repeat: no-repeat !important; background-size: 32px !important; background-position: center !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-text { width: 77.5% !important; float: right !important; background-color: #fff !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-title,.aolReplacedBody .aolmail_intercom-interblocks-article-title { color: #519dd4 !important; font-size: 15px !important; margin: 16px 18px 12px !important; line-height: 1.3em !important; overflow: hidden !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-body { margin: 0 18px 12px !important; font-size: 14px !important; color: #65757c !important; line-height: 1.3em !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-author,.aolReplacedBody .aolmail_intercom-interblocks-article-author { margin: 10px 15px !important; height: 24px !important; line-height: normal !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-author-avatar,.aolReplacedBody .aolmail_intercom-interblocks-article-author-avatar { width: 16px !important; height: 16px !important; display: inline-block !important; vertical-align: middle !important; float: left; margin-right: 5px;}.aolReplacedBody .aolmail_intercom-interblocks-link-author-avatar-image,.aolReplacedBody .aolmail_intercom-interblocks-article-author-avatar-image { width: 16px !important; height: 16px !important; border-radius: 50% !important; margin: 0 !important; vertical-align: top !important; font-size: 12px !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-author-name,.aolReplacedBody .aolmail_intercom-interblocks-article-author-name { color: #74848b !important; margin: 0 0 0 5px !important; font-size: 12px !important; font-weight: 500 !important; overflow: hidden !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-written-by { color: #8897a4 !important; margin: 1px 0 0 5px !important; font-size: 12px !important; overflow: hidden !important; vertical-align: middle !important; float: left !important;}</p>
-
-<p>Hey there!</p>
-
-<p>It's been a busy month for us at SashiDo.</p>
-
-<p>After releasing our Automatic Database Backups feature last week, now we have something else to announce :)</p>
-
-<p>You know that we care about your user experience and want to make it better and better, so we have decided to implement something really cool to our platform and that's Let's Encrypt.</p>
-
-<p>Let's Encrypt is a free, automated, and open certificate authority (CA) that issues domain-validated security certificates. They let people and organizations around the world obtain, renew, and manage SSL/TLS certificates. </p>
-
-<p>Their certificates can be used by websites to enable secure HTTPS connections.</p>
-
-<p>The key benefits of the Let’s Encrypt certificates are:</p>
-
-<p>cost-free</p>
-
-<p>automatic installation</p>
-
-<p>trusted by all major browsers</p>
-
-<p>Starting from today, every user of SashiDo can set up SSL on the custom domain name used with their app.</p>
-
-<p>You will be able to activate the SSL within a few clicks of the mouse. What is more, once you enable your certificate, we will renew it every 3 months for you automatically, so will you no longer have to worry about it :)</p>
-
-<p>How to use Let’s Encrypt at SashiDo:</p>
-
-<p>You can activate your Let's Encrypt certificate through your app dashboard -> App Settings -> Emails & Hosting.</p>
-
-<p>If you need additional information about the certificate you can refer to our blog post and of course you can always send us an email at support@sashido.io or reach us over the live chat :)</p>
-
-<p>Best,<br />
-SashiDo.io team </p>
-
-<p>Don't want to get emails like this? Unsubscribe</p>
-
-<p>￼ </p><p>I love SashiDo and "Let's Ecrypt".</p>
-<br />From: Tanya from SashiDo.io &#60;tanya.valeva@sashidoio.intercom-mail.com&#62;Date: Wednesday, March 29, 2017 at 09:04Subject: Let’s Encrypt is Here – Open Source Security Certificates Available at SashiDo!To: imyaman &#60;imyaman@netscape.net&#62;<br /><br />
-<div>
-#AOLMsgPart_2_d18f1e86-a603-4de7-992d-b0a3893061f4 td{color: black;}   .aolReplacedBody #aolmail_outlook a{    padding: 0;  }  .aolReplacedBody  {    -webkit-text-size-adjust: none;    -ms-text-size-adjust: none;    font-weight: 400;  }  .aolReplacedBody .aolmail_ReadMsgBody{    width: 100%;  }  .aolReplacedBody .aolmail_ExternalClass{    width: 100%;  }  .aolReplacedBody img {    border: 0;    max-width: 100%;    height: auto;    outline: none;    display: inline-block;    margin: 0;    padding: 0;    text-decoration: none;    line-height: 100%;  }  .aolReplacedBody #aolmail_backgroundTable{    height: 100% !important;    margin: 0;    padding: 0;    width: 100% !important;  }#AOLMsgPart_2_d18f1e86-a603-4de7-992d-b0a3893061f4 td{color: black;}     .aolReplacedBody .aolmail_main {    font-family: Helvetica, Arial, sans-serif;    letter-spacing: 0;    width: 100%;  }  .aolReplacedBody table {    border-spacing: 0;    border-collapse: separate;    table-layout: fixed;  }  .aolReplacedBody td {    padding: 0;    font-family: Helvetica, Arial, sans-serif;  }  .aolReplacedBody a {    border: none;    outline: none !important;  }    .aolReplacedBody .aolmail_content-td {    color: #222;    line-height: 20px;  }  .aolReplacedBody .aolmail_content-td &gt; :first-child {    margin-top: 0;    padding-top: 0;  }  .aolReplacedBody .aolmail_content-td h1 {    font-size: 1.3em;    font-weight: bold;    line-height: 25px;    margin-top: 20px;    margin-bottom: 5px;  }  .aolReplacedBody .aolmail_content-td h1 + h2 {    margin-top: 0 !important;  }  .aolReplacedBody .aolmail_content-td h2 + h1 {    margin-top: 0 !important;  }  .aolReplacedBody .aolmail_content-td h2 {    font-size: 1.1em;    font-weight: bold;    margin: 20px 0 5px;  }  .aolReplacedBody .aolmail_content-td h3 ,.aolReplacedBody   .aolmail_content-td h4 ,.aolReplacedBody   .aolmail_content-td h5 {    font-size: 13px;    font-weight: bold;    margin-bottom: 5px;  }  .aolReplacedBody .aolmail_content-td p {    margin: 0 0 15px 0;  }  .aolReplacedBody .aolmail_content-td p img,.aolReplacedBody   .aolmail_content-td h1 img,.aolReplacedBody   .aolmail_content-td h2 img,.aolReplacedBody   .aolmail_content-td li img,.aolReplacedBody   .aolmail_content-td .aolmail_intercom-h2b-button img {    margin: 0;    padding: 0;  }  .aolReplacedBody .aolmail_content-td a {    color: #1251ba;    text-decoration: underline;  }  .aolReplacedBody .aolmail_content-td strong {    color: #606060;  }  .aolReplacedBody .aolmail_content-td ol,.aolReplacedBody   .aolmail_content-td ul {    margin: 0 0 20px 40px;    padding: 0;    list-style: disc;  }  .aolReplacedBody .aolmail_content-td ol {    list-style: decimal;  }  .aolReplacedBody .aolmail_content-td ol li,.aolReplacedBody   .aolmail_content-td ul li {    margin: 5px 0;  }  .aolReplacedBody .aolmail_content-td blockquote {    padding: 10px 0;    margin: 10px 0;    font-style: italic;    color: #8C8C8C;  }  .aolReplacedBody .aolmail_content-td blockquote a {    color: #8C8C8C;  }  .aolReplacedBody .aolmail_content-td img {    max-width: 100%;    margin: 15px 0 15px;  }  .aolReplacedBody .aolmail_content-td .aolmail_intercom-container {    margin-bottom: 16px;  }  .aolReplacedBody .aolmail_content-td hr {    border: none;    border-top: 1px solid #DDD;    border-bottom: 0;    margin: 20px 0;  }  .aolReplacedBody .aolmail_content-td table th {    font-weight: bold;    background: #F6F6F6;  }  .aolReplacedBody .aolmail_content-td table td,.aolReplacedBody   .aolmail_content-td table th {    padding: 7px 10px;    border: 1px solid #DADADA;    text-align: left;    vertical-align: top;  }  .aolReplacedBody .aolmail_content-td table {    margin-bottom: 20px;    border-collapse: collapse;    border-spacing: 0;  }  .aolReplacedBody .aolmail_content-td table.aolmail_intercom-container.aolmail_intercom-align-center {    margin-left: auto;    margin-right: auto;  }  .aolReplacedBody .aolmail_content-td table.aolmail_intercom-container td {    border: none;    padding: 0;    margin: 0;  }    .aolReplacedBody .aolmail_footer {    width: 100%;    font-family: Helvetica, Arial, sans-serif;  }  .aolReplacedBody .aolmail_footer .aolmail_footer-td {    padding: 10px 0;    text-align: left;    width: 100%;    font-size: 11px;    color: #999999;  }  .aolReplacedBody .aolmail_footer a {    text-decoration: underline;    font-size: 11px;    color: #999999;  }#AOLMsgPart_2_d18f1e86-a603-4de7-992d-b0a3893061f4 td{color: black;}   .aolReplacedBody .aolmail_content-td blockquote + * {    margin-top: 10px !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td h1 {    padding: 15px 0 5px 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td h2 {    padding: 0 0 5px 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td p {    padding: 10px 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td hr + * {    padding-top: 20px !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td .aolmail_intercom-container {    padding: 5px 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td ol ,.aolReplacedBody   .aolmail_ExternalClass .aolmail_content-td ul {    padding: 0 0 20px 40px !important;    margin: 0 !important;  }  .aolReplacedBody img {    max-width: 600px !important;  }  @media (max-width: 600px) {    .aolReplacedBody img {      max-width: 100% !important;    }  }#AOLMsgPart_2_d18f1e86-a603-4de7-992d-b0a3893061f4 td{color: black;}   .aolReplacedBody .aolmail_intercom-align-right {  text-align: right !important;}.aolReplacedBody .aolmail_intercom-align-center {  text-align: center !important;}.aolReplacedBody .aolmail_intercom-align-left {  text-align: left !important;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-right{  text-align: left !important;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left{  text-align: right !important;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left {  text-align:right !important;}.aolReplacedBody .aolmail_right-to-left li {  text-align:right !important;  direction: rtl;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left img,.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left .aolmail_intercom-h2b-button {  margin-left: 0 !important;}.aolReplacedBody .aolmail_intercom-attachment,.aolReplacedBody .aolmail_intercom-attachments,.aolReplacedBody .aolmail_intercom-attachments td,.aolReplacedBody .aolmail_intercom-attachments th,.aolReplacedBody .aolmail_intercom-attachments tr,.aolReplacedBody .aolmail_intercom-attachments tbody,.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon,.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon img {  border: none !important;  box-shadow: none !important;  padding: 0 !important;  margin: 0 !important;}.aolReplacedBody .aolmail_intercom-attachments {  margin: 10px 0 !important;}.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon,.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon img {  width: 16px !important;  height: 16px !important;}.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon {  padding-right: 5px !important;}.aolReplacedBody .aolmail_intercom-attachment {  display: inline-block !important;  margin-bottom: 5px !important;}.aolReplacedBody .aolmail_intercom-interblocks-content-card {  width: 334px !important;  max-height: 136px !important;  max-width: 100% !important;  overflow: hidden !important;  border-radius: 20px !important;  font-size: 16px !important;  border: 1px solid #e0e0e0 !important;}.aolReplacedBody .aolmail_intercom-interblocks-link,.aolReplacedBody .aolmail_intercom-interblocks-article-card {  text-decoration: none !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-icon {  width: 22.5% !important;  height: 136px !important;  float: left !important;  background-color: #fafafa !important;  background-image: url('https://static.intercom-mail.com/assets/article_book-1a595be287f73c0d02f548f513bfc831.png') !important;  background-repeat: no-repeat !important;  background-size: 32px !important;  background-position: center !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-text {  width: 77.5% !important;  float: right !important;  background-color: #fff !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-title,.aolReplacedBody .aolmail_intercom-interblocks-article-title {  color: #519dd4 !important;  font-size: 15px !important;  margin: 16px 18px 12px !important;  line-height: 1.3em !important;  overflow: hidden !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-body {  margin: 0 18px 12px !important;  font-size: 14px !important;  color: #65757c !important;  line-height: 1.3em !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-author,.aolReplacedBody .aolmail_intercom-interblocks-article-author {  margin: 10px 15px !important;  height: 24px !important;  line-height: normal !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-author-avatar,.aolReplacedBody .aolmail_intercom-interblocks-article-author-avatar {  width: 16px !important;  height: 16px !important;  display: inline-block !important;  vertical-align: middle !important;  float: left;  margin-right: 5px;}.aolReplacedBody .aolmail_intercom-interblocks-link-author-avatar-image,.aolReplacedBody .aolmail_intercom-interblocks-article-author-avatar-image {  width: 16px !important;  height: 16px !important;  border-radius: 50% !important;  margin: 0 !important;  vertical-align: top !important;  font-size: 12px !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-author-name,.aolReplacedBody .aolmail_intercom-interblocks-article-author-name {  color: #74848b !important;  margin: 0 0 0 5px !important;  font-size: 12px !important;  font-weight: 500 !important;  overflow: hidden !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-written-by {  color: #8897a4 !important;  margin: 1px 0 0 5px !important;  font-size: 12px !important;  overflow: hidden !important;  vertical-align: middle !important;  float: left !important;}<div>
-
-  <table>
-    <tr>
-      <td>
-        
-          <p>Hey there!</p>
-<p>It's been a busy month for us at SashiDo.</p>
-<p>After releasing our Automatic Database Backups feature last week, now we have something else to announce :)</p>
-<p>You know that we care about your user experience and want to make it better and better, so we have decided to implement something really cool to our platform and that's Let's Encrypt.</p>
-<p><a href="https://via.intercom-mail-100.com/e?ob=m9%2BQLEVigzXe6DyY0HmEO%2B6lMYXS%2FCwdzswhgg3hLUA%3D&h=c421a591346589504c25c03eeed4987e26a7159a-9008604589">Let's Encrypt</a> is a free, automated, and open certificate authority (CA) that issues domain-validated security certificates. They let people and organizations around the world obtain, renew, and manage SSL/TLS certificates.&nbsp;</p>
-<p>Their certificates can be used by websites to enable secure HTTPS connections.</p>
-<p>The key benefits of the Let’s Encrypt certificates are:</p>
-<ul>
-<li>cost-free</li>
-<li>automatic installation</li>
-<li>trusted by all major browsers</li>
-</ul>
-<p>Starting from today, every user of SashiDo can set up SSL on the custom domain name used with their app.</p>
-<p>You will be able to activate the SSL within a few clicks of the mouse. What is more, once you enable your certificate, we will renew it every 3 months for you automatically, so will you no longer have to worry about it :)</p>
-How to use Let’s Encrypt at SashiDo:
-<p>You can activate your Let's Encrypt certificate through your app dashboard -&gt; App Settings -&gt; Emails & Hosting.</p>
-<p>If you need additional information about the certificate you can refer to our <a href="https://via.intercom-mail-100.com/e?ob=Hij651Yaz7rJJ1l5w0IShUWoVArJA4JSp0RB2Qsp5I1IxOok0Vp%2BWIN1T6XcwUPGAVL%2B74a%2BxD5pSNmt89v2Cg%3D%3D&h=0667a1dcfdd64a08035b698523385e274422edaa-9008604589">blog post </a>and of course you can always send us an email at <a href="mailto:support@sashido.io">support@sashido.io</a> or reach us over the live chat :)</p>
-<p>Best,<br /><a href="https://via.intercom-mail-100.com/e?ob=4qabvI%2Fa4L2VJyuEtuoM07QcJdQN40Cd3WK5ItptRis%3D&h=6ad1ec8112c4a9db539f43e8f25ab681f7833068-9008604589">SashiDo.io</a> team <br /></p>
-        
-      </td>
-    </tr>
-  </table>
-
-  
-  <table>
-    <tr>
-      <td>
-        
-          <p>Don't want to get emails like this? <a href="https://ckqg6zry.intercom-mail.com/unsubscribe?app_id=ckqg6zry&conversation_id=9008604589&user_id=576e030c41e3152eb0009672">Unsubscribe</a></p>
-        
-      </td>
-    </tr>
-  </table>
-
-<img src="https://via.intercom-mail-100.com/o?h=416d9c7430de2131271515793672c7851cc432bd-9008604589" width="1" height="1" alt="intercom">
-
-
-</div>
-</div>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>판타지 Final Fantasy IV - 추ㅣ미생활 취미생호라</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/03/-final-fantasy-iv.html" />
-    <id>tag:blog.youre.space,2017:/vergence//10.540</id>
-
-    <published>2017-03-26T23:57:29Z</published>
-    <updated>2017-03-26T23:59:18Z</updated>
-
-    <summary>오늫은 왠지 판타지에서 살고 싶군요. Final Fantasy IV...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>오늫은 왠지 판타지에서 살고 싶군요. Final Fantasy IV</p>
-
-<p><img src="http://vignette3.wikia.nocookie.net/finalfantasy/images/3/31/Ff4characters.jpg/revision/latest?cb=20120706190747" width="320"></p>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>탄이와 핵이 - 추ㅣ미생활 취미생호라</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/03/post-71.html" />
-    <id>tag:blog.youre.space,2017:/vergence//10.539</id>
-
-    <published>2017-03-25T05:37:44Z</published>
-    <updated>2017-03-25T05:41:57Z</updated>
-
-    <summary>탄핵을 기념하여 뿌린 씨앗에서 싹이 났습니다. 토마토가 열리기 전에 혼란스러운 상황이 정리되길....</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>탄핵을 기념하여 뿌린 씨앗에서 싹이 났습니다.
-토마토가 열리기 전에 혼란스러운 상황이 정리되길.</p>
-
-<p><img src="https://c1.staticflickr.com/3/2868/33505944971_2fb37d7a9b_k.jpg" width="320"></p>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>스타크래프트 HD 이야기에 이어 - 추ㅣ미생활 취미생호라</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/03/Starcraft-HD.html" />
-    <id>tag:blog.youre.space,2017:/vergence//10.538</id>
-
-    <published>2017-03-22T23:17:08Z</published>
-    <updated>2017-04-11T07:56:44Z</updated>
-
-    <summary>스타크래프트 HD 버전에 대한 이야기를 찾다가 OpenBW 프로젝트를 알게되었다는 이야기입니다. http://blog.naver.com/jinsuya44/220944405813 이 글을 보니 예전에 Warcraft 2 클론 소프트웨어가 기억납니다. Warcraft 2 원본 실행 파일과 동일한 동작을 하는 소프트웨어를 만들고, 리소스 파일은 원본 CD의 것을 그대로 복사해 쓰는 방식이었습니다. 실행...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>스타크래프트 HD 버전에 대한 이야기를 찾다가 OpenBW 프로젝트를 알게되었다는 이야기입니다.
-<a href="http://blog.naver.com/jinsuya44/220944405813">http://blog.naver.com/jinsuya44/220944405813</a></p>
-
-<p>이 글을 보니 예전에 Warcraft 2 클론 소프트웨어가 기억납니다. Warcraft 2 원본 실행 파일과 동일한 동작을 하는 소프트웨어를 만들고, 리소스 파일은 원본 CD의 것을 그대로 복사해 쓰는 방식이었습니다. 실행 파일을 새로 만들면서 기능을 더 좋게 한 부분이 있었던 것으로 기억합니다. 새로운 운영체제와 호환성도 좋았고요.</p>
-
-<p>찾아보면, 유명 게임의 클론 소프트웨어가 꽤 있습니다. 문명을 플레이할 수 있는 Freeciv, 에일리언 잡는 게임 Abuse 등.</p>
-
-<p>인터넷에 누군가 그런 소프트웨어 목록을 만들어 놨군요.
-<a href="http://osgameclones.com">http://osgameclones.com</a></p>
-
-<p><img src="http://www.gamehackstudios.com/wp-content/uploads/2015/08/Warcraft-II3-1024x576.jpg" width="320"></p>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>React Router v4 - 추ㅣ미생활 취미생호라</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/03/react-router-v4.html" />
-    <id>tag:blog.youre.space,2017:/vergence//10.537</id>
-
-    <published>2017-03-21T23:30:20Z</published>
-    <updated>2017-04-11T09:21:04Z</updated>
-
-    <summary>React Router로 삽질을 했습니다. 여러 경로를 웹 문서 하나에서 처리하기 위해 frontend router를 쓰는데, React Router는 그 중 하나입니다. 예를 들면, /home, /about, /contact 주소로 요청한 걸 모두 index.html이 처리, 그것도 frontend에서. React Router 최신 버전은 v4.0.0인데, 별 생각 없이...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>React Router로 삽질을 했습니다. 여러 경로를 웹 문서 하나에서 처리하기 위해 frontend router를 쓰는데, React Router는 그 중 하나입니다. 예를 들면, /home, /about, /contact 주소로 요청한 걸 모두<br />
-index.html이 처리, 그것도 frontend에서.<br />
-React Router 최신 버전은 v4.0.0인데, 별 생각 없이 그 버전를 선택했습니다. react-router-v4 ...<br />
-문서와 예제는 대부분 v3.x에 맞게 되어있는데, v4에서 많이 달라진 줄 모르고 그대로 쓰려고 한 거죠.</p>
-
-<p>React Router를 쓴다면, 현재는 v3으로. 미래를 위해선 v4로.</p>
-
-<p>일이 아니고 취미생활이라 참 다행입니다.<br />
-</p>React Router로 삽질을 했습니다. React Router는 여러 경로를 웹 문서 하나에서 처리하기 위해 frontend router를 쓰는데, 그 중 하나입니다. 예를 들면, /home, /about, /contact 주소로 요청한 걸 모두 index.html이 처리, 그것도 frontend에서.<div>React Router 최신 버전은 v4.0.0인데, 별 생각 없이 그 버전를 선택했습니다. react-router-v4 ...</div><div>문서와 예제는 대부분 v3.x에 맞게 되어있는데, v4에서 많이 달라진 줄 모르고 그대로 쓰려고 한 거죠.</div><div><br /></div><div>React Router를 쓴다면, 현재는 v3으로. 미래를 위해선 v4로.</div><div><br /></div><div>일이 아니고 취미생활이라 참 다행입니다.</div>
-
-<img src="https://i.ytimg.com/vi/ZurrLqWyRms/maxresdefault.jpg" width="320">]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Firebase와 Vue.js - 추ㅣ미생활 취미생호라</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/03/firebase-vuejs.html" />
-    <id>tag:blog.youre.space,2017:/vergence//10.536</id>
-
-    <published>2017-03-20T23:20:24Z</published>
-    <updated>2017-04-11T08:52:42Z</updated>
-
-    <summary>Firebase bindings for Vue.js라고 설명되어있는 VueFire라는게 있습니다. 이것 없어도 v-for 같이 목록을 표시하려는 구문에 Firebase 쿼리 결과를 그대로 전달해주어도 템플릿에서 데이터에 편하게 접근할 수 있었습니다. 그래서 Firebase와 Vue.js에 낙점해야겠다고 생각했습니다, 어제 저녁 시점까지만 해도. 오늘 아침 생각은, Parse Server로 낙점,...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>Firebase bindings for Vue.js라고 설명되어있는 VueFire라는게 있습니다. 이것 없어도 v-for 같이 목록을 표시하려는 구문에 Firebase 쿼리 결과를 그대로 전달해주어도 템플릿에서 데이터에 편하게 접근할 수 있었습니다.
-그래서 Firebase와 Vue.js에 낙점해야겠다고 생각했습니다, 어제 저녁 시점까지만 해도.</p>
-
-<p>오늘 아침 생각은, Parse Server로 낙점, UI 프레임워크를 쓰지 말고 단순한 JavaScript로 해결해야겠다입니다.
-뭐 대단하고 복잡한 걸 만들 거라고. 에휴.</p>
-
-<p>Frontend의 rounting 처리해주는 라이브러리는 찾아서 넣고, jquery 정도만 써서 낼롬 만들어야지 싶습니다.</p>
-
-<p>취미생활도 진도가 나가야 재미!</p>
-
-<p><img src="https://vuejs.org/images/logo.png" width="320"></p>
-]]>
         
     </content>
 </entry>
