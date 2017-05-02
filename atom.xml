@@ -4,30 +4,9 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/atom.xml" />
     <id>tag:blog.youre.space,2017-01-30:/3</id>
-    <updated>2017-04-25T23:08:12Z</updated>
+    <updated>2017-04-17T23:49:16Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3</generator>
-
-<entry>
-    <title>T1 - 추ㅣ미생활 취미생호라</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/04/t1.html" />
-    <id>tag:blog.youre.space,2017:/vergence//10.576</id>
-
-    <published>2017-04-25T23:08:12Z</published>
-    <updated>2017-04-25T23:08:12Z</updated>
-
-    <summary>:-):-)...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>:-)</p>:-)]]>
-        
-    </content>
-</entry>
 
 <entry>
     <title>일기 때문에 A+ 받은 이야기 - 추ㅣ미생활 취미생호라</title>
@@ -910,6 +889,27 @@ Waterman C/F fountain pen 만년필, M nib 닙입니다.</p>
 <p>NASA&#46020; &#49457;&#54805; &#49688;&#49696;&#51060;&#45208; &#51473;&#44256; &#51088;&#46041;&#52264;&#50640; &#44288;&#49900;&#51060; &#47566;&#51012; &#44163; &#44057;&#44596; &#54633;&#45768;&#45796;.</p>
 <p>&#45817;&#52392; &#54869;&#47456;&#51012; &#45458;&#51060;&#47140;&#47732;, &#47196;&#46608;&#47484; &#46160; &#44060; &#49324;&#47732; &#46121;&#45768;&#45796;.</p>
 ]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Vue.js Parse.js 함께 쓰고 싶은 마음 - 추ㅣ미생활 취미생호라</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/03/vuejs-parsejs.html" />
+    <id>tag:blog.youre.space,2017:/vergence//10.532</id>
+
+    <published>2017-03-08T15:01:34Z</published>
+    <updated>2017-03-08T15:02:31Z</updated>
+
+    <summary>하아... 컴맹이라 별짓하고 있습니다.Parse Server로부터 데이터를 여러개 가져옵니다. var Post = Parse.Object.extend(&quot;Post&quot;); //var blogs = new Post(); var query = new Parse.Query(Post); query.limit(10); query.descending(&quot;createdAt&quot;); query.find({ success: querySuccess, error: queryFailure });function querySuccess(posts){ $.each(posts, function(index, value){ console.log(value.createdAt); console.log(value.get(&quot;title&quot;)); });}이렇게 접근이 가능한데, Parse...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>하아... 컴맹이라 별짓하고 있습니다.<br /><br />Parse Server로부터 데이터를 여러개 가져옵니다.<br /><br />    var Post = Parse.Object.extend("Post");<br />    //var blogs = new Post();<br />    var query = new Parse.Query(Post);<br />    query.limit(10);<br />    query.descending("createdAt");<br />    query.find({<br />      success: querySuccess,<br />      error: queryFailure<br />    });<br /><br />function querySuccess(posts){<br />  $.each(posts, function(index, value){<br />    console.log(value.createdAt);<br />    console.log(value.get("title"));<br />  });<br />}<br /><br />이렇게 접근이 가능한데, Parse Object는 createdAt은 바로 접근이 되는데, 다른 컬럼은 get()을 써야합니다.<br />그래서, Vue.js에 쓸 때, <br /><br />  var example2 = new Vue({<br />    el: '#example-2',<br />    data: {<br />      items: posts<br />    }<br />  })<br />라고 하고,<br /><br />          &lt;template v-for="item in items"&gt;<br />          &lt;div class="blog-post"&gt;<br />            &lt;h2 class="blog-post-title"&gt;{{ item.title }}&lt;/h2&gt;<br />            &lt;p class="blog-post-meta"&gt;{{ item.createdAt }} by &lt;a href="#"&gt;imyaman&lt;/a&gt;&lt;/p&gt;<br />            &lt;span&gt;{{ item.content }} {{ item.objectId }}&lt;/span&gt;<br />          &lt;/div&gt;&lt;!-- /.blog-post --&gt;<br />          &lt;/template&gt;<br /><br />이렇게 하면, item.createdAt 만 정상적으로 표시되고, item.title은 정상적으로 표시되지 않습니다.<br />Vue.js에 쓰기 위해 object array를 다시 만들어보았습니다.<br /><br />  $.each(posts, function(index, value){<br />    str = str + '{"title" : "' + value.get('title') + '"}';<br />    if(index+1 != posts.length){ str=str+','; }<br />  }); <br />  str = '[' + str + ']';<br /><br />  postObjects=JSON.parse(str);<br /><br />  var example2 = new Vue({<br />    el: '#example-2',<br />    data: {<br />      items: postObjects<br />    }<br />  })<br /><br />이렇게 하면 템플릿에서 item.title을 쓸 수 있긴한데, 과연 이게 바른 방법인가... 고민되네요.<br />http://blog.sys5.co/renew/index.html  파일에서 실험해보고 있습니다.</p>]]>
         
     </content>
 </entry>
