@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/Article">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Movable Type 6.3">
+<meta name="description" content=" ---- Original Message ---- Subject: Splunk Light 6.6 Is Here Sent: May 10, 2017 4:33 AM From: "Splunk Inc." To: imyaman@netscape.net Cc: If you have trouble viewing this email, read the online version . Simplified Data Analysis, Easier Management...">
+<style>
+  @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+  :lang(ko) { font-family: 'Noto Sans KR', sans-serif; }
+</style>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://weblog.youre.space/imyaman/css/blog.css">
+<link rel="stylesheet" href="http://weblog.youre.space/imyaman/css/custom_for_mt.css">
+<link rel="start" href="http://weblog.youre.space/imyaman/" title="Home">
+<link rel="alternate" href="http://weblog.youre.space/imyaman/atom.xml" type="application/atom+xml" title="Recent Entries">
+<link rel="canonical" href="http://weblog.youre.space/imyaman/2017/05/splunk-light-66-is-here.html">
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-81713353-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<link rel="prev" href="http://weblog.youre.space/imyaman/2017/03/letas-encrypt-is-here-a-open-source-security-certificates-available-at-sashido.html" title="Let’s Encrypt is Here – Open Source Security Certificates Available at SashiDo!">
+<!-- Open Graph Protocol -->
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en-us">
+<meta property="og:title" content="Splunk Light 6.6 Is Here">
+<meta property="og:url" content="http://weblog.youre.space/imyaman/2017/05/splunk-light-66-is-here.html">
+<meta property="og:description" content=" ---- Original Message ---- Subject: Splunk Light 6.6 Is Here Sent: May 10, 2017 4:33 AM From: &quot;Splunk Inc.&quot; To: imyaman@netscape.net Cc: If you have trouble viewing this email, read the online version . Simplified Data Analysis, Easier Management...">
+<meta property="og:site_name" content="곽상용의 블로그">
+<meta property="og:image" content="http://weblog.youre.space/imyaman/blogimg/og_image.png">
+<!-- Metadata -->
+<meta itemprop="description" content=" ---- Original Message ---- Subject: Splunk Light 6.6 Is Here Sent: May 10, 2017 4:33 AM From: "Splunk Inc." To: imyaman@netscape.net Cc: If you have trouble viewing this email, read the online version . Simplified Data Analysis, Easier Management...">
+<link itemprop="url" href="http://weblog.youre.space/imyaman/2017/05/splunk-light-66-is-here.html">
+<link itemprop="image" href="http://weblog.youre.space/imyaman/blogimg/og_image.png">
+<title>Splunk Light 6.6 Is Here - 곽상용의 블로그</title>
+</head>
+<body id="sybootstrap">
+<div><!-- div class="blog-masthead" -->
+<div class="container">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">YOU'RE SPACE</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">YOUR E-SPACE</a></li>
+        <li><a href="http://weblog.youre.space/">WEBLOG</a></li>
+        <li><a href="http://weblog.youre.space/imyaman/" class="blog-nav-item">Blog Home</a></li>
+        <li><a href="http://highest.youre.space/">Perl API</a></li>
+        <li><a href="http://lego.youre.space/">Lego</a></li>
+        <li><a href="http://fnb.youre.space/">F & B</a></li>
+        <li><a href="http://weblog.youre.space/imyaman/atom.xml" class="blog-nav-item">Feed</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+</div>
+<div class="container">
+<header class="blog-header">
+<h1 class="blog-title">곽상용의 블로그</h1>
+<p class="lead blog-description">IT 서비스에 관심이 많습니다.</p>
+</header>
+<div class="row">
+<main class="col-sm-8 blog-main">
+<ul class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<li><a href="http://weblog.youre.space/">Home</a></li>
+<li>Splunk Light 6.6 Is Here</li>
+</ul>
+<article id="entry-578" class="blog-post entry entry-asset asset hentry h-entry">
+<div class="asset-header">
+<h2 itemprop="headline" class="blog-post-title entry-title p-name">Splunk Light 6.6 Is Here</h2>
+<footer class="asset-meta blog-post-meta">
+<ul class="asset-meta-list">
+<li class="asset-meta-list-item"><time datetime="2017-05-10T07:40:39+09:00" class="updated published dt-published" itemprop="datePublished">May 10, 2017</time></li>
+<li class="asset-meta-list-item">by <span class="author entry-author vcard p-author h-card"><span class="fn">Sangyong Gwak</span></span></li>
+</ul>
+</footer>
+</div>
+<div class="asset-body e-content" itemprop="articleBody">
+<p></p>
+<p>---- Original Message ----<br>
+Subject: Splunk Light 6.6 Is Here<br>
+Sent: May 10, 2017 4:33 AM<br>
+From: "Splunk Inc." <br>
+To: imyaman@netscape.net<br>
+Cc: </p>
+<p><br>
+If you have trouble viewing this email, read the online version .             </p>
+<p></p>
+<p><br>
+Simplified Data Analysis, Easier Management at Scale with Splunk Enterprise 6.6                 </p>
+<p>                                       </p>
+<p>                                                                                      </p>
+<p>Download Now                                                                                                                                           </p>
+<p>              </p>
+<p>                                                                                           Announcing Splunk Light 6.6         <br>
+--------------------------------------------------------------------------------------------------</p>
+<p>Simplified Data Analysis and More                                       </p>
+<p>                                                              </p>
+<p>Dear Sangyong,</p>
+<p>We are excited to announce that Splunk Light 6.6 is now available for download !</p>
+<p>Splunk Light 6.6 makes it easier than ever for a wide range of users to leverage datasets, get answers and share insights.</p>
+<p>In Splunk Light 6.6:<br>
+*Dataset explorer allows you to use a prepared dataset to create/schedule a report and export it in CSV format<br>
+*Dashboard drilldown makes it easier to build a guided dashboard navigation experience without writing any Simple XML</p>
+<p>* Trellis layout enables you to build multiple visualizations powered by a single search to compare different segments of a dataset</p>
+<p>Download the latest version today !</p>
+<p>The Splunk Team</p>
+<p>More Resources<br>
+*Read the                    documentation <br>
+*Splunk Light new feature                     release notes <br>
+*                    Compare  Splunk Light to Splunk Enterprise and use the one that's right for you</p>
+<p>                                                             <br>
+                  </p>
+<p>                                                              </p>
+<p>                                                           </p>
+<p></p>
+<p><br>
+Splunk, Splunk>, Listen to Your Data, The Engine for Machine Data, Splunk Cloud, Splunk Light, and SPL are trademarks of Splunk Inc., registered in the United States and other countries. All other brand names, product names or trademarks belong to their respective owners. ©2017 Splunk Inc. All rights reserved.<br>
+This is a commercial email. To unsubscribe from future emails or to update your e-mail preferences click here .<br>
+To view our Privacy Policy, click here .<br>
+Splunk Inc. | 270 Brannan St. | San Francisco, CA 94107                                                                                                      </p><br><br>---- Original Message ----<br>Subject: Splunk Light 6.6 Is Here<br>Sent: May 10, 2017 4:33 AM<br>From: &quot;Splunk Inc.&quot; &lt;newsletter@splunk.com&gt;<br>To: imyaman@netscape.net<br>Cc: <br><br><table>
+		<tr>
+			<td>If you&nbsp;have trouble viewing this email, <a href="http://s1528.t.en25.com/e/es?s=1528&e=1657663&elqTrackId=765a8178ba4c4d9888a1f89130a84434&elq=4ad0b12236114e328ae518d5d376ed85&elqaid=10742&elqat=1">read the online version</a>.</td>
+		</tr>
+</table>
+	<div>
+		<table>
+			<tr>
+				<td>
+					<table>
+							<tr>
+								<td>
+	<table>
+			<tr>
+				<td>Simplified Data Analysis, Easier Management at Scale with Splunk Enterprise 6.6</td>
+			</tr>
+	</table>
+        <table>
+                <tr>
+                    <td> </td>
+					<td>
+                        <table>
+                                <tr>
+                                    <td>
+                                        <table>
+                                                <tr>
+                                                    <td>
+														<a href="http://s1528.t.en25.com/e/er?s=1528&lid=248&elqTrackId=907148b559ed41bbbc276b3c72cc8026&elq=4ad0b12236114e328ae518d5d376ed85&elqaid=10742&elqat=1"><img src="http://img.en25.com/eloquaimages/clients/SplunkInc/%7Bf35ddc86-31f3-4cae-b893-a3a55a750371%7D_logo_splunk_black_low.png"></a>
+                                                    </td>
+                                                    <td>
+                                                        <table>
+																<tr>
+																	<td>
+														<table>
+																<tr>
+																	<td><a href="https://www.splunk.com/en_us/download/splunk-light.html?elqTrackId=fe5ef4c46ff74786941a4b39553cc42d&elq=4ad0b12236114e328ae518d5d376ed85&elqaid=10742&elqat=1&elqCampaignId=5674">Download Now</a>
+																	</td>
+																</tr>
+														</table>
+																	</td>
+																</tr>
+														</table>
+                                                     </td>
+                                                </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                        </table>
+                    </td>
+                    <td> </td>
+                </tr>
+        </table>
+		<table>
+				<tr>
+					<td>
+						<div>
+							<table>
+									<tr>
+										<td> </td>
+										<td>
+											Announcing Splunk Light 6.6
+										</td>
+									</tr>
+							</table>
+						</div>
+					</td>
+				</tr>
+		</table>
+                                  <br><table>
+			<tr>
+				<td> </td>
+				<td>Simplified Data Analysis and More</td>
+				<td> </td>
+			</tr>
+	</table>
+	<table>
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+			</tr>
+	</table>
+	<table>
+			<tr>
+				<th>
+        <table>
+                <tr>
+					<td>
+                        <table>
+                                <tr>
+            <td>
+                <table>
+                    <tr>
+						<td>
+                            <table>
+                                    <tr>
+                                        <td>
+                                          <br>Dear Sangyong,<br><br>We are excited to announce that Splunk Light 6.6 is now available for <a href="https://www.splunk.com/en_us/download/splunk-light.html?elqTrackId=8340CC75094CC66ACB29D07E610D7345&elq=4ad0b12236114e328ae518d5d376ed85&elqaid=10742&elqat=1&elqCampaignId=5674">download</a>!<br><br>Splunk Light 6.6 makes it easier than ever for a wide range of users to leverage datasets, get answers and share insights.<br><br>In Splunk Light 6.6:<br><ul><li><b>Dataset explorer</b> allows you to use a prepared dataset to create/schedule a report and export it in CSV format</li><li><b>Dashboard drilldown </b>makes
+ it easier to build a guided dashboard navigation experience without writing any Simple XML<br></li><li>
+<b>Trellis layout </b>enables you to build multiple visualizations powered by a single search to compare different segments of a dataset</li></ul><span>
+<a href="https://www.splunk.com/en_us/download/splunk-light.html?elqTrackId=8340CC75094CC66ACB29D07E610D7345&elq=4ad0b12236114e328ae518d5d376ed85&elqaid=10742&elqat=1&elqCampaignId=5674">Download the latest version today</a>!</span><br><br>
+											The Splunk Team<br><br>
+										</td>
+                                    <td><br>
+                                      <strong>More Resources</strong><br><ul><li><span><span>Read the </span></span>
+                                      <a href="http://docs.splunk.com/Documentation/SplunkLight/6.6.0/GettingStarted/Aboutthismanual?elqTrackId=c812429eae78469ebff49adf1d3ad979&elq=4ad0b12236114e328ae518d5d376ed85&elqaid=10742&elqat=1&elqCampaignId=5674">documentation</a></li><li>Splunk Light new feature <span><span></span></span><span><span>
+                                       <a href="http://docs.splunk.com/Documentation/SplunkLight/latest/ReleaseNotes/WhatsNewSplunkLight?elqTrackId=4cc81c9f5ee84c6499cd9698654f6aa7&elq=4ad0b12236114e328ae518d5d376ed85&elqaid=10742&elqat=1&elqCampaignId=5674">release notes</a></span></span></li><li>
+                                      <a href="https://www.splunk.com/en_us/products/splunk-light/splunk-light-vs-splunk-enterprise.html?elqTrackId=b03ced9c39354156bffe2f01077352f3&elq=4ad0b12236114e328ae518d5d376ed85&elqaid=10742&elqat=1&elqCampaignId=5674">Compare</a> Splunk Light to Splunk Enterprise and use the one that's right for you</li></ul>
+                                     </td>
+                                    </tr></table></td>
+                                </tr></table></td>
+                                            </tr></table></td>
+                            </tr>
+				</table></th>
+			</tr>
+	</table><table>
+			<tr>
+				<td> </td>
+				<th>
+					<a href="http://s1528.t.en25.com/e/er?s=1528&lid=239&elqTrackId=CC921E9EFD648BF60B0BDEF1DA9BD012&elq=4ad0b12236114e328ae518d5d376ed85&elqaid=10742&elqat=1"><img src="http://img.en25.com/EloquaImages/clients/SplunkInc/%7B877b1721-ad6d-49d1-ab58-61c4340d4e3a%7D_LOGO-Splunk-tagline-W-GreyCaret-footer-email.png"></a><br>
+				</th>
+				<td> </td>
+			</tr>
+	</table>
+	<table>
+			<tr>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+			</tr>
+	</table>
+								</td></tr></table></td>
+							</tr>
+				</table>
+	</div>
+	<div>                                                           </div>
+<div>
+<table>
+		<tr>
+			<td>
+			<table>
+					<tr>
+						<td>
+						<table>
+								<tr>
+									<td>
+									<table>
+											<tr>
+												<td><img height="1" src="http://img.en25.com/eloquaimages/clients/SplunkInc/{f5148764-08c5-404b-a5f7-e4495fb74d68}_spacer.gif" width="10"></td>
+												<td><i>Splunk, Splunk&gt;, Listen to Your Data, The Engine for Machine Data, Splunk Cloud, Splunk Light, and SPL are trademarks of Splunk Inc., registered in the United States and other countries. All other brand names, product names or trademarks belong to their respective owners. &copy;2017 Splunk Inc. All rights reserved.<br>
+												This is a commercial email. To unsubscribe from future emails or to update your e-mail preferences <a href="http://s1528.t.en25.com/e/sl?s=1528&elq=4ad0b12236114e328ae518d5d376ed85">click here</a>.<br>
+												To view our Privacy Policy, <a href="http://www.splunk.com/view/SP-CAAAAAG?elqTrackId=1cf53f5db2584280b86d76fd02e6647b&elq=4ad0b12236114e328ae518d5d376ed85&elqaid=10742&elqat=1&elqCampaignId=5674">click here</a>.</i><br>
+												<b>Splunk Inc. | 270 Brannan St. | San Francisco, CA <a href="tel:94107">94107</a></b></td>
+												<td><img height="1" src="http://img.en25.com/eloquaimages/clients/SplunkInc/{f5148764-08c5-404b-a5f7-e4495fb74d68}_spacer.gif" width="10"></td>
+											</tr>
+									</table>
+									</td>
+								</tr>
+						</table>
+						</td>
+					</tr>
+			</table>
+			</td>
+		</tr>
+</table>
+</div>
+<img src='http://s1528.t.en25.com/e/FooterImages/FooterImage1?elq=4ad0b12236114e328ae518d5d376ed85&siteid=1528' alt="">
+</div>
+<aside>
+<ul class="pager">
+<li class="previous"><a href="http://weblog.youre.space/imyaman/2017/03/letas-encrypt-is-here-a-open-source-security-certificates-available-at-sashido.html" title="Let’s Encrypt is Here – Open Source Security Certificates Available at SashiDo!">Previous Entry</a></li>
+</ul>
+</aside>
+<!--
+<aside id="zenback" class="zenback feedback">
+  ここに Zenback の Script コードを貼り付けてください。
+</aside>
+-->
+</article>
+</main>
+<aside class="col-sm-3 col-sm-offset-1 blog-sidebar">
+<div class="sidebar-module sidebar-module-inset">
+</div><div class="sidebar-module">
+<h4>Categories</h4>
+</div>
+<div class="sidebar-module">
+<h4>Archives</h4>
+<ol class="list-unstyled">
+<li><a href="http://weblog.youre.space/imyaman/2017/05/">May 2017 (1)</a></li>
+<li><a href="http://weblog.youre.space/imyaman/2017/03/">March 2017 (4)</a></li>
+<li><a href="http://weblog.youre.space/imyaman/2017/01/">January 2017 (1)</a></li>
+<li><a href="http://weblog.youre.space/imyaman/2016/09/">September 2016 (10)</a></li>
+<li><a href="http://weblog.youre.space/imyaman/2015/10/">October 2015 (1)</a></li>
+</ol>
+</div>
+<div class="sidebar-module">
+<h4>Search</h4>
+<form class="site-search" method="get" id="search" action="http://weblog.youre.space/63/mt-search.cgi">
+<input class="form-control" type="text" name="search" value="" placeholder="検索...">
+<input type="hidden" name="IncludeBlogs" value="5">
+<input type="hidden" name="limit" value="20">
+</form>
+</div>
+</aside>
+</div>
+</div>
+<footer class="blog-footer">
+<ul>
+<li>블로그 게시물에 대한 권한은 모두 저자에게 있습니다.</li>
+<li>설치형 블로그를 권장합니다.</li>
+<li>YOUR'E SPACE, YOUR E-SPACE</li>
+<li>문의 : <a href="mailto:imyaman@netscape.net">imyaman@netscape.net</a></li>
+</ul>
+<p><a href="#top">Back to top</a></p>
+<!-- ad starts -->
+<center>
+<script type="text/javascript">
+clicksor_enable_adhere = false;
+clicksor_enable_inter = false;
+clicksor_enable_layer_pop = false;
+clicksor_enable_pop = false;
+clicksor_enable_text_link = false;
+clicksor_banner_image_banner = true;
+clicksor_banner_text_banner = true;
+clicksor_layer_banner = false;
+clicksor_mobile_redirect = false;
+clicksor_default_url = '';
+clicksor_banner_border = '#000808';
+clicksor_banner_ad_bg = '#FFFFFF';
+clicksor_banner_link_color = '#080800';
+clicksor_banner_text_color = '#666666';
+</script>
+<script type="text/javascript" src="http://b.yu0123456.com/show.php?nid=1&amp;pid=330835&amp;adtype=7&amp;sid=588821"></script>
+<center>
+<script type="text/javascript">
+  ( function() {
+    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+    var unit = {"calltype":"async[2]","publisher":"imyaman","width":320,"height":50,"sid":"cal.youre.space"};
+    var placement_id = window.CHITIKA.units.length;
+    window.CHITIKA.units.push(unit);
+    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+}());
+</script>
+<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
+</center>
+<a href="//go.ad2up.com/afu.php?id=464574"><div style="width: 100%; height: 50px; background-color: green; text-align: center;">
+<h2>세상에서 제일 좋은 집은?</h2>
+</div></a>
+<center>
+<div class="main_banner" id="main_banner1">
+  <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
+  <script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+</div>
+</center>
+<center>
+<div id="admixer_display"></div>
+</center>
+<script type="text/javascript" src="http://scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript">
+    new admixer_ad({
+    admixer_key:"8ch8bwvi",
+    display_id:"admixer_display",
+    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
+    ad_change:true,  //default : true
+    test : false,//default : false
+    test_display_id : "log"
+});
+</script>
+<!-- ad ends -->
+</footer>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
