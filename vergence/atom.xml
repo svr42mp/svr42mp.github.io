@@ -4,9 +4,43 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:blog.youre.space,2017-01-30:/vergence//10</id>
-    <updated>2017-05-16T10:48:15Z</updated>
+    <updated>2017-05-21T16:07:01Z</updated>
     <subtitle>틈틈이 취미생활을 합니다. 추ㅣ미생활 취미생호라 일부러 오기한 겁니다.</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.4</generator>
+
+<entry>
+    <title>Firebase 호스팅에서 확장자 json 파일 서빙</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/05/firebase-iiiii-iii-json-ii-ie.html" />
+    <id>tag:blog.youre.space,2017:/vergence//10.584</id>
+
+    <published>2017-05-21T15:51:01Z</published>
+    <updated>2017-05-21T16:07:01Z</updated>
+
+    <summary>Firebase 호스팅에 확장자 json인 파일을 deploy 하였습니다. 그리고 그 파일을 요청해보았습니다. MIME type에 대한 헤더 정보는 주지 않는군요. 이게 없어도 javascript로 데이터 불러오는데 문제가 없는지 앞으로 확인해보려 합니다. Firebase 호스팅에 확장자 json인 파일을 deploy 하였습니다. 그리고 그 파일을 요청해보았습니다. MIME...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>Firebase 호스팅에 확장자 json인 파일을 deploy 하였습니다. 그리고 그 파일을 요청해보았습니다. MIME type에 대한 헤더 정보는 주지 않는군요. <br />
+이게 없어도 javascript로 데이터 불러오는데 문제가 없는지 앞으로 확인해보려 합니다.</p>
+
+
+
+
+
+
+
+
+    <div><div>Firebase 호스팅에 확장자 json인 파일을 deploy 하였습니다. 그리고 그 파일을 요청해보았습니다. MIME type에 대한 헤더 정보는 주지 않는군요.&nbsp;</div><div><br /></div><div>이게 없어도 javascript로 데이터 불러오는데 문제가 없는지 앞으로 확인해보려 합니다.</div></div>
+
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>대통령이 개인 일 스스로 하는 것을 보고</title>
@@ -2398,31 +2432,6 @@ React Router 최신 버전은 v4.0.0인데, 별 생각 없이 그 버전를 선�
 <p>취미생활도 진도가 나가야 재미!</p>
 
 <p><img src="https://vuejs.org/images/logo.png" width="320"></p>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>글씨 연습 2017-03-19</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/03/fountainpen-2017-03-19.html" />
-    <id>tag:blog.youre.space,2017:/vergence//10.534</id>
-
-    <published>2017-03-19T12:52:25Z</published>
-    <updated>2017-03-19T13:04:20Z</updated>
-
-    <summary>아무말 글씨 연습입니다. Waterman C/F fountain pen 만년필, M nib 닙입니다....</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>아무말 글씨 연습입니다.
-Waterman C/F fountain pen 만년필, M nib 닙입니다.</p>
-
-<p><img src="https://farm3.staticflickr.com/2933/33528909585_aa3d4988f1_k.jpg" width="320"></p>
 ]]>
         
     </content>
