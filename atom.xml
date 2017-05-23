@@ -4,7 +4,7 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/atom.xml" />
     <id>tag:blog.youre.space,2017-01-30:/3</id>
-    <updated>2017-05-21T16:07:01Z</updated>
+    <updated>2017-05-21T16:07:29Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3</generator>
 
@@ -14,9 +14,9 @@
     <id>tag:blog.youre.space,2017:/vergence//10.584</id>
 
     <published>2017-05-21T15:51:01Z</published>
-    <updated>2017-05-21T16:07:01Z</updated>
+    <updated>2017-05-21T16:07:29Z</updated>
 
-    <summary>Firebase 호스팅에 확장자 json인 파일을 deploy 하였습니다. 그리고 그 파일을 요청해보았습니다. MIME type에 대한 헤더 정보는 주지 않는군요. 이게 없어도 javascript로 데이터 불러오는데 문제가 없는지 앞으로 확인해보려 합니다. Firebase 호스팅에 확장자 json인 파일을 deploy 하였습니다. 그리고 그 파일을 요청해보았습니다. MIME...</summary>
+    <summary>Firebase 호스팅에 확장자 json인 파일을 deploy 하였습니다. 그리고 그 파일을 요청해보았습니다. MIME type에 대한 헤더 정보는 주지 않는군요. 이게 없어도 javascript로 데이터 불러오는데 문제가 없는지 앞으로 확인해보려 합니다....</summary>
     <author>
         <name>Sangyong Gwak</name>
         
@@ -25,19 +25,7 @@
     
     <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>Firebase 호스팅에 확장자 json인 파일을 deploy 하였습니다. 그리고 그 파일을 요청해보았습니다. MIME type에 대한 헤더 정보는 주지 않는군요. <br />
-이게 없어도 javascript로 데이터 불러오는데 문제가 없는지 앞으로 확인해보려 합니다.</p>
-
-
-
-
-
-
-
-
-    <div><div>Firebase 호스팅에 확장자 json인 파일을 deploy 하였습니다. 그리고 그 파일을 요청해보았습니다. MIME type에 대한 헤더 정보는 주지 않는군요.&nbsp;</div><div><br /></div><div>이게 없어도 javascript로 데이터 불러오는데 문제가 없는지 앞으로 확인해보려 합니다.</div></div>
-
-
-]]>
+이게 없어도 javascript로 데이터 불러오는데 문제가 없는지 앞으로 확인해보려 합니다.</p>]]>
         
     </content>
 </entry>
