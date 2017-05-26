@@ -4,17 +4,17 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/atom.xml" />
     <id>tag:blog.youre.space,2017-01-30:/3</id>
-    <updated>2017-05-26T04:16:11Z</updated>
+    <updated>2017-05-26T04:17:11Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3</generator>
 
 <entry>
-    <title> - 조철현의 블로그</title>
+    <title>Splunk(스플렁크)를 시작하며... - 조철현의 블로그</title>
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/genie7/blog/2017/05/2012-splunk.html" />
     <id>tag:blog.youre.space,2017:/genie7//4.593</id>
 
     <published>2017-05-26T03:02:36Z</published>
-    <updated>2017-05-26T04:16:11Z</updated>
+    <updated>2017-05-26T04:17:11Z</updated>
 
     <summary>2012년 처음으로 Splunk라는 솔루션을 접하게 되었다. 아주 우연한 기회에... 그 전까지 나는 데이터를 다룰때는 데이터베이스나 엑셀을 주로 사용하고 있었는데, 스플렁크는 나에게 신세계를 보여주었다. 마치 클라우드 서비스 처럼... ㅎㅎㅎ 이 후에 꾸준히 스플렁크를 사용할 기회를 가지게 되었고, 여러가지 데이터를 수집하고 처리하는...</summary>
     <author>
@@ -24,15 +24,20 @@
     
         <category term="Splunk" scheme="http://www.sixapart.com/ns/types#category" />
     
+    <category term="라이선스" label="라이선스" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="로그" label="로그" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="빅데이터" label="빅데이터" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="스플렁크" label="스플렁크" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="시작하기" label="시작하기" scheme="http://www.sixapart.com/ns/types#tag" />
     <category term="splunk" label="Splunk" scheme="http://www.sixapart.com/ns/types#tag" />
     
     <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/genie7/">
-        <![CDATA[<p>2012년 처음으로  <a href="http//www.splunk.com" target="_blank">Splunk</a>라는 솔루션을 접하게 되었다. 아주 우연한 기회에...</p>
+        <![CDATA[<p>2012년 처음으로 <a href="http//www.splunk.com" target="_blank">Splunk</a>라는 솔루션을 접하게 되었다. 아주 우연한 기회에...</p>
 <p>그 전까지 나는 데이터를 다룰때는 데이터베이스나 엑셀을 주로 사용하고 있었는데,</p>
 <p>스플렁크는 나에게 신세계를 보여주었다. 마치 클라우드 서비스 처럼... ㅎㅎㅎ</p>
 <p>이 후에 꾸준히 스플렁크를 사용할 기회를 가지게 되었고,</p>
 <p>여러가지 데이터를 수집하고 처리하는 방법을 익히게 되었는데,</p>
-<p>앞으로 스플렁크의  기본 사용법부터 다양한 활용 방법을 정리해 보려고한다.</p>
+<p>앞으로 스플렁크의 기본 사용법부터 다양한 활용 방법을 정리해 보려고한다.</p>
 <p>(이 내용을 기초로 해서 조만간 동영상 강의도 만들 계획이다. ^^ )</p>
 <p>이 글은 첫번째 내용으로 스플렁크에 대한 기본 소개를 적어볼까 한다.</p>
 <p>스플렁크는 뭐하는 놈인가?</p>
@@ -49,8 +54,8 @@
 <p>스플렁크의 라이선스 정책</p>
 <ul>
 <li>영구 라이선스 : 한번 구매를 통해 영구적인 리이선스 권리를 가질 수 있다. 라이선스 구매 후에는 매년 20%의 리뉴얼 비용을 지불하고, 기술지원을 받을 수 있다.</li>
-<li>연간 라이선스 : 1년단위로 유효기간이 종료되는 라이선스이고, 별도의 리뉴얼 비용은 없고, 연간 라이선스 구입으로 유효기간 내에 기술지원이 포함된다. </li>
-<li>라이선스 가격의 결정 요소 : 스플렁크는 서버의 규모나 대수와 상관없이 1일 기준으로 인덱스 서버에 수집되는 로그의 용량을 기준으로 가격이 결정된다. 1일 500MB까지는 무료로 사용이 가능하고, 이를 초과하는 데이터에 대해서는 1GB 단위로 라이선스를 구매할 수 있다. 다음의 <a href="http://splk.it/2qhQu1b" target="_blank">링크</a>에서 스플렁크의 가격을 예측할 수 있으나, 실제로 한국내에서는 온라인 구매가 가능하지 않고, 온라인 구매시에는 파트너사의 기술지원을 받기 어렵다는 점은 참고할 필요가 있다.<br /><br />사용자가 1일 10GB의 영구 라이선스를 구매하면, 사용자는 매일 10GB의 로그를 수집할 수 있고, 로그량 증가에 따른 서버와 저장 장치만 준비하면 된다. </li>
+<li>연간 라이선스 : 1년단위로 유효기간이 종료되는 라이선스이고, 별도의 리뉴얼 비용은 없고, 연간 라이선스 구입으로 유효기간 내에 기술지원이 포함된다.</li>
+<li>라이선스 가격의 결정 요소 : 스플렁크는 서버의 규모나 대수와 상관없이 1일 기준으로 인덱스 서버에 수집되는 로그의 용량을 기준으로 가격이 결정된다. 1일 500MB까지는 무료로 사용이 가능하고, 이를 초과하는 데이터에 대해서는 1GB 단위로 라이선스를 구매할 수 있다. 다음의 <a href="http://splk.it/2qhQu1b" target="_blank">링크</a>에서 스플렁크의 가격을 예측할 수 있으나, 실제로 한국내에서는 온라인 구매가 가능하지 않고, 온라인 구매시에는 파트너사의 기술지원을 받기 어렵다는 점은 참고할 필요가 있다.<br /><br />사용자가 1일 10GB의 영구 라이선스를 구매하면, 사용자는 매일 10GB의 로그를 수집할 수 있고, 로그량 증가에 따른 서버와 저장 장치만 준비하면 된다.</li>
 </ul>
 <p>스플렁크는 어디에서 얻을 수 있는가?</p>
 <ul>
