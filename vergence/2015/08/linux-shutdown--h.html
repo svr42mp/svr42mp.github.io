@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="generator" content="Movable Type 6.3">
+<meta name="generator" content="Movable Type 6.3.4">
 <meta name="description" content="리눅스를 서버로 쓰면 shutdown 명령을 쓸 일이 별로 없지만, 데스크탑으로 쓰고 또 자주 쓰기에 이 명령을 밥 먹듯 씁니다. 리눅스는 BSD 유닉스의 특성과 System V 유닉스의 특성을 섞어서 갖고 있는 것을 보게 되는데, 그 중엔 잘 섞이지 않아 어색한 것도...">
 <style>
   @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
@@ -42,12 +42,6 @@
 </script>
 <link rel="prev" href="http://weblog.youre.space/vergence/2015/08/post-59.html" title="이번 지뢰 사건에 대해">
 <link rel="next" href="http://weblog.youre.space/vergence/2015/08/post-60.html" title="안중근 장군님께">
-<script type="text/javascript">
-MT.entryID = 385;
-MT.commentsPerPage = 50;
-MT.entryCommentCount = <script type='text/javascript' src='http://disqus.com/forums/youre-space/get_num_replies_for_entry.js?url=http://weblog.youre.space/vergence/2015/08/linux-shutdown--h.html'></script><noscript>View</noscript>;
-MT.commentIds = [];
-</script>
 <!-- Open Graph Protocol -->
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en-us">
@@ -157,47 +151,6 @@ SUN과 AT&amp;T는 System V Release 3(SVR3)에 BSD를 합쳐 다음 버전을 �
  </form>
 </div>
 </div>
-<h4 class="comments-header"></h4>
-<ul id="top-comment-nav">
-<li id="top-prev-comments">
-<a href="javascript://" id="top-prev-comments-link" title="前">&lt;&lt;&nbsp;前</a>
-</li>
-<li id="top-num-comments">
-<span id="top-current-comments"></span>
-</li>
-<li id="top-next-comments">
-<a href="javascript://" id="top-next-comments-link" title="次">次&nbsp;&gt;&gt;</a>
-</li>
-</ul>
-</mt:If>
-<div id="comments-content" class="comments-content">
-            <div id="comments"></div><div id="disqus_thread"></div>
-            <div style="display:none;" id="disqus_post_title">Linux의 shutdown 명령의 -h 옵션에 대한 유감</div>
-            <div style="display:none;" id="disqus_post_message">리눅스를 서버로 쓰면 shutdown 명령을 쓸 일이 별로 없지만, 데스크탑으로 쓰고 또 자주 쓰기에 이 명령을 밥 먹듯 씁니다.\n\n리눅스는 BSD 유닉스의 특성과 System V 유닉스의 특성을 섞어서 갖고 있는 것을 보게 되는데, 그 중엔 잘 섞이지 않아 어색한 것도 있습니다.\n\nshutdown이 바로 그런 놈입니다.\nBSD는 rc 명령과 2개의 모드(single mode와 multi user mode)를 갖고 있습니다. 종료를 할 때엔 shutdow  -h, 재시동을 할 때엔 shutdown -r 옵션을 쓰지요. 각각 halt와 reboot의 첫 글자를 땄습니다.\n\nSystem V는 init 명령과 7개의 run level(0~6까지)을 갖고 있습니다. 종료를 하거나 재시동을 하는 것 등을 run level의 전환으로 처리합니다. 종료는 level 0으로, 재시동은 level 6으로 전환 하는 것입니다. shutdown에 -i 옵션을 쓰지요. shutdown -i 0, shutdown -i 6처럼요.\n\n리눅스는 init과 run level을 넣은 배포판이 대부분이었습니다. 예전엔  슬랙웨어만 run level 개념이 없는 배포판이었습니다. 지금에 와서는 그렇지 않은 것도 많고 변종이 많아졌지만요.\n아무튼, init 명령과 run level은 System V스러운 것입니다. 그런데 shutdown -h는 BSD스러운 것이지요. \n\n이 점에서 유감입니다. 리눅스에서 run level을 바꾸겠다면 shutdown 명령이 아니라 telinit 명령을 써야합니다. 이 명령이 System V에도 있긴하지만, 아무튼요.\n\n참고로, rc는 run command의 줄임말입니다. rc가 도대체 뭘까 한참을 찾다가 별것 아닌 줄임말인 걸 알고 허탈했던 기억이 있습니다.\n\n또 참고로, System V 유닉스의 /usr/ucb 디렉토리에 가면 -h 옵션을 쓸 수 있는 shutdown이 있습니다. 예를 들면 Solaris. 어쩌다 그렇게 된거냐면...\nSUN사는 System V 유닉스인 Solaris를 만들었습니다. 그 전에는 BSD 유닉스였던 Sun OS(버전 4까지는)를 만들었죠. 그 BSD를 만든게 SUN의 Bill Joy, 대학시절의 그 사람이죠. vi를 만든 것도 그 사람이고요.\nSUN과 AT&T는 System V Release 3(SVR3)에 BSD를 합쳐 다음 버전을 만듭니다. 그게 System V Release 4(SVR4)이지요. 그리고 System V인 Sun OS 5가 나옵니다. 이게 이후에 Solaris로 변하게 되고요. 그러다보니 호환을 위해 compatibility binary를 넣어둔 것이지요.\n\n이야기가 긴데... 사실 이젠 별로 중요하진 않습니다. 다 부질 없는 이야기죠.\n요즘 System V는 run level 1, 2만 쓰도록 권합니다. BSD의 두 모드와 다를 바 없죠. 뭐, 그런거죠.\n\n<a href=\"http://cal.youre.space/assets_c/2015/08/00-58-20-as500a-15.html\" onclick=\"window.open('http://cal.youre.space/assets_c/2015/08/00-58-20-as500a-15.html','popup','width=1050,height=534,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false\"><img src=\"http://cal.youre.space/assets_c/2015/08/00-58-20-as500a-thumb-1050x533-15.jpg\" width=\"1050\" height=\"533\" alt=\"00-58-20-as500a.jpg\" class=\"mt-image-none\" style=\"\" /></a></div>
-            <script type="text/javascript">
-                var disqus_domain = 'disqus.com';
-                var disqus_shortname = 'youre-space';
-                var disqus_url = 'http://weblog.youre.space/vergence/2015/08/linux-shutdown--h.html';
-                var disqus_title = document.getElementById('disqus_post_title').innerHTML;
-                var disqus_message = document.getElementById('disqus_post_message').innerHTML;
-            </script>
-            <script type="text/javascript" src="http://youre-space.disqus.com/embed.js"></script>
-            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=youre-space">comments powered by Disqus.</a></noscript>
-</div>
-<mt:If tag="EntryCommentCount" gt="$comments_per_page">
-<mt:Ignore>Paginationスクリプトによって変更されています。</mt:Ignore>
-<ul id="comment-nav">
-<li id="prev-comments">
-<a href="javascript://" id="prev-comments-link" title="前">&lt;&lt;&nbsp;前</a>
-</li>
-<li id="num-comments">
-<span id="current-comments"></span>
-</li>
-<li id="next-comments">
-<a href="javascript://" id="next-comments-link" title="次">次&nbsp;&gt;&gt;</a>
-</li>
-</ul>
-</mt:If>
 </article>
 </main>
 <aside class="col-sm-3 col-sm-offset-1 blog-sidebar">
@@ -205,23 +158,26 @@ SUN과 AT&amp;T는 System V Release 3(SVR3)에 BSD를 합쳐 다음 버전을 �
 </div><div class="sidebar-module">
 <h4>Categories</h4>
 <ol class="list-unstyled">
-<li><a href="http://weblog.youre.space/vergence/bc0/">BC0 (63)</a>
+<li><a href="http://weblog.youre.space/vergence/2002-2003/">2002-2003 (18)</a>
 </li>
-<li><a href="http://weblog.youre.space/vergence/cal/">cal (28)</a>
+<li><a href="http://weblog.youre.space/vergence/cal/">cal (29)</a>
+</li>
+<li><a href="http://weblog.youre.space/vergence/bc0/">BC0 (63)</a>
 </li>
 </ol>
 </div>
 <div class="sidebar-module">
 <h4>Tags</h4>
 <ul class="tags">
-<li class="level6"><a href="http://weblog.youre.space/63/mt-search.cgi?IncludeBlogs=4,5,6,9,10,11,12,13,17,3&amp;tag=leadership&amp;limit=20" rel="tag" title="タグ「leadership」の一覧">leadership</a></li>
-<li class="level6"><a href="http://weblog.youre.space/63/mt-search.cgi?IncludeBlogs=4,5,6,9,10,11,12,13,17,3&amp;tag=%EB%A6%AC%EB%8D%94%EC%8B%AD&amp;limit=20" rel="tag" title="タグ「리더십」の一覧">리더십</a></li>
+<li class="level6"><a href="http://weblog.youre.space/634/mt-search.cgi?IncludeBlogs=4,5,6,9,10,11,12,13,17,20,3&amp;tag=leadership&amp;limit=20" rel="tag" title="タグ「leadership」の一覧">leadership</a></li>
+<li class="level6"><a href="http://weblog.youre.space/634/mt-search.cgi?IncludeBlogs=4,5,6,9,10,11,12,13,17,20,3&amp;tag=%EB%A6%AC%EB%8D%94%EC%8B%AD&amp;limit=20" rel="tag" title="タグ「리더십」の一覧">리더십</a></li>
 </ul>
 </div>
 <div class="sidebar-module">
 <h4>Archives</h4>
 <ol class="list-unstyled">
-<li><a href="http://weblog.youre.space/vergence/2017/04/">April 2017 (2)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2017/05/">May 2017 (7)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2017/04/">April 2017 (5)</a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/03/">March 2017 (9)</a></li>
 <li><a href="http://weblog.youre.space/vergence/2017/02/">February 2017 (9)</a></li>
 <li><a href="http://weblog.youre.space/vergence/2016/11/">November 2016 (1)</a></li>
@@ -257,11 +213,12 @@ SUN과 AT&amp;T는 System V Release 3(SVR3)에 BSD를 합쳐 다음 버전을 �
 <li><a href="http://weblog.youre.space/vergence/2004/06/">June 2004 (4)</a></li>
 <li><a href="http://weblog.youre.space/vergence/2004/05/">May 2004 (19)</a></li>
 <li><a href="http://weblog.youre.space/vergence/2004/04/">April 2004 (4)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2002/02/">February 2002 (18)</a></li>
 </ol>
 </div>
 <div class="sidebar-module">
 <h4>Search</h4>
-<form class="site-search" method="get" id="search" action="http://weblog.youre.space/63/mt-search.cgi">
+<form class="site-search" method="get" id="search" action="http://weblog.youre.space/634/mt-search.cgi">
 <input class="form-control" type="text" name="search" value="" placeholder="検索...">
 <input type="hidden" name="IncludeBlogs" value="10">
 <input type="hidden" name="limit" value="20">
@@ -281,46 +238,6 @@ SUN과 AT&amp;T는 System V Release 3(SVR3)에 BSD를 합쳐 다음 버전을 �
 <p><a href="#top">Back to top</a></p>
 <!-- ad starts -->
 <center>
-<script type="text/javascript">
-clicksor_enable_adhere = false;
-clicksor_enable_inter = false;
-clicksor_enable_layer_pop = false;
-clicksor_enable_pop = false;
-clicksor_enable_text_link = false;
-clicksor_banner_image_banner = true;
-clicksor_banner_text_banner = true;
-clicksor_layer_banner = false;
-clicksor_mobile_redirect = false;
-clicksor_default_url = '';
-clicksor_banner_border = '#000808';
-clicksor_banner_ad_bg = '#FFFFFF';
-clicksor_banner_link_color = '#080800';
-clicksor_banner_text_color = '#666666';
-</script>
-<script type="text/javascript" src="http://b.yu0123456.com/show.php?nid=1&amp;pid=330835&amp;adtype=7&amp;sid=588821"></script>
-<!-- center>
-<script type="text/javascript">
-  ( function() {
-    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
-    var unit = {"calltype":"async[2]","publisher":"imyaman","width":320,"height":50,"sid":"cal.youre.space"};
-    var placement_id = window.CHITIKA.units.length;
-    window.CHITIKA.units.push(unit);
-    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
-}());
-</script>
-<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
-</center -->
-<!-- a href="//go.ad2up.com/afu.php?id=464574"><div style="width: 100%; height: 50px; background-color: green; text-align: center;">
-<h2>세상에서 제일 좋은 집은?</h2>
-</div></a -->
-<center>
-<div class="main_banner" id="main_banner1">
-  <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
-  <script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
-</div>
-</center>
-<center>
-<div id="realssp_imyaman00001_8387" class="realssp_dv" data-mcode="aW15YW1hbjAwMDAxXzgzODc="></div><script src="http://nw.realssp.co.kr/realclickssp.js?v=1.0&m=imyaman00001_8387&t=j" async></script>
 <div id="realssp_imyaman00001_8388" class="realssp_dv" data-mcode="aW15YW1hbjAwMDAxXzgzODg="></div><script src="http://nw.realssp.co.kr/realclickssp.js?v=1.0&m=imyaman00001_8388&t=j" async></script>
 </center>
 <center>
@@ -337,6 +254,12 @@ clicksor_banner_text_color = '#666666';
     test_display_id : "log"
 });
 </script>
+<center>
+<div class="main_banner" id="main_banner1">
+  <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
+  <script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+</div>
+</center>
 <!-- ad ends -->
 </footer>
 <script src="//code.jquery.com/jquery-latest.min.js"></script>
