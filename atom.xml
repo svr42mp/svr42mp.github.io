@@ -4,9 +4,43 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/atom.xml" />
     <id>tag:blog.youre.space,2017-01-30:/3</id>
-    <updated>2017-06-21T07:39:39Z</updated>
+    <updated>2017-06-21T23:35:39Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.4</generator>
+
+<entry>
+    <title>정보처리산업기사와 정보처리기사 - 추ㅣ미생활 취미생호라</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/06/ieieiieii-ieieei.html" />
+    <id>tag:blog.youre.space,2017:/vergence//10.609</id>
+
+    <published>2017-06-21T23:35:39Z</published>
+    <updated>2017-06-21T23:35:39Z</updated>
+
+    <summary>정보처리산업기사와 정보처리기사 자격을 차례로 취득하였습니다. 그 때에는 실기가, 명세에 맞게 컴퓨터 프로그램을 만들어서 소스코드와 실행 파일을 업로드 하는 것이었습니다.언어 선택지가 몇가지 있었고, 저는 C언어를 선택했습니다. 인기있었던 건 Visual Basic이었습니다. 컴파일러 등의 도구는 수험자가 직접 준비해야했습니다. 저는 MSYS에 포함된 gcc를 썼습니다....</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>정보처리산업기사와 정보처리기사 자격을 차례로 취득하였습니다. 그 때에는 실기가, 명세에 맞게 컴퓨터 프로그램을 만들어서 소스코드와 실행 파일을 업로드 하는 것이었습니다.언어 선택지가 몇가지 있었고, 저는 C언어를 선택했습니다. 인기있었던 건 Visual Basic이었습니다. 컴파일러 등의 도구는 수험자가 직접 준비해야했습니다. 저는 MSYS에 포함된 gcc를 썼습니다. C언어를 선택한 사람들 다수는 Turbo C를 썼고요.컴퓨터공학과 선배가 정보처리기사 실기시험에 Visual Basic 선택한다고 할 때 생각했습니다, "컴퓨터공학과 학생이 무슨 Visual Basic? C로 봐야하는 거 아닌가?" 지금 돌아보면 괜한 생각이었습니다. 자격증에 선택한 언어가 표시되지도 않아서 무용, C로 개발하는 프로젝트가 적어서 무용. 제가 개발자가 아닌 점점은 제외하고요.<br />
+지금 와서 드는 생각인데, 시험에 Perl이나 PHP를 선택할 수 있게 해줬으면 좋았을 겁니다. 그 땐 Python이나 Ruby는 인기가 높지 않았고요. JAVA는 중요했지만 공식적인 시험에 채택되기엔 좀...지금 이렇게 모든 일이 웹으로 될 줄은, Android와 iOS 판이 될 줄은, 그 때엔 누구도 몰랐겠죠.</p>
+
+
+
+
+
+
+
+
+    <div><div>정보처리산업기사와 정보처리기사 자격을 차례로 취득하였습니다. 그 때에는 실기가, 명세에 맞게 컴퓨터 프로그램을 만들어서 소스코드와 실행 파일을 업로드 하는 것이었습니다.</div><div>언어 선택지가 몇가지 있었고, 저는 C언어를 선택했습니다. 인기있었던 건 Visual Basic이었습니다. 컴파일러 등의 도구는 수험자가 직접 준비해야했습니다. 저는 MSYS에 포함된 gcc를 썼습니다. C언어를 선택한 사람들 다수는 Turbo C를 썼고요.</div><div>컴퓨터공학과 선배가 정보처리기사 실기시험에 Visual Basic 선택한다고 할 때 생각했습니다, "컴퓨터공학과 학생이 무슨 Visual Basic? C로 봐야하는 거 아닌가?"&nbsp;</div><div>지금 돌아보면 괜한 생각이었습니다. 자격증에 선택한 언어가 표시되지도 않아서 무용, C로 개발하는 프로젝트가 적어서 무용. 제가 개발자가 아닌 점점은 제외하고요.</div><div><br /></div><div>지금 와서 드는 생각인데, 시험에 Perl이나 PHP를 선택할 수 있게 해줬으면 좋았을 겁니다. 그 땐 Python이나 Ruby는 인기가 높지 않았고요. JAVA는 중요했지만 공식적인 시험에 채택되기엔 좀...</div><div>지금 이렇게 모든 일이 웹으로 될 줄은, Android와 iOS 판이 될 줄은, 그 때엔 누구도 몰랐겠죠.</div></div>
+
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>[서평]노후를 위해 오피스텔에 투자하라 - ionpocari</title>
@@ -703,28 +737,6 @@ Co-Founders, Apteligent</p><br />
 </div>
 </div>
 ]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Congratulations on 10 years of virtuallyfun - 추ㅣ미생활 취미생호라</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/05/congratulations-on-10-years-of-virtuallyfun.html" />
-    <id>tag:blog.youre.space,2017:/vergence//10.581</id>
-
-    <published>2017-05-15T05:49:29Z</published>
-    <updated>2017-05-15T06:53:41Z</updated>
-
-    <summary>https://virtuallyfun.superglobalmegacorp.com/2017/05/14/10-years-later/ I really like this blog. Live long and prosper....</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p><a href="https://virtuallyfun.superglobalmegacorp.com/2017/05/14/10-years-later/">https://virtuallyfun.superglobalmegacorp.com/2017/05/14/10-years-later/</a></p>
-<p>I really like this blog. Live long and prosper.</p>]]>
         
     </content>
 </entry>
