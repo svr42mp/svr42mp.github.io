@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>추ㅣ미생활 취미생호라</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
-    <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
+    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/" />
+    <link rel="self" type="application/atom+xml" href="http://blog.youre.space/vergence/atom.xml" />
     <id>tag:blog.youre.space,2017-01-30:/vergence//10</id>
-    <updated>2017-06-22T02:30:12Z</updated>
+    <updated>2017-06-25T12:44:54Z</updated>
     <subtitle>틈틈이 취미생활을 합니다. 추ㅣ미생활 취미생호라 일부러 오기한 겁니다.</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.4</generator>
 
 <entry>
+    <title>xbox360 사진</title>
+    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/06/xbox360.html" />
+    <id>tag:blog.youre.space,2017:/vergence//10.611</id>
+
+    <published>2017-06-25T12:41:57Z</published>
+    <updated>2017-06-25T12:44:54Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
+        <![CDATA[<p><a href="http://blog.youre.space/vergence/uploads/20170625_212139_HDR.jpg"><img alt="20170625_212139_HDR.jpg" src="http://blog.youre.space/vergence/assets_c/2017/06/20170625_212139_HDR-thumb-360xauto-155.jpg" width="360" height="360" class="mt-image-none" style="" /></a><a href="http://blog.youre.space/vergence/uploads/20170625_213512_HDR.jpg"><img alt="20170625_213512_HDR.jpg" src="http://blog.youre.space/vergence/assets_c/2017/06/20170625_213512_HDR-thumb-360xauto-154.jpg" width="360" height="360" class="mt-image-none" style="" /></a><a href="http://blog.youre.space/vergence/uploads/20170625_213445_HDR.jpg"><img alt="20170625_213445_HDR.jpg" src="http://blog.youre.space/vergence/assets_c/2017/06/20170625_213445_HDR-thumb-360xauto-153.jpg" width="360" height="360" class="mt-image-none" style="" /></a><a href="http://blog.youre.space/vergence/uploads/20170625_213412_HDR.jpg"><img alt="20170625_213412_HDR.jpg" src="http://blog.youre.space/vergence/assets_c/2017/06/20170625_213412_HDR-thumb-360xauto-152.jpg" width="360" height="360" class="mt-image-none" style="" /></a></p>
+]]>
+        
+    </content>
+</entry>
+
+<entry>
     <title>Firefox로 Gmail standard view 이용하기</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/06/firefoxe-gmail-standard-view-iiie.html" />
+    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/06/firefoxe-gmail-standard-view-iiie.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.610</id>
 
     <published>2017-06-22T02:24:15Z</published>
@@ -23,7 +45,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
         <![CDATA[<p>구형 웹 브라우저로 Gmail에 접속하면 basic HTML view를 이용하게되는데, 오류 없이 동작은 하지만 매우 불편합니다. Firefox 최신 버전을 이용해도, 근래엔 Gmail basic HTML view만을 이용하게 됩니다. 왠지 Google이 Firefox를 배척하는 느낌.</p>
 <p>이럴 땐 아래 주소로 접속하면 standard view를 이용할 수 있습니다.<br /> <a href="https://mail.google.com/mail/u/0/?nocheckbrowser">https://mail.google.com/mail/u/0/?nocheckbrowser</a></p>]]>
         
@@ -32,7 +54,7 @@
 
 <entry>
     <title>정보처리산업기사와 정보처리기사</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/06/ieieiieii-ieieei.html" />
+    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/06/ieieiieii-ieieei.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.609</id>
 
     <published>2017-06-21T23:35:39Z</published>
@@ -45,7 +67,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
         <![CDATA[<p>정보처리산업기사와 정보처리기사 자격을 차례로 취득하였습니다. 그 때에는 실기가, 명세에 맞게 컴퓨터 프로그램을 만들어서 소스코드와 실행 파일을 업로드 하는 것이었습니다.언어 선택지가 몇가지 있었고, 저는 C언어를 선택했습니다. 인기있었던 건 Visual Basic이었습니다. 컴파일러 등의 도구는 수험자가 직접 준비해야했습니다. 저는 MSYS에 포함된 gcc를 썼습니다. C언어를 선택한 사람들 다수는 Turbo C를 썼고요.컴퓨터공학과 선배가 정보처리기사 실기시험에 Visual Basic 선택한다고 할 때 생각했습니다, "컴퓨터공학과 학생이 무슨 Visual Basic? C로 봐야하는 거 아닌가?" 지금 돌아보면 괜한 생각이었습니다. 자격증에 선택한 언어가 표시되지도 않아서 무용, C로 개발하는 프로젝트가 적어서 무용. 제가 개발자가 아닌 점점은 제외하고요.<br />
 지금 와서 드는 생각인데, 시험에 Perl이나 PHP를 선택할 수 있게 해줬으면 좋았을 겁니다. 그 땐 Python이나 Ruby는 인기가 높지 않았고요. JAVA는 중요했지만 공식적인 시험에 채택되기엔 좀...지금 이렇게 모든 일이 웹으로 될 줄은, Android와 iOS 판이 될 줄은, 그 때엔 누구도 몰랐겠죠.</p>
 
@@ -66,7 +88,7 @@
 
 <entry>
     <title>건강과 출근</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/05/eee-ie.html" />
+    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/05/eee-ie.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.601</id>
 
     <published>2017-05-30T23:00:45Z</published>
@@ -79,7 +101,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
         <![CDATA[<p>10년쯤 전에 군대에 있었습니다. 그 때엔 몸이 아파도 출근을 했습니다. 몸이 아픈 것과 상관 없이 일을 할 수 있다고 생각했지요. 그 때는 의무감도 강하고 고집스러웠나봅니다.<br />
 지금은 그렇게 생각하진 않습니다. 어제 전신 근육통과 어지러움, 메스꺼움 등으로 불편했습니다. 출근 도중에 집으로 돌아왔습니다. 병원에 갔더니 몸살과 가벼운 장염 같다며 진통제 들어있는 약을 처방해 주었습니다. 약 먹고 종일 쉬니 이제 살 것 같네요.</p>]]>
         
@@ -88,7 +110,7 @@
 
 <entry>
     <title>아플 땐 책</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/05/book-modernandpostmodern.html" />
+    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/05/book-modernandpostmodern.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.600</id>
 
     <published>2017-05-30T13:43:36Z</published>
@@ -101,7 +123,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
         <![CDATA[<p>아플 땐 책이죠.</p>
 <p>현대냐 탈현대냐</p>
 
@@ -112,7 +134,7 @@
 
 <entry>
     <title>Lonely Night</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/05/lonely-night.html" />
+    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/05/lonely-night.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.595</id>
 
     <published>2017-05-29T09:38:45Z</published>
@@ -127,7 +149,7 @@
         <category term="cal" scheme="http://www.sixapart.com/ns/types#category" />
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
         <![CDATA[<iframe id="sbs_player" src=http://openapi.sbs.co.kr/api/sbs/video/player.jsp?clientid=f88f0e13402c69a95c94620e39d6fa6d7b81e118&content_id=410569382&req_gubun=1&uuid=1 scrolling="no" style="border:0" width="640" height="360" allowfullscreen></iframe>
 <p>TV가요 20, 166회, Lonely Night, 부활</p>
 ]]>
@@ -137,7 +159,7 @@
 
 <entry>
     <title>시작</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/05/post-72.html" />
+    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/05/post-72.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.594</id>
 
     <published>2017-05-26T04:57:38Z</published>
@@ -150,7 +172,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
         <![CDATA[<p>1</p>]]>
         
     </content>
@@ -158,7 +180,7 @@
 
 <entry>
     <title>새로운 태그</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/05/iei-ie.html" />
+    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/05/iei-ie.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.588</id>
 
     <published>2017-05-23T04:54:07Z</published>
@@ -171,7 +193,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
         <![CDATA[<p>취미생활이라는 태그와 더불어 무작정연습이라는 태그를 쓰기 시작했습니다.</p>취미생활이라는 태그와 더불어 무작정연습이라는 태그를 쓰기 시작했습니다.]]>
         
     </content>
@@ -179,7 +201,7 @@
 
 <entry>
     <title>Firebase 호스팅에서 확장자 json 파일 서빙</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/05/firebase-iiiii-iii-json-ii-ie.html" />
+    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/05/firebase-iiiii-iii-json-ii-ie.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.584</id>
 
     <published>2017-05-21T15:51:01Z</published>
@@ -192,7 +214,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
         <![CDATA[<p>Firebase 호스팅에 확장자 json인 파일을 deploy 하였습니다. 그리고 그 파일을 요청해보았습니다. MIME type에 대한 헤더 정보는 주지 않는군요. <br />
 이게 없어도 javascript로 데이터 불러오는데 문제가 없는지 앞으로 확인해보려 합니다.</p>]]>
         
@@ -201,7 +223,7 @@
 
 <entry>
     <title>대통령이 개인 일 스스로 하는 것을 보고</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/05/president-moon-starting.html" />
+    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/05/president-moon-starting.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.583</id>
 
     <published>2017-05-16T10:32:02Z</published>
@@ -214,7 +236,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
         <![CDATA[<p>며칠 전 뉴스에서 대통령이 개인 일을 스스로 하는 것을 보았습니다, 외투 벗고 식권 내고 식판에 밥 푸는 것 같은 개인 일이요. 여러가지 생각이 드네요.<br />
 군대에서 첫 보직은 GOP 소초장(소대장)이었습니다. 교육기관에서 배운 것처럼 "어머니의 리더십", 솔선수범, 전문성, 뛰어남 등으로 잘 이끌어야겠다, 악폐습을 없게 해야겠다, 병사들 건강히 전역시켜야겠다 등등 좋은 뜻은 다 품고 갔습니다.<br />
 GOP에서 저녁 먹고 전후반 근무자 합동근무 들어갈 때 꽤 바쁩니다. 복장 장비 등 개인 것도 챙기고 근무자들 것도 챙겨야 하고요. 근무명령서를 수정한다든지, 변경사항도 종종 생깁니다.소초장 시작할 때엔 전임 소초장도 잠시 함께 있었고, 모르고 챙기지 않는 일도 있어서 조금 여유 있었습니다.저녁 먹고 식판을 씻으려고 하니 조리병(취사병)이 자기가 씻겠다고 그대로 두라고 이야기 했습니다. 개인 업무는 개인이 해야한다고 배웠고, 병사들에게 그렇게 강조해야하므로 내가 솔선수범해야한다고 생각했습니다. 그래서 식판을 직접 씻었습니다. <br />
@@ -230,7 +252,7 @@ GOP에서 저녁 먹고 전후반 근무자 합동근무 들어갈 때 꽤 바�
 
 <entry>
     <title>Congratulations on 10 years of virtuallyfun</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/05/congratulations-on-10-years-of-virtuallyfun.html" />
+    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/05/congratulations-on-10-years-of-virtuallyfun.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.581</id>
 
     <published>2017-05-15T05:49:29Z</published>
@@ -243,7 +265,7 @@ GOP에서 저녁 먹고 전후반 근무자 합동근무 들어갈 때 꽤 바�
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
         <![CDATA[<p><a href="https://virtuallyfun.superglobalmegacorp.com/2017/05/14/10-years-later/">https://virtuallyfun.superglobalmegacorp.com/2017/05/14/10-years-later/</a></p>
 <p>I really like this blog. Live long and prosper.</p>]]>
         
@@ -252,7 +274,7 @@ GOP에서 저녁 먹고 전후반 근무자 합동근무 들어갈 때 꽤 바�
 
 <entry>
     <title>NBP의 Cloud Service 소식을 듣고</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/05/nbp-cloud-service.html" />
+    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/05/nbp-cloud-service.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.579</id>
 
     <published>2017-05-14T14:35:56Z</published>
@@ -265,7 +287,7 @@ GOP에서 저녁 먹고 전후반 근무자 합동근무 들어갈 때 꽤 바�
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
         <![CDATA[<p>3월에 NBP의 클라우드 관련 채용공고를 보고, 뭔가 나오나보다, 어떤 클라우드 서비스가 나올까 궁금했습니다. 엊그제 오픈 소식을 듣고 반가워 하며 살펴보았습니다. 예상 외네요. 짧은 의견 좀 써보자면...</p>
 <p>1. 차이 없는 깡통장사</p>
 <p>클라우드 인프라 서비스인데, IaaS부터 하나봅니다. NBP이니까 NAVER의 무언가를 살려서 한다면 IaaS보다 추상화되고 응용된 클라우드일 걸로 생각했습니다. 인터넷 서비스 회사의 경험을 살려서요.<br /> 하지만 IaaS 중심입니다, 가상 머신 빌려서 OS부터 엔지니어가 손을 대야하는 거죠. 사용자 입장에선 다른 것 없는 또 하나의 선택지입니다.<br /> 어느 기사에는 x86 서버가 가장 많은 회사라고 수식 되어있더군요. 서버 많으면 IaaS 사업한다? 딱히 강점 없는 이야기로 들립니다. 사용자가 원하는게 단지 싼 깡통(서버 하드웨어)은 아닐 겁니다. 서버를 잘 관리해준다든지, 가상 머신이 먹통되면 껐다켜주는 정도의 관리가 아닌, 적극적인 의미의 관리일 거고요.<br /> 내일 당장 접는다고 해도 사용자 입장에서 아쉽지는 않을 것 같습니다.</p>
@@ -281,7 +303,7 @@ GOP에서 저녁 먹고 전후반 근무자 합동근무 들어갈 때 꽤 바�
 
 <entry>
     <title>Requirements Management Project의 Artifact Type 비교</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/05/requirements-management-project-artifact-type.html" />
+    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/05/requirements-management-project-artifact-type.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.577</id>
 
     <published>2017-05-02T02:43:54Z</published>
@@ -294,7 +316,7 @@ GOP에서 저녁 먹고 전후반 근무자 합동근무 들어갈 때 꽤 바�
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
         <![CDATA[<h1>Rational DOORS Next Generation</h1>
 <h2>Requirements Management Project</h2>
 <p><!--[if gte mso 9]><xml>
@@ -2327,7 +2349,7 @@ GOP에서 저녁 먹고 전후반 근무자 합동근무 들어갈 때 꽤 바�
 
 <entry>
     <title>일기 때문에 A+ 받은 이야기</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/04/statistic.html" />
+    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/04/statistic.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.575</id>
 
     <published>2017-04-17T23:29:28Z</published>
@@ -2342,7 +2364,7 @@ GOP에서 저녁 먹고 전후반 근무자 합동근무 들어갈 때 꽤 바�
         <category term="cal" scheme="http://www.sixapart.com/ns/types#category" />
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
         <![CDATA[<p>일기와 관련하여 특히 기억나는 건 대학교 통계학개론 수업입니다.</p>
 <p>첫 학기에 통계학개론 수업을 신청했습니다, 그것도 자연과학대학에 있는 걸로, 전 사회과학대학 소속인데. 사회과학대학엔 기초사회통계 수업이 있지만 만원이라 나중에 듣게 되었고, 통계학은 심리학 공부할 때 계속 필요할 테니 좋은 경험을 기대하며 통계학 수업을 추가로 선택한 거죠.</p>
 <p>나중에 알게 되었습니다, 자연과학대 학생들에게 그 통계학개론 수업은 교양 필수 과목이란 걸. 게다가 그 수업에 자연과학대 학생이 아닌 사람은 나 하나였다는 걸.</p>
@@ -2356,7 +2378,7 @@ GOP에서 저녁 먹고 전후반 근무자 합동근무 들어갈 때 꽤 바�
 
 <entry>
     <title>좋은 소식</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/04/goodnews.html" />
+    <link rel="alternate" type="text/html" href="http://blog.youre.space/vergence/2017/04/goodnews.html" />
     <id>tag:blog.youre.space,2017:/vergence//10.545</id>
 
     <published>2017-04-13T23:10:35Z</published>
@@ -2369,37 +2391,8 @@ GOP에서 저녁 먹고 전후반 근무자 합동근무 들어갈 때 꽤 바�
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+    <content type="html" xml:lang="en-us" xml:base="http://blog.youre.space/vergence/">
         <![CDATA[<p>좋은 소식이 있습니다. 오늘 금요일이예요.</p>좋은 소식이 있습니다. 오늘 금요일이예요.]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>문재인 구글 검색</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/04/answodls.html" />
-    <id>tag:blog.youre.space,2017:/vergence//10.544</id>
-
-    <published>2017-04-11T15:28:12Z</published>
-    <updated>2017-04-11T15:41:43Z</updated>
-
-    <summary>구글에서 문재인을 검색하면 엉뚱한 결과가, 엉뚱할 뿐 아니라 나쁜 결과가 나윤다는 이야기를 아침에 들었습니다. 구글은 특정 인뭉이나 지명, 사건 등에 위키피디아의 글을 많이 활용합니다. 이 글은 문재인 answodls 키워드로 검색 결과가 멀쩡하길 기원하는 겁니다. 문재인 answodls...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>구글에서 문재인을 검색하면 엉뚱한 결과가, 엉뚱할 뿐 아니라 나쁜 결과가 나윤다는 이야기를 아침에 들었습니다.</p>
-
-<p>구글은 특정 인뭉이나 지명, 사건 등에 위키피디아의 글을 많이 활용합니다.</p>
-
-<p>이 글은 문재인 answodls 키워드로 검색 결과가 멀쩡하길 기원하는 겁니다.</p>
-
-<p><a href="https://ko.wikipedia.org/wiki/문재인" title="문재인">문재인</a>
-<a href="https://ko.wikipedia.org/wiki/문재인" title="문재인">answodls</a></p>
-]]>
         
     </content>
 </entry>
