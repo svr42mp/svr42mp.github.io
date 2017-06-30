@@ -4,9 +4,152 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/atom.xml" />
     <id>tag:blog.youre.space,2017-01-30:/3</id>
-    <updated>2017-06-28T14:19:08Z</updated>
+    <updated>2017-06-30T07:02:27Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.4</generator>
+
+<entry>
+    <title>Rational Team Concert 6.0.4 migration - 추ㅣ미생활 취미생호라</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/06/rational-team-concert-604-migration.html" />
+    <id>tag:blog.youre.space,2017:/vergence//10.613</id>
+
+    <published>2017-06-30T06:58:52Z</published>
+    <updated>2017-06-30T07:02:27Z</updated>
+
+    <summary>Rational Team Concert 업그레이드 하려고, 기존 서버에서 데이터 export 하고 새 서버에서 import 했는데, 오류가 발생했습니다. 6.0.3 에서 6.0.4 로 간 것 뿐인데. 애라. 2017-06-30 05:38:46,400 Repo Tools 2017-06-30 05:38:46,401 java.version=1.7.0 2017-06-30 05:38:46,401 java.runtime.version=pxa6470_27sr4fp1-20170215_01 (SR4 FP1) 2017-06-30 05:38:46,404 Provisioning using...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>Rational Team Concert 업그레이드 하려고, 기존 서버에서 데이터 export 하고 새 서버에서 import 했는데, 오류가 발생했습니다.<br />
+6.0.3 에서 6.0.4 로 간 것 뿐인데.
+애라.</p>
+
+<pre><code>
+2017-06-30 05:38:46,400 Repo Tools
+2017-06-30 05:38:46,401 java.version=1.7.0
+2017-06-30 05:38:46,401 java.runtime.version=pxa6470_27sr4fp1-20170215_01 (SR4 FP1)
+2017-06-30 05:38:46,404 Provisioning using "./conf/jts/provision_profiles".
+2017-06-30 05:38:46,418 repotools-jts -import fromFile=JTSData.tar
+2017-06-30 05:38:46,444 
+ To submit questions about issues, go to the Jazz.net forum at https://jazz.net/forum. 
+ To find more information about a message, see the online product documentation.
+2017-06-30 05:38:46,444 CRJAZ1363I Loading the configuration from "file:conf/jts/teamserver.properties".
+2017-06-30 05:38:50,635 CRJAZ1365I The server is attempting to connect to the following database: "conf/jts/derby/repositoryDB"
+2017-06-30 05:38:50,840 CRJAZ1364I The connection to the following database was successful:
+ Db Product Name: Apache Derby
+  Db Product Version: 10.10.2.0 - (1582446)
+  Db URL: jdbc:derby:conf/jts/derby/repositoryDB;create=true
+  Jdbc Driver Name: Apache Derby Embedded JDBC Driver
+  Jdbc Driver Version: 10.10.2.0 - (1582446)
+  SchemaPrefix: 
+ 
+2017-06-30 05:38:54,451 CRJAZ1779I This server is configured as a JTS.
+2017-06-30 05:38:54,454 CRJAZ2558I Setting the local server rename state to false and the openServerDescriptionServiceTemporarily state to false.
+2017-06-30 05:38:54,513 CRJAZ2523I Setting the global server rename state to false and the validation state to false.
+2017-06-30 05:38:54,709 CRJAZ1971I The server is configured with: 
+  Public URI: "https://rational.youre.space:9443/jts"
+2017-06-30 05:38:54,851 CRJAZ2105I Checking for a running server...
+2017-06-30 05:38:55,011 CRJAZ2084I The import operation requires approximately 93K of free space at "/tmp".
+2017-06-30 05:42:29,636 Creating the tables for the database "conf/jts/derby/repositoryDB" without indices.
+2017-06-30 05:42:57,586 CRJAZ1971I The server is configured with: 
+  Public URI: "https://rational.youre.space:9443/jts"
+2017-06-30 05:43:00,631 The user "ADMIN" has logged in to the database "conf/jts/derby/repositoryDB".
+2017-06-30 05:43:00,741 The user "ADMIN" has logged out of the database "conf/jts/derby/repositoryDB".
+2017-06-30 05:43:00,752 CRJZS5650I Indices directory is /opt/IBM/JazzTeamServer/server/conf/jts/indices
+2017-06-30 05:43:00,765 The database tables were created successfully.
+2017-06-30 05:43:03,533 CRJAZ1365I The server is attempting to connect to the following database: "conf/jts/derby/repositoryDB"
+2017-06-30 05:43:03,556 CRJAZ1364I The connection to the following database was successful:
+ Db Product Name: Apache Derby
+  Db Product Version: 10.10.2.0 - (1582446)
+  Db URL: jdbc:derby:conf/jts/derby/repositoryDB;create=true
+  Jdbc Driver Name: Apache Derby Embedded JDBC Driver
+  Jdbc Driver Version: 10.10.2.0 - (1582446)
+  SchemaPrefix: 
+ 
+2017-06-30 05:43:05,334 CRJAZ1971I The server is configured with: 
+  Public URI: "https://rational.youre.space:9443/jts"
+2017-06-30 05:43:06,559 The user "ADMIN" has logged in to the database "conf/jts/derby/repositoryDB".
+2017-06-30 05:43:06,560 Importing the data from the file "JTSData.tar" into the database "conf/jts/derby/repositoryDB".
+2017-06-30 05:43:06,560 Using encoding "UTF-8" for TAR file headers.
+2017-06-30 05:43:06,569 
+Reading the TAR file /opt/IBM/JazzTeamServer/server/JTSData.tar...
+2017-06-30 05:43:06,581 Finished reading the TAR file "/opt/IBM/JazzTeamServer/server/JTSData.tar" in 13 ms.
+2017-06-30 05:43:06,581 Using deserializer caching options to improve migration performance.
+2017-06-30 05:43:06,581 Configured to update database stats every 1800000ms.
+2017-06-30 05:43:06,581 Importing contents from JTSData.tar into the repository.
+2017-06-30 05:43:06,681 
+Migrating data exported from the following model versions
+2017-06-30 05:43:06,681 	Namespace URI = com.ibm.team.repository.friends, Version = 2
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.jfs.resource, Version = 9
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.repository.auth, Version = 4
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.links, Version = 7
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.reports, Version = 1.9
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.markers, Version = 3
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.applicationmigration, Version = 2
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.dashboard, Version = 1.7
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.serviceability, Version = 1.0.1
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.repository.discovery, Version = 1
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.diagnostictests, Version = 2
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.vvc, Version = 13
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.validity, Version = 2
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.globalconfiguration, Version = 3
+2017-06-30 05:43:06,683 	Namespace URI = com.ibm.team.repository, Version = 38
+2017-06-30 05:43:06,683 	Namespace URI = com.ibm.team.opaque, Version = 1
+2017-06-30 05:43:06,683 	Namespace URI = com.ibm.team.compatibilitypack, Version = 1
+2017-06-30 05:43:06,683 	Namespace URI = com.ibm.team.process, Version = 24
+2017-06-30 05:43:06,728 CRJAZ2403E The version of the data that you are trying to import does not match the version of this tool.  The "com.ibm.team.vvc" component in the exported file uses version "13". However, this import tool can handle only version "19".
+2017-06-30 05:43:06,728 
+Imported 0 items, 0 item states in 147 ms. 0 item states skipped. Error importing 0 elements.
+2017-06-30 05:43:06,728 Total time spent writing to the blackboard:  0 ms.
+2017-06-30 05:43:06,729 Total time spent reading from the blackboard:  0 ms.
+2017-06-30 05:43:06,729 
+2017-06-30 05:43:06,729 
+2017-06-30 05:43:06,729 ##############################################################################################
+2017-06-30 05:43:06,729                                 ****** Migration Errors ******
+2017-06-30 05:43:06,729 CRJAZ0656I **ERROR** Migration completed with errors. The imported database is in an inconsistent state and should not be used without further analysis.
+Check the migration log "/opt/IBM/JazzTeamServer/server/repotools-jts_import.log" for details.
+2017-06-30 05:43:06,730 ##############################################################################################
+2017-06-30 05:43:06,730 The user "ADMIN" has logged out of the database "conf/jts/derby/repositoryDB".
+2017-06-30 05:43:08,285 CRJAZ2403E The version of the data that you are trying to import does not match the version of this tool.  The "com.ibm.team.vvc" component in the exported file uses version "13". However, this import tool can handle only version "19".
+com.ibm.team.repository.migration.internal.service.IllegalVersionException: CRJAZ2403E The version of the data that you are trying to import does not match the version of this tool.  The "com.ibm.team.vvc" component in the exported file uses version "13". However, this import tool can handle only version "19".
+	at com.ibm.team.repository.migration.internal.service.MigrationHandlerDispatcher.assertAllModelVersionsEqualToCurrent(MigrationHandlerDispatcher.java:97)
+	at com.ibm.team.repository.migration.internal.service.AbstractMigrationService.importData(AbstractMigrationService.java:1027)
+	at com.ibm.team.repository.migration.internal.service.AbstractMigrationService.importRepositoryOptionalVerifyPreserve(AbstractMigrationService.java:881)
+	at com.ibm.team.repository.migration.internal.service.AbstractMigrationService.importRepositoryOptionalVerify(AbstractMigrationService.java:831)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at org.eclipse.soda.sat.core.internal.record.ExportProxyServiceRecord.invoke(ExportProxyServiceRecord.java:361)
+	at org.eclipse.soda.sat.core.internal.record.ExportProxyServiceRecord.access$0(ExportProxyServiceRecord.java:347)
+	at org.eclipse.soda.sat.core.internal.record.ExportProxyServiceRecord$ExportedServiceInvocationHandler.invoke(ExportProxyServiceRecord.java:56)
+	at com.sun.proxy.$Proxy1353.importRepositoryOptionalVerify(Unknown Source)
+	at com.ibm.team.repotools.commands.local.internal.ImportCommand.importData(ImportCommand.java:288)
+	at com.ibm.team.repotools.commands.local.internal.ImportCommand.execute(ImportCommand.java:205)
+	at com.ibm.team.repotools.command.AbstractCommand.execute(AbstractCommand.java:68)
+	at com.ibm.team.repotools.rcp.internal.RepositoryToolsApplication.run(RepositoryToolsApplication.java:838)
+	at com.ibm.team.repotools.rcp.internal.RepositoryToolsApplication.start(RepositoryToolsApplication.java:928)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+</code></pre>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Gathering Blue Review - Ella</title>
@@ -548,35 +691,6 @@
     <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>Firebase 호스팅에 확장자 json인 파일을 deploy 하였습니다. 그리고 그 파일을 요청해보았습니다. MIME type에 대한 헤더 정보는 주지 않는군요. <br />
 이게 없어도 javascript로 데이터 불러오는데 문제가 없는지 앞으로 확인해보려 합니다.</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>대통령이 개인 일 스스로 하는 것을 보고 - 추ㅣ미생활 취미생호라</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/05/president-moon-starting.html" />
-    <id>tag:blog.youre.space,2017:/vergence//10.583</id>
-
-    <published>2017-05-16T10:32:02Z</published>
-    <updated>2017-05-16T10:48:15Z</updated>
-
-    <summary>며칠 전 뉴스에서 대통령이 개인 일을 스스로 하는 것을 보았습니다, 외투 벗고 식권 내고 식판에 밥 푸는 것 같은 개인 일이요. 여러가지 생각이 드네요. 군대에서 첫 보직은 GOP 소초장(소대장)이었습니다. 교육기관에서 배운 것처럼 &quot;어머니의 리더십&quot;, 솔선수범, 전문성, 뛰어남 등으로 잘 이끌어야겠다,...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>며칠 전 뉴스에서 대통령이 개인 일을 스스로 하는 것을 보았습니다, 외투 벗고 식권 내고 식판에 밥 푸는 것 같은 개인 일이요. 여러가지 생각이 드네요.<br />
-군대에서 첫 보직은 GOP 소초장(소대장)이었습니다. 교육기관에서 배운 것처럼 "어머니의 리더십", 솔선수범, 전문성, 뛰어남 등으로 잘 이끌어야겠다, 악폐습을 없게 해야겠다, 병사들 건강히 전역시켜야겠다 등등 좋은 뜻은 다 품고 갔습니다.<br />
-GOP에서 저녁 먹고 전후반 근무자 합동근무 들어갈 때 꽤 바쁩니다. 복장 장비 등 개인 것도 챙기고 근무자들 것도 챙겨야 하고요. 근무명령서를 수정한다든지, 변경사항도 종종 생깁니다.소초장 시작할 때엔 전임 소초장도 잠시 함께 있었고, 모르고 챙기지 않는 일도 있어서 조금 여유 있었습니다.저녁 먹고 식판을 씻으려고 하니 조리병(취사병)이 자기가 씻겠다고 그대로 두라고 이야기 했습니다. 개인 업무는 개인이 해야한다고 배웠고, 병사들에게 그렇게 강조해야하므로 내가 솔선수범해야한다고 생각했습니다. 그래서 식판을 직접 씻었습니다. <br />
-처음엔 그렇게 할 수 있었는데, 시간이 지날 수록 점점 바빠지고 식판 씻는 시간도 부담이 되었습니다. 결국 조리병에게 부탁하게 되었습니다. 전임 소초장이나 부소초장이 밥 먹고 식판을 조리실에 주며 하는 말을 저도 쓰게 되었습니다, "민우야, 잘 먹었다."소초장과 부소초장 외에는 조리병에게 식판을 씻으라고 하는 인원은 없었습니다. 하사인 선임분대장도 자기가 직접 씻었습니다. 선임분대장이 다른 분대장보다 특별히 더 바쁠 일은 없었기 때문일 겁니다.조리병에게 식판 2개는 큰 부담은 아니었을 거란 생각이 듭니다, 남이 쓴 식판이니 짜증은 좀 났더라도. 또, 식판 대신 씻어준게 소초장과 부소초장 업무에는 큰 도움이 되었을 겁니다. 단지 그 2명 뿐 아니라 소초 전체에도 도움이 되었을 겁니다.<br />
-때때로 어느 사람의 시간은 다른 사람의 시간보다 중요해지기도 한다는 생각이 듭니다. 그리고 그건 거꾸로 바뀔 수도 있고요.예를 들면, 조리병이 조리 하는 시간은 왠만해선 건드릴 수 없는 중요한 시간일 거니까요.</p>
-
-<p>소초장 처음에 병사들에게 좋은 소리를 들었습니다. 병사들 왈, 전 소초장은 잘 삐지고 병사들에게 실망하는 일이 있으면 말을 잘 안 한다고. 그래서 병사들과 거리가 있다고. 저는 근무 투입해서 초소에서 병사들과 이야기를 많이 나눴습니다. 초소 이동할 때 고생한다고 격려하는 말도 자주 하고요. 초소에서 떠들면 안 되지만, 간부들 순찰 지나가면 병사들끼리 떠드니까, 그건 포기하고 병사들과 관계를 취한거죠. 병사들 왈, 먼저 말 걸어주고 부드럽게 대해주어서 좋다고.시간이 지나 병사들의 불만을 들은 적이 있습니다, 병사들과 함께 하는 활동이 적다고, 축구도 함께 하고 주말에 외박 나가면 밖에서 만나서 술도 마시자고. 그러자고 대답은 했지만 지키지는 못 했습니다.우선 일상 업무가 많이 바쁘고, 7시에 출근해서 12시 퇴근이 보통입니다. 게다가, 정작 장교들이 힘써야할 전투 계획을 다듬는 일은 신경쓰지 못했습니다. 전투세부시행규칙이라는 이름의 계획서를 수정한 것도 손에 꼽을 정도고, 장교들이 모여 작전 회의 하는 것도 년 중 손에 꼽을 정도였습니다. 항상 빚이 있는 상태인 거죠.나중에 어느 선배 장교에게서 이런 말을 들었습니다, "계획 업무가 끝이 어디있냐. 오늘 할 수 있는만큼 하고 내일 또 해야하는거야."<br />
-소대장 끝나고 대대 인사과장을 했습니다. 대대장님이 기러기 아빠로 관사에서 혼자 살았고 술을 좋아했습니다. 대대장님이 술을 많이 마시고 관사에 들어간 어느 날은 꿀물을 가져다 놓았습니다. 대대장님이 빨리 나와야 내 일이 원활하니까요, 내 일 뿐 아니라 대대 운영 전체가 그렇지요.<br />
-대통령이 취임 직후 보여준 모습을 그의 순수한 의도로만 볼 뿐, 임기 끝까지 반드시 유지해야할 것은 아니라고 생각해봅니다. 한 두 해 지나서, 식권 직접 안 내더라도 욕하지 않을 겁니다.</p>]]>
         
     </content>
 </entry>

@@ -61,6 +61,173 @@ var infolinks_wsid = 0;
                         <div id="alpha-inner">
 
                             
+                            <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://weblog.youre.space/vergence/2017/06/rational-team-concert-604-migration.html"
+    trackback:ping="http://weblog.youre.space/634/mt-tb.cgi/328"
+    dc:title="Rational Team Concert 6.0.4 migration"
+    dc:identifier="http://weblog.youre.space/vergence/2017/06/rational-team-concert-604-migration.html"
+    dc:subject=""
+    dc:description="Rational Team Concert 업그레이드 하려고, 기존 서버에서 데이터 export 하고 새 서버에서 import 했는데, 오류가 발생했습니다. 6.0.3 에서 6.0.4 로 간 것 뿐인데. 애라. 2017-06-30 05:38:46,400 Repo Tools 2017-06-30 05:38:46,401 java.version=1.7.0 2017-06-30 05:38:46,401 java.runtime.version=pxa6470_27sr4fp1-20170215_01 (SR4 FP1) 2017-06-30 05:38:46,404 Provisioning using..."
+    dc:creator="Sangyong Gwak"
+    dc:date="2017-06-30T15:58:52+09:00" />
+</rdf:RDF>
+-->
+
+<div id="entry-613" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <h2 class="asset-name entry-title"><a href="http://weblog.youre.space/vergence/2017/06/rational-team-concert-604-migration.html" rel="bookmark">Rational Team Concert 6.0.4 migration</a> - <a href="http://weblog.youre.space/vergence/">추ㅣ미생활 취미생호라</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                By <span class="vcard author">Sangyong Gwak</span> on <abbr class="published" title="2017-06-30T15:58:52+09:00">June 30, 2017  3:58 PM</abbr>
+    
+            </span>
+
+            
+            <span class="separator">|</span> <a href="http://weblog.youre.space/vergence/2017/06/rational-team-concert-604-migration.html#trackbacks">No TrackBacks</a>
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>Rational Team Concert 업그레이드 하려고, 기존 서버에서 데이터 export 하고 새 서버에서 import 했는데, 오류가 발생했습니다.<br />
+6.0.3 에서 6.0.4 로 간 것 뿐인데.
+애라.</p>
+
+<pre><code>
+2017-06-30 05:38:46,400 Repo Tools
+2017-06-30 05:38:46,401 java.version=1.7.0
+2017-06-30 05:38:46,401 java.runtime.version=pxa6470_27sr4fp1-20170215_01 (SR4 FP1)
+2017-06-30 05:38:46,404 Provisioning using "./conf/jts/provision_profiles".
+2017-06-30 05:38:46,418 repotools-jts -import fromFile=JTSData.tar
+2017-06-30 05:38:46,444 
+ To submit questions about issues, go to the Jazz.net forum at https://jazz.net/forum. 
+ To find more information about a message, see the online product documentation.
+2017-06-30 05:38:46,444 CRJAZ1363I Loading the configuration from "file:conf/jts/teamserver.properties".
+2017-06-30 05:38:50,635 CRJAZ1365I The server is attempting to connect to the following database: "conf/jts/derby/repositoryDB"
+2017-06-30 05:38:50,840 CRJAZ1364I The connection to the following database was successful:
+ Db Product Name: Apache Derby
+  Db Product Version: 10.10.2.0 - (1582446)
+  Db URL: jdbc:derby:conf/jts/derby/repositoryDB;create=true
+  Jdbc Driver Name: Apache Derby Embedded JDBC Driver
+  Jdbc Driver Version: 10.10.2.0 - (1582446)
+  SchemaPrefix: 
+ 
+2017-06-30 05:38:54,451 CRJAZ1779I This server is configured as a JTS.
+2017-06-30 05:38:54,454 CRJAZ2558I Setting the local server rename state to false and the openServerDescriptionServiceTemporarily state to false.
+2017-06-30 05:38:54,513 CRJAZ2523I Setting the global server rename state to false and the validation state to false.
+2017-06-30 05:38:54,709 CRJAZ1971I The server is configured with: 
+  Public URI: "https://rational.youre.space:9443/jts"
+2017-06-30 05:38:54,851 CRJAZ2105I Checking for a running server...
+2017-06-30 05:38:55,011 CRJAZ2084I The import operation requires approximately 93K of free space at "/tmp".
+2017-06-30 05:42:29,636 Creating the tables for the database "conf/jts/derby/repositoryDB" without indices.
+2017-06-30 05:42:57,586 CRJAZ1971I The server is configured with: 
+  Public URI: "https://rational.youre.space:9443/jts"
+2017-06-30 05:43:00,631 The user "ADMIN" has logged in to the database "conf/jts/derby/repositoryDB".
+2017-06-30 05:43:00,741 The user "ADMIN" has logged out of the database "conf/jts/derby/repositoryDB".
+2017-06-30 05:43:00,752 CRJZS5650I Indices directory is /opt/IBM/JazzTeamServer/server/conf/jts/indices
+2017-06-30 05:43:00,765 The database tables were created successfully.
+2017-06-30 05:43:03,533 CRJAZ1365I The server is attempting to connect to the following database: "conf/jts/derby/repositoryDB"
+2017-06-30 05:43:03,556 CRJAZ1364I The connection to the following database was successful:
+ Db Product Name: Apache Derby
+  Db Product Version: 10.10.2.0 - (1582446)
+  Db URL: jdbc:derby:conf/jts/derby/repositoryDB;create=true
+  Jdbc Driver Name: Apache Derby Embedded JDBC Driver
+  Jdbc Driver Version: 10.10.2.0 - (1582446)
+  SchemaPrefix: 
+ 
+2017-06-30 05:43:05,334 CRJAZ1971I The server is configured with: 
+  Public URI: "https://rational.youre.space:9443/jts"
+2017-06-30 05:43:06,559 The user "ADMIN" has logged in to the database "conf/jts/derby/repositoryDB".
+2017-06-30 05:43:06,560 Importing the data from the file "JTSData.tar" into the database "conf/jts/derby/repositoryDB".
+2017-06-30 05:43:06,560 Using encoding "UTF-8" for TAR file headers.
+2017-06-30 05:43:06,569 
+Reading the TAR file /opt/IBM/JazzTeamServer/server/JTSData.tar...
+2017-06-30 05:43:06,581 Finished reading the TAR file "/opt/IBM/JazzTeamServer/server/JTSData.tar" in 13 ms.
+2017-06-30 05:43:06,581 Using deserializer caching options to improve migration performance.
+2017-06-30 05:43:06,581 Configured to update database stats every 1800000ms.
+2017-06-30 05:43:06,581 Importing contents from JTSData.tar into the repository.
+2017-06-30 05:43:06,681 
+Migrating data exported from the following model versions
+2017-06-30 05:43:06,681 	Namespace URI = com.ibm.team.repository.friends, Version = 2
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.jfs.resource, Version = 9
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.repository.auth, Version = 4
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.links, Version = 7
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.reports, Version = 1.9
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.markers, Version = 3
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.applicationmigration, Version = 2
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.dashboard, Version = 1.7
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.serviceability, Version = 1.0.1
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.repository.discovery, Version = 1
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.diagnostictests, Version = 2
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.vvc, Version = 13
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.validity, Version = 2
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.globalconfiguration, Version = 3
+2017-06-30 05:43:06,683 	Namespace URI = com.ibm.team.repository, Version = 38
+2017-06-30 05:43:06,683 	Namespace URI = com.ibm.team.opaque, Version = 1
+2017-06-30 05:43:06,683 	Namespace URI = com.ibm.team.compatibilitypack, Version = 1
+2017-06-30 05:43:06,683 	Namespace URI = com.ibm.team.process, Version = 24
+2017-06-30 05:43:06,728 CRJAZ2403E The version of the data that you are trying to import does not match the version of this tool.  The "com.ibm.team.vvc" component in the exported file uses version "13". However, this import tool can handle only version "19".
+2017-06-30 05:43:06,728 
+Imported 0 items, 0 item states in 147 ms. 0 item states skipped. Error importing 0 elements.
+2017-06-30 05:43:06,728 Total time spent writing to the blackboard:  0 ms.
+2017-06-30 05:43:06,729 Total time spent reading from the blackboard:  0 ms.
+2017-06-30 05:43:06,729 
+2017-06-30 05:43:06,729 
+2017-06-30 05:43:06,729 ##############################################################################################
+2017-06-30 05:43:06,729                                 ****** Migration Errors ******
+2017-06-30 05:43:06,729 CRJAZ0656I **ERROR** Migration completed with errors. The imported database is in an inconsistent state and should not be used without further analysis.
+Check the migration log "/opt/IBM/JazzTeamServer/server/repotools-jts_import.log" for details.
+2017-06-30 05:43:06,730 ##############################################################################################
+2017-06-30 05:43:06,730 The user "ADMIN" has logged out of the database "conf/jts/derby/repositoryDB".
+2017-06-30 05:43:08,285 CRJAZ2403E The version of the data that you are trying to import does not match the version of this tool.  The "com.ibm.team.vvc" component in the exported file uses version "13". However, this import tool can handle only version "19".
+com.ibm.team.repository.migration.internal.service.IllegalVersionException: CRJAZ2403E The version of the data that you are trying to import does not match the version of this tool.  The "com.ibm.team.vvc" component in the exported file uses version "13". However, this import tool can handle only version "19".
+	at com.ibm.team.repository.migration.internal.service.MigrationHandlerDispatcher.assertAllModelVersionsEqualToCurrent(MigrationHandlerDispatcher.java:97)
+	at com.ibm.team.repository.migration.internal.service.AbstractMigrationService.importData(AbstractMigrationService.java:1027)
+	at com.ibm.team.repository.migration.internal.service.AbstractMigrationService.importRepositoryOptionalVerifyPreserve(AbstractMigrationService.java:881)
+	at com.ibm.team.repository.migration.internal.service.AbstractMigrationService.importRepositoryOptionalVerify(AbstractMigrationService.java:831)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at org.eclipse.soda.sat.core.internal.record.ExportProxyServiceRecord.invoke(ExportProxyServiceRecord.java:361)
+	at org.eclipse.soda.sat.core.internal.record.ExportProxyServiceRecord.access$0(ExportProxyServiceRecord.java:347)
+	at org.eclipse.soda.sat.core.internal.record.ExportProxyServiceRecord$ExportedServiceInvocationHandler.invoke(ExportProxyServiceRecord.java:56)
+	at com.sun.proxy.$Proxy1353.importRepositoryOptionalVerify(Unknown Source)
+	at com.ibm.team.repotools.commands.local.internal.ImportCommand.importData(ImportCommand.java:288)
+	at com.ibm.team.repotools.commands.local.internal.ImportCommand.execute(ImportCommand.java:205)
+	at com.ibm.team.repotools.command.AbstractCommand.execute(AbstractCommand.java:68)
+	at com.ibm.team.repotools.rcp.internal.RepositoryToolsApplication.run(RepositoryToolsApplication.java:838)
+	at com.ibm.team.repotools.rcp.internal.RepositoryToolsApplication.start(RepositoryToolsApplication.java:928)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+</code></pre>
+        </div>
+
+
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+                            
                             <div id="entry-612" class="entry-asset asset hentry">
     <div class="asset-header">
         <h2 class="asset-name entry-title"><a href="http://weblog.youre.space/imyagirl/2017/06/gathering-blue-review.html" rel="bookmark">Gathering Blue Review</a> - <a href="http://weblog.youre.space/imyagirl/">Ella</a></h2>
@@ -596,68 +763,6 @@ var infolinks_wsid = 0;
 </div>
 
 
-                            
-                            <div id="entry-593" class="entry-asset asset hentry">
-    <div class="asset-header">
-        <h2 class="asset-name entry-title"><a href="http://weblog.youre.space/genie7/blog/2017/05/2012-splunk.html" rel="bookmark">Splunk(스플렁크)를 시작하며...</a> - <a href="http://weblog.youre.space/genie7/">조철현의 블로그</a></h2>
-        <div class="asset-meta">
-            <span class="byline">
-    
-                By <span class="vcard author">genie7</span> on <abbr class="published" title="2017-05-26T12:02:36+09:00">May 26, 2017 12:02 PM</abbr>
-    
-            </span>
-
-            
-            
-
-        </div>
-    </div>
-    <div class="asset-content entry-content">
-
-        <div class="asset-body">
-            <p>2012년 처음으로 <a href="http//www.splunk.com" target="_blank">Splunk</a>라는 솔루션을 접하게 되었다. 아주 우연한 기회에...</p>
-<p>그 전까지 나는 데이터를 다룰때는 데이터베이스나 엑셀을 주로 사용하고 있었는데,</p>
-<p>스플렁크는 나에게 신세계를 보여주었다. 마치 클라우드 서비스 처럼... ㅎㅎㅎ</p>
-<p>이 후에 꾸준히 스플렁크를 사용할 기회를 가지게 되었고,</p>
-<p>여러가지 데이터를 수집하고 처리하는 방법을 익히게 되었는데,</p>
-<p>앞으로 스플렁크의 기본 사용법부터 다양한 활용 방법을 정리해 보려고한다.</p>
-<p>(이 내용을 기초로 해서 조만간 동영상 강의도 만들 계획이다. ^^ )</p>
-<p>이 글은 첫번째 내용으로 스플렁크에 대한 기본 소개를 적어볼까 한다.</p>
-<h4><strong>스플렁크는 뭐하는 놈인가?</strong></h4>
-<p>스플렁크는 한 문장으로 정리하면 다음과 같다.</p>
-<blockquote>
-<p>"<span style="color: #ff0000;"><strong>머신 데이터</strong></span>를 아무런 <span style="color: #ff0000;"><strong>제약 없이</strong> <strong>수집, 저장, 분석, 시각화</strong></span> 할 수 있는 <span style="color: #ff0000;"><strong>실시간 분산</strong> <strong>플랫폼</strong></span>"</p>
-</blockquote>
-<ul>
-<li>머신 데이터 : 스플렁크는 서버, 네트워크, 각종 설비, 어플리케이션에서 발생하는 로그와 데이터를 다룬다. 그 외에도 기타 모든 텍스트 형태의 데이터를 다룬다. 이런 데이터는 "머신"에서 발생되기 때문에 머신 데이터라 부른다.</li>
-<li>제약 없이 : 워낙에 광범위한 의미의 용어라 완전 동의하지는 않지만, 비정형, 정형 데이터를 다룰수 있고, 데이터의 포맷에 무관하게, 데이터의 용량에 무관하게 데이터를 다룰 수 있다. 또한 발생되는 데이터의 속도와도 무관하게 처리가 가능하다.</li>
-<li>수집 &gt; 저장 &gt; 분석 &gt; 시각화 : 다른 표현으로 엔드 투 엔드 솔루션이라 부를 수 있다. 별도의 외부 솔루션이나 복잡한 코딩, 개발이 없이도 데이터의 생성(수집)부터, 저장하고, 저장된 데이터를 검색하여 분석하고 시각화하는 기능까지 모두 제공한다.</li>
-<li>실시간/분산 : 스플렁크는 모든 데이터를 실시간 처리하고, 처리된 데이터는 즉시 결과를 확인할 수 있다. 성능 향상과 안정성, 용량의 확장을 위해 서버를 선형적 확장할 수 있고, 선형 확장된 환경에서 분산 저장, 분산 검색의 기능을 제공한다.</li>
-</ul>
-<h4><strong>스플렁크의 라이선스 정책</strong></h4>
-<ul>
-<li>영구 라이선스 : 한번 구매를 통해 영구적인 리이선스 권리를 가질 수 있다. 라이선스 구매 후에는 매년 20%의 리뉴얼 비용을 지불하고, 기술지원을 받을 수 있다.</li>
-<li>연간 라이선스 : 1년단위로 유효기간이 종료되는 라이선스이고, 별도의 리뉴얼 비용은 없고, 연간 라이선스 구입으로 유효기간 내에 기술지원이 포함된다.</li>
-<li>라이선스 가격의 결정 요소 : 스플렁크는 서버의 규모나 대수와 상관없이 1일 기준으로 인덱스 서버에 수집되는 로그의 용량을 기준으로 가격이 결정된다. 1일 500MB까지는 무료로 사용이 가능하고, 이를 초과하는 데이터에 대해서는 1GB 단위로 라이선스를 구매할 수 있다. 다음의 <a href="http://splk.it/2qhQu1b" target="_blank">링크</a>에서 스플렁크의 가격을 예측할 수 있으나, 실제로 한국내에서는 온라인 구매가 가능하지 않고, 온라인 구매시에는 파트너사의 기술지원을 받기 어렵다는 점은 참고할 필요가 있다.<br /><br />사용자가 1일 10GB의 영구 라이선스를 구매하면, 사용자는 매일 10GB의 로그를 수집할 수 있고, 로그량 증가에 따른 서버와 저장 장치만 준비하면 된다.</li>
-</ul>
-<h4>스플렁크는 어디에서 얻을 수 있는가?</h4>
-<ul>
-<li>스플렁크는 웹사이트에서 <a href="https://www.splunk.com/en_us/download.html" target="_blank">다운로드</a> 할 수 있다.<br /><a href="http://weblog.youre.space/genie7/assets_c/2017/05/02-Splunk_Download_page-141.html" onclick="window.open('http://weblog.youre.space/genie7/assets_c/2017/05/02-Splunk_Download_page-141.html','popup','width=2560,height=1467,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://weblog.youre.space/genie7/assets_c/2017/05/02-Splunk_Download_page-thumb-480xauto-141.png" alt="02-Splunk_Download_page.png" class="mt-image-none" width="480" height="275" /></a></li>
-<li>다운로드를 위해서는 스플렁크 웹사이트에 <a href="http://splk.it/2qi1mMq" target="_blank">회원가입</a>을 해야한다.</li>
-</ul>
-<p>다음 글부터는 스플렁크를 사용하기 위한 방법들을 하나씩 정리할 예정이다.</p>
-<p>하나씩 따라하면 어느 순간 스플렁크를 잘 활용하는 사용자가 되어 있기를 기대해본다.</p>
-<p></p>
-<p></p>
-        </div>
-
-
-
-    </div>
-    <div class="asset-footer"></div>
-</div>
-
-
 
                         </div>
                     </div>
@@ -817,6 +922,10 @@ var infolinks_wsid = 0;
     <div class="widget-content">
         <ul>
         
+            <li><a href="http://weblog.youre.space/vergence/2017/06/rational-team-concert-604-migration.html">Rational Team Concert 6.0.4 migration</a> - <a href="http://weblog.youre.space/vergence/">추ㅣ미생활 취미생호라</a></li>
+        
+    
+        
             <li><a href="http://weblog.youre.space/imyagirl/2017/06/gathering-blue-review.html">Gathering Blue Review</a> - <a href="http://weblog.youre.space/imyagirl/">Ella</a></li>
         
     
@@ -850,10 +959,6 @@ var infolinks_wsid = 0;
     
         
             <li><a href="http://weblog.youre.space/vergence/2017/05/book-modernandpostmodern.html">아플 땐 책</a> - <a href="http://weblog.youre.space/vergence/">추ㅣ미생활 취미생호라</a></li>
-        
-    
-        
-            <li><a href="http://weblog.youre.space/genie7/blog/2017/05/2012-splunk.html">Splunk(스플렁크)를 시작하며...</a> - <a href="http://weblog.youre.space/genie7/">조철현의 블로그</a></li>
         
         </ul>
     </div>
