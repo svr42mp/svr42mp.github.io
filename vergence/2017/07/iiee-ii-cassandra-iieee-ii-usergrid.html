@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/Article">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Movable Type 6.3">
+<meta name="description" content="http://imyaman.bekrage.net/ROOT.war_usergrid_1.0.2 apt-get -qq -y purge openjdk* apt-get -qq -y install software-properties-common add-apt-repository ppa:webupd8team/java apt-get -qq update apt-get -qq -y install oracle-java7-installer update-java-alternatives -s java-7-oracle apt-get -qq install oracle-java7-set-default gpg --keyserver pgp.mit.edu --recv-keys F758CE318D77295D gpg --export --armor F758CE318D77295D | sudo apt-key...">
+<style>
+  @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+  :lang(ko) { font-family: 'Noto Sans KR', sans-serif; }
+</style>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://weblog.youre.space/vergence/css/blog.css">
+<link rel="stylesheet" href="http://weblog.youre.space/vergence/css/custom_for_mt.css">
+<link rel="start" href="http://weblog.youre.space/vergence/" title="Home">
+<link rel="alternate" href="http://weblog.youre.space/vergence/atom.xml" type="application/atom+xml" title="Recent Entries">
+<link rel="canonical" href="http://weblog.youre.space/vergence/2017/07/iiee-ii-cassandra-iieee-ii-usergrid.html">
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://weblog.youre.space/vergence/2017/07/iiee-ii-cassandra-iieee-ii-usergrid.html">
+<dc:title>ì¹´ì°ëë¼ ì¤ì¹ cassandra, ì ì ê·¸ë¦¬ë ì¤ì¹ usergrid</dc:title>
+<dc:description>http://imyaman.bekrage.net/ROOT.war_usergrid_1.0.2 apt-get -qq -y purge openjdk* apt-get -qq -y install software-properties-common add-apt-repository ppa:webupd8team/java apt-get -qq update apt-get -qq -y install oracle-java7-installer update-java-alternatives -s java-7-oracle apt-get -qq install oracle-java7-set-default gpg -keyserver pgp.mit.edu -recv-keys F758CE318D77295D gpg -export -armor F758CE318D77295D | sudo apt-key...</dc:description>
+<dc:creator>Sangyong Gwak</dc:creator>
+<dc:date>2017-07-05T10:59:23+09:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-nd/4.0/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+</License>
+</rdf:RDF>
+-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-81713353-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<link rel="prev" href="http://weblog.youre.space/vergence/2017/07/mbaas-shopping-baas-ie-ee.html" title="mbaas shopping, BaaS 속도 비교">
+<!-- Open Graph Protocol -->
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en-us">
+<meta property="og:title" content="ì¹´ì°ëë¼ ì¤ì¹ cassandra, ì ì ê·¸ë¦¬ë ì¤ì¹ usergrid">
+<meta property="og:url" content="http://weblog.youre.space/vergence/2017/07/iiee-ii-cassandra-iieee-ii-usergrid.html">
+<meta property="og:description" content="http://imyaman.bekrage.net/ROOT.war_usergrid_1.0.2 apt-get -qq -y purge openjdk* apt-get -qq -y install software-properties-common add-apt-repository ppa:webupd8team/java apt-get -qq update apt-get -qq -y install oracle-java7-installer update-java-alternatives -s java-7-oracle apt-get -qq install oracle-java7-set-default gpg --keyserver pgp.mit.edu --recv-keys F758CE318D77295D gpg --export --armor F758CE318D77295D | sudo apt-key...">
+<meta property="og:site_name" content="추ㅣ미생활 취미생호라">
+<meta property="og:image" content="http://weblog.youre.space/vergence/blogimg/og_image.png">
+<!-- Metadata -->
+<meta itemprop="description" content="http://imyaman.bekrage.net/ROOT.war_usergrid_1.0.2 apt-get -qq -y purge openjdk* apt-get -qq -y install software-properties-common add-apt-repository ppa:webupd8team/java apt-get -qq update apt-get -qq -y install oracle-java7-installer update-java-alternatives -s java-7-oracle apt-get -qq install oracle-java7-set-default gpg --keyserver pgp.mit.edu --recv-keys F758CE318D77295D gpg --export --armor F758CE318D77295D | sudo apt-key...">
+<link itemprop="url" href="http://weblog.youre.space/vergence/2017/07/iiee-ii-cassandra-iieee-ii-usergrid.html">
+<link itemprop="image" href="http://weblog.youre.space/vergence/blogimg/og_image.png">
+<title>ì¹´ì°ëë¼ ì¤ì¹ cassandra, ì ì ê·¸ë¦¬ë ì¤ì¹ usergrid - 추ㅣ미생활 취미생호라</title>
+</head>
+<body id="sybootstrap">
+<div><!-- div class="blog-masthead" -->
+<div class="container">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">YOU'RE SPACE</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">YOUR E-SPACE</a></li>
+        <li><a href="http://weblog.youre.space/">WEBLOG</a></li>
+        <li><a href="http://weblog.youre.space/vergence/" class="blog-nav-item">Blog Home</a></li>
+        <li><a href="http://highest.youre.space/">Perl API</a></li>
+        <li><a href="http://lego.youre.space/">Lego</a></li>
+        <li><a href="http://fnb.youre.space/">F & B</a></li>
+        <li><a href="http://weblog.youre.space/vergence/atom.xml" class="blog-nav-item">Feed</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+</div>
+<div class="container">
+<header class="blog-header">
+<h1 class="blog-title">추ㅣ미생활 취미생호라</h1>
+<p class="lead blog-description">틈틈이 취미생활을 합니다. 추ㅣ미생활 취미생호라 일부러 오기한 겁니다.</p>
+</header>
+<div class="row">
+<main class="col-sm-8 blog-main">
+<ul class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<li><a href="http://weblog.youre.space/">Home</a></li>
+<li>ì¹´ì°ëë¼ ì¤ì¹ cassandra, ì ì ê·¸ë¦¬ë ì¤ì¹ usergrid</li>
+</ul>
+<article id="entry-615" class="blog-post entry entry-asset asset hentry h-entry">
+<div class="asset-header">
+<h2 itemprop="headline" class="blog-post-title entry-title p-name">ì¹´ì°ëë¼ ì¤ì¹ cassandra, ì ì ê·¸ë¦¬ë ì¤ì¹ usergrid</h2>
+<footer class="asset-meta blog-post-meta">
+<ul class="asset-meta-list">
+<li class="asset-meta-list-item"><time datetime="2017-07-05T10:59:23+09:00" class="updated published dt-published" itemprop="datePublished">July  5, 2017</time></li>
+<li class="asset-meta-list-item">by <span class="author entry-author vcard p-author h-card"><span class="fn">Sangyong Gwak</span></span></li>
+</ul>
+</footer>
+</div>
+<div class="asset-body e-content" itemprop="articleBody">
+<p>http://imyaman.bekrage.net/ROOT.war_usergrid_1.0.2</p>
+<p><br>
+apt-get -qq -y purge openjdk*<br>
+apt-get -qq -y install software-properties-common<br>
+add-apt-repository ppa:webupd8team/java<br>
+apt-get -qq update<br>
+apt-get -qq -y install oracle-java7-installer<br>
+update-java-alternatives -s java-7-oracle<br>
+apt-get -qq install oracle-java7-set-default</p>
+<p>gpg --keyserver pgp.mit.edu --recv-keys F758CE318D77295D<br>
+gpg --export --armor F758CE318D77295D | sudo apt-key add -<br>
+gpg --keyserver pgp.mit.edu --recv-keys 2B5C1B00<br>
+gpg --export --armor 2B5C1B00 | sudo apt-key add -<br>
+gpg --keyserver pgp.mit.edu --recv-keys 0353B12C<br>
+gpg --export --armor 0353B12C | sudo apt-key add -</p>
+<p>apt-get -qq update<br>
+apt-get -qq -y install cassandra</p>
+<p>service cassandra stop<br>
+rm -rf /var/lib/cassandra/data/system/*</p>
+<p><br>
+apt-get -qq install tomcat7 nginx</p>
+<p><br>
+새 organization 만들기</p>
+<p># curl -X POST  \<br>
+>      -d 'organization=imyaman&username=svr42mp&name=Admin&email=<br>
+svr42mp@yahoo.com&password=baas.io1' \<br>
+>      http://localhost:8080/management/organizations<br>
+{<br>
+  "action" : "new organization",<br>
+  "status" : "ok",<br>
+  "data" : {<br>
+    "owner" : {<br>
+      "applicationId" : "00000000-0000-0000-0000-000000000001",<br>
+      "username" : "svr42mp",<br>
+      "name" : "Admin",<br>
+      "email" : "svr42mp@yahoo.com",<br>
+      "activated" : true,<br>
+      "confirmed" : true,<br>
+      "disabled" : false,<br>
+      "properties" : { },<br>
+      "uuid" : "f0e317ea-2f72-11e5-9362-3f286e63b447",<br>
+      "adminUser" : true,<br>
+      "displayEmailAddress" : "Admin ",<br>
+      "htmldisplayEmailAddress" : "Admin &lt;<a />
+com\">svr42mp@yahoo.com&gt;"<br>
+    },<br>
+    "organization" : {<br>
+      "name" : "imyaman",<br>
+      "properties" : null,<br>
+      "uuid" : "f110908a-2f72-11e5-bb16-fdddaa772565",<br>
+      "passwordHistorySize" : 0<br>
+    }<br>
+  },<br>
+  "timestamp" : 1437460641880,<br>
+  "duration" : 994</p>
+<p></p>
+<p><br>
+================== admin ==============<br>
+curl -X POST  \<br>
+     -d 'organization=imyaman&username=svr42mp&name=Admin&email=<br>
+svr42mp@yahoo.com&password=baas.io1' \<br>
+     http://localhost:8080/management/organizations</p>
+<p>curl 'http://localhost:8080/management/token?grant_type=<br>
+password&username=svr42mp&password=baas.io1'</p>
+<p>curl -H "Authorization: Bearer<br>
+YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY"<br>
+\<br>
+     -H "Content-Type: application/json" \<br>
+     -X POST -d '{ "name":"baas.io" }' \<br>
+     http://localhost:8080/management/orgs/imyaman/apps</p>
+<p>curl -H "Authorization: Bearer<br>
+YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY"<br>
+\<br>
+     -X POST "http://localhost:8080/imyaman/baas.io/users" \<br>
+     -d '{ "username":"bruce", "password":"baasio1", "email":"<br>
+imyaman@hitel.net" }'</p>
+<p>curl -H "Authorization: Bearer<br>
+YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY"<br>
+\<br>
+     -X GET "http://localhost:8080/imyaman/baas.io/roles/guest"</p>
+<p>curl -H "Authorization: Bearer<br>
+YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY"<br>
+\<br>
+     -X GET "http://localhost:8080/imyaman/baas.io/roles/guest/permissions"</p>
+<p>curl -H "Authorization: Bearer<br>
+YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY"<br>
+\<br>
+     -X POST "http://localhost:8080/imyaman/baas.io/roles/guest/permissions"<br>
+\<br>
+     -d '{"permission":"get,post,put,delete:/**"}'</p>
+<p>============ ================== ==================<br>
+## as a user<br>
+curl 'http://localhost:8080/imyaman/baas.io/token?grant_<br>
+type=password&username=bruce&password=baasio1'</p>
+<p>curl -H "Authorization: Bearer<br>
+YWMtDrgBqC90EeWwMaOzMjpJRAAAAU7TaI2Y_TRmmlPydRYYyexiDqqUxUvWKZg"<br>
+\<br>
+     -X POST -d '[ { "cat":"fluffy" }, { "fish": { "gold":2, "oscar":1 } }<br>
+]' \<br>
+     http://localhost:8080/imyaman/baas.io/pets</p>
+<p><br>
+파일 업로드<br>
+http://usergrid.incubator.apache.org/docs/assets-and-<br>
+files/uploading-assets.html<br>
+</p><div><div><a href="http://imyaman.bekrage.net/ROOT.war_usergrid_1.0.2">http://imyaman.bekrage.net/ROOT.war_usergrid_1.0.2</a><br><br><br>apt-get -qq -y purge openjdk* <br>apt-get -qq -y install software-properties-common<br>add-apt-repository ppa:webupd8team/java<br>apt-get -qq update<br>apt-get -qq -y install oracle-java7-installer<br>update-java-alternatives -s java-7-oracle<br>apt-get -qq install oracle-java7-set-default<br><br>gpg --keyserver <a href="http://pgp.mit.edu">pgp.mit.edu</a> --recv-keys F758CE318D77295D<br>gpg --export --armor F758CE318D77295D | sudo apt-key add -<br>gpg --keyserver <a href="http://pgp.mit.edu">pgp.mit.edu</a> --recv-keys 2B5C1B00<br>gpg --export --armor 2B5C1B00 | sudo apt-key add -<br>gpg --keyserver <a href="http://pgp.mit.edu">pgp.mit.edu</a> --recv-keys 0353B12C<br>gpg --export --armor 0353B12C | sudo apt-key add -<br><br>apt-get -qq update<br>apt-get -qq -y install cassandra<br><br>service cassandra stop<br>rm -rf /var/lib/cassandra/data/system/* <br><br><br></div><div>apt-get -qq install tomcat7 nginx<br></div><div><br><br>새 organization 만들기<br><br># curl -X POST  \<br>&gt;      -d &#39;organization=imyaman&amp;username=svr42mp&amp;name=Admin&amp;email=<a href="mailto:svr42mp@yahoo.com">svr42mp@yahoo.com</a>&amp;password=baas.io1&#39; \<br>&gt;      <a href="http://localhost:8080/management/organizations">http://localhost:8080/management/organizations</a><br>{<br>  &quot;action&quot; : &quot;new organization&quot;,<br>  &quot;status&quot; : &quot;ok&quot;,<br>  &quot;data&quot; : {<br>    &quot;owner&quot; : {<br>      &quot;applicationId&quot; : &quot;00000000-0000-0000-0000-000000000001&quot;,<br>      &quot;username&quot; : &quot;svr42mp&quot;,<br>      &quot;name&quot; : &quot;Admin&quot;,<br>      &quot;email&quot; : &quot;<a href="mailto:svr42mp@yahoo.com">svr42mp@yahoo.com</a>&quot;,<br>      &quot;activated&quot; : true,<br>      &quot;confirmed&quot; : true,<br>      &quot;disabled&quot; : false,<br>      &quot;properties&quot; : { },<br>      &quot;uuid&quot; : &quot;f0e317ea-2f72-11e5-9362-3f286e63b447&quot;,<br>      &quot;adminUser&quot; : true,<br>      &quot;displayEmailAddress&quot; : &quot;Admin &lt;<a href="mailto:svr42mp@yahoo.com">svr42mp@yahoo.com</a>&gt;&quot;,<br>      &quot;htmldisplayEmailAddress&quot; : &quot;Admin &amp;lt;&lt;a href=\&quot;mailto:<a href="mailto:svr42mp@yahoo.com">svr42mp@yahoo.com</a>\&quot;&gt;<a href="mailto:svr42mp@yahoo.com">svr42mp@yahoo.com</a>&lt;/a&gt;&amp;gt;&quot;<br>    },<br>    &quot;organization&quot; : {<br>      &quot;name&quot; : &quot;imyaman&quot;,<br>      &quot;properties&quot; : null,<br>      &quot;uuid&quot; : &quot;f110908a-2f72-11e5-bb16-fdddaa772565&quot;,<br>      &quot;passwordHistorySize&quot; : 0<br>    }<br>  },<br>  &quot;timestamp&quot; : 1437460641880,<br>  &quot;duration&quot; : 994<br><br><br><br><br></div>================== admin ==============<br>curl -X POST  \<br>     -d &#39;organization=imyaman&amp;username=svr42mp&amp;name=Admin&amp;email=<a href="mailto:svr42mp@yahoo.com">svr42mp@yahoo.com</a>&amp;password=baas.io1&#39; \<br>     <a href="http://localhost:8080/management/organizations">http://localhost:8080/management/organizations</a><br><br>curl &#39;<a href="http://localhost:8080/management/token?grant_type=password&amp;username=svr42mp&amp;password=baas.io1">http://localhost:8080/management/token?grant_type=password&amp;username=svr42mp&amp;password=baas.io1</a>&#39;<br><br>curl -H &quot;Authorization: Bearer YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY&quot; \<br>     -H &quot;Content-Type: application/json&quot; \<br>     -X POST -d &#39;{ &quot;name&quot;:&quot;<a href="http://baas.io">baas.io</a>&quot; }&#39; \<br>     <a href="http://localhost:8080/management/orgs/imyaman/apps">http://localhost:8080/management/orgs/imyaman/apps</a><br><br>curl -H &quot;Authorization: Bearer YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY&quot; \<br>     -X POST &quot;<a href="http://localhost:8080/imyaman/baas.io/users">http://localhost:8080/imyaman/baas.io/users</a>&quot; \<br>     -d &#39;{ &quot;username&quot;:&quot;bruce&quot;, &quot;password&quot;:&quot;baasio1&quot;, &quot;email&quot;:&quot;<a href="mailto:imyaman@hitel.net">imyaman@hitel.net</a>&quot; }&#39;<br><br>curl -H &quot;Authorization: Bearer YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY&quot; \<br>     -X GET &quot;<a href="http://localhost:8080/imyaman/baas.io/roles/guest">http://localhost:8080/imyaman/baas.io/roles/guest</a>&quot;<br><br>curl -H &quot;Authorization: Bearer YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY&quot; \<br>     -X GET &quot;<a href="http://localhost:8080/imyaman/baas.io/roles/guest/permissions">http://localhost:8080/imyaman/baas.io/roles/guest/permissions</a>&quot;<br><br>curl -H &quot;Authorization: Bearer YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY&quot; \<br>     -X POST &quot;<a href="http://localhost:8080/imyaman/baas.io/roles/guest/permissions">http://localhost:8080/imyaman/baas.io/roles/guest/permissions</a>&quot; \<br>     -d &#39;{&quot;permission&quot;:&quot;get,post,put,delete:/**&quot;}&#39;<br><br>============ ================== ==================<br>## as a user<br>curl &#39;<a href="http://localhost:8080/imyaman/baas.io/token?grant_type=password&amp;username=bruce&amp;password=baasio1">http://localhost:8080/imyaman/baas.io/token?grant_type=password&amp;username=bruce&amp;password=baasio1</a>&#39;<br><br>curl -H &quot;Authorization: Bearer YWMtDrgBqC90EeWwMaOzMjpJRAAAAU7TaI2Y_TRmmlPydRYYyexiDqqUxUvWKZg&quot; \<br>     -X POST -d &#39;[ { &quot;cat&quot;:&quot;fluffy&quot; }, { &quot;fish&quot;: { &quot;gold&quot;:2, &quot;oscar&quot;:1 } } ]&#39; \<br>     <a href="http://localhost:8080/imyaman/baas.io/pets">http://localhost:8080/imyaman/baas.io/pets</a><br><br><br>파일 업로드<br><a href="http://usergrid.incubator.apache.org/docs/assets-and-files/uploading-assets.html">http://usergrid.incubator.apache.org/docs/assets-and-files/uploading-assets.html</a><br></div>
+</div>
+<aside>
+<ul class="pager">
+<li class="previous"><a href="http://weblog.youre.space/vergence/2017/07/mbaas-shopping-baas-ie-ee.html" title="mbaas shopping, BaaS 속도 비교">Previous Entry</a></li>
+</ul>
+</aside>
+<!--
+<aside id="zenback" class="zenback feedback">
+  ここに Zenback の Script コードを貼り付けてください。
+</aside>
+-->
+</article>
+</main>
+<aside class="col-sm-3 col-sm-offset-1 blog-sidebar">
+<div class="sidebar-module sidebar-module-inset">
+</div><div class="sidebar-module">
+<h4>Categories</h4>
+<ol class="list-unstyled">
+<li><a href="http://weblog.youre.space/vergence/2002-2003/">2002-2003 (18)</a>
+</li>
+<li><a href="http://weblog.youre.space/vergence/cal/">cal (29)</a>
+</li>
+<li><a href="http://weblog.youre.space/vergence/bc0/">BC0 (63)</a>
+</li>
+</ol>
+</div>
+<div class="sidebar-module">
+<h4>Tags</h4>
+<ul class="tags">
+<li class="level6"><a href="http://weblog.youre.space/63/mt-search.cgi?IncludeBlogs=4,5,6,9,10,11,12,13,17,20,21,22,3&amp;tag=leadership&amp;limit=20" rel="tag" title="タグ「leadership」の一覧">leadership</a></li>
+<li class="level6"><a href="http://weblog.youre.space/63/mt-search.cgi?IncludeBlogs=4,5,6,9,10,11,12,13,17,20,21,22,3&amp;tag=%EB%A6%AC%EB%8D%94%EC%8B%AD&amp;limit=20" rel="tag" title="タグ「리더십」の一覧">리더십</a></li>
+</ul>
+</div>
+<div class="sidebar-module">
+<h4>Archives</h4>
+<ol class="list-unstyled">
+<li><a href="http://weblog.youre.space/vergence/2017/07/">July 2017 (2)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2017/06/">June 2017 (4)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2017/05/">May 2017 (8)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2017/04/">April 2017 (4)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2017/03/">March 2017 (9)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2017/02/">February 2017 (9)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2016/11/">November 2016 (1)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2016/10/">October 2016 (3)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2016/09/">September 2016 (2)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2016/07/">July 2016 (2)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2016/06/">June 2016 (1)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2016/05/">May 2016 (1)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2016/04/">April 2016 (1)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2016/03/">March 2016 (4)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2016/02/">February 2016 (1)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2016/01/">January 2016 (2)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2015/12/">December 2015 (2)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2015/11/">November 2015 (3)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2015/10/">October 2015 (5)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2015/09/">September 2015 (3)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2015/08/">August 2015 (9)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2015/07/">July 2015 (4)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2014/11/">November 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2014/10/">October 2014 (2)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2014/08/">August 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2014/06/">June 2014 (2)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2014/05/">May 2014 (2)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2014/04/">April 2014 (2)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2014/03/">March 2014 (1)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2013/11/">November 2013 (1)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2013/08/">August 2013 (1)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2013/05/">May 2013 (2)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2011/09/">September 2011 (2)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2004/09/">September 2004 (14)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2004/08/">August 2004 (14)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2004/07/">July 2004 (6)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2004/06/">June 2004 (4)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2004/05/">May 2004 (19)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2004/04/">April 2004 (4)</a></li>
+<li><a href="http://weblog.youre.space/vergence/2002/02/">February 2002 (18)</a></li>
+</ol>
+</div>
+<div class="sidebar-module">
+<h4>Search</h4>
+<form class="site-search" method="get" id="search" action="http://weblog.youre.space/63/mt-search.cgi">
+<input class="form-control" type="text" name="search" value="" placeholder="検索...">
+<input type="hidden" name="IncludeBlogs" value="10">
+<input type="hidden" name="limit" value="20">
+</form>
+</div>
+</aside>
+</div>
+</div>
+<footer class="blog-footer">
+<ul>
+<li>블로그 게시물에 대한 권한은 모두 저자에게 있습니다.</li>
+<li>설치형 블로그를 권장합니다.</li>
+<li>YOUR'E SPACE, YOUR E-SPACE</li>
+<li>문의 : <a href="mailto:imyaman@netscape.net">imyaman@netscape.net</a></li>
+</ul>
+<p><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">라이선스 안내 Attribution-NoDerivs-NonCommercial, 저작자 표시-비영리-변경 금지(BY-NC-ND)</a></p>
+<p><a href="#top">Back to top</a></p>
+<!-- ad starts -->
+<center>
+<div id="realssp_imyaman00001_8388" class="realssp_dv" data-mcode="aW15YW1hbjAwMDAxXzgzODg="></div><script src="http://nw.realssp.co.kr/realclickssp.js?v=1.0&m=imyaman00001_8388&t=j" async></script>
+</center>
+<center>
+<div id="admixer_display"></div>
+</center>
+<script type="text/javascript" src="http://scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript">
+    new admixer_ad({
+    admixer_key:"8ch8bwvi",
+    display_id:"admixer_display",
+    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
+    ad_change:true,  //default : true
+    test : false,//default : false
+    test_display_id : "log"
+});
+</script>
+<center>
+<div class="main_banner" id="main_banner1">
+  <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
+  <script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+</div>
+</center>
+<!-- ad ends -->
+</footer>
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
